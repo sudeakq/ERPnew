@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import backgroundImage from './images/leftimage_page-0001.jpg'; // Adjust the path according to your project structure
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const App = () => {
   return (
     <Container>
