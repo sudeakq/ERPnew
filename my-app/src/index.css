@@ -81,10 +81,17 @@ section {
   text-decoration: none;
   color: #333;
 }
-
-.section {
+ .daily-reminder  {
   padding: 5px;
-  background-color: #af8de3;
+  background-color: #cfb2fa;
+}
+
+.Reminder{
+  width: 70%;
+  padding: 10px;
+  height: 70vh;
+  border: 1px solid black;
+  margin-left: 10%;
 }
 
 .section h2 {

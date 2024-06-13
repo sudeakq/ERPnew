@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import WhatsNew from './WhatsNew';
+import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <WhatsNew />
+    <WhatsNewClick />
   </React.StrictMode>
 );
 
