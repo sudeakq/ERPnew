@@ -1,0 +1,33 @@
+/* src/components/Card.css */
+.card {
+  border: 1px solid #626262;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.card-header .posted-by {
+  font-style: italic;
+}
+
+.card-header .status {
+  color: #4A47A3;
+}
+
+.card-content h3 {
+  margin: 0;
+}
+
+.read-more {
+  background-color: transparent;
+  border: none;
+  color: #4A47A3;
+  cursor: pointer;
+}

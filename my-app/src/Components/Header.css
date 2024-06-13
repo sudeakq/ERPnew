@@ -1,0 +1,24 @@
+/* src/components/Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4b3fa1;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right span {
+  margin-left: 40px;
+  font-weight: 600;
+}

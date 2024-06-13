@@ -1,0 +1,15 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  width: 200px;
+  padding: 1rem;
+  background-color: #F1F1F1;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
