@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import WhatsNewClick from './WhatsNewClick';
+// import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
+import DailyReminders from './Events';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <WhatsNewClick />
+    <DailyReminders />
   </React.StrictMode>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header  from './Components/Header';
 import Sidebar from './Components/Sidebar';
-import Reminders from './Components/Reminders';
+import Events from './Components/UpcomingEvents';
 
 function DailyReminders() {
 
@@ -12,7 +12,7 @@ function DailyReminders() {
     <div className="container">
       <Sidebar />
       <main>
-        <Reminders />
+        <Events />
       </main>
     </div>
   </>
