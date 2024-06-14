@@ -3,8 +3,7 @@ import "./WeeklySchedule-2.css";
 
 
 function WeeklyScheduleView() {
-
-
+  
   return (
     <>
       <header class="header-week">
