@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
-import DailyReminders from './Events';
-import Dashboard from './Dashboard';
+// import DailyReminders from './Events';
+// import Dashboard from './Dashboard';
+import UpcomingBirthdays from './Components/Birthdays';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard />
+    <UpcomingBirthdays />
   </React.StrictMode>
 );
 
