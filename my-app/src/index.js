@@ -5,7 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import DailyReminders from './Events';
 // import Dashboard from './Dashboard';
-import UpcomingBirthdays from './Components/Birthdays';
+import UpcomingBirthdays from './UpcomingBirthdays';
 
 
 
