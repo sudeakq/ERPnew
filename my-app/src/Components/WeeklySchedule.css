@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4b3fa1;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .date {
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.header-right .nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.shift {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-basis: 25%;
+  min-width: 300px;
+}
+
+.shift h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #4b3fa1;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4b3fa1;
+}
+
+.group ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.group ul li {
+  margin-bottom: 5px;
+}
+
