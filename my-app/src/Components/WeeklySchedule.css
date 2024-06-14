@@ -39,6 +39,12 @@
   flex-wrap: wrap;
 }
 
+.edit {
+  padding: 3px;
+  border-radius: 3px;
+  position: absolute; /* or 'fixed' if you want it to stick to the viewport */
+}
+
 .shift {
   background-color: #fff;
   margin: 7px;
