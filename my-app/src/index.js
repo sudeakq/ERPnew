@@ -4,12 +4,13 @@ import './index.css';
 // import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
 import DailyReminders from './Events';
+import Dashboard from './Dashboard';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DailyReminders />
+    <Dashboard />
   </React.StrictMode>
 );
 
