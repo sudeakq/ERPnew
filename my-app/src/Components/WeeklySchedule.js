@@ -7,7 +7,7 @@ function WeeklySchedule() {
 
   return (
     <>
-      <header class="header">
+      <header class="header-week">
         <h1>Weekly Schedule</h1>
         <div class="header-right">
             <button class="nav-button">&#x25C0;</button>
