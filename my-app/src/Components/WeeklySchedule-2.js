@@ -18,7 +18,59 @@ function WeeklyScheduleView() {
       <main class="schedule-container">
         <section class="shift" id="morning-shift">
           <h2>Morning shift 8:00 to 13:00</h2>
-          
+          <div class="group">
+            <h3>Human Resources: 4</h3>
+            <ul>
+              <li>Isata Sajor Bah</li>
+              <li>Katerina Svarcova</li>
+              <li>Klara Tlaskalova</li>
+              <li>Marvellous Oreoluwa Oseyemi</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Data Analyst: 4</h3>
+            <ul>
+              <li>Dang Thi Phi Yen</li>
+              <li>Danil Podtesov</li>
+              <li>Bedriye Ekin Uslu</li>
+              <li>Rustem Mammedov</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Digital Marketing: 3</h3>
+            <ul>
+              <li>Nida Oral</li>
+              <li>Burak Colak</li>
+              <li>Metehan Duzcan</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Copy Writer: 1</h3>
+            <ul>
+              <li>Oyku Dilekci</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Growth Hacker: 1</h3>
+            <ul>
+              <li>Akif Kilic</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Business Project Management: 3</h3>
+            <ul>
+              <li>Sanvir Kaur</li>
+              <li>Hafiza Noorie</li>
+              <li>Julia Wielgus</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Architecture & Urban Design: 1</h3>
+            <ul>
+              <li>Bilge Bahar Saatci</li>
+            </ul>
+          </div>
+
         </section>
         <button class="edit">&#8644;</button>
         <section class="shift" id="afternoon-shift">
