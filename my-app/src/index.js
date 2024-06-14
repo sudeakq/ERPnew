@@ -5,15 +5,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import DailyReminders from './Events';
 // import Dashboard from './Dashboard';
-// import UpcomingBirthdays from './UpcomingBirthdays';
-import Schedule from './Schedule';
+import UpcomingBirthdays from './UpcomingBirthdays';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Schedule />
+    <UpcomingBirthdays />
   </React.StrictMode>
 );
 
