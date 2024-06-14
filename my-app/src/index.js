@@ -7,14 +7,12 @@ import reportWebVitals from './reportWebVitals';
 // import Dashboard from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
 
-import Dashboard from './Dashboard';
-
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard />
+    <UpcomingBirthdays />
   </React.StrictMode>
 );
 
