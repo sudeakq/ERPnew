@@ -1,0 +1,59 @@
+
+.containers {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+.headerb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.headerb h1 {
+  margin: 0;
+}
+.sectionb {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.sectionb .box {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #e9f0f8;
+  border-radius: 8px;
+  padding: 20px;
+}
+.box h2 {
+  margin-top: 0;
+}
+.room {
+  margin-top: 20px;
+}
+.room h3 {
+  margin: 0 0 10px;
+}
+.room-details {
+  background-color: #e9f0f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
