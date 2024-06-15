@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
-import Intern from './Intern';
+// import Intern from './Intern';
 // import DailyReminders from './Events';
 // import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
+import Alumni from './Alumni';
 
 
 
@@ -15,7 +16,7 @@ import Intern from './Intern';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Intern/>
+    <Alumni/>
   </React.StrictMode>
 );
 
