@@ -8,7 +8,9 @@ import reportWebVitals from './reportWebVitals';
 // import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
-import Alumni from './Alumni';
+// import Alumni from './Alumni';
+import House from './Houses';
+
 
 
 
@@ -16,7 +18,7 @@ import Alumni from './Alumni';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Alumni/>
+    <House/>
   </React.StrictMode>
 );
 
