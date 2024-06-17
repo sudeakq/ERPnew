@@ -1,0 +1,25 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  text-align: center;
+  margin: 20px;
+}
+.title {
+  background-color: #8CA6F7;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+.grid img {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+}
