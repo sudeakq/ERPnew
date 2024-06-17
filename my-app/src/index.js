@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
-import BiancoHouses from './BiancoHouses';
+// import BiancoHouses from './BiancoHouses';
 // import Intern from './Intern';
 // import DailyReminders from './Events';
 // import Dashboard from './Dashboard';
@@ -11,6 +11,8 @@ import BiancoHouses from './BiancoHouses';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
 // import House from './Houses';
+import AllHous from './AllHouse';
+
 
 
 
@@ -20,7 +22,7 @@ import BiancoHouses from './BiancoHouses';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BiancoHouses />
+    <AllHous />
   </React.StrictMode>
 );
 
