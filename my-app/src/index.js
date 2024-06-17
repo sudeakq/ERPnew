@@ -10,9 +10,9 @@ import reportWebVitals from './reportWebVitals';
 // import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
-// import Alumni from './Alumni';
+import Alumni from './Alumni';
 // import House from './Houses';
-import Bills from './Bills';
+// import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 
@@ -28,7 +28,7 @@ root.render(
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    <Bills />
+    <Alumni />
     {/* <Depar /> */}
     {/* <AllHous /> */}
   </React.StrictMode>

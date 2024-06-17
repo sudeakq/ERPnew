@@ -9,9 +9,12 @@
               <div className="expenses-header">
                 <h1>Expenses Ferraro</h1>
                 <div className="header-icons">
-                  <img src="user1.jpg" alt="User 1" />
-                  <img src="user2.jpg" alt="User 2" />
-                  <img src="user3.jpg" alt="User 3" />
+                <img src={`${process.env.PUBLIC_URL}/image17.png`} alt="Team Member" />
+
+                <img src={`${process.env.PUBLIC_URL}/image17.png`} alt="Team Member" />
+                <img src={`${process.env.PUBLIC_URL}/image17.png`} alt="Team Member" />
+
+
                   <button className="add-user">+</button>
                 </div>
               </div>
