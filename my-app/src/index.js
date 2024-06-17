@@ -11,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
 // import House from './Houses';
-import AllHous from './AllHouse';
+import Bills from './Bills';
 
 
 
@@ -22,7 +22,7 @@ import AllHous from './AllHouse';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AllHous />
+    <Bills />
   </React.StrictMode>
 );
 
