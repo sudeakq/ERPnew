@@ -1,10 +1,13 @@
-/* Expenses.css
+ Expenses.css
 .expenses-container {
   display: flex;
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f4f6fa;
 }
+
+
+         
 
 .left-panel {
   flex: 2;
@@ -184,9 +187,9 @@
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
-} */
+} 
 
-
+/* 
 .teams-container {
   text-align: center;
   padding: 20px;
@@ -214,3 +217,14 @@ h2{
   border: 1px solid black;
 }
 
+    <div className="teams-container">
+        <h2>Meet The Teams</h2>
+        <div className="team-grid">
+          {Array(9).fill().map((_, index) => (
+            <div className="team-member" key={index}>
+              <img src={`${process.env.PUBLIC_URL}/image17.png`} alt="Team Member" />
+            </div>
+          ))}
+        </div>
+      </div> 
+ */
