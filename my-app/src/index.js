@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import WhatsNewClick from './WhatsNewClick';
 import reportWebVitals from './reportWebVitals';
-<<<<<<< HEAD
 
-
-=======
-// import BiancoHouses from './BiancoHouses';
->>>>>>> bb84543b2457b6d69788f295a95567677f0da2fe
+// Uncomment and import the necessary components as needed
+// import WhatsNewClick from './WhatsNewClick';
 // import Intern from './Intern';
 // import DailyReminders from './Events';
 // import Dashboard from './Dashboard';
@@ -16,34 +12,25 @@ import reportWebVitals from './reportWebVitals';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
 // import House from './Houses';
-<<<<<<< HEAD
 import Bills from './Bills';
-=======
-<<<<<<< HEAD
-import Depar from 'src\Depar.js';
-=======
-import AllHous from './AllHouse';
->>>>>>> f70bfa33689770abd6580f36283d9a6ed505b349
-
-
->>>>>>> bb84543b2457b6d69788f295a95567677f0da2fe
-
-
-
-
+// import Depar from './Depar';  // Fixed the path
+// import AllHous from './AllHouse';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
+    {/* Uncomment the component you want to render */}
+    {/* <WhatsNewClick /> */}
+    {/* <Intern /> */}
+    {/* <DailyReminders /> */}
+    {/* <Dashboard /> */}
+    {/* <UpcomingBirthdays /> */}
+    {/* <ScheduleView /> */}
+    {/* <Alumni /> */}
+    {/* <House /> */}
     <Bills />
-=======
-<<<<<<< HEAD
-    < Depar/>
-=======
-    <AllHous />
->>>>>>> bb84543b2457b6d69788f295a95567677f0da2fe
->>>>>>> f70bfa33689770abd6580f36283d9a6ed505b349
+    {/* <Depar /> */}
+    {/* <AllHous /> */}
   </React.StrictMode>
 );
 
