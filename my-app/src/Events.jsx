@@ -1,21 +1,21 @@
 import React from 'react'
-import Header  from './Components/Header';
+import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import Events from './Components/UpcomingEvents';
 
 function DailyReminders() {
 
 
-  return(
+  return (
     <>
-    <Header />
-    <div className="container">
-      <Sidebar />
-      <main>
+      <Header />
+      <div className="container">
+        <Sidebar />
+
         <Events />
-      </main>
-    </div>
-  </>
+
+      </div>
+    </>
 
   );
 }

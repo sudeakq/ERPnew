@@ -5,26 +5,20 @@
   box-sizing: border-box;
 
 }
-
 .daily-reminder {
   margin: 0;
-  padding: 0;
-
-}
-
-.container {
-  margin-top: 0px;
-  background-color: rgb(224, 223, 223);
+  padding: 20px;
+  background-color: #f9f9f9; /* Adjust as per the background */
 }
 
 .daily-reminder h2 {
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 2rem;
-  padding-top: 10px;
-  padding-bottom: 28px;
 }
 
 .daily-reminder .cards {
   display: flex;
   flex-direction: column;
+  gap: 20px; /* Add space between cards */
 }

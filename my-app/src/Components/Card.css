@@ -1,33 +1,44 @@
-/* src/components/Card.css */
 .card {
-  border: 1px solid #626262;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  background-color: #FFF;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  align-items: center;
 }
 
-.card-header .posted-by {
-  font-style: italic;
-}
-
-.card-header .status {
-  color: #4A47A3;
-}
-
-.card-content h3 {
+.card-header h3 {
   margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-.read-more {
-  background-color: transparent;
-  border: none;
-  color: #4A47A3;
-  cursor: pointer;
+.card-content {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-footer span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.card-footer .status {
+  font-weight: bold;
+  color: green;
+  /* Adjust as needed */
 }

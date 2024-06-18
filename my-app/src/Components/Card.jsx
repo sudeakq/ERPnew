@@ -1,4 +1,3 @@
-// src/components/Card.js
 import React from 'react';
 import './Card.css';
 
@@ -7,14 +6,16 @@ const Card = ({ title, content, date, postedBy, status }) => {
     <div className="card">
       <div className="card-header">
         <span>{date}</span>
-        <span className="posted-by">posted by {postedBy}</span>
         <span className="status">{status}</span>
       </div>
+      <h3>{title}</h3>
       <div className="card-content">
-        <h3>{title}</h3>
         <p>{content}</p>
       </div>
-      <button className="read-more">Read More</button>
+      <div className="card-footer">
+        <span>posted by {postedBy}</span>
+        <a href="/">Read More</a>
+      </div>
     </div>
   );
 };
