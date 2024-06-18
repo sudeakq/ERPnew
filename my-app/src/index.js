@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
 // import WhatsNewClick from './WhatsNewClick';
@@ -10,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 // import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
-import Alumni from './Alumni';
+// import Alumni from './Alumni';
 // import House from './Houses';
 // import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
@@ -28,7 +29,7 @@ root.render(
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    <Alumni />
+    <WhatsNew />
     {/* <Depar /> */}
     {/* <AllHous /> */}
   </React.StrictMode>

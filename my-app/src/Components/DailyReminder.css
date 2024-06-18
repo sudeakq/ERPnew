@@ -4,6 +4,11 @@
   border: 1px solid black;
 }
 
+.container {
+  margin-top: 0px;
+  background-color: rgb(224, 223, 223);
+}
+
 .daily-reminder h2 {
   margin-bottom: 1rem;
   text-align: center;
