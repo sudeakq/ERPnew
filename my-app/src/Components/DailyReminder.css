@@ -1,7 +1,15 @@
 /* src/components/DailyReminder.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
 .daily-reminder {
-  margin: rem 0;
-  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+
 }
 
 .container {
@@ -10,10 +18,10 @@
 }
 
 .daily-reminder h2 {
-  margin-bottom: 1rem;
   text-align: center;
-  margin-bottom: 20px;
   font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 28px;
 }
 
 .daily-reminder .cards {
