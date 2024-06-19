@@ -20,6 +20,7 @@ import ApplicantsForm from './ApllicantForm';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
+import StartPage from './StartPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,7 +34,7 @@ root.render(
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    <ApplicantsForm />
+    <StartPage />
     {/* <Depar /> */}
     {/* <AllHous /> */}
   </React.StrictMode>
