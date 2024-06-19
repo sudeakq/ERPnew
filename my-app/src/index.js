@@ -6,13 +6,13 @@ import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
 // import WhatsNewClick from './WhatsNewClick';
-// import Intern from './Intern';
-// import DailyReminders from './Events';
-// import Dashboard from './Dashboard';
+ import Intern from './Intern';
+ import DailyReminders from './Events';
+ import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
-// import House from './Houses';
+ import House from './Houses';
 // import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
@@ -29,7 +29,7 @@ root.render(
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    <WhatsNew />
+    <Dashboard />
     {/* <Depar /> */}
     {/* <AllHous /> */}
   </React.StrictMode>
