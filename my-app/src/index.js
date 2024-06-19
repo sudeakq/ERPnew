@@ -9,13 +9,13 @@ import ApplicantsForm from './ApllicantForm';
 
 // Uncomment and import the necessary components as needed
 // import WhatsNewClick from './WhatsNewClick';
- import Intern from './Intern';
- import DailyReminders from './Events';
- import Dashboard from './Dashboard';
+//  import Intern from './Intern';
+//  import DailyReminders from './Events';
+//  import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
- import House from './Houses';
+//  import House from './Houses';
 // import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
