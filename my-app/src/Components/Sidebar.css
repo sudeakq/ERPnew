@@ -1,15 +1,30 @@
 /* src/components/Sidebar.css */
-.sidebar {
-  width: 230px;
-  padding: 1rem;
-  background-color: #F1F1F1;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar nav ul li {
-  margin: 1rem 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
 }

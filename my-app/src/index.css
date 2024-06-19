@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
 }
 
 code {
@@ -12,7 +13,6 @@ code {
     monospace;
 }
 
-/* src/index.css */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -22,118 +22,20 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
+  margin-top: 0;
 }
 
 main {
-  flex-grow: 1;
+  flex: 1;
   padding: 20px;
+  background-color: #f9f9f9;
 }
 
-header,
+/* 
 .sidebar,
 section {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #4b3fa1;
-  color: #fff;
-  border-radius: 0px;
-}
-
-.header h1 {
-  margin: 0;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-}
-
-.header-right span {
-  margin-left: 20px;
-}
-
-.sidebar {
-  width: 250px;
-  padding: 20px;
-  background-color: #f4f4f4;
-}
-
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar nav ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.sidebar nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
- .daily-reminder  {
-  padding: 5px;
-  background-color: #cfb2fa;
-}
-
-.Reminder{
-  width: 70%;
-  padding: 10px;
-  height: 70vh;
-  border: 1px solid black;
-  margin-left: 10%;
-}
-
-.section h2 {
-  margin-top: 0;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  flex: 1;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-
-.card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.card p {
-  margin: 0;
-}
-
-.read-more {
-  align-self: flex-end;
-  color: #4b3fa1;
-  text-decoration: none;
-}
-
+} */

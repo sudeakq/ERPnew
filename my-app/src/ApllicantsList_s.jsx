@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
-import Events from './Components/UpcomingEvents';
+import ApplicantsList from './Components/ApllicantsList';
 
-function DailyReminders() {
+function Applicants() {
 
 
   return (
@@ -11,13 +11,11 @@ function DailyReminders() {
       <Header />
       <div className="container">
         <Sidebar />
-
-        <Events />
-
+       <ApplicantsList />
       </div>
     </>
 
   );
 }
 
-export default DailyReminders
+export default Applicants
