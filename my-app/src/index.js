@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import WhatsNew from './WhatsNew';
+import ApplicantsForm from './ApllicantForm';
+// import ApplicantsList from './Components/ApllicantsList';
+// import ApplicantsForms from './Components/ApllicantForms';
+// import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
 // import WhatsNewClick from './WhatsNewClick';
@@ -16,6 +19,7 @@ import WhatsNew from './WhatsNew';
 // import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
+// import Applicants from './Applicants';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,7 +33,7 @@ root.render(
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    <WhatsNew />
+    <ApplicantsForm />
     {/* <Depar /> */}
     {/* <AllHous /> */}
   </React.StrictMode>
