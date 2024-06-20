@@ -1,14 +1,13 @@
- .header-week {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 5px;
-   background-color: #d1ccf4;
-   color: white;
-   border-radius: 12px;
-   border: 1px solid black;
- }
-
+.header-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  border-radius: 12px;
+  border: 1px solid rgb(182, 182, 182);
+  margin-bottom: 10px;
+}
  .header h1 {
    margin: 0;
  }
@@ -23,7 +22,11 @@
    font-weight: 600;
  }
 
- .header-right .nav-button {
+ .date{
+  color: #000000;
+}
+
+ .header-right  {
    background: none;
    border: none;
    color: white;
@@ -31,6 +34,16 @@
    cursor: pointer;
    padding: 5px;
  }
+
+
+ .nav-button{
+  color: #4b3fa1;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+}
 
  .schedule-container {
    display: flex;
