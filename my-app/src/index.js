@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ApplicantsForm from './ApllicantForm';
+// import DailyReminders from './Events';
+import Schedule from './Schedule';
+// import ApplicantsForm from './ApllicantForm';
 // import ApplicantsList from './Components/ApllicantsList';
 // import ApplicantsForms from './Components/ApllicantForms';
 // import WhatsNew from './WhatsNew';
@@ -20,7 +22,7 @@ import ApplicantsForm from './ApllicantForm';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
-import StartPage from './StartPage';
+// import StartPage from './StartPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,10 +36,10 @@ root.render(
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    <StartPage />
+    {/* <StartPage /> */}
     {/* <Depar /> */}
-    {/* <AllHous /> */}
-  </React.StrictMode>
+    <Schedule />
+  </React.StrictMode> 
 );
 
 // If you want to start measuring performance in your app, pass a function

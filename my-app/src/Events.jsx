@@ -11,9 +11,7 @@ function DailyReminders() {
       <Header />
       <div className="container">
         <Sidebar />
-
         <Events />
-
       </div>
     </>
 

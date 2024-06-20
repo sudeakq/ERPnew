@@ -2,20 +2,20 @@ import React from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
-import AllHous from './Components/AllHouse';
+import AllHouse from './Components/AllHouses';
 
-function AllHouse() {
+function AllHous() {
   return (
     <>
       <Header />
       <div className="container">
         <Sidebar />
         <main>
-          <AllHous />
+          <AllHouse />
         </main>
       </div>
     </>
   );
 }
 
-export default AllHouse
+export default AllHous
