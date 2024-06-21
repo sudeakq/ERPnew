@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ScheduleView from './Schedule-2';
+import UpcomingBirthdays from './UpcomingBirthdays';
+// import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
 // import ApplicantsForm from './ApllicantForm';
@@ -39,7 +40,7 @@ root.render(
     {/* <House /> */}
     {/* <StartPage /> */}
     {/* <Depar /> */}
-    <ScheduleView />
+    <UpcomingBirthdays />
   </React.StrictMode> 
 );
 

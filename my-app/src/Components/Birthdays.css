@@ -6,7 +6,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.container {
+/* .containeor {
   display: flex;
   background-color: white;
   border-radius: 10px;
@@ -15,8 +15,9 @@ h2 {
   width: 98%;
   max-width: 90%;
   height: 80vh;
-  border: 1px solid black;
+  border: 1px solid black; 
 }
+ */
 
 
 .section {
@@ -24,7 +25,7 @@ h2 {
   padding: 20px;
   text-align: center;
   height: 60vh;
-  background-color: rgb(193, 138, 245);
+  /* background-color: rgb(193, 138, 245); */
 } 
 
 h2 {
@@ -34,20 +35,45 @@ h2 {
 
 .calendar {
   width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
 }
 
 .calendar th,
 .calendar td {
   text-align: center;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #ddd;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#prevMonth {
+  float: left;
+}
+
+#nextMonth {
+  float: right;
 }
 
 .calendar th {
   background-color: #f0f0f0;
   font-weight: bold;
+}
+
+.calendar th[colspan="7"] {
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.calendar th h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: normal;
 }
 
 .calendar td {
@@ -59,12 +85,21 @@ h2 {
 }
 
 .calendar td.selected {
-  background-color: #ddd;
+  background-color: #e0f7ff;
   font-weight: bold;
+  color: #0077ff;
+  border-radius: 50%;
+}
+
+.calendar td.prev-month,
+.calendar td.next-month {
+  color: #b0b0b0;
 }
 .list {
   width: 100%;
-  border-collapse: collapse;
+  border: 1px solid #000000;
+
+  /* border-collapse: collapse; */
 }
 
 .list th, .list td {
@@ -88,11 +123,11 @@ h2 {
 }
 
 .list .date {
-  color: #888;
+  color: #848383;
   font-size: 14px;
 }
 
 .list .department {
-  color: #888;
+  color: #848383;
   font-size: 14px;
 }
