@@ -7,13 +7,13 @@ import reportWebVitals from './reportWebVitals';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
 // import ApplicantsForm from './ApllicantForm';
-// import ApplicantsList from './Components/ApllicantsList';
+import ApplicantsList from './Components/ApllicantsList';
 // import ApplicantsForms from './Components/ApllicantForms';
 // import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
 // import WhatsNewClick from './WhatsNewClick';
- import Intern from './Intern';
+//  import Intern from './Intern';
 //  import DailyReminders from './Events';
 //  import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
@@ -31,7 +31,7 @@ root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
     {/* <WhatsNewClick /> */}
-    <Intern />
+    {/* <Intern /> */}
     {/* <DailyReminders /> */}
     {/* <Dashboard /> */}
     {/* <UpcomingBirthdays /> */}
@@ -39,6 +39,7 @@ root.render(
     {/* <Alumni /> */}
     {/* <House /> */}
     {/* <StartPage /> */}
+    <ApplicantsList />
     {/* <Depar /> */}
     {/* <UpcomingBirthdays /> */}
   </React.StrictMode> 

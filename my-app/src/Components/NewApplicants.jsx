@@ -6,7 +6,7 @@ function NewApplicants() {
     <div className="containeor">
       <headerk>
         <h1>Applicants List</h1>
-        <div className="header-actions">
+        <div className="headerk-actions">
           <input type="text" placeholder="Sort by:" />
           <button>CSV Import</button>
           <button>Add Candidate</button>
