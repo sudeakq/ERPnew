@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import UpcomingBirthdays from './UpcomingBirthdays';
+// import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
@@ -13,7 +13,7 @@ import UpcomingBirthdays from './UpcomingBirthdays';
 
 // Uncomment and import the necessary components as needed
 // import WhatsNewClick from './WhatsNewClick';
-//  import Intern from './Intern';
+ import Intern from './Intern';
 //  import DailyReminders from './Events';
 //  import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
@@ -31,7 +31,7 @@ root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
     {/* <WhatsNewClick /> */}
-    {/* <Intern /> */}
+    <Intern />
     {/* <DailyReminders /> */}
     {/* <Dashboard /> */}
     {/* <UpcomingBirthdays /> */}
@@ -40,7 +40,7 @@ root.render(
     {/* <House /> */}
     {/* <StartPage /> */}
     {/* <Depar /> */}
-    <UpcomingBirthdays />
+    {/* <UpcomingBirthdays /> */}
   </React.StrictMode> 
 );
 

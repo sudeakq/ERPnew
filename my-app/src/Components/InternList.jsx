@@ -5,9 +5,9 @@ import "./InternList.css";
 function InternLists() {
   return (
     <>
-      <div className="header-list">
+      <div className="headeor-list">
         <h1>Intern List</h1>
-        <div className="header-icons">
+        <div className="headeor-icons">
           <div>
             <button>Human Resource<br />3</button>
           </div>

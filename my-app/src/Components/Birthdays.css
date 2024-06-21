@@ -1,39 +1,27 @@
-
-
-h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* .containeor {
+.containeor {
   display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 98%;
-  max-width: 90%;
-  height: 80vh;
-  border: 1px solid black; 
+  max-width: 100%;
+  height: 79vh;
 }
- */
-
 
 .section {
-  flex: 0.5;
+  flex: 1;
   padding: 20px;
   text-align: center;
-  height: 60vh;
-  /* background-color: rgb(193, 138, 245); */
-} 
+  /* height: 80vh; */
+}
 
-h2 {
+.section h2 {
   color: #333;
   margin-bottom: 20px;
 }
 
-.calendar {
+.calendar,
+.list {
   width: 100%;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -41,7 +29,9 @@ h2 {
 }
 
 .calendar th,
-.calendar td {
+.calendar td,
+.list th,
+.list td {
   text-align: center;
   padding: 7px;
   border: 1px solid #ddd;
@@ -65,7 +55,7 @@ h2 {
   font-weight: bold;
 }
 
-.calendar th[colspan="7"] {
+.calendar th[colspan="5"] {
   background-color: #fff;
   border-bottom: none;
 }
@@ -95,17 +85,10 @@ h2 {
 .calendar td.next-month {
   color: #b0b0b0;
 }
-.list {
-  width: 100%;
-  border: 1px solid #000000;
 
-  /* border-collapse: collapse; */
-}
-
-.list th, .list td {
-  padding: 10px;
+.list th,
+.list td {
   text-align: left;
-  border-bottom: 1px solid #ddd;
 }
 
 .list th {
@@ -122,11 +105,7 @@ h2 {
   background-color: #f9f9f9;
 }
 
-.list .date {
-  color: #848383;
-  font-size: 14px;
-}
-
+.list .date,
 .list .department {
   color: #848383;
   font-size: 14px;
