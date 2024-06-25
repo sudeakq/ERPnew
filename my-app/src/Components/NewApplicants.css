@@ -18,20 +18,22 @@ headerk h1 {
   margin: 0;
 }
 
-.header-actions {
+.headerk-actions {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
-.header-actions input {
+.headerk-actions input {
   padding: 5px;
 }
 
-.header-actions button {
-  padding: 5px 10px;
+.headerk-actions button {
+  padding: 5px 15px;
+  margin-left: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 table {
@@ -50,11 +52,20 @@ table td {
   border-bottom: 1px solid #ddd;
 }
 
+table th {
+  text-align: center;
+}
+
+table td {
+  text-align: center;
+}
+
 .status {
   padding: 5px 10px;
   border-radius: 12px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .status.pending {
@@ -63,8 +74,7 @@ table td {
 }
 
 .status.on-board {
-  background-color: blue;
-  padding: 5px;
+  background-color: rgb(12, 16, 255);
 }
 
 .status.rejected {
@@ -84,4 +94,38 @@ table td {
   background: none;
   font-size: 18px;
   cursor: pointer;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup form button {
+  margin-top: 10px;
 }

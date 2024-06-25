@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Applicants from './Applicants';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
 // import ApplicantsForm from './ApllicantForm';
-import ApplicantsList from './Components/ApllicantsList';
+// import ApplicantsList from './Components/ApllicantsList';
 // import ApplicantsForms from './Components/ApllicantForms';
 // import WhatsNew from './WhatsNew';
 
@@ -34,12 +35,13 @@ root.render(
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
     {/* <Dashboard /> */}
+    <Applicants />
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
     {/* <StartPage /> */}
-    <ApplicantsList />
+    {/* <ApplicantsList /> */}
     {/* <Depar /> */}
     {/* <UpcomingBirthdays /> */}
   </React.StrictMode> 

@@ -1,7 +1,56 @@
-import React from "react";
+import React, { useState } from 'react';
+import axios from 'axios';
 import './NewApplicants.css';
 
 function NewApplicants() {
+  const [applicants, setApplicants] = useState([]);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    position: '',
+    status: '',
+    department: '',
+    progressDate: '',
+  });
+
+  useState(() => {
+    axios.get('http://localhost:5000/api/applicants')
+      .then(response => {
+        setApplicants(response.data);
+      })
+      .catch(error => {
+        console.error('There was an error fetching the applicants!', error);
+      });
+  }, []);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post('http://localhost:5000/api/applicants', formData)
+      .then(response => {
+        setApplicants([...applicants, response.data]);
+        closePopup();
+      })
+      .catch(error => {
+        console.error('There was an error creating the applicant!', error);
+      });
+  };
+
   return (
     <div className="containeor">
       <headerk>
@@ -9,7 +58,7 @@ function NewApplicants() {
         <div className="headerk-actions">
           <input type="text" placeholder="Sort by:" />
           <button>CSV Import</button>
-          <button>Add Candidate</button>
+          <button onClick={openPopup}>Add Candidate</button>
         </div>
       </headerk>
       <table>
@@ -128,6 +177,39 @@ function NewApplicants() {
           </tr>
         </tbody>
       </table>
+
+      {isPopupOpen && (
+        <div className="popup-overlay">
+          <div className="popup">
+            <h2>Add Candidate</h2>
+            <form onSubmit={handleSubmit}>
+              <label>
+                Name:
+                <input type="text" name="name" value={formData.name} onChange={handleChange} />
+              </label>
+              <label>
+                Position:
+                <input type="text" name="position" value={formData.position} onChange={handleChange} />
+              </label>
+              <label>
+                Status:
+                <input type="text" name="status" value={formData.status} onChange={handleChange} />
+              </label>
+              <label>
+                Department:
+                <input type="text" name="department" value={formData.department} onChange={handleChange} />
+              </label>
+              <label>
+                Progress Date:
+                <input type="date" name="progressDate" value={formData.progressDate} onChange={handleChange} />
+              </label>
+              <button type="submit">Submit</button>
+              <button type="button" onClick={closePopup}>Cancel</button>
+            </form>
+          </div>
+        </div>
+      )}
+1
     </div>
   );
 }
