@@ -8,7 +8,6 @@ function StartPage() {
     <>
       
       <div className="container">
-        
         <main>
           <StartPages />
         </main>
