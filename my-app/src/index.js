@@ -10,10 +10,10 @@ import Applicants from './Applicants';
 // import ApplicantsForm from './ApllicantForm';
 // import ApplicantsList from './Components/ApllicantsList';
 // import ApplicantsForms from './Components/ApllicantForms';
-// import WhatsNew from './WhatsNew';
+//import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
-// import WhatsNewClick from './WhatsNewClick';
+import WhatsNewClick from './WhatsNewClick';
 //  import Intern from './Intern';
 //  import DailyReminders from './Events';
 //  import Dashboard from './Dashboard';
@@ -25,22 +25,22 @@ import Applicants from './Applicants';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
-// import StartPage from './StartPage';
+// import StartPage from './StartPage'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
-    {/* <WhatsNewClick /> */}
+    <WhatsNewClick /> 
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
     {/* <Dashboard /> */}
-    <Applicants />
+    {/* <Applicants /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
     {/* <House /> */}
-    {/* <StartPage /> */}
+    {/* <StartPage />  */} {/* Done */}
     {/* <ApplicantsList /> */}
     {/* <Depar /> */}
     {/* <UpcomingBirthdays /> */}
