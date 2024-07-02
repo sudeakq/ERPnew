@@ -1,6 +1,6 @@
 import React from "react";
-import leftImage from "./images/UserStartPage.png";
-import ExtramusText from "./images/ExtramusText_image.png";
+import leftImage from "../images/UserStartPage.png";
+import ExtramusText from "../images/ExtramusText_image.png";
 import "./UserStartPage.css";
 
 function UserStartPage() {
@@ -45,4 +45,4 @@ function UserStartPage() {
   );
 }
 
-export default Example;
+export default UserStartPage;
