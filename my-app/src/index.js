@@ -13,7 +13,7 @@ import reportWebVitals from './reportWebVitals';
 //import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
-import WhatsNewClick from './WhatsNewClick';
+// import WhatsNewClick from './WhatsNewClick';
 //  import Intern from './Intern';
 //  import DailyReminders from './Events';
 //  import Dashboard from './Dashboard';
@@ -25,25 +25,17 @@ import Alumni from './Alumni';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
-<<<<<<< Updated upstream
-// import StartPage from './StartPage'; 
-=======
-import StartPage from './StartPage';
->>>>>>> Stashed changes
+// import StartPage from './StartPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
-    <WhatsNewClick /> 
+    {/* <WhatsNewClick />  */}
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
     {/* <Dashboard /> */}
-<<<<<<< Updated upstream
-    {/* <Applicants /> */}
-=======
     {/* <StartPage /> */}
->>>>>>> Stashed changes
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 
