@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Applicants from './Applicants';
+// import Applicants from './Applicants';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
@@ -16,7 +16,7 @@ import Applicants from './Applicants';
 // import WhatsNewClick from './WhatsNewClick';
 //  import Intern from './Intern';
 //  import DailyReminders from './Events';
-//  import Dashboard from './Dashboard';
+import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
@@ -34,8 +34,8 @@ root.render(
     {/* <WhatsNewClick /> */}
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
-    {/* <Dashboard /> */}
-    <Applicants />
+    <Dashboard />
+    {/* <Applicants /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
@@ -44,7 +44,7 @@ root.render(
     {/* <ApplicantsList /> */}
     {/* <Depar /> */}
     {/* <UpcomingBirthdays /> */}
-  </React.StrictMode> 
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
