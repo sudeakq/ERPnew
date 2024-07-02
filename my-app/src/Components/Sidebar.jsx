@@ -1,6 +1,11 @@
+<<<<<<< Updated upstream
 // src/components/Sidebar.js
 import React, { useState } from 'react';
+=======
+import React from 'react';
+>>>>>>> Stashed changes
 import './Sidebar.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Sidebar = () => {
 
@@ -9,6 +14,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <nav>
+<<<<<<< Updated upstream
         <ul className='link-list' >
 
           <li className="link-container">
@@ -31,6 +37,17 @@ const Sidebar = () => {
             <a href="#" onClick={()=>setSelected("Bills")} className={ `nav-link ` + ` ${selected === "Bills" ? " selected " : "" }` } >Bills</a>
           </li>
 
+=======
+        <ul>
+          <li><i className="fas fa-tachometer-alt"></i>Dashboard</li>
+          <li><i className="fas fa-calendar-alt"></i>Schedule</li>
+          <li><i className="fas fa-building"></i>Departments</li>
+          <li><i className="fas fa-user-plus"></i>New Applicants</li>
+          <li><i className="fas fa-user-graduate"></i>Interns</li>
+          <li><i className="fas fa-user-friends"></i>Alumni</li>
+          <li><i className="fas fa-home"></i>Houses</li>
+          <li><i className="fas fa-file-invoice-dollar"></i>Bills</li>
+>>>>>>> Stashed changes
         </ul>
       </nav>
     </aside>

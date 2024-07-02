@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Applicants from './Applicants';
+// import Applicants from './Applicants';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
@@ -19,13 +19,17 @@ import WhatsNewClick from './WhatsNewClick';
 //  import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
-// import Alumni from './Alumni';
+import Alumni from './Alumni';
 //  import House from './Houses';
 // import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
+<<<<<<< Updated upstream
 // import StartPage from './StartPage'; 
+=======
+import StartPage from './StartPage';
+>>>>>>> Stashed changes
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,10 +39,15 @@ root.render(
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
     {/* <Dashboard /> */}
+<<<<<<< Updated upstream
     {/* <Applicants /> */}
+=======
+    {/* <StartPage /> */}
+>>>>>>> Stashed changes
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
-    {/* <Alumni /> */}
+
+    <Alumni />
     {/* <House /> */}
     {/* <StartPage />  */} {/* Done */}
     {/* <ApplicantsList /> */}
