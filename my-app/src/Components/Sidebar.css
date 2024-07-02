@@ -1,30 +1,49 @@
-/* src/components/Sidebar.css */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-}.sidebar {
-  width: 250px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Sidebar navigation styling */
 .sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar nav ul li {
+/* Container for each link */
+.link-container {
+  display: flex;
+  flex-direction: column;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
 }
 
-.sidebar nav ul li a {
+/* Styling for each navigation link */
+.nav-link {
   text-decoration: none;
-  color: #333;
+  color: #232121; /* Light gray color */
+  padding: 15px 20px;
+  border-left: 5px solid transparent;
+  display: flex;
+  align-items: left;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+  color: #000;
+  border-left-color: #000; /* Highlight the left border on hover */
+}
+
+/* Sidebar list items */
+.sidebar li {
+  display: flex;
+  align-items: left ;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+/* Margin for icons */
+.sidebar li i {
+  margin-right: 10px;
 }

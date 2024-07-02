@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './StartPages.css';
 import chartImage from '../images/leftimage_page-0001.jpg';
+import erasmusTitleImage from '../images/extramus_title_image.png';
 
 const StartPages = () => {
   const [email, setEmail] = useState('');
@@ -30,7 +31,10 @@ const StartPages = () => {
       </div>
       <div className="login-right">
         <form className="login-form" onSubmit={handleLogin}>
-          <h1 className="login-title">EXTRAMUS HR Platform</h1>
+          <div className="image-title-container">
+            <img src={erasmusTitleImage} alt="" />
+            <h1 className="login-title poppins-extrabold ">HR Platform</h1>
+          </div>
           {error && <p className="error">{error}</p>}
           <input
             type="email"
@@ -38,7 +42,7 @@ const StartPages = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="login-input"
+            className="login-input poppins-extrabold"
           />
           <input
             type="password"
@@ -46,16 +50,20 @@ const StartPages = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="login-input"
+            className="login-input poppins-extrabold"
           />
           <div className="login-options">
-            <a href="/forgot-password" className="forgot-password">Forgot password?</a>
-            <label className="remember-me">
-              <input type="checkbox" /> Remember me
+            <a href="/forgot-password" className="forgot-password poppins-extrabold">Forgot password?</a>
+            <label className="remember-me poppins-extrabold ">
+            <p>Remember me</p> <input type="checkbox" /> 
             </label>
           </div>
-          <button type="submit" className="login-button">Log In</button>
+          <button type="submit" className="login-button poppins-bold">Log In</button>
         </form>
+        <div className="register-link-container">
+          <p className='register-text poppins-extrabold ' >Don't have an account ?</p>
+          <a className='register-link poppins-extrabold ' href="#">Sign Up</a>
+        </div>
       </div>
     </div>
   );

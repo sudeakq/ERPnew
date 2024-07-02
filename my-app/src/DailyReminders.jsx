@@ -5,18 +5,16 @@ import Reminders from './Components/Reminders';
 
 function DailyReminders() {
 
-
   return(
     <>
-    <Header />
-    <div className="container">
-      <Sidebar />
-      <main>
-        <Reminders />
-      </main>
-    </div>
-  </>
-
+      <Header />
+      <div className="container">
+        <Sidebar />
+        <main>
+          <Reminders />
+        </main>
+      </div>
+    </>
   );
 }
 
