@@ -67,7 +67,6 @@ function InternLists() {
           <label><input type="checkbox" /> Project Management</label>
           <label><input type="checkbox" /> Language Teaching</label>
         </div>
-        
       </div>
       <table>
         <thead>
