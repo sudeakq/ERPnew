@@ -14,28 +14,28 @@ const Sidebar = () => {
 
           <li className="link-container">
             <div onClick={()=>setSelected("DashBoard")} className={ `link-data ` + ` ${selected === "DashBoard" ? " selected " : "" }` }>
-            <i className="fas fa-tachometer-alt"></i><a href="/" className="nav-link" >Dashboard</a>
+            <i className="fas fa-tachometer-alt"></i><a href="#" className="nav-link" >Dashboard</a>
             </div>
           </li>
 
           <li className="link-container">
             <div onClick={()=>setSelected("Schedule")} className={ `link-data ` + ` ${selected === "Schedule" ? " selected " : "" }` } >
-              <i className="fas fa-calendar-alt" ></i><a href="/" className="nav-link"  >Schedule</a>
+              <i className="fas fa-calendar-alt" ></i><a href="#" className="nav-link"  >Schedule</a>
             </div>
             <div onClick={()=>setSelected("Departments")} className={ `link-data ` + ` ${selected === "Departments" ? " selected " : "" }` }>
-              <i className="fas fa-building"></i><a href="/"  className="nav-link" >Departments</a>
+              <i className="fas fa-building"></i><a href="#"  className="nav-link" >Departments</a>
             </div>
           </li>
 
           <li className="link-container">
             <div onClick={()=>setSelected("New Appca")} className={ `link-data ` + ` ${selected === "New Appca" ? " selected " : "" }` } >
-              <i className="fas fa-user-plus"></i><a href="/"  className="nav-link" >New Appca</a>
+              <i className="fas fa-user-plus"></i><a href="#"  className="nav-link" >New Appca</a>
             </div>
             <div onClick={()=>setSelected("Interns")} className={ `link-data ` + ` ${selected === "Interns" ? " selected " : "" }` } >
-              <i className="fas fa-user-graduate"></i><a href="/"  className="nav-link" >Interns</a>
+              <i className="fas fa-user-graduate"></i><a href="#"  className="nav-link" >Interns</a>
             </div>
             <div onClick={()=>setSelected("Alumni")} className={ `link-data ` + ` ${selected === "Alumni" ? " selected " : "" }` } >
-              <i className="fas fa-user-friends"></i><a href="/"  className="nav-link" >Alumni</a>
+              <i className="fas fa-user-friends"></i><a href="#"  className="nav-link" >Alumni</a>
             </div>
           </li>
 
