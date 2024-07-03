@@ -26,3 +26,6 @@ Route::get('users/{id}',[UserController::class,'show']);
 
 
 Route::post('/login', [AuthController::class, 'login']);
+Route::get('/test-cors', function (Request $request) {
+    return response()->json(['message' => 'CORS is working!']);
+});

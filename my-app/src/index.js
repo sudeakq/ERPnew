@@ -2,9 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+<<<<<<< Updated upstream
 // import Applicants from './Applicants';
 // import Applicants from './Applicants';
 // import UpcomingBirthdays from './UpcomingBirthdays';
+=======
+import UpcomingBirthdays from './UpcomingBirthdays';
+import StartPage from './StartPage';
+
+
+>>>>>>> Stashed changes
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
@@ -17,12 +24,12 @@ import reportWebVitals from './reportWebVitals';
 //import WhatsNewClick from './WhatsNewClick';
 import Intern from './Intern';
 //  import DailyReminders from './Events';
-//  import Dashboard from './Dashboard';
+ // import Alumni from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
-// import Bills from './Bills';
+ import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
@@ -35,8 +42,12 @@ root.render(
     {/* <WhatsNewClick /> */} {/* done */} 
     <Intern />  
     {/* <DailyReminders /> */}
+<<<<<<< Updated upstream
     {/* <Dashboard /> */}
     {/* <StartPage /> */}
+=======
+     <StartPage /> 
+>>>>>>> Stashed changes
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 
@@ -45,8 +56,13 @@ root.render(
     {/* <StartPage />  */} {/* Done */}
     {/* <ApplicantsList /> */}
     {/* <Depar /> */}
+<<<<<<< Updated upstream
     {/* <UpcomingBirthdays /> */}
   </React.StrictMode>
+=======
+    
+  </React.StrictMode> 
+>>>>>>> Stashed changes
 );
 
 // If you want to start measuring performance in your app, pass a function
