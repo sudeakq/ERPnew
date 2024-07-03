@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from './Services/axios.js'; // Corrected import path
 import './StartPages.css';
-import chartImage from '../images/extramus_title_image.png';
+import startPageImage from '../images/UserStartPage.png';
 import erasmusTitleImage from '../images/extramus_title_image.png';
 
 const StartPages = () => {
@@ -29,7 +29,7 @@ const StartPages = () => {
   return (
     <div className="login-container">
       <div className="login-left">
-        <img src={chartImage} alt="Chart" className="chart-image" />
+        <img src={startPageImage} alt="Chart" className="chart-image" />
       </div>
       <div className="login-right">
         <form className="login-form" onSubmit={handleLogin}>

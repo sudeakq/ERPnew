@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import UpcomingBirthdays from './UpcomingBirthdays';
-import StartPage from './StartPage';
 
 
 // import ScheduleView from './Schedule-2';
@@ -16,31 +15,27 @@ import StartPage from './StartPage';
 
 // Uncomment and import the necessary components as needed
 /* import WhatsNewClick from './WhatsNewClick'; */
-import Intern from './Intern';
+//import Intern from './Intern'; 
 //  import DailyReminders from './Events';
  // import Alumni from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
- import Bills from './Bills';
+ /* import Bills from './Bills'; */
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
-<<<<<<< HEAD
-//import StartPage from './StartPage'; 
-=======
-// import StartPage from './StartPage';
->>>>>>> 2b4e78c4d8733db94fcbb0e81775a4823c07561d
+import StartPage from './StartPage'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
     {/* <WhatsNewClick />  */}
-    <Intern />
+    {/* <Intern /> */}
     {/* <DailyReminders /> */}
-     <StartPage /> 
+    <StartPage />   
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 
