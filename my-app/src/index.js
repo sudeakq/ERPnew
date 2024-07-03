@@ -16,6 +16,7 @@ import reportWebVitals from './reportWebVitals';
 // Uncomment and import the necessary components as needed
 /* import WhatsNewClick from './WhatsNewClick'; */
 import Intern from './Intern'; //
+import Intern from './Intern'; //
 //  import DailyReminders from './Events';
  // import Alumni from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
@@ -23,7 +24,7 @@ import Intern from './Intern'; //
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills'; //
-// import ForgotPassword from './UserSıde/ForgotPassword'
+//import ForgotPassword from './UserSıde/ForgotPassword'
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
@@ -38,8 +39,8 @@ root.render(
     {/* <DailyReminders /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
-    {/* <Alumni /> */}
-    <Intern />
+<Intern />
+ {/*    <Alumni /> */}
     {/* <House /> */}
     {/* <StartPage />   */}   {/* Done */}
     {/* <ApplicantsList /> */}
