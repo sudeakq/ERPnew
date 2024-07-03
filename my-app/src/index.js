@@ -17,7 +17,7 @@ import reportWebVitals from './reportWebVitals';
 // import WhatsNewClick from './WhatsNewClick';
 //  import Intern from './Intern';
 //  import DailyReminders from './Events';
-import Dashboard from './Dashboard';
+ import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
@@ -36,7 +36,7 @@ root.render(
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
     <Dashboard />
-    {/* <Applicants /> */}
+    {/* <StartPage /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 

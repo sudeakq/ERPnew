@@ -2,7 +2,7 @@
 import React from 'react';
 import './content.css';
 import DashCard from './DashCard';
-import { FaArrowRightLong } from "react-icons/fa6";
+// import { FaArrowRightLong } from "react-icons/fa6";
 
 const Content = () => {
   return (
@@ -11,7 +11,7 @@ const Content = () => {
         <h4>What's New?</h4>
         <div>
           <a href="./" style={{ marginBottom: '100px' }}>View All (18) </a>
-          <FaArrowRightLong />
+          {/* <FaArrowRightLong /> */}
         </div>
       </div>
       <DashCard day="Fri" number={15} description="Project Management" backgroundColor="rgba(115, 86, 255, 1)" />
