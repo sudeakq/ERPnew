@@ -6,12 +6,23 @@ function InternLists() {
 
   const [selectedTab,setSelectedTab] = useState('OnGoing')
 
-  const [HRCount,setHRCount] = useState(3);
-  const [ICTCount,setICTCount] = useState(6);
-  const [marketingCount,setMarketingCount] = useState(5)
-  const [BACount,setBACount] = useState(5)
-  const [PMCount,setPMCount] = useState(5)
-  const [LanTeachingCount,setLanTeachingCount] = useState(1)
+  const [counts,setCounts] = useState({
+    HRCount : 3,
+    ICTCount : 6,
+    marketingCount : 5,
+    BACount : 5,
+    PMCount : 5,
+    LanTeachingCount : 1
+  })
+
+  const [selectedButtons,setSelectedButtons] = useState({
+    humanResources : false,
+    ICT : false,
+    marketing : false,
+    businessAlaysis : false,
+    projectManagement : false,
+    languageTeaching : false,
+  })
 
   return (
     <>
@@ -23,27 +34,27 @@ function InternLists() {
         <div className="headeor-icons">
           <div className="icon-button-container" >
             <i style={{color : "#9D99C4"}} class="users-icon fa-solid fa-user-group"></i>
-            <button>Human Resource<br /> {HRCount} </button>
+            <button>Human Resource<br /> {counts.HRCount} </button>
           </div>
           <div className="icon-button-container" >
             <i style={{color : "#72DF76"}} class="users-icon fa-solid fa-user-group"></i>
-            <button>ICT<br /> {ICTCount} </button>
+            <button>ICT<br /> {counts.ICTCount} </button>
           </div>
           <div className="icon-button-container" >
             <i style={{color : "#F2B05C"}} class="users-icon fa-solid fa-user-group"></i>
-            <button>Marketing<br /> {marketingCount} </button>
+            <button>Marketing<br /> {counts.marketingCount} </button>
           </div>
           <div className="icon-button-container" >
             <i style={{color : "#E96168"}} class="users-icon fa-solid fa-user-group"></i>
-            <button>Business & Analysis<br /> {BACount} </button>
+            <button>Business & Analysis<br /> {counts.BACount} </button>
           </div>
           <div className="icon-button-container" >
             <i style={{color : "#6461E9"}} class="users-icon fa-solid fa-user-group"></i>
-            <button>Project Management<br /> {PMCount} </button>
+            <button>Project Management<br /> {counts.PMCount} </button>
           </div>
           <div className="icon-button-container" >
             <i style={{color : "#A86108"}} class="users-icon fa-solid fa-user-group"></i>
-            <button>Language Teaching<br /> {LanTeachingCount} </button>
+            <button>Language Teaching<br /> {counts.LanTeachingCount} </button>
           </div>
         </div>
       </div>
@@ -59,13 +70,18 @@ function InternLists() {
         </div>
       </div>
       <div className="filters">
-        <div>
-          <label><input type="checkbox" /> Human Resource</label>
-          <label><input type="checkbox" /> ICT</label>
-          <label><input type="checkbox" /> Marketing</label>
-          <label><input type="checkbox" /> Business & Analysis</label>
-          <label><input type="checkbox" /> Project Management</label>
-          <label><input type="checkbox" /> Language Teaching</label>
+        <div className="inner-container" >
+          <button className="check-button" >
+            <div className="check-container">
+              <span className="check" ></span>
+            </div> 
+            Human Resource
+          </button>
+          <button className="check-button" ><span className="check" ></span>ICT</button>
+          <button className="check-button" ><span className="check" ></span>Marketing</button> 
+          <button className="check-button" ><span className="check" ></span>Business & Analysis</button> 
+          <button className="check-button" ><span className="check" ></span>Project Management</button> 
+          <button className="check-button" ><span className="check" ></span>Language Teaching</button> 
         </div>
       </div>
       <table>

@@ -2,7 +2,7 @@
 .total-container {
   background-color: rgba(245,248,254,255);  
   max-width: 100%;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .headeor-list {
@@ -10,7 +10,7 @@
   font-size: 18px;
   flex-direction: column;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
   margin-bottom: 40px;
 }
 
@@ -27,20 +27,19 @@
   display: flex;
   justify-content: space-around;
   gap: 13px;
-  
-  background-color: red;
+  /* background-color: red; */
   margin-top: 10px;
 }
 
 .icon-button-container {
   display: flex;
   align-items: center;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .users-icon {
   font-size: 220%;
-  background-color: red;
+ /*  background-color: red; */
 }
 
 .headeor-icons button {
@@ -77,15 +76,16 @@
 }
 
 .tab {
-  padding: 10px 20px;
+  padding: 2%;
   cursor: pointer;
   color: #414141;
   border-bottom: 4px solid black;
-  font-size: 20px;
+  font-size: 100%;
   font-weight: bold;
   width: 25%;
   text-align: center;
 }
+
 .tab-active {
   border-bottom: 4px solid rgba(0,110,255,255);
   background-color: rgba(217,230,247,255);
@@ -108,18 +108,35 @@
   margin: 20px 0;
 }
 
-.filters div {
+.inner-container {
   width: 75%;
   display: flex;
   gap: 10px;
   /* background-color: red; */
   align-items: center;
 }
-.filters input[type="text"] {
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+
+.check-button {
+  background-color: yellow;
+  color: red;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
+
+.check-container {
+  background-color: white;
+}
+
+.check {
+  background-color: white;
+  border: 2px solid grey;
+  padding: 12px;
+  border-radius: 5px;
+
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
