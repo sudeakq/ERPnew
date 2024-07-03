@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from './Services/axios.js'; // Corrected import path
 import './StartPages.css';
-import chartImage from '../images/leftimage_page-0001.jpg';
+import chartImage from '../images/extramus_title_image.png';
 import erasmusTitleImage from '../images/extramus_title_image.png';
 
 const StartPages = () => {

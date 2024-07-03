@@ -2,16 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-<<<<<<< Updated upstream
-// import Applicants from './Applicants';
-// import Applicants from './Applicants';
-// import UpcomingBirthdays from './UpcomingBirthdays';
-=======
 import UpcomingBirthdays from './UpcomingBirthdays';
 import StartPage from './StartPage';
 
 
->>>>>>> Stashed changes
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
@@ -42,12 +36,7 @@ root.render(
     {/* <WhatsNewClick /> */} {/* done */} 
     <Intern />  
     {/* <DailyReminders /> */}
-<<<<<<< Updated upstream
-    {/* <Dashboard /> */}
-    {/* <StartPage /> */}
-=======
      <StartPage /> 
->>>>>>> Stashed changes
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 
@@ -56,13 +45,8 @@ root.render(
     {/* <StartPage />  */} {/* Done */}
     {/* <ApplicantsList /> */}
     {/* <Depar /> */}
-<<<<<<< Updated upstream
-    {/* <UpcomingBirthdays /> */}
-  </React.StrictMode>
-=======
     
   </React.StrictMode> 
->>>>>>> Stashed changes
 );
 
 // If you want to start measuring performance in your app, pass a function
