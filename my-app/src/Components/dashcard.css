@@ -3,7 +3,7 @@
 .dashcard-rectangle {
     border-radius: 30px;
     width: 100%;
-    height: 130px;
+    height: 120px;
     margin-top: 1%;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,7 @@
 
 .dashcard-left-section {
     background-color: white;
-    width: 19%;
+    width: 22%;
     height: 100%;
     border-radius: 10px 30px 30px 10px;
     justify-content: center;
@@ -28,11 +28,13 @@
 
 .dashcard-middle-section {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 40px;
     align-items: center;
     font-weight: 700;
     margin-right: 20%;
     font-size: 16px;
+    width: 50%;
 }
 
 .dashcard-right-section {
@@ -43,4 +45,5 @@
     text-decoration: underline;
     font-weight: 600;
     font-size: 16px;
+    width: 28%;
 }

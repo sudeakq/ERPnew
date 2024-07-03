@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import UpcomingBirthdays from './UpcomingBirthdays';
+// import UpcomingBirthdays from './UpcomingBirthdays';
 
 
 // import ScheduleView from './Schedule-2';
@@ -15,27 +15,27 @@ import UpcomingBirthdays from './UpcomingBirthdays';
 
 // Uncomment and import the necessary components as needed
 /* import WhatsNewClick from './WhatsNewClick'; */
-//import Intern from './Intern'; 
+// import Intern from './Intern'; //
 //  import DailyReminders from './Events';
  // import Alumni from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
- /* import Bills from './Bills'; */
+// import Bills from './Bills'; //
+import ForgotPassword from './UserSıde/ForgotPassword'
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
-import StartPage from './StartPage'; 
+// import StartPage from './StartPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
-    {/* <WhatsNewClick />  */}
-    {/* <Intern /> */}
+    {/* <WhatsNewClick /> */} {/* done */} 
+    <ForgotPassword />  
     {/* <DailyReminders /> */}
-    <StartPage />   
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 
