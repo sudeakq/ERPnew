@@ -22,13 +22,26 @@ body {
   width: 100%;
   background-color: yellow;
   display: flex;
+
+    main {
+      width: 100%;
+      /* padding: 20px; */
+      background-color: red;
+    }
 }
 
-main {
-  width: 85%;
-  /* padding: 20px; */
-  background-color: red;
+.container-asidebar {
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  
+    main {
+      width: 85%;
+      /* padding: 20px; */
+      background-color: red;
+    }
 }
+
 
 /* 
 .sidebar,

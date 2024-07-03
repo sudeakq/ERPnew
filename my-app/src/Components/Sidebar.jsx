@@ -28,8 +28,8 @@ const Sidebar = () => {
           </li>
 
           <li className="link-container">
-            <div onClick={()=>setSelected("New Appca")} className={ `link-data ` + ` ${selected === "New Appca" ? " selected " : "" }` } >
-              <i className="fas fa-user-plus"></i><a href="#"  className="nav-link" >New Appca</a>
+            <div onClick={()=>setSelected("New Applicants")} className={ `link-data ` + ` ${selected === "New Applicants" ? " selected " : "" }` } >
+              <i className="fas fa-user-plus"></i><a href="#"  className="nav-link" >New Applicants</a>
             </div>
             <div onClick={()=>setSelected("Interns")} className={ `link-data ` + ` ${selected === "Interns" ? " selected " : "" }` } >
               <i className="fas fa-user-graduate"></i><a href="#"  className="nav-link" >Interns</a>

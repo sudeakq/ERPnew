@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from './Services/axios.js'; // Corrected import path
 import './StartPages.css';
-import chartImage from '../images/leftimage_page-0001.jpg';
+import chartImage from '../images/extramus_title_image.png';
 import erasmusTitleImage from '../images/extramus_title_image.png';
 
 const StartPages = () => {
@@ -12,7 +12,8 @@ const StartPages = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/login', { email, password });
+      const response = await axios.post('/api/login', { email, password });
+      console.log('Response:', response);
       if (response.data.success) {
         alert('Login successful');
         // Handle successful login (e.g., redirect to dashboard)
@@ -20,6 +21,7 @@ const StartPages = () => {
         setError('Invalid email or password');
       }
     } catch (error) {
+      console.error('Error:', error);
       setError('An error occurred. Please try again later.');
     }
   };
