@@ -40,11 +40,11 @@ const Sidebar = () => {
           </li>
 
           <li className="link-container">
-            <div className={ `link-data ` + ` ${selected === "Houses" ? " selected " : "" }` } >
-              <i className="fas fa-home"></i><a href="#" onClick={()=>setSelected("Houses")} className="nav-link" >Houses</a>
+            <div   onClick={()=>setSelected("Houses")} className={ `link-data ` + ` ${selected === "Houses" ? " selected " : "" }` } >
+              <i className="fas fa-home"></i><a href="/" className="nav-link" >Houses</a>
             </div>
-            <div className={ `link-data ` + ` ${selected === "Bills" ? " selected " : "" }` } >
-              <i className="fas fa-file-invoice-dollar"></i><a href="#" onClick={()=>setSelected("Bills")} className="nav-link" >Bills</a>
+            <div  onClick={()=>setSelected("Bills")} className={ `link-data ` + ` ${selected === "Bills" ? " selected " : "" }` } >
+              <i className="fas fa-file-invoice-dollar"></i><a href="/"  className="nav-link" >Bills</a>
             </div>
           </li>
         </ul>

@@ -1,28 +1,27 @@
 <?php
 
-namespace App\Providers;
+namespace App\Http\Controllers;
 
-// use Illuminate\Support\Facades\Gate;
-use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
-class AuthServiceProvider extends ServiceProvider
+class AuthController extends Controller
 {
-    /**
-     * The model to policy mappings for the application.
-     *
-     * @var array<class-string, class-string>
-     */
-    protected $policies = [
-        // 'App\Models\Model' => 'App\Policies\ModelPolicy',
-    ];
-
-    /**
-     * Register any authentication / authorization services.
-     */
-    public function boot(): void
+    public function login(Request $request)
     {
-        $this->registerPolicies();
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
-        //
+        if (!Auth::attempt($request->only('email', 'password'))) {
+            return response()->json(['success' => false, 'message' => 'Invalid login details'], 401);
+        }
+
+        $user = User::where('email', $request->email)->firstOrFail();
+        $token = $user->createToken('auth_token')->plainTextToken;
+
+        return response()->json(['success' => true, 'access_token' => $token, 'token_type' => 'Bearer']);
     }
 }
