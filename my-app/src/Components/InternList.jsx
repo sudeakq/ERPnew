@@ -1,38 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import "./InternList.css";
 
 
 function InternLists() {
+
+  const [selectedTab,setSelectedTab] = useState('OnGoing')
+
+  const [HRCount,setHRCount] = useState(3);
+  const [ICTCount,setICTCount] = useState(6);
+  const [marketingCount,setMarketingCount] = useState(5)
+  const [BACount,setBACount] = useState(5)
+  const [PMCount,setPMCount] = useState(5)
+  const [LanTeachingCount,setLanTeachingCount] = useState(1)
+
   return (
     <>
+      <div className="total-container">
       <div className="headeor-list">
-        <h1>Intern List</h1>
+        <div className="title-container">
+          <h1>Intern List</h1>
+        </div>
         <div className="headeor-icons">
-          <div>
-            <button>Human Resource<br />3</button>
+          <div className="icon-button-container" >
+            <i style={{color : "#9D99C4"}} class="users-icon fa-solid fa-user-group"></i>
+            <button>Human Resource<br /> {HRCount} </button>
           </div>
-          <div>
-            <button>ICT<br />6</button>
+          <div className="icon-button-container" >
+            <i style={{color : "#72DF76"}} class="users-icon fa-solid fa-user-group"></i>
+            <button>ICT<br /> {ICTCount} </button>
           </div>
-          <div>
-            <button>Marketing<br />5</button>
+          <div className="icon-button-container" >
+            <i style={{color : "#F2B05C"}} class="users-icon fa-solid fa-user-group"></i>
+            <button>Marketing<br /> {marketingCount} </button>
           </div>
-          <div>
-            <button>Business & Analysis<br />5</button>
+          <div className="icon-button-container" >
+            <i style={{color : "#E96168"}} class="users-icon fa-solid fa-user-group"></i>
+            <button>Business & Analysis<br /> {BACount} </button>
           </div>
-          <div>
-            <button>Project Management<br />5</button>
+          <div className="icon-button-container" >
+            <i style={{color : "#6461E9"}} class="users-icon fa-solid fa-user-group"></i>
+            <button>Project Management<br /> {PMCount} </button>
           </div>
-          <div>
-            <button>Language Teaching<br />1</button>
+          <div className="icon-button-container" >
+            <i style={{color : "#A86108"}} class="users-icon fa-solid fa-user-group"></i>
+            <button>Language Teaching<br /> {LanTeachingCount} </button>
           </div>
         </div>
       </div>
-      <div className="tabs">
-        <div className="tab tab-active">Ongoing</div>
-        <div className="tab">Finished</div>
-        <div className="tab">Terminated</div>
-        <div className="tab">All</div>
+      <div className="tab-search-container">
+        <div className="inner-container">
+          <div className="tabs">
+            <div onClick={()=>setSelectedTab('OnGoing')} className={`tab ${ selectedTab === "OnGoing" ? "tab-active" : "" }`} >Ongoing</div>
+            <div onClick={()=>setSelectedTab('Finished')} className={`tab ${ selectedTab === "Finished" ? "tab-active" : "" }`} >Finished</div>
+            <div onClick={()=>setSelectedTab('Terminated')} className={`tab ${ selectedTab === "Terminated" ? "tab-active" : "" }`} >Terminated</div>
+            <div onClick={()=>setSelectedTab('All')} className={`tab ${ selectedTab === "All" ? "tab-active" : "" }`} >All</div>
+          </div>
+          <input className="search-input" type="text" placeholder="Search by Name" />
+        </div>
       </div>
       <div className="filters">
         <div>
@@ -43,7 +67,6 @@ function InternLists() {
           <label><input type="checkbox" /> Project Management</label>
           <label><input type="checkbox" /> Language Teaching</label>
         </div>
-        <input type="text" placeholder="Search by Name" />
       </div>
       <table>
         <thead>
@@ -227,6 +250,7 @@ function InternLists() {
           </tr>
         </tbody>
       </table>
+      </div>
     </>
   );
 }

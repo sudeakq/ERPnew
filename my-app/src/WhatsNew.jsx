@@ -5,7 +5,6 @@ import DailyReminder from './Components/DailyReminder';
 
 function WhatsNew() {
 
-
   return(
     <>
     <Header />

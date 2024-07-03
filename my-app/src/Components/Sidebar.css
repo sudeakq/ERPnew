@@ -1,49 +1,57 @@
+/* src/components/Sidebar.css */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-/* Sidebar navigation styling */
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
+.sidebar {
+  height: 100vh;
+  width: 15%;
+  border-radius: 8px;
+}
+
+.link-list{
+  list-style-type: none;
+  padding:0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-/* Container for each link */
 .link-container {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  gap: 10px;
 }
 
-/* Styling for each navigation link */
+.link-data {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px; 
+  gap: 10px;
+  cursor: pointer;
+}
+
 .nav-link {
+  height: 50px;
   text-decoration: none;
-  color: #232121; /* Light gray color */
-  padding: 15px 20px;
+  color: #333;
+  display: flex;
+  align-items: center;
   border-left: 5px solid transparent;
-  display: flex;
-  align-items: left;
+  color: #8E8D8D;
+  font-weight: bold;
 }
 
-/* Hover effect for navigation links */
-.nav-link:hover {
-  color: #000;
-  border-left-color: #000; /* Highlight the left border on hover */
+.selected {
+
+  border-left: 5px solid #2F80ED;
+  color : #2F80ED;
 }
 
-/* Sidebar list items */
-.sidebar li {
-  display: flex;
-  align-items: left ;
-  padding: 10px 0;
-  font-size: 16px;
-}
 
-/* Margin for icons */
-.sidebar li i {
-  margin-right: 10px;
-}

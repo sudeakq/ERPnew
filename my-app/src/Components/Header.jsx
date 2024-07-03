@@ -1,16 +1,23 @@
 // src/components/Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import extramus_image from '../images/extramus_image.png';
+import downIcon from '../images/caret-down-solid.svg'
 
 const Header = () => {
+
+  const [date,setData] = useState('01 September 2021')
+
+  const [name,setName] = useState('Ebube Samuel')
+
   return (
     <header className="header">
       <img src={extramus_image} alt='extramus_image.png' />
-      <div className="header-right">
-        <span>28 August 2024</span>
-        <span>|</span>
-        <span>Ebube Samuel</span>
+      <div className="header-right poppins-extrabold ">
+        <span className='poppins-extrabold' > {date} </span>
+        <span className='column' ></span>
+        <span className='poppins-extrabold' > {name} </span>
+        <img className='icon' src={downIcon} alt="" />
       </div>
     </header>
   );
