@@ -1,51 +1,99 @@
 
+.total-container {
+  background-color: rgba(245,248,254,255);  
+}
+
 .headeor-list {
-  background-color: #fff;
   padding: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-size: 18px;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.headeor h1 {
-  color: #333;
-  font-size: 20px;
+
+.title-container {
+  width: 100%;
+} 
+
+.title-container h1{
+  color: #151540;
+  margin: 15px;
 }
+
 .headeor-icons {
   display: flex;
+  justify-content: space-around;
   gap: 13px;
+  width: 90%;
+  margin-top: 10px;
 }
-.headeor-icons div {
-  text-align: center;
-  font-size: 0.8em;
+
+.icon-button-container {
+  display: flex;
+  align-items: center;
 }
+
+.users-icon {
+  font-size: 65px;
+}
+
 .headeor-icons button {
-  background-color: rgb(31, 31, 31);
-  color: white;
+  height: 100%;
+  width: 100px;
+  color: #414141;
   border: none;
   padding: 6px 6px;
   cursor: pointer;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 18px;
+  background-color: rgba(245,248,254,255);
+  font-weight: bold;
 }
-.tabs {
+
+.tab-search-container {
+  width: 100%;
+  /* background-color: red; */
   display: flex;
   justify-content: center;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.inner-container {
+  /* background-color: green; */
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs {
+  display: flex;
+  background-color: rgba(245,248,254,255);
+  width: 60%;
+}
+
 .tab {
-  margin: 0 10px;
   padding: 10px 20px;
   cursor: pointer;
-  color: #666;
-  border-bottom: 2px solid transparent;
+  color: #414141;
+  border-bottom: 4px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  width: 25%;
+  text-align: center;
 }
 .tab-active {
-  border-bottom: 2px solid #333;
-  color: #333;
+  border-bottom: 4px solid rgba(0,110,255,255);
+  background-color: rgba(217,230,247,255);
+  color: #414141;
 }
+
+.search-input {
+  width: 35%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+}
+
 .filters {
   display: flex;
   justify-content: space-between;
