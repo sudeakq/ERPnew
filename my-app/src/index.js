@@ -20,13 +20,13 @@ import reportWebVitals from './reportWebVitals';
  import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
-// import Alumni from './Alumni';
+/* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills';
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
-// import StartPage from './StartPage';
+import StartPage from './StartPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,12 +35,12 @@ root.render(
     {/* <WhatsNewClick />  */}
     {/* <Intern /> */}
     {/* <DailyReminders /> */}
-    <Dashboard />
+    {/* <Dashboard /> */}
     {/* <StartPage /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
 
-    {/* <Alumni /> */}
+ {/*    <Alumni /> */}
     {/* <House /> */}
     {/* <StartPage />  */} {/* Done */}
     {/* <ApplicantsList /> */}

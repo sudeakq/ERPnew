@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <img src={extramus_image} alt='extramus_image.png' />
       <div className="header-right">
-        <span>28 August 2024</span>
+        <span>01 September 2021</span>
         <span>|</span>
         <span>Ebube Samuel</span>
       </div>

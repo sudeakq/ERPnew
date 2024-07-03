@@ -9,14 +9,14 @@ function WhatsNewClick() {
 
   return(
     <>
-    <Header />
-    <div className="container">
-      <Sidebar />
-      <main>
-        <ReminderClicked />
-      </main>
+      <Header />
+      <div className="container">
+        <Sidebar />
+        <main>
+          <ReminderClicked />
+        </main>
     </div>
-  </>
+    </>
 
   );
 }
