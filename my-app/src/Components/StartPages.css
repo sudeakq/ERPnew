@@ -15,9 +15,9 @@
 }
 
 .chart-image {
-  width: 90%;
+  height: 80%;
   object-fit: cover;
-  height: 90%;
+  width : auto;
 }
 
 .login-right {
