@@ -71,17 +71,98 @@ function InternLists() {
       </div>
       <div className="filters">
         <div className="inner-container" >
-          <button className="check-button" >
+          <button 
+            onClick={()=>setSelectedButtons((prevData) => (
+              {
+                ...prevData,
+                humanResources : !prevData.humanResources
+              }
+            ))} 
+            className={`check-button ${selectedButtons.humanResources ? "selected" : ""}`} 
+          >
             <div className="check-container">
               <span className="check" ></span>
             </div> 
             Human Resource
           </button>
-          <button className="check-button" ><span className="check" ></span>ICT</button>
-          <button className="check-button" ><span className="check" ></span>Marketing</button> 
-          <button className="check-button" ><span className="check" ></span>Business & Analysis</button> 
-          <button className="check-button" ><span className="check" ></span>Project Management</button> 
-          <button className="check-button" ><span className="check" ></span>Language Teaching</button> 
+          <button 
+            onClick={()=>setSelectedButtons((prevData) => (
+              {
+                ...prevData,
+                ICT : !prevData.ICT
+              }
+            ))} 
+            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`}
+          >
+            <div className="check-container">
+              <span className="check" ></span>
+            </div> 
+            ICT
+          </button>
+          <button 
+            onClick={()=>setSelectedButtons((prevData) => (
+              {
+                ...prevData,
+                marketing : !prevData.marketing
+              }
+            ))} 
+            className={`check-button ${selectedButtons.marketing ? "selected" : ""}`} 
+          >
+            <div 
+              onClick={()=>setSelectedButtons((prevData) => (
+                {
+                  ...prevData,
+                  businessAlaysis : !prevData.businessAlaysis
+                }
+              ))} 
+              className={`check-button ${selectedButtons.businessAlaysis ? "selected" : ""}`}
+            >
+              <span className="check" ></span>
+            </div> 
+            Marketing
+          </button>
+          <button 
+            onClick={()=>setSelectedButtons((prevData) => (
+              {
+                ...prevData,
+                humanResources : !prevData.ICT
+              }
+            ))} 
+            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`} 
+          >
+            <div className="check-container">
+              <span className="check" ></span>
+            </div> 
+            Business & Analysis
+          </button>
+          <button 
+            onClick={()=>setSelectedButtons((prevData) => (
+              {
+                ...prevData,
+                humanResources : !prevData.ICT
+              }
+            ))} 
+            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`} 
+          >
+            <div className="check-container">
+              <span className="check" ></span>
+            </div> 
+            Project Management
+          </button>
+          <button 
+            onClick={()=>setSelectedButtons((prevData) => (
+              {
+                ...prevData,
+                humanResources : !prevData.ICT
+              }
+            ))} 
+            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`} 
+          >
+            <div className="check-container">
+              <span className="check" ></span>
+            </div> 
+            Language Teaching
+          </button>
         </div>
       </div>
       <table>
