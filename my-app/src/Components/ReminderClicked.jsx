@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import './ReminderClicked.css';
+import leftIcon from '../images/chevron-left-solid.svg'
+import rightIcon from '../images/chevron-right-solid.svg'
 
 function ReminderClicked(){
+
+  const [totalPage,setTotalPage] = useState(4);
+  const [currentPage,setCurrentPage] = useState(1);
+
   return (
     <div className="total-container">
       <h1 className="title" >What's New</h1>
@@ -72,6 +78,13 @@ function ReminderClicked(){
             </div>
           </div>  
         </section>
+      </div>
+      <div className="buttons-container poppins-extrabold">
+        <img className="icon" src={leftIcon} />
+        {/* left arrow icon */}
+        {currentPage} / {totalPage}
+        {/* right arrow icon */}
+        <img className="icon" src={rightIcon} />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
   background-color: #4b3fa1;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
+  max-height: 120px;
 }
 
 .header h1 {
@@ -33,4 +33,17 @@
 .header-right span {
   margin-left: 40px;
   font-weight: 600;
+}
+
+.column {
+  background-color: white;
+  width: 2.2px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.icon {
+  margin-left: 17px;
+  min-width: 15px ;
+  max-width: 15px;
 }

@@ -74,3 +74,17 @@
     color: #4F4F4F;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-weight: bold;
+    font-size: 11px;
+    gap: 3px;
+}
+
+.icon {
+    height: auto;
+    width: 10px;
+}
