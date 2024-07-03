@@ -27,10 +27,6 @@
   display: flex;
   justify-content: space-around;
   gap: 13px;
-<<<<<<< HEAD
-  /* background-color: red; */
-=======
->>>>>>> 2b4e78c4d8733db94fcbb0e81775a4823c07561d
   margin-top: 10px;
 }
 
@@ -42,11 +38,7 @@
 
 .users-icon {
   font-size: 220%;
-<<<<<<< HEAD
- /*  background-color: red; */
-=======
   /* background-color: red; */
->>>>>>> 2b4e78c4d8733db94fcbb0e81775a4823c07561d
 }
 
 .headeor-icons button {
