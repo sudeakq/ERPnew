@@ -18,7 +18,7 @@ import StartPage from './StartPage';
 import WhatsNewClick from './WhatsNewClick';
 import DailyReminders from './Events';
 import Intern from './Intern';
-import Alumni from './Dashboard';
+import Dashboard from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
 import ForgotPassword from './UserSıde/ForgotPassword'
 // import ScheduleView from './Schedule-2';
@@ -49,7 +49,7 @@ root.render(
         <Route path='/news' element={<WhatsNewClick />} />
         <Route path='/interns' element={<Intern />} />
         <Route path='/reminder' element={<DailyReminders />} />
-        <Route path='/dashboard' element={<Alumni />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/birthdays' element={<UpcomingBirthdays />} />
         <Route path='/forgotPassword' element={<ForgotPassword />} />
       </Routes>

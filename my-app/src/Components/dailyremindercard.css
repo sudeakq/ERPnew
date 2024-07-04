@@ -1,8 +1,8 @@
 .daily-reminder-card-frame {
     background-color: white;
-    height: 220px;
+    height: auto;
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     border: 1px solid rgba(128, 128, 128, 0.322);
     border-radius: 10px;
     margin-top: 15px;
