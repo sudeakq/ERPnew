@@ -2,7 +2,9 @@ import React from "react";
 import "./Reminders.css";
 
 function Reminders() {
-  return (  <>    <h1>Daily Reminders</h1>
+  return (  
+    <>    
+    <h1>Daily Reminders</h1>
       <div class="container">
         <div class="calendar">
           <div class="calendar-header">July 2024</div>

@@ -16,7 +16,7 @@ const Header = () => {
       <div className="header-right poppins-extrabold ">
         <span className='poppins-extrabold' > {date} </span>
         <span className='column' ></span>
-        <i class="fa-regular fa-bell notification-icon" ></i>
+        <i className="fa-regular fa-bell notification-icon" ></i>
         <span className='poppins-extrabold' > {name} </span>
         <img className='icon' src={downIcon} alt="" />
       </div>

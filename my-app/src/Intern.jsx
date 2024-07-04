@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
-import './Components/Header.css';
-import InternLists from './Components/InternList';
+import './Components/Header.css'; 
+import InternLists from './Components/InternList'; 
 
 function Intern() {
+  
   return (
     <>
       <Header />
@@ -15,7 +16,7 @@ function Intern() {
         </main>
       </div>
     </>
-  );
-}
+  ); 
+} 
 
 export default Intern
