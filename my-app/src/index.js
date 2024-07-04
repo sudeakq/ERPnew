@@ -24,7 +24,7 @@ import Intern from './Intern'; //
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills'; //
-//import ForgotPassword from './UserSıde/ForgotPassword'
+// import ForgotPassword from './UserSıde/ForgotPassword'
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
