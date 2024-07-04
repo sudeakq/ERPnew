@@ -1,4 +1,9 @@
- Expenses.css
+
+import styled from "styled-components";
+
+export const BillsContainer = styled.div`
+
+Expenses.css
 .expenses-container {
   display: flex;
   padding: 20px;
@@ -186,42 +191,4 @@
   cursor: pointer;
 } 
 
-/* 
-.teams-container {
-  text-align: center;
-  padding: 20px;
-
-}
-
-h2{
-  background-color: aqua;
-  padding: 20px;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-
-}
-
-.team-member img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
-}
-
-    <div className="teams-container">
-        <h2>Meet The Teams</h2>
-        <div className="team-grid">
-          {Array(9).fill().map((_, index) => (
-            <div className="team-member" key={index}>
-              <img src={`${process.env.PUBLIC_URL}/image17.png`} alt="Team Member" />
-            </div>
-          ))}
-        </div>
-      </div> 
- */
+`

@@ -1,13 +1,10 @@
 import React from "react";
-import './AllHouses.css';
-
+import { AllHousesContainer } from "./AllHouses.style";
 
 function AllHouse(){
 
-
   return(
-    <>
- 
+    <AllHousesContainer>
     <div className="houses">
       <h1>Houses</h1>
       <div className="locators">
@@ -42,7 +39,7 @@ function AllHouse(){
       </div>
     </div>
 
-    </>
+    </AllHousesContainer>
   )
 }
 
