@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const InternListContainer = styled.div`
 
+
     
 .total-container {
   background-color: rgba(245,248,254,255);  

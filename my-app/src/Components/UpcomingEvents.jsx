@@ -5,6 +5,7 @@ import { UpcomingEventsContainer } from "./UpcomingEvents.style";
 function Events(){
   return (
     <UpcomingEventsContainer>
+      
         <div className="section">
             <h2>Calendar</h2>
             <table className="calendar">

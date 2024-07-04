@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const UpcomingEventsContainer = styled.div`
 
+
   display: flex;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
