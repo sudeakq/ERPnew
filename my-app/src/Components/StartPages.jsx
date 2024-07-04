@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from './Services/axios.js'; // Corrected import path
-import './StartPages.css';
 import startPageImage from '../images/UserStartPage.png';
 import erasmusTitleImage from '../images/extramus_title_image.png';
+import { StartPagesContainer } from './StartPages.style.js';
 
 const StartPages = () => {
   const [email, setEmail] = useState('');
@@ -27,6 +27,7 @@ const StartPages = () => {
   };
 
   return (
+    <StartPagesContainer>
     <div className="login-container">
       <div className="login-left">
         <img src={startPageImage} alt="Chart" className="chart-image" />
@@ -68,6 +69,7 @@ const StartPages = () => {
         </div>
       </div>
     </div>
+    </StartPagesContainer>
   );
 };
 
