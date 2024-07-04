@@ -1,7 +1,12 @@
 import React from "react";
 import ExtramusText from "../images/ExtramusText_image.png";
 import "./ForgotPassword.css";
+import { useState } from "react";
 function ForgotPassword() {
+  const [isClicked, setIsClicked] = useState(false);
+  function handleClick() {
+    setIsClicked(true);
+  }
   return (
     <>
       <div className="container">
@@ -15,7 +20,7 @@ function ForgotPassword() {
           true,click below to reset your password.
         </p>
         <div className="btn">
-          <button>
+          <button onClick={handleClick}>
             <p>Reset My Password</p>
           </button>
         </div>

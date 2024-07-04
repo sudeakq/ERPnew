@@ -15,7 +15,8 @@ import reportWebVitals from './reportWebVitals';
 
 // Uncomment and import the necessary components as needed
 /* import WhatsNewClick from './WhatsNewClick'; */
-// import Intern from './Intern'; //
+import Intern from './Intern'; //
+/* import Intern from './Intern'; */ //
 //  import DailyReminders from './Events';
  // import Alumni from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
@@ -23,11 +24,16 @@ import reportWebVitals from './reportWebVitals';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills'; //
+<<<<<<< HEAD
 import ForgotPassword from './UserSıde/ForgotPassword'
+=======
+//import ForgotPassword from './UserSıde/ForgotPassword'
+>>>>>>> main
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
 // import StartPage from './StartPage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,8 +44,13 @@ root.render(
     {/* <DailyReminders /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
+<<<<<<< HEAD
     {/* <Alumni /> */}
     <ForgotPassword />
+=======
+<Intern />
+ {/*    <Alumni /> */}
+>>>>>>> main
     {/* <House /> */}
     {/* <StartPage />   */}   {/* Done */}
     {/* <ApplicantsList /> */}

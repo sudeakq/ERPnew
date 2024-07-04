@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./InternList.css";
 import penIcon from "../images/pen.png"
 import trashIcon from "../images/trash.png"
 import moreIcon from "../images/more-alt.png"
+import { InternListContainer } from "./InternList.style";
 
 function InternLists() {
 
@@ -27,7 +27,8 @@ function InternLists() {
   })
 
   return (
-    <>
+    <InternListContainer>
+      
       <div className="total-container">
       <div className="headeor-list">
         <div className="title-container">
@@ -345,7 +346,7 @@ function InternLists() {
       </div>
      
       </div>
-    </>
+    </InternListContainer>
   );
 }
 
