@@ -75,7 +75,6 @@
   width: 60%;
 }
 
-
 .tab {
   padding: 2%;
   cursor: pointer;
@@ -95,7 +94,7 @@
 
 .search-input {
   width: 35%;
-  padding: 5px;
+  padding: 15px;
   border-radius: 5px;
   border: 0.5px solid gray;
 }
@@ -105,7 +104,6 @@
   display: flex;
   justify-content: center;
   padding: 10px 20px;
-  
   margin: 20px 0;
 }
 
@@ -125,12 +123,13 @@
   font-weight: bold;
   gap: 5px;
   cursor: pointer;
+
 }
 
 .selected {
-  .check {
-    background-color: red;
-  }
+
+
+
 }
 
 .check-container {
@@ -144,37 +143,65 @@
   border: 2px solid grey;
   padding: 4px 12px;
   border-radius: 5px;
+  padding: 8px 10px  ;
+
+  .hidden {
+    opacity: 0;
+  }
+
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
 }
 
 table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
-  background-color: #fff;
   /* margin: 0 20px; */
 }
+
 th, td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  padding: 10px 40px ;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
+
 th {
-  background-color: #f9f9f9;
+  background-color: rgba(245,248,254,255);
+  font-size: 20px;
+  color: #414141;
 }
+
 tr:hover {
   background-color: #f1f1f1;
 }
+
 .pending {
   color: #e67e22;
 }
+
 .ongoing {
   color: #3498db;
 }
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .action button {
-  background-color: orange;
-  color: white;
+  background-color: rgba(245,248,254,255);
   border: none;
   padding: 6px 10px;
   cursor: pointer;
   border-radius: 4px;
   margin-right: 5px;
 }
+

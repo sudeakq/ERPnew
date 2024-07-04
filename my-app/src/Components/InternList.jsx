@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./InternList.css";
-
+import penIcon from "../images/pen.png"
+import trashIcon from "../images/trash.png"
+import moreIcon from "../images/more-alt.png"
 
 function InternLists() {
 
@@ -19,7 +21,7 @@ function InternLists() {
     humanResources : false,
     ICT : false,
     marketing : false,
-    businessAlaysis : false,
+    businessAnalysis : false,
     projectManagement : false,
     languageTeaching : false,
   })
@@ -81,7 +83,7 @@ function InternLists() {
             className={`check-button ${selectedButtons.humanResources ? "selected" : ""}`} 
           >
             <div className="check-container">
-              <span className="check" ></span>
+              <span className="check" ><i className={`fa-solid fa-check ${!selectedButtons.humanResources ? "hidden" : ""} `} ></i></span>
             </div> 
             Human Resource
           </button>
@@ -95,7 +97,7 @@ function InternLists() {
             className={`check-button ${selectedButtons.ICT ? "selected" : ""}`}
           >
             <div className="check-container">
-              <span className="check" ></span>
+              <span className="check" ><i className={`fa-solid fa-check ${!selectedButtons.ICT ? "hidden" : ""} `} ></i></span>
             </div> 
             ICT
           </button>
@@ -106,18 +108,10 @@ function InternLists() {
                 marketing : !prevData.marketing
               }
             ))} 
-            className={`check-button ${selectedButtons.marketing ? "selected" : ""}`} 
+            className={`check-button ${selectedButtons.marketing ? "selected" : ""}`}
           >
-            <div 
-              onClick={()=>setSelectedButtons((prevData) => (
-                {
-                  ...prevData,
-                  businessAlaysis : !prevData.businessAlaysis
-                }
-              ))} 
-              className={`check-button ${selectedButtons.businessAlaysis ? "selected" : ""}`}
-            >
-              <span className="check" ></span>
+            <div className="check-container">
+              <span className="check" ><i className={`fa-solid fa-check ${!selectedButtons.marketing ? "hidden" : ""} `} ></i></span>
             </div> 
             Marketing
           </button>
@@ -125,13 +119,13 @@ function InternLists() {
             onClick={()=>setSelectedButtons((prevData) => (
               {
                 ...prevData,
-                humanResources : !prevData.ICT
+                businessAnalysis : !prevData.businessAnalysis
               }
             ))} 
-            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`} 
+            className={`check-button ${selectedButtons.businessAnalysis ? "selected" : ""}`} 
           >
             <div className="check-container">
-              <span className="check" ></span>
+              <span className="check" ><i className={`fa-solid fa-check ${!selectedButtons.businessAnalysis ? "hidden" : ""} `} ></i></span>
             </div> 
             Business & Analysis
           </button>
@@ -139,13 +133,13 @@ function InternLists() {
             onClick={()=>setSelectedButtons((prevData) => (
               {
                 ...prevData,
-                humanResources : !prevData.ICT
+                projectManagement : !prevData.projectManagement
               }
             ))} 
-            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`} 
+            className={`check-button ${selectedButtons.projectManagement ? "selected" : ""}`} 
           >
             <div className="check-container">
-              <span className="check" ></span>
+              <span className="check" ><i className={`fa-solid fa-check ${!selectedButtons.projectManagement ? "hidden" : ""} `} ></i></span>
             </div> 
             Project Management
           </button>
@@ -153,19 +147,20 @@ function InternLists() {
             onClick={()=>setSelectedButtons((prevData) => (
               {
                 ...prevData,
-                humanResources : !prevData.ICT
+                languageTeaching : !prevData.languageTeaching
               }
             ))} 
-            className={`check-button ${selectedButtons.ICT ? "selected" : ""}`} 
+            className={`check-button ${selectedButtons.languageTeaching ? "selected" : ""}`} 
           >
             <div className="check-container">
-              <span className="check" ></span>
+              <span className="check" ><i className={`fa-solid fa-check ${!selectedButtons.languageTeaching ? "hidden" : ""} `} ></i></span>
             </div> 
             Language Teaching
           </button>
         </div>
       </div>
-      <table>
+      <div className="table-container">
+      <table >
         <thead>
           <tr>
             <th>Full Name</th>
@@ -184,9 +179,9 @@ function InternLists() {
             <td>Project Management</td>
             <td>EU Proj. Mgr</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -196,9 +191,9 @@ function InternLists() {
             <td>Project Management</td>
             <td>Business Proj. Mgr</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -208,9 +203,9 @@ function InternLists() {
             <td>Project Management</td>
             <td>Business Proj. Mgr</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -220,9 +215,9 @@ function InternLists() {
             <td>Business & Analysis</td>
             <td>Data Analyst</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -232,9 +227,9 @@ function InternLists() {
             <td>Business & Analysis</td>
             <td>Data Analyst</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -244,9 +239,9 @@ function InternLists() {
             <td>Business & Analysis</td>
             <td>Business Lawyer</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -256,9 +251,9 @@ function InternLists() {
             <td>Marketing</td>
             <td>Social Media Mgr</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -268,9 +263,9 @@ function InternLists() {
             <td>Marketing</td>
             <td>Content Creator</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -280,9 +275,9 @@ function InternLists() {
             <td>Marketing</td>
             <td>Copywriter</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -292,9 +287,9 @@ function InternLists() {
             <td>Human Resources</td>
             <td>HR Personnel</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -304,9 +299,9 @@ function InternLists() {
             <td>Human Resources</td>
             <td>HR Personnel</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -316,9 +311,9 @@ function InternLists() {
             <td>ICT</td>
             <td>UX Designer</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -328,9 +323,9 @@ function InternLists() {
             <td>ICT</td>
             <td>Back-End Dev</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
           <tr>
@@ -340,13 +335,15 @@ function InternLists() {
             <td>ICT</td>
             <td>Fullstack Dev</td>
             <td className="action">
-              <button>Edit</button>
-              <button>Delete</button>
-              <button>More</button>
+              <button><img src={penIcon} alt="" /></button>
+              <button><img src={trashIcon} alt="" /></button>
+              <button><img src={moreIcon} alt="" /></button>
             </td>
           </tr>
         </tbody>
       </table>
+      </div>
+     
       </div>
     </>
   );
