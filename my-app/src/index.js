@@ -14,13 +14,13 @@ import reportWebVitals from './reportWebVitals';
 // import WhatsNew from './WhatsNew';
 
 // Uncomment and import the necessary components as needed
-import StartPage from './StartPage'; 
-import WhatsNewClick from './WhatsNewClick'; 
+import StartPage from './StartPage';
+import WhatsNewClick from './WhatsNewClick';
 import DailyReminders from './Events';
 import Intern from './Intern';
 import Alumni from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
-import ForgotPassword from './UserSıde/ForgotPassword' 
+import ForgotPassword from './UserSıde/ForgotPassword'
 // import ScheduleView from './Schedule-2';
 // import Alumni from './Alumni';
 // import House from './Houses';
@@ -28,7 +28,7 @@ import ForgotPassword from './UserSıde/ForgotPassword'
 /* import WhatsNewClick from './WhatsNewClick'; */
 /* import Intern from './Intern';  *///
 //  import DailyReminders from './Events';
- // import Alumni from './Dashboard';
+// import Alumni from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 /* import Alumni from './Alumni'; */
@@ -45,29 +45,29 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes  >
-        <Route path='/login'  element={<StartPage />} />
-        <Route path='/news'  element={<WhatsNewClick />} />   
-        <Route path='/interns'  element={<Intern />} /> 
-        <Route path='/reminder'   element={<DailyReminders />} />
-        <Route path='/dashboard'   element={<Alumni />} />
-        <Route path='/birthdays'   element={<UpcomingBirthdays />} />
-        <Route path='/forgotPassword'   element={<ForgotPassword />} />
+        <Route path='/login' element={<StartPage />} />
+        <Route path='/news' element={<WhatsNewClick />} />
+        <Route path='/interns' element={<Intern />} />
+        <Route path='/reminder' element={<DailyReminders />} />
+        <Route path='/dashboard' element={<Alumni />} />
+        <Route path='/birthdays' element={<UpcomingBirthdays />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
       </Routes>
     </BrowserRouter>
 
     {/* Uncomment the component you want to render */}
-    {/* <WhatsNewClick /> */} {/* done */} 
+    {/* <WhatsNewClick /> */} {/* done */}
     {/* <ForgotPassword />   */}
     {/* <DailyReminders /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
     {/* <Alumni /> */}
-{/*     <Intern /> */}
+    {/*     <Intern /> */}
     {/* <House /> */}
     {/* <StartPage />   */}   {/* Done */}
     {/* <ApplicantsList /> */}
-    {/* <Depar /> */} 
-  </React.StrictMode> 
+    {/* <Depar /> */}
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
