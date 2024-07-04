@@ -15,10 +15,10 @@ import reportWebVitals from './reportWebVitals';
 
 // Uncomment and import the necessary components as needed
 /* import WhatsNewClick from './WhatsNewClick'; */
-import Intern from './Intern'; //
+// import Intern from './Intern'; //
 /* import Intern from './Intern'; */ //
 //  import DailyReminders from './Events';
- // import Alumni from './Dashboard';
+import Dashboard from './Dashboard';
 // import UpcomingBirthdays from './UpcomingBirthdays';
 // import ScheduleView from './Schedule-2';
 /* import Alumni from './Alumni'; */
@@ -35,18 +35,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
-    {/* <WhatsNewClick /> */} {/* done */} 
+    {/* <WhatsNewClick /> */} {/* done */}
     {/* <ForgotPassword />   */}
     {/* <DailyReminders /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
-<Intern />
- {/*    <Alumni /> */}
+    {/* <Intern /> */}
+    <Dashboard />
+    {/*    <Alumni /> */}
     {/* <House /> */}
     {/* <StartPage />   */}   {/* Done */}
     {/* <ApplicantsList /> */}
-    {/* <Depar /> */} 
-  </React.StrictMode> 
+    {/* <Depar /> */}
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
