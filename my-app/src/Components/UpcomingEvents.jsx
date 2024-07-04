@@ -1,16 +1,16 @@
 import React from "react";
-import "./UpcomingEvents.css";
+import { UpcomingEventsContainer } from "./UpcomingEvents.style"; 
 
 
 function Events(){
   return (
-    <div class="containeor">
-        <div class="section">
+    <UpcomingEventsContainer>
+        <div className="section">
             <h2>Calendar</h2>
-            <table class="calendar">
+            <table className="calendar">
   <thead>
     <tr>
-      <th colspan="7"><h3>July 2024</h3></th>
+      <th colSpan="7"><h3>July 2024</h3></th>
     </tr>
     <tr>
       <th>M</th>
@@ -24,17 +24,17 @@ function Events(){
   </thead>
   <tbody>
     <tr>
-      <td class="prev-month">01</td>
-      <td class="prev-month">02</td>
-      <td class="prev-month">03</td>
-      <td class="prev-month">04</td>
-      <td class="prev-month">05</td>
-      <td class="prev-month">06</td>
-      <td class="prev-month">07</td>
+      <td className="prev-month">01</td>
+      <td className="prev-month">02</td>
+      <td className="prev-month">03</td>
+      <td className="prev-month">04</td>
+      <td className="prev-month">05</td>
+      <td className="prev-month">06</td>
+      <td className="prev-month">07</td>
     </tr>
     <tr>
       <td>01</td>
-      <td class="selected">02</td>
+      <td className="selected">02</td>
       <td>03</td>
       <td>04</td>
       <td>05</td>
@@ -72,18 +72,18 @@ function Events(){
       <td>29</td>
       <td>30</td>
       <td>31</td>
-      <td class="next-month">01</td>
-      <td class="next-month">02</td>
-      <td class="next-month">03</td>
-      <td class="next-month">04</td>
+      <td className="next-month">01</td>
+      <td className="next-month">02</td>
+      <td className="next-month">03</td>
+      <td className="next-month">04</td>
     </tr>
   </tbody>
 </table>
 
         </div>
-        <div class="section">
+        <div className="section">
             <h2>Upcoming Arrivals and Departures</h2>
-            <table class="list">
+            <table className="list">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -94,28 +94,28 @@ function Events(){
                 <tbody>
                     <tr>
                         <td>Sandeep Gautam</td>
-                        <td class="status arriving">Arriving</td>
-                        <td class="date">2024-07-02</td>
+                        <td className="status arriving">Arriving</td>
+                        <td className="date">2024-07-02</td>
                     </tr>
                     <tr>
                         <td>Jane Doe</td>
-                        <td class="status departing">Departing</td>
-                        <td class="date">2024-07-05</td>
+                        <td className="status departing">Departing</td>
+                        <td className="date">2024-07-05</td>
                     </tr>
                     <tr>
                         <td>Manos Striglikas</td>
-                        <td class="status arriving">Arriving</td>
-                        <td class="date">2024-07-08</td>
+                        <td className="status arriving">Arriving</td>
+                        <td className="date">2024-07-08</td>
                     </tr>
                     <tr>
                         <td>Alice Johnson</td>
-                        <td class="status departing">Departing</td>
-                        <td class="date">2024-07-12</td>
+                        <td className="status departing">Departing</td>
+                        <td className="date">2024-07-12</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    </div>
+    </UpcomingEventsContainer>
 );
 }
 
