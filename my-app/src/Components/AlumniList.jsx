@@ -1,12 +1,11 @@
 import React from "react";
-import "./AlumniList.css";
-
+import { AlumniListContainer } from "./AlumniList.style";
 
 function Alumni() {
 
 
   return (
-    <>
+    <AlumniListContainer>
       <div className="alumni-list">
         <div className="headeral">
           <h1>Alumni List</h1>
@@ -104,7 +103,7 @@ function Alumni() {
         </table>
       </div>
 
-    </>
+    </AlumniListContainer>
   );
 }
 

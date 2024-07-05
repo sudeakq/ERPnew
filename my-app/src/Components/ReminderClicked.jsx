@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from "react";
-import './ReminderClicked.css';
+import { ReminderClickedContainer } from "./ReminderClicked.style";
 import leftIcon from '../images/chevron-left-solid.svg'
 import rightIcon from '../images/chevron-right-solid.svg'
 
@@ -9,6 +9,7 @@ function ReminderClicked(){
   const [currentPage,setCurrentPage] = useState(1);
 
   return (
+    <ReminderClickedContainer>
     <div className="total-container">
       <h1 className="title" >What's New</h1>
       <div className="reminder-list">
@@ -87,6 +88,7 @@ function ReminderClicked(){
         <img className="icon" src={rightIcon} />
       </div>
     </div>
+    </ReminderClickedContainer>
   );
 
 

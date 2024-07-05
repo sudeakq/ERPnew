@@ -1,9 +1,10 @@
 import React from "react";
-import "./Birthdays.css";
-
+import { BirthdaysContainer } from "./Birthdays.style";
 
 function Birthdays() {
+
   return (
+    <BirthdaysContainer>
     <div class="containeor">
       <div class="section">
         <h2>Calendar</h2>
@@ -107,6 +108,7 @@ function Birthdays() {
         </table>
       </div>
     </div>
+    </BirthdaysContainer>
   );
 }
 

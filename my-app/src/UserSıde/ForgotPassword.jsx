@@ -1,6 +1,9 @@
 import React from "react";
 import ExtramusText from "../images/ExtramusText_image.png";
-import "./ForgotPassword.css";
+/* import "./ForgotPassword.css"; */
+
+import { ForgotPasswordContainer } from "./ForgotPassword.style";
+
 import { useState } from "react";
 function ForgotPassword() {
   const [isClicked, setIsClicked] = useState(false);
@@ -8,7 +11,7 @@ function ForgotPassword() {
     setIsClicked(true);
   }
   return (
-    <>
+    <ForgotPasswordContainer>
       <div className="container">
         <div className="ExtramusTextImg">
           <img src={ExtramusText} alt="" />
@@ -28,7 +31,7 @@ function ForgotPassword() {
           You will receive an email where you can reset your password
         </p>
       </div>
-    </>
+    </ForgotPasswordContainer>
   );
 }
 
