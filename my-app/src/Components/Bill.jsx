@@ -1,9 +1,10 @@
 
-      import React from 'react';
-      import './Bill.css';
+import React from 'react';
+import { BillsContainer } from './Bills.style';
       
       function Bill() {
         return (
+          <BillsContainer>
           <div className="expenses-container">
             <div className="left-panel">
               <div className="expenses-header">
@@ -78,7 +79,7 @@
               </div>
             </div>
           </div>
-
+          </BillsContainer>
         );
       
       }

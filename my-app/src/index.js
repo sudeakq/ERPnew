@@ -50,6 +50,7 @@ import ForgotPassword from './UserSıde/ForgotPassword'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     {/* Uncomment the component you want to render */}
@@ -58,8 +59,8 @@ root.render(
     {/* <DailyReminders /> */}
     {/* <UpcomingBirthdays /> */}
     {/* <ScheduleView /> */}
-    {/* <Alumni /> */}
-    <Intern />
+<Intern />
+ {/*    <Alumni /> */}
     {/* <House /> */}
     {/* <StartPage />   */}   {/* Done */}
     {/* <ApplicantsList /> */}

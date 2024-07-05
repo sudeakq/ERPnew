@@ -1,3 +1,7 @@
+import styled from "styled-components";
+
+export const ContentContainer = styled.div `
+
 .content-container {
   width: 100%;
   background-color: rgba(238, 238, 247, 0.466);
@@ -13,6 +17,7 @@
 .content-container-right {
   width: 55%;
   justify-content: left;
+  padding: 30px 40px;
 }
 
 .content-container-top {
@@ -39,4 +44,25 @@
 
 .content-container-top h4 {
   font-size: 24px;
+
 }
+  .content-container-middle {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.content-container-middle h4{
+   font-size: 24px;
+}
+
+.content-container-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.content-container-bottom h4{
+   font-size: 24px;
+}
+
+
+`

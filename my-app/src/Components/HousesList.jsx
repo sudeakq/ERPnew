@@ -1,12 +1,11 @@
 import React from "react";
-import "./HousesList.css";
+import { HousesListContainer } from "./HousesList.style";
 
-
-function HousesL() {
+function HousesList() {
 
 
   return (
-    <>
+    <HousesListContainer>
     <div className="houses">
       <h1>Houses</h1>
       <div className="houses-grid">
@@ -65,7 +64,7 @@ function HousesL() {
       </div>
     </div>
 
-    </>
+    </HousesListContainer>
 
   );
 
@@ -73,4 +72,4 @@ function HousesL() {
 }
 
 
-export default HousesL
+export default HousesList
