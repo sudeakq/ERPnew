@@ -8,7 +8,8 @@ export const DepartmantsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
-  height: 100vh;
+  overflow-y: auto;
+  height: 120vh;
 
   .title {
     background-color: #BDE3FF;
@@ -22,11 +23,12 @@ export const DepartmantsContainer = styled.div`
     h4 {
       font-size: 30px;
     }
+    
   }
 
   .grid {
     width: 90%;
-    height: 90%;
+    height: 100%;
     margin-top : 30px;
     display: grid;
     grid-template-columns: 31% 31% 31%;
