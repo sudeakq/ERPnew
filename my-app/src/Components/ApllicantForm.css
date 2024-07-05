@@ -1,3 +1,21 @@
+/* Main container for the sidebar and form */
+.main-container {
+  display: flex;
+  align-items: flex-start; /* Align items at the start of the cross-axis (vertically) */
+}
+
+/* Sidebar styles */
+.sidebar {
+  flex: 0 0 250px; /* Fixed width for the sidebar */
+}
+
+/* Form container styles */
+.form-container {
+  flex: 1; /* Take up the remaining space */
+  padding: 20px;
+}
+
+/* Application form styles */
 .application-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6,8 +24,10 @@
   background-color: #f9fafb;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make sure the form takes the full width of the container */
 }
 
+/* Section styles within the form */
 .section {
   display: flex;
   flex-direction: column;
@@ -19,6 +39,7 @@
   color: #333;
 }
 
+/* Field styles within each section */
 .field {
   display: flex;
   flex-direction: column;
@@ -36,6 +57,7 @@
   border-radius: 4px;
 }
 
+/* Add button styles */
 .add-button {
   margin-top: 10px;
   padding: 10px;

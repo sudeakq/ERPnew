@@ -16,6 +16,7 @@ import House from './Houses';
 import Bills from './Bills'; 
 import AllHous from './AllHouse';
 import Applicants from './Applicants';
+import ApplicantsForm from './ApllicantForm';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -37,6 +38,8 @@ root.render(
         <Route path='/bills' element={<Bills />} />
         <Route path='/houses' element={<AllHous />} />
         <Route path='/applicants' element={<Applicants />} />
+        <Route path='/ApplicantsForm' element={<ApplicantsForm />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
