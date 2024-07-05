@@ -12,10 +12,10 @@ import UpcomingBirthdays from './UpcomingBirthdays';
 import ForgotPassword from './UserSıde/ForgotPassword'
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
-import House from './Houses';
 import Bills from './Bills'; 
 import AllHous from './AllHouse';
 import Applicants from './Applicants';
+import Departments from './Departments';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -25,7 +25,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes  >
-        <Route path='/login' element={<StartPage />} />
+        <Route path='/' element={<StartPage />} />
+        <Route path='/departments' element={<Departments />} />
         <Route path='/news' element={<WhatsNewClick />} />
         <Route path='/interns' element={<Intern />} />
         <Route path='/reminder' element={<DailyReminders />} />
@@ -33,10 +34,9 @@ root.render(
         <Route path='/birthdays' element={<UpcomingBirthdays />} />
         <Route path='/forgotPassword' element={<ForgotPassword />} /> {/* type the "path" on url and you'll go to the page */}
         <Route path='/schedule' element={<ScheduleView />} />
-        <Route path='/alumni' element={<Alumni />} />
-        <Route path='/houses' element={<House />} />
+        <Route path='/alumni' element={<Alumni />} />   
         <Route path='/bills' element={<Bills />} />
-        <Route path='/allHouses' element={<AllHous />} />
+        <Route path='/houses' element={<AllHous />} />
         <Route path='/applicants' element={<Applicants />} />
       </Routes>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContentContainer = styled.div`
+export const ContentContainer = styled.div `
 
 .content-container {
   width: 100%;
@@ -17,7 +17,7 @@ export const ContentContainer = styled.div`
 .content-container-right {
   width: 55%;
   justify-content: left;
-  padding: 70px 40px;
+  padding: 30px 40px;
 }
 
 .content-container-top {
@@ -44,6 +44,25 @@ export const ContentContainer = styled.div`
 
 .content-container-top h4 {
   font-size: 24px;
+
 }
+  .content-container-middle {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.content-container-middle h4{
+   font-size: 24px;
+}
+
+.content-container-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.content-container-bottom h4{
+   font-size: 24px;
+}
+
 
 `

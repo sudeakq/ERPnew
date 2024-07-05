@@ -1,5 +1,6 @@
 
 import styled from "styled-components";
+import image from "../images/ForgotPassword-Background-Img.png";
 
 export const ForgotPasswordContainer = styled.div`
 
@@ -11,7 +12,8 @@ export const ForgotPasswordContainer = styled.div`
     border-radius: 1rem;
     gap: 10px;
     height: 100vh;
-    background-image : url(../images/ForgotPassword-Background-Img.png);
+    background-image : url(${image});
+    background-size: cover;
 
     .container {
         display: flex;
