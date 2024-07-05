@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
 import Bill from './Components/Bill';
 
 function Bills() {
+
+  const [selected,setSelected] = useState("Bills")
+
   return (
     <>
       <Header />
       <div className="container">
-        <Sidebar />
+        <Sidebar {...{selected,setSelected}} />
         <main>
           <Bill />
         </main>

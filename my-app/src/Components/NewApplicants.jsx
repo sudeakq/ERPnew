@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './NewApplicants.css';
+
+import { ApplicantsContainer } from './NewApplicants.style';
 
 function NewApplicants() {
   const [applicants, setApplicants] = useState([]);
@@ -52,7 +53,7 @@ function NewApplicants() {
   };
 
   return (
-    <div className="containeor">
+    <ApplicantsContainer>
       <headerk>
         <h1>Applicants List</h1>
         <div className="headerk-actions">
@@ -209,8 +210,7 @@ function NewApplicants() {
           </div>
         </div>
       )}
-1
-    </div>
+    </ApplicantsContainer>
   );
 }
 
