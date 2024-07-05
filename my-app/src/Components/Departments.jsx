@@ -4,20 +4,47 @@ import { DepartmantsContainer } from './Departments.style';
 function Departments() {
   return (
     <DepartmantsContainer>
-      <div className="container">
-        <div className="title">MEET THE TEAMS</div>
-        <div className="grid">
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
+        <div className="title">
+          <h4>MEET THE TEAMS</h4>
         </div>
-      </div>
+        <div className="grid">
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div className="card">    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
     </DepartmantsContainer>
   );
 }
