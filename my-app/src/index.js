@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 // import DailyReminders from './Events';
 // import Schedule from './Schedule';
 // import ApplicantsForm from './ApllicantForm';
-import ApplicantsList from './Components/ApllicantsList';
+// import ApplicantsList from './Components/ApllicantsList';
 // import ApplicantsForms from './Components/ApllicantForms';
 // import WhatsNew from './WhatsNew';
 
