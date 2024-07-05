@@ -1,9 +1,9 @@
 import React from 'react';
-import './Tmimata.css'; // Assuming your styles are in App.css
+import { DepartmantsContainer } from './Departments.style';
 
-function Tmimatas() {
+function Departments() {
   return (
-    <>
+    <DepartmantsContainer>
       <div className="container">
         <div className="title">MEET THE TEAMS</div>
         <div className="grid">
@@ -18,8 +18,8 @@ function Tmimatas() {
           <img src="/images/image 17.png" alt="Team Member" />
         </div>
       </div>
-    </>
+    </DepartmantsContainer>
   );
 }
 
-export default Tmimatas;
+export default Departments;
