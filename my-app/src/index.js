@@ -12,10 +12,10 @@ import UpcomingBirthdays from './UpcomingBirthdays';
 import ForgotPassword from './UserSıde/ForgotPassword'
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
-import House from './Houses';
 import Bills from './Bills'; 
 import AllHous from './AllHouse';
 import Applicants from './Applicants';
+import Departments from './Departments';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -26,6 +26,7 @@ root.render(
     <BrowserRouter>
       <Routes  >
         <Route path='/' element={<StartPage />} />
+        <Route path='/departments' element={<Departments />} />
         <Route path='/news' element={<WhatsNewClick />} />
         <Route path='/interns' element={<Intern />} />
         <Route path='/reminder' element={<DailyReminders />} />
