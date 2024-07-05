@@ -6,6 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import WeeklyScheduleCard from './WeeklyScheduleCard';
 import DailyReminderCard from './DailyReminderCard';
 import UpcomingBirthdayCard from './UpcomingBirthdaysCard';
+import UpcomingArrivalCard from './UpcomingArrivalCard';
 
 const Content = () => {
   return (
@@ -52,6 +53,7 @@ const Content = () => {
               <a href="./" >View All (8)</a>
             </div>
           </div>
+          <UpcomingArrivalCard />
 
 
           <div className='content-container-bottom' style={{}}>

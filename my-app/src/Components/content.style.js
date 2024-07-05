@@ -17,7 +17,7 @@ export const ContentContainer = styled.div `
 .content-container-right {
   width: 55%;
   justify-content: left;
-  padding: 70px 40px;
+  padding: 30px 40px;
 }
 
 .content-container-top {
@@ -49,16 +49,16 @@ export const ContentContainer = styled.div `
   .content-container-middle {
   display: flex;
   justify-content: space-between;
-  margin: 25px 0px;
+  margin: 20px 0px;
 }
 .content-container-middle h4{
    font-size: 24px;
 }
 
-  .content-container-bottom {
+.content-container-bottom {
   display: flex;
   justify-content: space-between;
-  margin: 25px 0px;
+  margin: 20px 0px;
 }
 .content-container-bottom h4{
    font-size: 24px;

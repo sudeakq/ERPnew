@@ -1,9 +1,9 @@
 import React from 'react';
-import './dailyremindercard.css';
+import './upcomingarrivalcard.css';
 // i used same css with dailyremindercard becouse the cards are same
 import { AiOutlineClockCircle } from "react-icons/ai";
 
-const UpcomingBirthdayCard = () => {
+const UpcomingArrivalCard = () => {
 
 
     return (
@@ -14,6 +14,9 @@ const UpcomingBirthdayCard = () => {
                         <p style={{ fontWeight: "700" }}>Ebube Samuel</p>
                         <p style={{ color: "gray" }}>ICT</p>
                     </div>
+                </div>
+                <div className='daily-reminder-card-middle' style={{ padding: "5px" }}>
+                    <p style={{ color: "gray" }}>Arriving</p>
                 </div>
                 <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
                     <p style={{ color: "gray" }}>Today</p>
@@ -28,8 +31,28 @@ const UpcomingBirthdayCard = () => {
                         <p style={{ color: "gray" }}>IT</p>
                     </div>
                 </div>
+                <div className='daily-reminder-card-middle' style={{ padding: "5px" }}>
+                    <p style={{ color: "gray" }}>Departing</p>
+                </div>
                 <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>26 May</p>
+                    <p style={{ color: "gray" }}>12 June</p>
+                    <AiOutlineClockCircle style={{ color: "gray" }} />
+                </div>
+
+            </div>
+
+            <div className='daily-reminder-card'>
+                <div className='daily-reminder-card-left'>
+                    <div className='daily-reminder-card-left-hr'>
+                        <p style={{ fontWeight: "700" }}>John Doe</p>
+                        <p style={{ color: "gray" }}>HR</p>
+                    </div>
+                </div>
+                <div className='daily-reminder-card-middle' style={{ padding: "5px" }}>
+                    <p style={{ color: "gray" }}>Departing</p>
+                </div>
+                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
+                    <p style={{ color: "gray" }}>13 September</p>
                     <AiOutlineClockCircle style={{ color: "gray" }} />
                 </div>
 
@@ -40,4 +63,4 @@ const UpcomingBirthdayCard = () => {
     );
 };
 
-export default UpcomingBirthdayCard;
+export default UpcomingArrivalCard;
