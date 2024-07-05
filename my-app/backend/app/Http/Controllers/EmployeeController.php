@@ -11,17 +11,22 @@ class EmployeeController extends Controller
     }
     public function index()
     {
-        return $this->employee->all();
-
+      //  return $this->employee->all();
+          return "hello" ;
     }
+
 
     public function store(Request $request)
     {
-     return $this->employee->create($request->all());
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'address' => 'required|string',
+            'phone' => 'nullable|string|max:20',
+        ]);
 
-
+        $employee = Employee::create($validated);
+        return response()->json($employee, 201);
     }
-
     public function show(string $id)
     {
      $student = $this->employee->find($id);
