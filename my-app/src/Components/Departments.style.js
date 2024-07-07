@@ -51,6 +51,15 @@ export const DepartmantsContainer = styled.div`
       transition: 0.5s ease-in-out;
     }
     
+    .card:hover p {
+      transform: translateX(30px);
+    }
+
+    .card:hover h2   {
+      transform: translateX(30px);
+    }
+
+
     .card:hover::before {
       opacity: 0.2; 
     }
@@ -60,13 +69,14 @@ export const DepartmantsContainer = styled.div`
       border-radius: 30px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      cursor: pointer;
+      background-color: #BDE3FF;
 
       h2 {
         font-weight: bold;
         font-size: 30px;
-        transition: 0.5s ease-in-out;
+        transition: 0.3s ease-in-out;
         margin-bottom: 20px;
       }
 
