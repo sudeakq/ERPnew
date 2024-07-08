@@ -10,10 +10,11 @@ import Events from './Events';
 import Intern from './Intern';
 import Dashboard from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
+import UpcomingArrival from './UpcomingArrivals';
 import ForgotPassword from './UserSıde/ForgotPassword'
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
-import Bills from './Bills'; 
+import Bills from './Bills';
 import AllHous from './AllHouse';
 import Applicants from './Applicants';
 import Departments from './Departments';
@@ -40,10 +41,11 @@ root.render(
         <Route path='/birthdays' element={<UpcomingBirthdays />} />
         <Route path='/forgotPassword' element={<ForgotPassword />} /> {/* type the "path" on url and you'll go to the page */}
         <Route path='/schedule' element={<ScheduleView />} />
-        <Route path='/alumni' element={<Alumni />} />   
+        <Route path='/alumni' element={<Alumni />} />
         <Route path='/bills' element={<Bills />} />
         <Route path='/houses' element={<AllHous />} />
         <Route path='/applicants' element={<Applicants />} />
+        <Route path='/arrivals' element={<UpcomingArrival />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

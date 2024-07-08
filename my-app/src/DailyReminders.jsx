@@ -8,7 +8,7 @@ function DailyReminders() {
   return(
     <>
       <Header />
-      <div className="container">
+      <div className="container" style={{padding:"0px !important"}}>
         <Sidebar />
         <main>
           <Reminders />

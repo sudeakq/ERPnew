@@ -1,7 +1,7 @@
 
 import styled from "styled-components";
 
-export const BirthdaysContainer = styled.div`
+export const ArrivalsContainer = styled.div`
 
 
 
@@ -29,7 +29,7 @@ width: 100%;
 
 }
 .list-reminder{
-    width:500px !important;
+    width:600px !important;
     display:block;
     justify-content:center;
     align-items:center;
