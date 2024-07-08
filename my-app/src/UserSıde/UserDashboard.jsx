@@ -11,6 +11,8 @@ import Calendar from "../images/Calendar.png";
 import list from "../images/List_ul.png";
 import Home from "../images/home.png";
 import blueLine from "../images/blue-arrow-right.png";
+import clock from "../images/icon-clock.png";
+import down_blueLine from "../images/down-blue-line.png";
 import "./UserDashboard.css";
 
 function UserDashboard() {
@@ -26,51 +28,59 @@ function UserDashboard() {
           </div>
         </div>
         <div className="right-Header">
-          <p>01 September 2021</p>
+          <p className="grey">01 September 2021</p>
           <img src={line} alt="" />
           <img src={bell} alt="" />
-          <p>Ebube Samule</p>
+          <p className="grey">Ebube Samule</p>
           <img src={dropdown_logo} alt="" className="dropdown" />
         </div>
       </div>
       <div className="Main">
         <div className="Sidebar">
-          <div className="dashboard Sidebar-list">
+          <div className="dashboard Sidebar-list selected">
             <div className="sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={dashboard_logo} alt="" />
               <p>Dashboard</p>
             </div>
           </div>
           <div className="date Sidebar-list">
             <div className="Schedule sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={Calendar} alt="" />
               <p>Schedule</p>
             </div>
             <div className="Departments sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={Calendar} alt="" />
               <p>Departments</p>
             </div>
           </div>
           <div className="side-3 Sidebar-list">
             <div className="New_Applicants sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={list} alt="" />
               <p>New Applicants</p>
             </div>
             <div className="Interns sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={list} alt="" />
               <p>Interns</p>
             </div>
             <div className="Alumni sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={list} alt="" />
               <p>Alumni</p>
             </div>
           </div>
           <div className="side-4 Sidebar-list">
             <div className="Houses sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={Home} alt="" />
               <p>Houses</p>
             </div>
             <div className="Bills sidebar-menu">
+              <img src={down_blueLine} alt="" />
               <img src={list} alt="" />
               <p>Bills</p>
             </div>
@@ -82,7 +92,7 @@ function UserDashboard() {
               <div className="Header-News HeadFlex">
                 <h3>What's New</h3>
                 <div className="right-H_news">
-                  <p>View All (18)</p>
+                  <b className="blue">View All (18)</b>
                   <img src={blueLine} alt="" />
                 </div>
               </div>
@@ -90,8 +100,8 @@ function UserDashboard() {
                 <div className="New">
                   <div className="new-left">
                     <div className="white">
-                      <h1>Fri</h1>
-                      <h1>15</h1>
+                      <h2>Fri</h2>
+                      <h2>15</h2>
                     </div>
                     <b>Event with the Extramus</b>
                   </div>
@@ -100,8 +110,8 @@ function UserDashboard() {
                 <div className="New">
                   <div className="new-left">
                     <div className="white">
-                      <h1>Sat</h1>
-                      <h1>16</h1>
+                      <h2>Sat</h2>
+                      <h2>16</h2>
                     </div>
                     <b>Lesson of Italian</b>
                   </div>
@@ -110,8 +120,8 @@ function UserDashboard() {
                 <div className="New">
                   <div className="new-left">
                     <div className="white">
-                      <h1>Sun</h1>
-                      <h1>17</h1>
+                      <h2>Sun</h2>
+                      <h2>17</h2>
                     </div>
                     <b>Birthday of Guillermo</b>
                   </div>
@@ -123,10 +133,10 @@ function UserDashboard() {
           <div className="Bottom-Sections">
             <div className="Schedule-Section">
               <div className="Head-Schedule HeadFlex">
-                <h1>Weekly Schedule</h1>
-                <h2 className="blue">View All</h2>
+                <h3>Weekly Schedule</h3>
+                <b className="blue">View All</b>
               </div>
-              <div className="content">
+              <div className="content-schedule">
                 <div className="left-Schedule">
                   <p>20 july 2022</p>
                   <p>posted by Antonio Gallo</p>
@@ -146,9 +156,9 @@ function UserDashboard() {
                 </div>
               </div>
             </div>
-            <div className="Birthdays">
+            <div className="Birthdays-Section">
               <div className="Head-Birthday HeadFlex">
-                <h1>Upcoming Birthdays🎂🎉🍾</h1>
+                <h3>Upcoming Birthdays🎂🎉🍾</h3>
                 <p className="blue">View All (8)</p>
               </div>
               <div className="Content-Birthday">
@@ -159,7 +169,7 @@ function UserDashboard() {
                   </div>
                   <div className="right-B">
                     <p className="Birthday-time">Today</p>
-                    <img src="" alt="" />
+                    <img src={clock} alt="" />
                   </div>
                 </div>
                 <div className="Birthday">
@@ -169,7 +179,7 @@ function UserDashboard() {
                   </div>
                   <div className="right-B">
                     <p className="birthday-time">13 September</p>
-                    <img src="" alt="" />
+                    <img src={clock} alt="" />
                   </div>
                 </div>
               </div>
