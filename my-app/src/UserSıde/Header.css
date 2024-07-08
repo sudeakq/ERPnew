@@ -28,3 +28,13 @@
 .grey {
     color: #F2F2F2;
 }
+.redLogo {
+    color: #F54048;
+    border: 1px solid #F54048;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    width: 10.25rem;
+    border-radius: 10px;
+    padding: 2px;
+}

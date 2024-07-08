@@ -6,13 +6,25 @@ import line from "../images/Line_8.png";
 import bell from "../images/Bell.png";
 import dropdown_logo from "../images/caret-down-solid.svg";
 import "./Header.css";
+import { useState } from "react";
 function Header() {
+  const [isHovered, setIsHovered] = useState(false);
+  function handleHover() {
+    setIsHovered(!isHovered);
+  }
   return (
     <div className="Header">
       <div className="left-Header">
         <img src={Extramus_Text} alt="" />
         <div className="Header-logos">
-          <img src={red_logo} alt="" />
+          <div
+            onMouseEnter={handleHover}
+            onMouseLeave={handleHover}
+            className={isHovered && "redLogo"}
+          >
+            <img src={red_logo} alt="" />
+            {isHovered && <p>Send a Notification</p>}
+          </div>
           <img src={green_logo} alt="" />
           <img src={blue_logo} alt="" />
         </div>
