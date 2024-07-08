@@ -1,23 +1,63 @@
 import React from 'react';
 import { DepartmantsContainer } from './Departments.style';
+import { useNavigate } from 'react-router-dom';
 
 function Departments() {
+
+  const navigate = useNavigate();
+
   return (
     <DepartmantsContainer>
-      <div className="container">
-        <div className="title">MEET THE TEAMS</div>
-        <div className="grid">
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
-          <img src="/images/image 17.png" alt="Team Member" />
+        <div className="title" >
+          <h4>MEET THE TEAMS</h4>
         </div>
-      </div>
+        <div className="grid">
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+          <div className="card" onClick={()=>navigate('/workers')} >    
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
+          </div>
+        </div>
     </DepartmantsContainer>
   );
 }
