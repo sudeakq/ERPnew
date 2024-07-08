@@ -21,24 +21,7 @@ import NewsData from './NewsData';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import StartPage from './StartPage';
-import WhatsNewClick from './WhatsNewClick';
-import DailyReminders from './Events';
-import Intern from './Intern';
-import Dashboard from './Dashboard';
-import UpcomingBirthdays from './UpcomingBirthdays';
-import ForgotPassword from './UserSıde/ForgotPassword'
-import ScheduleView from './Schedule-2';
-import Alumni from './Alumni';
-import Bills from './Bills';
-import AllHous from './AllHouse';
-import Applicants from './Applicants';
-import Departments from './Departments';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 
 root.render(
   <React.StrictMode>
