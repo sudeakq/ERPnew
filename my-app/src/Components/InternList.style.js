@@ -147,7 +147,6 @@ export const InternListContainer = styled.div`
 table {
   width: 90%;
   border-collapse: collapse;
-  /* margin: 0 20px; */
 }
 
 th, td {
@@ -192,7 +191,5 @@ tr:hover {
   border-radius: 4px;
   margin-right: 5px;
 }
-
-
 
 `
