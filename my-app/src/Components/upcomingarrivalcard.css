@@ -3,6 +3,7 @@
     height: auto;
     width: 100%;
     padding: 20px;
+    padding-bottom: 0px;
     border: 1px solid rgba(128, 128, 128, 0.322);
     border-radius: 10px;
     margin-top: 15px;
@@ -21,7 +22,7 @@
 .daily-reminder-card-left {
     display: flex;
     justify-content: left;
-    width: 60%;
+    width: 40%;
 }
 
 .daily-reminder-card-left-hr {
@@ -29,9 +30,16 @@
     justify-content: left;
 }
 
+.daily-reminder-card-middle {
+    display: flex;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
 .daily-reminder-card-right {
     display: flex;
-    width: 60%;
+    width: 30%;
     display: flex;
     justify-content: right;
 }

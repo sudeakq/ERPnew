@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header  from './Components/Header';
 import Sidebar from './Components/Sidebar';
 // import Card from './Components/Card';
@@ -6,12 +6,13 @@ import ReminderClicked from './Components/ReminderClicked';
 
 function WhatsNewClick() {
 
+  const [selected,setSelected] = useState();
 
   return(
     <>
       <Header />
       <div className="container">
-        <Sidebar />
+        <Sidebar {...{}} />
         <main>
           <ReminderClicked />
         </main>

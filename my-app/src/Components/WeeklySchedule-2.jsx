@@ -1,11 +1,11 @@
 import React from "react";
-import "./WeeklySchedule-2.css";
-
+/* import "./WeeklySchedule-2.css"; */
+import { ScheduleContainer } from "./WeeklySchedule-2.style";
 
 function WeeklyScheduleView() {
   
   return (
-    <>
+    <ScheduleContainer>
       <header class="header-week">
         <h1>Weekly Schedule</h1>
         <div class="header-right">
@@ -121,7 +121,7 @@ function WeeklyScheduleView() {
           </div>
         </section>
       </main>
-    </>
+    </ScheduleContainer>
   );
 }
 

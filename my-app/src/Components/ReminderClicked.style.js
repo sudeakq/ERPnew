@@ -2,7 +2,8 @@
 import styled from "styled-components";
 
 export const ReminderClickedContainer = styled.div`
-
+padding-bottom : 50px;
+background-color: rgba(228,234,246,255);
 
 .total-container {
     background-color: rgba(228,234,246,255); 
@@ -89,7 +90,9 @@ export const ReminderClickedContainer = styled.div`
     gap: 3px;
 }
 
+
 .icon {
+    margin-left: 0;
     height: auto;
     width: 10px;
 }

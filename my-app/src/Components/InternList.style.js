@@ -2,12 +2,9 @@ import styled from 'styled-components'
 
 export const InternListContainer = styled.div`
 
-
-    
 .total-container {
   background-color: rgba(245,248,254,255);  
   max-width: 100%;
-  /* background-color: blue; */
 }
 
 .headeor-list {
@@ -15,7 +12,6 @@ export const InternListContainer = styled.div`
   font-size: 18px;
   flex-direction: column;
   align-items: center;
-  /* background-color: green; */
   margin-bottom: 40px;
 }
 
@@ -38,12 +34,10 @@ export const InternListContainer = styled.div`
 .icon-button-container {
   display: flex;
   align-items: center;
-  /* background-color: yellow; */
 }
 
 .users-icon {
   font-size: 220%;
-  /* background-color: red; */
 }
 
 .headeor-icons button {
@@ -56,19 +50,16 @@ export const InternListContainer = styled.div`
   border-radius: 4px;
   font-size: 18px;
   background-color: transparent ;
-  /* background-color: rgba(245,248,254,255); */
   font-weight: bold;
 }
 
 .tab-search-container {
   width: 100%;
-  /* background-color: red; */
   display: flex;
   justify-content: center;
 }
 
 .inner-container {
-  /* background-color: green; */
   width: 75%;
   display: flex;
   justify-content: space-between;
@@ -116,7 +107,6 @@ export const InternListContainer = styled.div`
   width: 75%;
   display: flex;
   gap: 10px;
-  /* background-color: red; */
   align-items: center;
 }
 
@@ -128,19 +118,12 @@ export const InternListContainer = styled.div`
   font-weight: bold;
   gap: 5px;
   cursor: pointer;
-
-}
-
-.selected {
-
-
-
 }
 
 .check-container {
   background-color: white;
-  padding: 10px;
   border-radius: 5px;
+  padding: 20px 10px;
 }
 
 .check {
@@ -164,7 +147,6 @@ export const InternListContainer = styled.div`
 table {
   width: 90%;
   border-collapse: collapse;
-  /* margin: 0 20px; */
 }
 
 th, td {
@@ -209,7 +191,5 @@ tr:hover {
   border-radius: 4px;
   margin-right: 5px;
 }
-
-
 
 `

@@ -28,7 +28,6 @@ function InternLists() {
 
   return (
     <InternListContainer>
-      
       <div className="total-container">
       <div className="headeor-list">
         <div className="title-container">
