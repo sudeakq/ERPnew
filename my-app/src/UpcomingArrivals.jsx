@@ -1,20 +1,20 @@
 import React from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
-import Birthdays from './Components/Birthdays';
+import Arrivals from './Components/Arrivals';
 
-function UpcomingBirthdays() {
+function UpcomingArrivals() {
   return (
     <>
       <Header />
       <div className="container"  style={{padding:"0px !important"}}>
         <Sidebar />
         <main>
-          <Birthdays />
+          <Arrivals />
         </main>
       </div>
     </>
   );
 }
 
-export default UpcomingBirthdays;
+export default UpcomingArrivals;

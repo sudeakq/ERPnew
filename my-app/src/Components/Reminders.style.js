@@ -1,10 +1,7 @@
-
 import styled from "styled-components";
 
-export const BirthdaysContainer = styled.div`
-
-
-
+export const RemindersContainer = styled.div`
+  
 background-color: rgba(245,248,254,255);
 height: 1000px;
 padding: 0px !important;
@@ -29,7 +26,7 @@ width: 100%;
 
 }
 .list-reminder{
-    width:500px !important;
+    width:700px !important;
     display:block;
     justify-content:center;
     align-items:center;
@@ -38,10 +35,6 @@ width: 100%;
 
 
 }
-
-
-
-
 .border-reminder{
     border: 1px solid rgb(220, 221, 225);
     border-radius:20px;
@@ -52,4 +45,5 @@ width: 100%;
 
 
 
-`
+
+`;
