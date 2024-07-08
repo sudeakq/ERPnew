@@ -1,11 +1,11 @@
-import Rectangle_1 from "../images/Rectangle_1.png";
-function Rectangle({ id, selectedId, isSelected }) {
+import down_blueLine from "../images/down-blue-line.png";
+function Rectangle({ id, selectedId }) {
   return (
     <>
-      {isSelected && selectedId === id ? (
-        <img src={Rectangle_1} alt="" className="Rectangle" />
+      {id && selectedId === id ? (
+        <img src={down_blueLine} alt="" />
       ) : (
-        <img src={Rectangle_1} alt="" className="Rectangle Hidden" />
+        <img src={down_blueLine} alt="" className="hidden" />
       )}
     </>
   );
