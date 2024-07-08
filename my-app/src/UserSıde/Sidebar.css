@@ -1,0 +1,26 @@
+.Sidebar {
+    width: 15vw;
+    padding-top: .25rem;
+    background-color: white;
+}
+.sidebar-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.selected {
+    color: #2F80ED;
+}
+.Sidebar-list {
+    display: flex;
+    flex-direction: column;
+}
+.date {
+    margin-top: 2rem;
+}
+.side-3 {
+    margin-top: 3rem;
+}
+.side-4 {
+    margin-top: 4.5rem;
+}
