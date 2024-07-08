@@ -78,6 +78,7 @@ export const DepartmantsContainer = styled.div`
         font-size: 30px;
         transition: 0.3s ease-in-out;
         margin-bottom: 20px;
+        opacity: 0%;
       }
 
       p {
@@ -85,6 +86,7 @@ export const DepartmantsContainer = styled.div`
         font-size: 20px;
         transition: 0.5s ease-in-out;
         margin-bottom: 35px;
+        opacity: 0%;
       }
 
     }
