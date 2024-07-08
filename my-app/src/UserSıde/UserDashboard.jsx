@@ -10,6 +10,7 @@ import dashboard_logo from "../images/Dashboard.png";
 import Calendar from "../images/Calendar.png";
 import list from "../images/List_ul.png";
 import Home from "../images/home.png";
+import "./UserDashboard.css";
 
 function UserDashboard() {
   return (
@@ -28,16 +29,18 @@ function UserDashboard() {
           <img src={line} alt="" />
           <img src={bell} alt="" />
           <p>Ebube Samule</p>
-          <img src={dropdown_logo} alt="" />
+          <img src={dropdown_logo} alt="" className="dropdown" />
         </div>
       </div>
       <div className="Main">
         <div className="Sidebar">
-          <div className="dashboard sidebar-menu">
-            <img src={dashboard_logo} alt="" />
-            <p>Dashboard</p>
+          <div className="dashboard Sidebar-list">
+            <div className="sidebar-menu">
+              <img src={dashboard_logo} alt="" />
+              <p>Dashboard</p>
+            </div>
           </div>
-          <div className="date">
+          <div className="date Sidebar-list">
             <div className="Schedule sidebar-menu">
               <img src={Calendar} alt="" />
               <p>Schedule</p>
@@ -47,7 +50,7 @@ function UserDashboard() {
               <p>Departments</p>
             </div>
           </div>
-          <div className="side-3">
+          <div className="side-3 Sidebar-list">
             <div className="New_Applicants sidebar-menu">
               <img src={list} alt="" />
               <p>New Applicants</p>
@@ -61,7 +64,7 @@ function UserDashboard() {
               <p>Alumni</p>
             </div>
           </div>
-          <div className="side-4">
+          <div className="side-4 Sidebar-list">
             <div className="Houses sidebar-menu">
               <img src={Home} alt="" />
               <p>Houses</p>
@@ -115,12 +118,12 @@ function UserDashboard() {
                 <div className="mid-Schedule">
                   <p>Morning shift 8:00 to 13.00</p>
                   <p>Human Resources:4</p>
-                  <ol>
+                  <ul>
                     <li>Isata Sajor Bah</li>
                     <li>Katerina Svarcova</li>
                     <li>Klara Tlaskalova</li>
                     <li>Marvellous Oreoluwa Oseyemi</li>
-                  </ol>
+                  </ul>
                 </div>
                 <div className="right-Schedule">
                   <p className="cizgi">Read More</p>
