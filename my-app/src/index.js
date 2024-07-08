@@ -16,6 +16,8 @@ import Bills from './Bills';
 import AllHous from './AllHouse';
 import Applicants from './Applicants';
 import Departments from './Departments';
+import Workers from './Workers';
+import NewsData from './NewsData';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -27,7 +29,9 @@ root.render(
       <Routes  >
         <Route path='/' element={<StartPage />} />
         <Route path='/departments' element={<Departments />} />
+        <Route path='/workers' element={<Workers />} />
         <Route path='/news' element={<WhatsNewClick />} />
+        <Route path='/news/1' element={<NewsData />} />
         <Route path='/interns' element={<Intern />} />
         <Route path='/reminder' element={<DailyReminders />} />
         <Route path='/dashboard' element={<Dashboard />} />
