@@ -5,7 +5,8 @@ import reportWebVitals from './reportWebVitals';
 
 import StartPage from './StartPage';
 import WhatsNewClick from './WhatsNewClick';
-import DailyReminders from './Events';
+import DailyReminders from './DailyReminders';
+import Events from './Events';
 import Intern from './Intern';
 import Dashboard from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
@@ -34,6 +35,7 @@ root.render(
         <Route path='/news/1' element={<NewsData />} />
         <Route path='/interns' element={<Intern />} />
         <Route path='/reminder' element={<DailyReminders />} />
+        <Route path='/events' element={<Events />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/birthdays' element={<UpcomingBirthdays />} />
         <Route path='/forgotPassword' element={<ForgotPassword />} /> {/* type the "path" on url and you'll go to the page */}

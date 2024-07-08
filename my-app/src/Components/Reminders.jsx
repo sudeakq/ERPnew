@@ -1,9 +1,10 @@
 import React from "react";
 import "./Reminders.css";
+import { RemindersContainer } from "./Reminders.style";
 
 function Reminders() {
   return (  
-    <>    
+    <RemindersContainer>    
     <h1>Daily Reminders</h1>
       <div class="container">
         <div class="calendar">
@@ -96,7 +97,7 @@ function Reminders() {
           </div>
         </div>
       </div>
-      </>
+      </RemindersContainer>
 
   );
 }
