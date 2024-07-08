@@ -1,17 +1,17 @@
 import React from "react";
-import { BirthdaysContainer } from "./Birthdays.style";
+import { ArrivalsContainer } from "./Arrivals.style";
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
-import UpcomingBirthdayCard from "./UpcomingBirthdaysCard";
-function Birthdays() {
+import UpcomingArrivalCard from './UpcomingArrivalCard';
+function Arrivals() {
 
   return (
-    <BirthdaysContainer>
+    <ArrivalsContainer>
       <h1 style={
 
         { paddingTop: "30px"}
-      }>Upcoming Birthdays</h1>
+      }>Upcoming Arrivals</h1>
     <div class="container-reminder">
    
     <div class="calendar-reminder border-reminder">
@@ -22,11 +22,11 @@ function Birthdays() {
           </LocalizationProvider></div>
       <div class="list-reminder">
         <h1>List</h1>
-        <UpcomingBirthdayCard />
+       < UpcomingArrivalCard/>
       </div>
     </div>
-    </BirthdaysContainer>
+    </ArrivalsContainer>
   );
 }
 
-export default Birthdays
+export default Arrivals
