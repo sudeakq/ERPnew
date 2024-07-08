@@ -1,6 +1,6 @@
 // src/Content.js
 import React from 'react';
-import './content.css';
+import { ContentContainer } from './content.style';
 import DashCard from './DashCard';
 import { FaArrowRightLong } from "react-icons/fa6";
 import WeeklyScheduleCard from './WeeklyScheduleCard';
@@ -8,6 +8,7 @@ import DailyReminderCard from './DailyReminderCard';
 
 const Content = () => {
   return (
+    <ContentContainer>
     <div className='content-container'>
       <div className="content-container-left">
 
@@ -44,6 +45,7 @@ const Content = () => {
         <DailyReminderCard />
       </div>
     </div>
+    </ContentContainer>
   );
 };
 
