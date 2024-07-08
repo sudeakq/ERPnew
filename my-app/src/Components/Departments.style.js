@@ -86,6 +86,7 @@ export const DepartmantsContainer = styled.div`
         font-size: 20px;
         transition: 0.5s ease-in-out;
         margin-bottom: 35px;
+        opacity: 100%;
         opacity: 0%;
       }
 
