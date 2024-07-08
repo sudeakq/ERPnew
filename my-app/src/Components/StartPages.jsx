@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
-import axios from './Services/axios.js'; // Corrected import path
+/* import axios from './Services/axios.js'; */ // Corrected import path
+import axios from 'axios';
 import startPageImage from '../images/UserStartPage.png';
 import erasmusTitleImage from '../images/extramus_title_image.png';
 import { StartPagesContainer } from './StartPages.style.js';
+import { useNavigate } from 'react-router-dom';
 
 const StartPages = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const navigate = useNavigate();
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/login', { email, password });
+      const response = await axios.post('http://localhost:8000/api/loginn', { email, password });
       console.log('Response:', response);
       if (response.data.success) {
         alert('Login successful');
-        // Handle successful login (e.g., redirect to dashboard)
+        navigate("/dashboard");
       } else {
         setError('Invalid email or password');
       }
