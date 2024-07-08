@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TheUsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::apiResource('/employee', EmployeeController::class);
+
+Route::get('/users', [TheUsersController::class, "index"]);
+Route::post('/users', [TheUsersController::class, "store"]);
+Route::post("/loginn", [TheUsersController::class,"loginUser"]);
