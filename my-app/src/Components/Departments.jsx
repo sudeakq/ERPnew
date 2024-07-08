@@ -13,49 +13,49 @@ function Departments() {
         </div>
         <div className="grid">
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
           <div className="card" onClick={()=>navigate('/workers')} >    
-            <h2 className='poppins-bold' >HR</h2>
-            <p className='poppins-bold' >Lorem ipsum dolor sit amet.</p>
-            <p className='poppins-bold' >Click to See More</p>
+            <h2>HR</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Click to See More</p>
           </div>
         </div>
     </DepartmantsContainer>
