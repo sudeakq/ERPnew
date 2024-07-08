@@ -8,8 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.25rem 2.5rem 1.25rem 5rem;
-    height: 15vh;
+    padding: 1.5rem 2.5rem 1.5rem 5rem;
+    height: 11vh;
 }
 .dropdown {
     width: 20px;
@@ -27,7 +27,8 @@
 .Header-logos {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .25rem;
+    width: 20px;
 }
 .Main {
     display: flex;
@@ -56,4 +57,73 @@
 }
 .side-4 {
     margin-top: 4.5rem;
+}
+.Container {
+    display: flex;
+    flex-direction: column;
+}
+.Top-Sections{
+    display: flex;
+    align-items: center;
+}
+.Bottom-Sections {
+    display: flex;
+    align-items: center;
+}
+.HeadFlex {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.New-Section {
+    width: 40vw;
+    background-color: red;
+    margin-left: 2.5rem;
+}
+.New {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+.new-left {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.News {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Header-News {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+.New:nth-child(1) {
+    background-color: #7356FF;
+}
+.New:nth-child(2) {
+    background-color: #4E97E8;
+}
+.New:nth-child(3) {
+    background-color: #4C8BD2;
+}
+.white {
+    background-color: white;
+    padding: 1rem 2.25rem 1rem 1rem;
+    border-radius: 1rem 2.25rem 2.25rem 1rem;
+    
+}
+.white > h1 {
+    color: #2467B2;
+}
+.right-H_news {
+    display: flex;
+    align-items: center;
+}
+.cizgi {
+    font-weight: bold;
+    text-decoration-line: underline;
 }

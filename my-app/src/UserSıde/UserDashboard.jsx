@@ -10,6 +10,7 @@ import dashboard_logo from "../images/Dashboard.png";
 import Calendar from "../images/Calendar.png";
 import list from "../images/List_ul.png";
 import Home from "../images/home.png";
+import blueLine from "../images/blue-arrow-right.png";
 import "./UserDashboard.css";
 
 function UserDashboard() {
@@ -78,27 +79,42 @@ function UserDashboard() {
         <div className="Container">
           <div className="Top-Sections">
             <div className="New-Section">
-              <div className="Header-News">
-                <p>What's New</p>
+              <div className="Header-News HeadFlex">
+                <h3>What's New</h3>
                 <div className="right-H_news">
                   <p>View All (18)</p>
-                  <img src="" alt="" />
+                  <img src={blueLine} alt="" />
                 </div>
               </div>
               <div className="News">
                 <div className="New">
-                  <h1>Fri 15</h1>
-                  <p>Event with the Extramus</p>
+                  <div className="new-left">
+                    <div className="white">
+                      <h1>Fri</h1>
+                      <h1>15</h1>
+                    </div>
+                    <b>Event with the Extramus</b>
+                  </div>
                   <p className="cizgi">Read More</p>
                 </div>
                 <div className="New">
-                  <h1>Sat 16</h1>
-                  <p>Lesson of Italian</p>
+                  <div className="new-left">
+                    <div className="white">
+                      <h1>Sat</h1>
+                      <h1>16</h1>
+                    </div>
+                    <b>Lesson of Italian</b>
+                  </div>
                   <p className="cizgi">Read More</p>
                 </div>
                 <div className="New">
-                  <h1>Sun 17</h1>
-                  <p>Birthday of Guillermo</p>
+                  <div className="new-left">
+                    <div className="white">
+                      <h1>Sun</h1>
+                      <h1>17</h1>
+                    </div>
+                    <b>Birthday of Guillermo</b>
+                  </div>
                   <p className="cizgi">Read More</p>
                 </div>
               </div>
@@ -106,7 +122,7 @@ function UserDashboard() {
           </div>
           <div className="Bottom-Sections">
             <div className="Schedule-Section">
-              <div className="Head-Schedule">
+              <div className="Head-Schedule HeadFlex">
                 <h1>Weekly Schedule</h1>
                 <h2 className="blue">View All</h2>
               </div>
@@ -131,7 +147,7 @@ function UserDashboard() {
               </div>
             </div>
             <div className="Birthdays">
-              <div className="Head-Birthday">
+              <div className="Head-Birthday HeadFlex">
                 <h1>Upcoming Birthdays🎂🎉🍾</h1>
                 <p className="blue">View All (8)</p>
               </div>
