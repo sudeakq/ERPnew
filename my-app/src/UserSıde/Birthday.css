@@ -75,6 +75,7 @@ table {
 }
 .calendarDays {
     color: #333333;
+    opacity: 0.8;
 }
 .greyDay {
     color: #333333;

@@ -2,7 +2,6 @@ import dashboard_logo from "../images/Dashboard.png";
 import Calendar from "../images/Calendar.png";
 import list from "../images/List_ul.png";
 import Home from "../images/home.png";
-import down_blueLine from "../images/down-blue-line.png";
 import Rectangle from "./Rectangle";
 import "./Sidebar.css";
 import { useState } from "react";
