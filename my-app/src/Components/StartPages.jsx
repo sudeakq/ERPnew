@@ -16,7 +16,7 @@ const StartPages = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/login', { email, password });
+      const response = await axios.post('http://localhost:8000/api/admins/login', { email, password });
       console.log('Response:', response);
       if (response.data.success) {
         alert('Login successful');

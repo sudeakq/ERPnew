@@ -24,7 +24,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        $this->student->create($request->all());
+        return $this->student->create($request->all());
     }
 
     /**
