@@ -24,7 +24,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->student->create($request->all());
     }
 
     /**
@@ -32,7 +32,7 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return $this->student->find($id);
     }
 
     /**
