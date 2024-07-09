@@ -11,7 +11,7 @@ function UserDashboard() {
       <Header />
       <div className="Main">
         <Sidebar />
-        <NewsPage />
+        <Content />
       </div>
     </>
   );

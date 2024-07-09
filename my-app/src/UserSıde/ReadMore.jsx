@@ -1,5 +1,4 @@
-import "./NewsPage.css";
-function NewsPage() {
+function ReadMore() {
   return (
     <div className="NewsPage">
       <h1>What's New</h1>
@@ -56,4 +55,4 @@ function NewsPage() {
     </div>
   );
 }
-export default NewsPage;
+export default ReadMore;
