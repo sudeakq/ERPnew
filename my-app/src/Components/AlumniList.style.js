@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const AlumniListContainer = styled.div`
+  padding-top: 20px;
 
    .alumni-list {
       font-family: Arial, sans-serif;
@@ -12,7 +13,7 @@ export const AlumniListContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #5cb85c;
+    background-color: #f1f1f1;
     margin-bottom: 20px;
   }
   
