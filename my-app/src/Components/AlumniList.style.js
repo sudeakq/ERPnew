@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const AlumniListContainer = styled.div`
   padding-top: 20px;
-  background-color: transparent;
 
    .alumni-list {
       font-family: Arial, sans-serif;
