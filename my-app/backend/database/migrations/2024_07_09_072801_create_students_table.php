@@ -16,9 +16,9 @@ return new class extends Migration
             $table->date('application_date');
             $table->date('start_date');
             $table->date('end_date');
-            $table->foreignIdFor('arrivals_id');
-            $table->foreignIdFor('status_id');
-            $table->foreignIdFor('positions_id');
+            $table->integer('arrivals_id');
+            $table->integer('status_id');
+            $table->integer('positions_id');
             $table->string('name');
             $table->string('surname');
             $table->string('phone_number');
@@ -26,11 +26,11 @@ return new class extends Migration
             $table->string('country');
             $table->string('institution');
             $table->string('nationality');
-            $table->foreignIdFor('departments_id');
+            $table->integer('departments_id');
             $table->string('email')->unique();
             $table->date('date_of_birth');
-            $table->foreignIdFor('coordinators_id');
-            $table->foreignIdFor('rooms_id');
+            $table->integer('coordinators_id');
+            $table->integer('rooms_id');
             $table->string('health_issues');
             $table->timestamps();
         });
