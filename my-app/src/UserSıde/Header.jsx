@@ -22,8 +22,8 @@ function Header() {
             onMouseLeave={handleHover}
             className={isHovered && "redLogo"}
           >
-            <img src={red_logo} alt="" />
-            {isHovered && <p>Send a Notification</p>}
+            <img src={red_logo} alt="" className="red-icon" />
+            {isHovered && <p className="red-iconP">Send a Notification</p>}
           </div>
           <img src={green_logo} alt="" />
           <img src={blue_logo} alt="" />
@@ -32,7 +32,7 @@ function Header() {
       <div className="right-Header">
         <p className="grey">01 September 2021</p>
         <img src={line} alt="" />
-        <img src={bell} alt="" />
+        <img src={bell} alt="" className="bell" />
         <p className="grey">Ebube Samule</p>
         <img src={dropdown_logo} alt="" className="dropdown" />
       </div>
