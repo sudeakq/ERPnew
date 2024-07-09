@@ -20,6 +20,9 @@ import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
 import NewsData from './NewsData';
+import ApplicantsForm from './ApllicantForm';
+
+
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -46,6 +49,8 @@ root.render(
         <Route path='/houses' element={<AllHous />} />
         <Route path='/applicants' element={<Applicants />} />
         <Route path='/arrivals' element={<UpcomingArrivals />} />
+        <Route path="/ApllicantForm" element={< ApplicantsForm/>} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
