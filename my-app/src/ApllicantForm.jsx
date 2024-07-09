@@ -1,23 +1,21 @@
-import React from 'react'
+import React from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
-// import ApplicantsList from './Components/ApllicantsList';
-import ApplicantsForms from './Components/ApllicantForms';
+import ApplicantsForms from './Components/ApllicantForms'; // Corrected import
+// Corrected import
 
 function ApplicantsForm() {
-
-
   return (
     <>
       <Header />
-      <Sidebar />
-      <div className="container">
-        <ApplicantsForms />
-       {/* <ApplicantsList /> */}
+      <div className="main-container">
+        <Sidebar className="sidebar" />
+        <div className="form-container">
+          <ApplicantsForms />
+        </div>
       </div>
     </>
-
   );
 }
 
-export default ApplicantsForm
+export default ApplicantsForm;

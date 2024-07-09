@@ -6,7 +6,7 @@ import ReminderClicked from './Components/ReminderClicked';
 
 function WhatsNewClick() {
 
-  const [selected,setSelected] = useState();
+  // const [selected,setSelected] = useState();
 
   return(
     <>

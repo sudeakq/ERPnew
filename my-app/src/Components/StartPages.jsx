@@ -69,7 +69,7 @@ const StartPages = () => {
         </form>
         <div className="register-link-container">
           <p className='register-text poppins-extrabold ' >Don't have an account ?</p>
-          <a className='register-link poppins-extrabold ' href="#">Sign Up</a>
+          <a className='register-link poppins-extrabold ' href="/">Sign Up</a>
         </div>
       </div>
     </div>

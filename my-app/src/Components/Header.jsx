@@ -11,6 +11,7 @@ const Header = () => {
   const [name,setName] = useState('Ebube Samuel')
 
   return (
+    
     <header className="header">
       <img src={extramus_image} alt='extramus_image.png' />
       <div className="header-right poppins-extrabold ">
