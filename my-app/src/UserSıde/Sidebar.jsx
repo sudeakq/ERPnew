@@ -21,7 +21,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={1} selectedId={selectedId} />
-          <img src={dashboard_logo} alt="" />
+          <img src={dashboard_logo} alt="" className="icons" />
           <p className={selectedId === 1 && "selected"}>Dashboard</p>
         </div>
       </div>
@@ -33,7 +33,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={2} selectedId={selectedId} />
-          <img src={Calendar} alt="" />
+          <img src={Calendar} alt="" className="icons" />
           <p className={selectedId === 2 && "selected"}>Schedule</p>
         </div>
         <div
@@ -43,7 +43,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={3} selectedId={selectedId} />
-          <img src={Calendar} alt="" />
+          <img src={Calendar} alt="" className="icons" />
           <p className={selectedId === 3 && "selected"}>Departments</p>
         </div>
       </div>
@@ -55,7 +55,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={4} selectedId={selectedId} />
-          <img src={list} alt="" />
+          <img src={list} alt="" className="icons" />
           <p className={selectedId === 4 && "selected"}>New Applicants</p>
         </div>
         <div
@@ -65,7 +65,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={5} selectedId={selectedId} />
-          <img src={list} alt="" />
+          <img src={list} alt="" className="icons" />
           <p className={selectedId === 5 && "selected"}>Interns</p>
         </div>
         <div
@@ -75,7 +75,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={6} selectedId={selectedId} />
-          <img src={list} alt="" />
+          <img src={list} alt="" className="icons" />
           <p className={selectedId === 6 && "selected"}>Alumni</p>
         </div>
       </div>
@@ -87,7 +87,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={7} selectedId={selectedId} />
-          <img src={Home} alt="" />
+          <img src={Home} alt="" className="icons" />
           <p className={selectedId === 7 && "selected"}>Houses</p>
         </div>
         <div
@@ -97,7 +97,7 @@ function Sidebar() {
           }}
         >
           <Rectangle id={8} selectedId={selectedId} />
-          <img src={list} alt="" />
+          <img src={list} alt="" className="icons" />
           <p className={selectedId === 8 && "selected"}>Bills</p>
         </div>
       </div>
