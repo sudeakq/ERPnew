@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
@@ -24,8 +25,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('/employee', EmployeeController::class);
 
-Route::controller(TheUsersController::class)->group(function () {
+Route::controller(AdminController::class)->group(function () {
     Route::get('/users', 'index');
     Route::post('/users', 'store');
-    Route::post('/login', 'loginUser');
+    Route::post('/login', 'loginAdmin');
 });
