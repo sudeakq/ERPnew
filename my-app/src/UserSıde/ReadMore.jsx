@@ -1,55 +1,41 @@
+import profileImg from "../images/Profile-img.png";
+import dot from "../images/dot.png";
+import "./ReadMore.css";
 function ReadMore() {
   return (
-    <div className="NewsPage">
-      <h1>What's New</h1>
-      <div className="NewsList">
-        <div className="left-News">
-          <div className="Newsdate">
-            <p className="darker">20 august 2021</p>
-            <p className="darker p2">posted by Antonio Gallo</p>
-          </div>
-          <div className="news-content">
-            <p className="darker">Project Management Presentation</p>
-            <p className="desc">
-              On monday 23 August there will be a presentation from project
-              management regarding the theater platform. Please prepare the
-              necessary documents.
-            </p>
-          </div>
+    <div className="ReadMorePage">
+      <div className="Container-ReadMore">
+        <div className="Heading bold">
+          <img src={profileImg} alt="" />
+          <p>posted by Antonio Gallo</p>
+          <img src={dot} alt="" className="dot" />
+          <p>23 august 2024</p>
         </div>
-        <p className="cizgi darker">Read More</p>
-      </div>
-      <div className="NewsList">
-        <div className="left-News">
-          <div className="Newsdate">
-            <p className="darker">16 august 2021</p>
-            <p className="darker p2">posted by Zeynep</p>
-          </div>
-          <div className="news-content">
-            <p className="darker">HR Meeting</p>
-            <p className="desc">
-              Weekly progress will be held at the end of this week. All HR
-              should be in the afternoon shift at 5PM. Thank you.
-            </p>
-          </div>
+        <div className="Contain">
+          <p>
+            On monday 23 August there will be a presentation from project
+            management regarding the theater platform. Please prepare the
+            necessary documents.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
-        <p className="cizgi darker">Read More</p>
-      </div>
-      <div className="NewsList">
-        <div className="left-News">
-          <div className="Newsdate">
-            <p className="darker">13 august 2021</p>
-            <p className="darker p2">posted by Joshua</p>
-          </div>
-          <div className="news-content">
-            <p className="darker">Interns Performance Review</p>
-            <p className="desc">
-              Daily progress for interns performance. All the interns should be
-              interviewed and report updated.
-            </p>
-          </div>
-        </div>
-        <p className="cizgi darker">Read More</p>
       </div>
       <> {"< 1/4 >"} </>
     </div>

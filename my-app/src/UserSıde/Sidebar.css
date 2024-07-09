@@ -3,7 +3,7 @@
     width: 15%;
     padding-top: .25rem;
     background-color: white;
-    height: 100vh;
+    max-height: 100vh;
 }
 .sidebar-menu {
     display: flex;
