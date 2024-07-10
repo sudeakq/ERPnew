@@ -1,0 +1,39 @@
+.Sidebar {
+    min-width: 200px;
+    width: 15%;
+    padding-top: .25rem;
+    background-color: white;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.side-4 {
+    margin-top: 1rem;
+}
+.sidebar-menu {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    cursor: pointer;
+}
+.hidden {
+    visibility: hidden;
+}
+.Sidebar-list {
+    display: flex;
+    flex-direction: column;
+}
+.unSelected {
+    color: #8E8D8D;
+    font-size: 14px;
+    font-weight: 600;
+}
+.selectedTitle {
+    color: #2F80ED;
+    font-size: 14px;
+    font-weight: 600;
+}
+.icons {
+    width: 20px;
+}
