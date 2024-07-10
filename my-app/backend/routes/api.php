@@ -39,8 +39,8 @@ Route::controller(StudentController::class)->group(function (){
     Route::get('/students/{id}','show');
 });
 
-Route::controller(ArrivalController::class)->groupd(function (){
+Route::controller(ArrivalController::class)->group(function (){
     Route::get('/arrivals','index');
     Route::post('/arrivals','store');
-    Route::get('/arrivals/{id}','show');
+    Route::get('/arrivals/{arrival}','show');
 });

@@ -49,7 +49,7 @@ root.render(
         <Route path='/houses' element={<AllHous />} />
         <Route path='/applicants' element={<Applicants />} />
         <Route path='/arrivals' element={<UpcomingArrivals />} />
-        <Route path="/ApplicantForm" element={< ApplicantsForm/>} />s
+        <Route path="/ApplicantForm" element={<ApplicantsForm />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
