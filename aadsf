@@ -1,0 +1,65 @@
+[33m35d21c9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhidayet[m[33m)[m HEAD@{0}: reset: moving to HEAD~1
+[33m5ab05b6[m[33m ([m[1;31morigin/hidayet[m[33m)[m HEAD@{1}: checkout: moving from eb521bba3a42d353d0aa901cb623acde4b56361c to hidayet
+[33meb521bb[m[33m ([m[1;33mtag: [m[1;33mUpdtae-Schedule[m[33m)[m HEAD@{2}: checkout: moving from main to Updtae-Schedule
+[33m1dbbf50[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from hidayet to main
+[33m5ab05b6[m[33m ([m[1;31morigin/hidayet[m[33m)[m HEAD@{4}: reset: moving to 5ab05b69f9e42d3808853d04bcd2797197866371
+[33m5ab05b6[m[33m ([m[1;31morigin/hidayet[m[33m)[m HEAD@{5}: reset: moving to 5ab05b69f9e42d3808853d04bcd2797197866371
+[33m5ab05b6[m[33m ([m[1;31morigin/hidayet[m[33m)[m HEAD@{6}: checkout: moving from 0512dbd1e1d2c0e86e9a1036ab7ed6634407d737 to hidayet
+[33m0512dbd[m HEAD@{7}: commit: dashboard
+[33m1dbbf50[m[33m ([m[1;32mmain[m[33m)[m HEAD@{8}: pull origin main (start): checkout 1dbbf509716ee51ef8bbfcbec7386acb006a669a
+[33m5ab05b6[m[33m ([m[1;31morigin/hidayet[m[33m)[m HEAD@{9}: commit (merge): finished loginPages
+[33m35d21c9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhidayet[m[33m)[m HEAD@{10}: commit: merge
+[33m7155968[m[33m ([m[1;31morigin/sude[m[33m)[m HEAD@{11}: checkout: moving from main to hidayet
+[33m3b1574c[m HEAD@{12}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33m152c984[m HEAD@{13}: rebase (finish): returning to refs/heads/main
+[33m152c984[m HEAD@{14}: rebase (pick): ResetPassword
+[33m9e35d8b[m HEAD@{15}: rebase (continue): changeindex
+[33m80a9bfa[m HEAD@{16}: pull --ff --recurse-submodules --progress origin (pick): createDeniz
+[33mc8aaf6d[m HEAD@{17}: pull --ff --recurse-submodules --progress origin (start): checkout c8aaf6da903c6be5a7dddfe9e2e0b23fa3fe1520
+[33md328dcf[m HEAD@{18}: rebase (abort): returning to refs/heads/main
+[33m45524aa[m HEAD@{19}: pull --ff --recurse-submodules --progress origin (pick): createDeniz
+[33mc8aaf6d[m HEAD@{20}: pull --ff --recurse-submodules --progress origin (start): checkout c8aaf6da903c6be5a7dddfe9e2e0b23fa3fe1520
+[33md328dcf[m HEAD@{21}: commit: ResetPassword
+[33m46bd2eb[m HEAD@{22}: reset: moving to 46bd2ebd004d9ddef35660532308c6a92e8a72dc
+[33mff27420[m HEAD@{23}: commit: ResetPassword
+[33m46bd2eb[m HEAD@{24}: reset: moving to 46bd2ebd004d9ddef35660532308c6a92e8a72dc
+[33mfc23ed1[m HEAD@{25}: commit: ResetPassword
+[33m46bd2eb[m HEAD@{26}: commit: changeindex
+[33m780dae4[m HEAD@{27}: pull --ff --recurse-submodules --progress origin (finish): returning to refs/heads/main
+[33m780dae4[m HEAD@{28}: pull --ff --recurse-submodules --progress origin (pick): createDeniz
+[33mdcf974d[m HEAD@{29}: pull --ff --recurse-submodules --progress origin (start): checkout dcf974d14e666f88604461eebaf100b6a041f60b
+[33m1c6db72[m HEAD@{30}: commit: createDeniz
+[33m62b3683[m HEAD@{31}: reset: moving to 62b3683
+[33mcf5c35e[m HEAD@{32}: commit: changes
+[33m62b3683[m HEAD@{33}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33mdc8350c[m HEAD@{34}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33m280b2c5[m HEAD@{35}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33mc3dd1a3[m HEAD@{36}: reset: moving to c3dd1a3bc85deaf69bbaafd5d2a6e938c40c5a12
+[33m280b2c5[m HEAD@{37}: pull --ff --recurse-submodules --progress origin (finish): returning to refs/heads/main
+[33m280b2c5[m HEAD@{38}: pull --ff --recurse-submodules --progress origin (start): checkout 280b2c5873007aef3d125bf825e914860d99c85f
+[33ma534a14[m HEAD@{39}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33m242eba6[m HEAD@{40}: reset: moving to HEAD~1
+[33m7340658[m HEAD@{41}: reset: moving to HEAD~1
+[33m5a22c3c[m HEAD@{42}: reset: moving to HEAD~1
+[33md58d90d[m HEAD@{43}: reset: moving to HEAD~1
+[33mccc7233[m HEAD@{44}: commit (amend): ResetFile
+[33m47a60a8[m HEAD@{45}: rebase (finish): returning to refs/heads/main
+[33m47a60a8[m HEAD@{46}: rebase (continue): ResetFile
+[33md58d90d[m HEAD@{47}: pull --ff --recurse-submodules --progress origin (start): checkout d58d90d74ab233073798e8ee4de1235c50025167
+[33m34acf74[m HEAD@{48}: commit: ResetFile
+[33mc3dd1a3[m HEAD@{49}: pull --ff --recurse-submodules --progress origin (finish): returning to refs/heads/main
+[33mc3dd1a3[m HEAD@{50}: pull --ff --recurse-submodules --progress origin (pick): ForgotPasswordPage
+[33m4499549[m HEAD@{51}: pull --ff --recurse-submodules --progress origin (pick): little change
+[33mcfdd8c1[m HEAD@{52}: pull --ff --recurse-submodules --progress origin (pick): User-Start-Page
+[33m7340658[m HEAD@{53}: pull --ff --recurse-submodules --progress origin (start): checkout 7340658e88ed2364dd36aec51770befa98ce90ef
+[33m6f5c1e6[m HEAD@{54}: commit: ForgotPasswordPage
+[33me44cc49[m HEAD@{55}: pull --ff --recurse-submodules --progress origin (finish): returning to refs/heads/main
+[33me44cc49[m HEAD@{56}: pull --ff --recurse-submodules --progress origin (pick): little change
+[33mec7b6c6[m HEAD@{57}: pull --ff --recurse-submodules --progress origin (pick): User-Start-Page
+[33md8be206[m HEAD@{58}: pull --ff --recurse-submodules --progress origin (start): checkout d8be2061985f774a4851576a5698725856821507
+[33m1d38cb6[m HEAD@{59}: commit: little change
+[33mebdf68e[m HEAD@{60}: commit: User-Start-Page
+[33m25baa50[m HEAD@{61}: commit: sıde folder
+[33m19185a0[m HEAD@{62}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33mc37c01e[m HEAD@{63}: pull --ff --recurse-submodules --progress origin: Fast-forward
+[33m30f6132[m HEAD@{64}: clone: from https://github.com/dpsd18108/ERP.git

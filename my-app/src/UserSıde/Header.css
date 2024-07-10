@@ -1,0 +1,54 @@
+.Header{
+    background-color: #483894;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem 1.5rem 5rem;
+    height: 10vh;
+    min-height: 60px;
+    min-width: 600px;
+    width: 100%;
+}
+.dropdown {
+    width: 17.5px;
+}
+.left-Header {
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+}
+.right-Header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Header-logos {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: 15px;
+}
+.grey {
+    color: #F2F2F2;
+}
+.redLogo {
+    border: 1px solid #F54048;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    width: 10.25rem;
+    border-radius: 10px;
+    padding: 2px;
+}
+.redLogo > img {
+    width: 14px;
+}
+.red-icon {
+    width: 15px;
+}
+.red-iconP {
+    color: #F54048;
+}
+.bell {
+    width: 20px;
+}
