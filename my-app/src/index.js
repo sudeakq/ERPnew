@@ -22,8 +22,6 @@ import Workers from './Workers';
 import NewsData from './NewsData';
 import ApplicantsForm from './ApllicantForm';
 
-
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
