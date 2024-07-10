@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Arrival;
+use App\Models\Coordinator;
 use App\Models\Status;
 use App\Models\Student;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -38,7 +39,7 @@ class StudentFactory extends Factory
             'departments_id' => $this->faker->randomDigitNotNull,
             'email' => $this->faker->unique()->safeEmail,
             'date_of_birth' => $this->faker->date(),
-            'coordinators_id' => $this->faker->randomDigitNotNull,
+            'coordinators_id' => Coordinator::factory(),
             'rooms_id' => $this->faker->randomDigitNotNull,
             'health_issues' => $this->faker->sentence,
             'created_at' => now(),

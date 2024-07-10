@@ -14,6 +14,20 @@ return new class extends Migration
     public function up(): void
     {
 
+       /*  Schema::create("departments", function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        }); */
+
+        Schema::create('coordinators', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->string('phone_number');
+            $table->timestamps();
+        });
+
         Schema::create('arrivals', function (Blueprint $table) {
             $table->id();
             $table->timestamp('time');
@@ -59,6 +73,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('students');
+        Schema::dropIfExists('coordinators');
         Schema::dropIfExists('arrivals');
         Schema::dropIfExists('status');
     }
