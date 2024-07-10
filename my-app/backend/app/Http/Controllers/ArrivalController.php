@@ -30,9 +30,9 @@ class ArrivalController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Arrival $arrival)
     {
-        return $this->arrival->findOrFail($id);
+        return $arrival;
     }
 
     /**

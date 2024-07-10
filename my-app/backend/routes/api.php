@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ArrivalController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
@@ -36,4 +37,10 @@ Route::controller(StudentController::class)->group(function (){
     Route::get('/students','index');
     Route::post('/students','store');
     Route::get('/students/{id}','show');
+});
+
+Route::controller(ArrivalController::class)->groupd(function (){
+    Route::get('/arrivals','index');
+    Route::post('/arrivals','store');
+    Route::get('/arrivals/{id}','show');
 });
