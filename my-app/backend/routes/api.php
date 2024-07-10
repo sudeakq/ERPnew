@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CoordinatorController;
+use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TheUsersController;
@@ -56,7 +57,12 @@ Route::controller(StatusController::class)->group(function (){
 Route::controller(CoordinatorController::class)->group(function (){
     Route::get('/coordinators','index');
     Route::post('/coordinators','store');
-    Route::get('/coordinators/{coordinator}','index');
+    Route::get('/coordinators/{coordinator}','show');
 });
 
+Route::controller(DepartmentController::class)->group(function (){
+    Route::get('/departments','index');
+    Route::post('/departments','store');
+    Route::get('/departments/{deparment}','show');
+});
 
