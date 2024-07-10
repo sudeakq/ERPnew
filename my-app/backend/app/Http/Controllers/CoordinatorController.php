@@ -28,7 +28,7 @@ class CoordinatorController extends Controller
     public function store(Request $request)
     {
         return $this->coordinator->create($request->all());
-    }
+}
 
     /**
      * Display the specified resource.
