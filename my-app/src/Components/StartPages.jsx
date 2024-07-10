@@ -19,7 +19,6 @@ const StartPages = () => {
       const response = await axios.post('http://localhost:8000/api/admins/login', { email, password });
       console.log('Response:', response);
       if (response.data.success) {
-        alert('Login successful');
         navigate("/dashboard");
       } else {
         setError('Invalid email or password');

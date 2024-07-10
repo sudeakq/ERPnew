@@ -60,6 +60,7 @@ function ApplicantsForms(){
     "phone" : "",
     "email" : "",
     "dateOfBirth" : "",
+    "healthIssues" : "",
     "internshipInfo" : {
       "applicationDate" : "",
       "department" : "",
@@ -157,7 +158,11 @@ function ApplicantsForms(){
       <div className="field">
         <label>Status</label>
         <select onChange={(e)=>handleChangeSelected(e,setSelectedStatus)}>
-          <option>Status</option>
+          {status.map(status=>{
+            return (
+              <option>{status}</option>
+            )
+          })}
         </select>
       </div>
       <div className="field">
@@ -197,6 +202,19 @@ function ApplicantsForms(){
             [e.target.name] : e.target.value
           }))}   
           placeholder="DD/MM/YYYY" 
+        />
+      </div>
+      <div className="field">
+        <label>Health Issues</label>
+        <input
+          name="healthIssues" 
+          type="string" 
+          value={formData.healthIssues} 
+          onChange={(e)=>setFormData(v=>({
+            ...v,
+            [e.target.name] : e.target.value
+          }))}   
+          placeholder="Health Issues" 
         />
       </div>
     </div>
