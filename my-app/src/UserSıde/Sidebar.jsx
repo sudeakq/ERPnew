@@ -21,7 +21,9 @@ function Sidebar() {
         >
           <Rectangle id={1} selectedId={selectedId} />
           <img src={dashboard_logo} alt="" className="icons" />
-          <p className={selectedId === 1 && "selected"}>Dashboard</p>
+          <p className={selectedId === 1 ? " selectedTitle" : "unSelected"}>
+            Dashboard
+          </p>
         </div>
       </div>
       <div className="date Sidebar-list">
@@ -33,7 +35,9 @@ function Sidebar() {
         >
           <Rectangle id={2} selectedId={selectedId} />
           <img src={Calendar} alt="" className="icons" />
-          <p className={selectedId === 2 && "selected"}>Schedule</p>
+          <p className={selectedId === 2 ? " selectedTitle" : "unSelected"}>
+            Schedule
+          </p>
         </div>
         <div
           className="Departments sidebar-menu"
@@ -43,7 +47,9 @@ function Sidebar() {
         >
           <Rectangle id={3} selectedId={selectedId} />
           <img src={Calendar} alt="" className="icons" />
-          <p className={selectedId === 3 && "selected"}>Departments</p>
+          <p className={selectedId === 3 ? " selectedTitle" : "unSelected"}>
+            Departments
+          </p>
         </div>
       </div>
       <div className="side-3 Sidebar-list">
@@ -55,7 +61,9 @@ function Sidebar() {
         >
           <Rectangle id={4} selectedId={selectedId} />
           <img src={list} alt="" className="icons" />
-          <p className={selectedId === 4 && "selected"}>New Applicants</p>
+          <p className={selectedId === 4 ? " selectedTitle" : "unSelected"}>
+            New Applicants
+          </p>
         </div>
         <div
           className="Interns sidebar-menu"
@@ -65,7 +73,9 @@ function Sidebar() {
         >
           <Rectangle id={5} selectedId={selectedId} />
           <img src={list} alt="" className="icons" />
-          <p className={selectedId === 5 && "selected"}>Interns</p>
+          <p className={selectedId === 5 ? " selectedTitle" : "unSelected"}>
+            Interns
+          </p>
         </div>
         <div
           className="Alumni sidebar-menu"
@@ -75,7 +85,9 @@ function Sidebar() {
         >
           <Rectangle id={6} selectedId={selectedId} />
           <img src={list} alt="" className="icons" />
-          <p className={selectedId === 6 && "selected"}>Alumni</p>
+          <p className={selectedId === 6 ? " selectedTitle" : "unSelected"}>
+            Alumni
+          </p>
         </div>
       </div>
       <div className="side-4 Sidebar-list">
@@ -87,7 +99,9 @@ function Sidebar() {
         >
           <Rectangle id={7} selectedId={selectedId} />
           <img src={Home} alt="" className="icons" />
-          <p className={selectedId === 7 && "selected"}>Houses</p>
+          <p className={selectedId === 7 ? " selectedTitle" : "unSelected"}>
+            Houses
+          </p>
         </div>
         <div
           className="Bills sidebar-menu"
@@ -97,7 +111,9 @@ function Sidebar() {
         >
           <Rectangle id={8} selectedId={selectedId} />
           <img src={list} alt="" className="icons" />
-          <p className={selectedId === 8 && "selected"}>Bills</p>
+          <p className={selectedId === 8 ? " selectedTitle" : "unSelected"}>
+            Bills
+          </p>
         </div>
       </div>
     </div>

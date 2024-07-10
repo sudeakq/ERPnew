@@ -4,7 +4,8 @@ import Sidebar from "./Sidebar";
 /* import Content from "./Content";
 import NewsPage from "./NewsPage";
 import ReadMore from "./ReadMore"; */
-import Birthday from "./Birthday";
+/* import Birthday from "./Birthday"; */
+import WeeklySchedule from "./WeeklySchedule";
 import "./UserDashboard.css";
 
 function UserDashboard() {
@@ -13,7 +14,7 @@ function UserDashboard() {
       <Header />
       <div className="Main">
         <Sidebar />
-        <Birthday />
+        <WeeklySchedule />
       </div>
     </>
   );
