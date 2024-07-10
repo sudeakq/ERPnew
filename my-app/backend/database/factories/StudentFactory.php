@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Arrival;
+use App\Models\Status;
 use App\Models\Student;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -24,8 +25,8 @@ class StudentFactory extends Factory
             'application_date' => $this->faker->date(),
             'start_date' => $this->faker->date(),
             'end_date' => $this->faker->date(),
-            'arrival_id' => Arrival::factory(), // Foreign key için Arrival model factory'si
-            'status_id' => $this->faker->randomDigitNotNull,
+            'arrival_id' => Arrival::factory(),
+            'status_id' =>  Status::factory(),
             'positions_id' => $this->faker->randomDigitNotNull,
             'name' => $this->faker->firstName,
             'surname' => $this->faker->lastName,

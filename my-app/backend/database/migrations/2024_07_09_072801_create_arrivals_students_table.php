@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Arrival;
+use App\Models\Status;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -21,13 +22,19 @@ return new class extends Migration
             $table->timestamps();
         });
 
+        Schema::create('status', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->timestamps();
+        });
+
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->date('application_date');
             $table->date('start_date');
             $table->date('end_date');
             $table->foreignIdFor(Arrival::class)->constrained()->onDelete('cascade');
-            $table->integer('status_id');
+            $table->foreignIdFor(Status::class)->constrained('status')->onDelete('cascade');
             $table->integer('positions_id');
             $table->string('name');
             $table->string('surname');
@@ -53,5 +60,6 @@ return new class extends Migration
     {
         Schema::dropIfExists('students');
         Schema::dropIfExists('arrivals');
+        Schema::dropIfExists('status');
     }
 };
