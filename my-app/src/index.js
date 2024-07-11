@@ -29,7 +29,7 @@ import reportWebVitals from './reportWebVitals';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills'; //
-import ForgotPassword from './UserSıde/UserDashboard'
+import ForgotPassword from './UserSide/UserDashboard'
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
