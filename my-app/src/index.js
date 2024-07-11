@@ -2,26 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-
-import StartPage from './StartPage';
-import WhatsNewClick from './WhatsNewClick';
-import DailyReminders from './DailyReminders';
-import Events from './Events';
-import Intern from './Intern';
-import Dashboard from './Dashboard';
-import UpcomingBirthdays from './UpcomingBirthdays';
-import UpcomingArrivals from './UpcomingArrivals';
-import ForgotPassword from './UserSıde/ForgotPassword'
-import ScheduleView from './Schedule-2';
-import Alumni from './Alumni';
-import Bills from './Bills';
-import AllHous from './AllHouse';
-import Applicants from './Applicants';
-import Departments from './Departments';
-import Workers from './Workers';
-import NewsData from './NewsData';
-import ApplicantsForm from './ApllicantForm';
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import StartPage from './StartPage';
@@ -32,7 +12,7 @@ import Intern from './Intern';
 import Dashboard from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
 import UpcomingArrivals from './UpcomingArrivals';
-import ForgotPassword from './UserSıde/ForgotPassword'
+import ForgotPassword from './UserSide/ForgotPassword';
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
 import Bills from './Bills';
@@ -70,11 +50,11 @@ import ApplicantsForm from './ApllicantForm';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills'; //
-
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
 // import StartPage from './StartPage';
+// ,khkdbhhdbfhbahbrvhabrhbvb
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
