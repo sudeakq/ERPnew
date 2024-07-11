@@ -13,20 +13,23 @@ import gas from "../images/Gas.png";
 import electricityBar from "../images/electrictyBar.png";
 import waterBar from "../images/WaterBar.png";
 import gasBar from "../images/GasBar.png";
+import "./Bills.css";
 function Bills() {
   return (
     <>
-      <div className="Bills">
+      <div className="BillsUserPage">
         <div className="leftBills">
           <div className="PaymentProfile">
             <div className="titleProfile">
               <h1>What you have to pay</h1>
-              <img src={profileImg} alt="" />
-              <img src={profileImg2} alt="" />
-              <img src={profileImg3} alt="" />
-              <img src={addProfile} alt="" />
+              <div className="titleImages">
+                <img src={profileImg} alt="" />
+                <img src={profileImg2} alt="" />
+                <img src={profileImg3} alt="" />
+                <img src={addProfile} alt="" />
+              </div>
             </div>
-            <p>01 - 25 March,2020</p>
+            <p className="grayColor">01 - 25 March, 2020</p>
             <img src={Stats} alt="" />
           </div>
           <div className="SumHouse">
@@ -37,44 +40,50 @@ function Bills() {
             <hr />
             <div className="BillsPrices">
               <div className="SumBill">
-                <img src={electricity} alt="" />
-                <div className="typeOfBill">
-                  <p>Electricity</p>
-                  <div className="infosBill">
-                    <p>5:12 pm</p>
-                    <img src={dot} alt="" />
-                    <p>Belanja di pasar</p>
+                <div className="leftBill">
+                  <img src={electricity} alt="" />
+                  <div className="typeOfBill">
+                    <p className="bolder">Electricity</p>
+                    <div className="infosBill">
+                      <p>5:12 pm</p>
+                      <img src={dot} alt="" />
+                      <p>Belanja di pasar</p>
+                    </div>
                   </div>
                 </div>
-                <div className="priceBill">
+                <div className="priceBill bolder">
                   <p>-326.800</p>
                 </div>
               </div>
               <div className="SumBill">
-                <img src={water} alt="" />
-                <div className="typeOfBill">
-                  <p>Water</p>
-                  <div className="infosBill">
-                    <p>5:12 pm</p>
-                    <img src={dot} alt="" />
-                    <p>Naik bus umum</p>
+                <div className="leftBill">
+                  <img src={water} alt="" />
+                  <div className="typeOfBill">
+                    <p className="bolder">Water</p>
+                    <div className="infosBill">
+                      <p>5:12 pm</p>
+                      <img src={dot} alt="" />
+                      <p>Naik bus umum</p>
+                    </div>
                   </div>
                 </div>
-                <div className="priceBill">
+                <div className="priceBill bolder">
                   <p>-15.000</p>
                 </div>
               </div>
               <div className="SumBill">
-                <img src={gas} alt="" />
-                <div className="typeOfBill">
-                  <p>Gas</p>
-                  <div className="infosBill">
-                    <p>5:12 pm</p>
-                    <img src={dot} alt="" />
-                    <p>Bayar Listrik</p>
+                <div className="leftBill">
+                  <img src={gas} alt="" />
+                  <div className="typeOfBill">
+                    <p className="bolder">Gas</p>
+                    <div className="infosBill">
+                      <p>5:12 pm</p>
+                      <img src={dot} alt="" />
+                      <p>Bayar Listrik</p>
+                    </div>
                   </div>
                 </div>
-                <div className="priceBill">
+                <div className="priceBill bolder">
                   <p>-185.750</p>
                 </div>
               </div>
@@ -113,13 +122,14 @@ function Bills() {
                   <img src={boxImage} alt="" />
                   <img src={flower} alt="" />
                 </div>
-                <h3>Your request process(1)_View all</h3>
-                <p>Make a request about an issue that you have at your house</p>
+                <b>Your request process(1)_View all</b>
+                <p className="descPrice">
+                  Make a request about an issue that you have at your house
+                </p>
               </div>
-              <div className="btn">
-                <button>Make a request</button>
-              </div>
+              <button>Make a request</button>
             </div>
+            <div className="greyBackG"></div>
           </div>
         </div>
       </div>
