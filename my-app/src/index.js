@@ -43,7 +43,6 @@ import Workers from './Workers';
 import NewsData from './NewsData';
 import ApplicantsForm from './ApllicantForm';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /* import UpcomingBirthdays from './UpcomingBirthdays'; */
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
@@ -71,7 +70,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 /* import Alumni from './Alumni'; */
 //  import House from './Houses';
 // import Bills from './Bills'; //
-import ForgotPassword from './UserSıde/UserDashboard'
+
 // import Depar from './Depar';  // Fixed the path
 // import AllHous from './AllHouse';
 // import Applicants from './Applicants';
