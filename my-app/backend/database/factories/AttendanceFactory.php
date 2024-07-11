@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Attendance;
+use App\Models\AttendanceType;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -23,7 +24,7 @@ class AttendanceFactory extends Factory
     {
         return [
             "user_id"=> User::factory(),
-            'attendancetypes_id' => $this->faker->randomNumber,
+            'attendancetypes_id' => AttendanceType::factory(),
             'date' => $this->faker->dateTime()
         ];
     }

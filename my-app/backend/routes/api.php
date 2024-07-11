@@ -12,6 +12,7 @@ use App\Http\Controllers\CoordinatorController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TheUsersController;
@@ -91,4 +92,16 @@ Route::controller(AttendanceController::class)->group(function (){
     Route::get('/attendances','index');
     Route::post('/attendances','store');
     Route::get('/attendances/{attendance}','show');
+});
+
+Route::controller(AttendanceController::class)->group(function (){
+    Route::get('/attendances/types','index');
+    Route::post('/attendances/types','store');
+    Route::get('/attendances/types/{attendanceType}','show');
+});
+
+Route::controller(ScheduleController::class)->group(function (){
+    Route::get('/schedules','index');
+    Route::post('/schedules','store');
+    Route::get('/schedules/{schedule}','show');
 });
