@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Arrival;
+use App\Models\Position;
 use App\Models\Status;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -13,35 +14,6 @@ return new class extends Migration
      */
     public function up(): void
     {
-
-       /*  Schema::create("departments", function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
-        }); */
-
-        Schema::create('coordinators', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('phone_number');
-            $table->timestamps();
-        });
-
-        Schema::create('arrivals', function (Blueprint $table) {
-            $table->id();
-            $table->timestamp('time');
-            $table->string('pickup_location');
-            $table->string('pickup_by');
-            $table->timestamps();
-        });
-
-        Schema::create('status', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
-        });
-
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->date('application_date');
@@ -49,7 +21,7 @@ return new class extends Migration
             $table->date('end_date');
             $table->foreignIdFor(Arrival::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Status::class)->constrained('status')->onDelete('cascade');
-            $table->integer('positions_id');
+            $table->foreignIdFor(Position::class)->constrained('positions')->onDelete('cascade');
             $table->string('name');
             $table->string('surname');
             $table->string('phone_number');
@@ -73,8 +45,5 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('students');
-        Schema::dropIfExists('coordinators');
-        Schema::dropIfExists('arrivals');
-        Schema::dropIfExists('status');
     }
 };

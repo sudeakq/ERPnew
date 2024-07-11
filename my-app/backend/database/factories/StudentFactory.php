@@ -4,6 +4,8 @@ namespace Database\Factories;
 
 use App\Models\Arrival;
 use App\Models\Coordinator;
+use App\Models\Department;
+use App\Models\Position;
 use App\Models\Status;
 use App\Models\Student;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -28,7 +30,7 @@ class StudentFactory extends Factory
             'end_date' => $this->faker->date(),
             'arrival_id' => Arrival::factory(),
             'status_id' =>  Status::factory(),
-            'positions_id' => $this->faker->randomDigitNotNull,
+            'position_id' => Position::factory(),
             'name' => $this->faker->firstName,
             'surname' => $this->faker->lastName,
             'phone_number' => $this->faker->phoneNumber,
@@ -36,7 +38,7 @@ class StudentFactory extends Factory
             'country' => $this->faker->country,
             'institution' => $this->faker->company,
             'nationality' => $this->faker->country,
-            'departments_id' => $this->faker->randomDigitNotNull,
+            'departments_id' => Department::factory(),
             'email' => $this->faker->unique()->safeEmail,
             'date_of_birth' => $this->faker->date(),
             'coordinators_id' => Coordinator::factory(),
