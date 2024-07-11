@@ -101,7 +101,7 @@ function ApplicantsForms(){
         "application_date": formData.internshipInfo.applicationDate,
         "start_date": formData.internshipInfo.startDate,
         "end_date": formData.internshipInfo.endDate,
-        "arrivals_id": 1,
+        "arrival_id": 1,
         "status_id": 1,
         "positions_id": 1,
         "name": formData.name,
