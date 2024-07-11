@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Student;
 use App\Models\User;
+use App\Models\UserType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -26,7 +27,7 @@ class UserFactory extends Factory
             "phone_number"=> $this->faker->phoneNumber(),
             "email"=> $this->faker->safeEmail,
             "password"=> $this->faker->password,
-            "usertypes_id"=> $this->faker->randomNumber(),
+            "usertypes_id"=> UserType::factory(),
             "student_id"=> Student::factory(),
             "created_at"=> now(),
             "updated_at"=> now(),

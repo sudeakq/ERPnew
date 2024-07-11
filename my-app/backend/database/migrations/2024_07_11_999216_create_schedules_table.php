@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Shift;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,7 +16,7 @@ return new class extends Migration
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(User::class)->constrained()->cascadeOnDelete();
-            $table->integer('shifts_id');
+            $table->foreignIdFor(Shift::class)->constrained()->cascadeOnDelete();   
             $table->timestamps();
         });
     }
