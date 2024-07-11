@@ -22,8 +22,8 @@ class DepartmentFactory extends Factory
     public function definition(): array
     {
         return [
-            /* "name"=> $this->faker->name,
-            'user_id'  */ // DO HERE
+            "name" => $this->faker->name,
+            'user_id' => $this->faker->randomNumber
         ];
     }
 }
