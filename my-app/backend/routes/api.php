@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArrivalController;
+use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
@@ -84,4 +85,10 @@ Route::controller(RoomController::class)->group(function (){
     Route::get('/rooms','index');
     Route::post('/rooms','store');
     Route::get('/rooms/{room}','show');
+});
+
+Route::controller(AttendanceController::class)->group(function (){
+    Route::get('/attendances','index');
+    Route::post('/attendances','store');
+    Route::get('/attendances/{attendance}','show');
 });
