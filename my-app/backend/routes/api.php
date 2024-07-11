@@ -32,6 +32,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('/employee', EmployeeController::class);
 
+Route::controller(UserController::class)->group(function () {
+    Route::get('/users','index');
+    Route::post('/users','store');
+    Route::get('/users/{user}','show');
+});
+
 Route::controller(AdminController::class)->group(function () {
     Route::get('/admins', 'index');
     Route::post('/admins', 'store');

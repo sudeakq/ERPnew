@@ -11,8 +11,6 @@ class Room extends Model
 
     protected $table = "rooms";
 
-    protected $primaryKey = 'id';
-
     protected $guarded = [];
     
     public function students(){

@@ -10,8 +10,6 @@ class Department extends Model
     use HasFactory;
     protected $table = "departments";
 
-    protected $primaryKey = "id";
-
     protected $guarded = [];
 
     public function students(){

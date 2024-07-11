@@ -11,8 +11,6 @@ class Arrival extends Model
 
     protected $table = 'arrivals';
 
-    protected $primaryKey = 'id';
-
     protected $fillable = [
         'time',
         'pickup_location',

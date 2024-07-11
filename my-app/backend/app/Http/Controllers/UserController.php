@@ -2,31 +2,54 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Models\Request;
 use App\Models\User;
-
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index(){
-        $users = User::all();
+    protected $user;
 
-        return response()->json([
-            'results' =>$users
-        ],200);
+    public function __construct(){
+        $this->user = new User();
     }
 
-    public function show($id){
-        $users = User::find($id);
-        if(!$users){
-            return response()->json([
-                'message'=>'User Not Found'
-            ],404);
-        }
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        return $this->user->paginate(10);
+    }
 
-        return response()->json([
-            'users' =>$users
-        ],200);
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        return $this->user->create($request->all());
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(User $user)
+    {
+        return $user;
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        return $this->user->findOrFail($id)->update($request->all());
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        return $this->user->findOrFail($id)->delete();
     }
 }
-

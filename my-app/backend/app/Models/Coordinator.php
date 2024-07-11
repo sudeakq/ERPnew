@@ -9,11 +9,7 @@ class Coordinator extends Model
 {
     use HasFactory;
     protected $table = "coordinators";
-    protected $primaryKey = 'id';
-
-    protected $guarded = [
-
-    ];
+    protected $guarded = [];
 
     public function students(){
         return $this->hasMany(Student::class);
