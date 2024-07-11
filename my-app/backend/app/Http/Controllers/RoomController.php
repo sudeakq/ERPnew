@@ -19,7 +19,7 @@ class RoomController extends Controller
      */
     public function index()
     {
-        return $this->room->all(10);
+        return $this->room->all();
     }
 
     /**

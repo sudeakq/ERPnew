@@ -10,6 +10,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CoordinatorController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\PositionController;
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TheUsersController;
@@ -73,3 +74,8 @@ Route::controller(PositionController::class)->group(function (){
     Route::get('/positions/{position}','show');
 });
 
+Route::controller(RoomController::class)->group(function (){
+    Route::get('/rooms','index');
+    Route::post('/rooms','store');
+    Route::get('/rooms/{room}','show');
+});

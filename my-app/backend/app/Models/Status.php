@@ -13,4 +13,8 @@ class Status extends Model
     protected $table = "status";
     protected $guarded = [];
 
+    public function students(){
+        return $this->hasMany(Student::class);
+    }
+
 }

@@ -14,5 +14,9 @@ class Room extends Model
     protected $primaryKey = 'id';
 
     protected $guarded = [];
+    
+    public function students(){
+        return $this->hasMany(Student::class);
+    }
 
 }

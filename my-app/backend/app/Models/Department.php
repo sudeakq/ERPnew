@@ -14,4 +14,9 @@ class Department extends Model
 
     protected $guarded = [];
 
+    public function students(){
+        return $this->hasMany(Student::class,"department_id",'id');
+    }
+
+
 }

@@ -20,6 +20,6 @@ class Arrival extends Model
     ];
 
     public function students(){
-        return $this->hasOne(Student::class, 'arrivals_id','id');
+        return $this->hasMany(Student::class);
     }
 }
