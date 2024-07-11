@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date('end_date');
             $table->foreignIdFor(Arrival::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Status::class)->constrained('status')->onDelete('cascade');
-            $table->foreignIdFor(Position::class)->constrained('')->onDelete('cascade');
+            $table->foreignIdFor(Position::class)->constrained('positions')->onDelete('cascade');
             $table->string('name');
             $table->string('surname');
             $table->string('phone_number');
