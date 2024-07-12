@@ -35,4 +35,16 @@ class Student extends Model
         return $this->belongsTo(Room::class);
     }
 
+    public function users(){
+        return $this->hasMany(User::class);
+    }
+
+    public function documents(){
+        return $this->hasMany(Document::class);
+    }
+
+    public function interviews(){
+        return $this->hasMany(Interview::class);
+    }
+
 }
