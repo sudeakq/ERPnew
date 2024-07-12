@@ -12,10 +12,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms', function (Blueprint $table) {
+        Schema::create('consumed_utilities', function (Blueprint $table) {
             $table->id();
-            $table->integer('capacity');
+            $table->integer('water_clock');
+            $table->integer('electricity_clock');
+            $table->integer('gas_clock');
             $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
+            $table->date('date');
             $table->timestamps();
         });
     }
@@ -25,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rooms');
+        Schema::dropIfExists('consumed_utilities');
     }
 };

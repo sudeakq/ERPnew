@@ -29,6 +29,9 @@ class DatabaseSeeder extends Seeder
             ReminderSeeder::class,
             DocumentSeeder::class,
             NewsSeeder::class,
+            ApartmentProblemSeeder::class,
+            BillSeeder::class,
+            UtilityPriceSeeder::class,
         ]);
 
     }
