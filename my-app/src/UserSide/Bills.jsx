@@ -115,20 +115,18 @@ function Bills() {
               <img src={gasBar} alt="" />
             </div>
           </div>
-          <div className="requestPart">
-            <div className="greyBackground">
-              <div className="topPart">
-                <div className="images">
-                  <img src={boxImage} alt="" />
-                  <img src={flower} alt="" />
-                </div>
-                <b>Your request process(1)_View all</b>
-                <p className="descPrice">
-                  Make a request about an issue that you have at your house
-                </p>
-              </div>
-              <button>Make a request</button>
+          <div className="greyBackground">
+            <div className="images">
+              <img src={boxImage} alt="" />
+              <img src={flower} alt="" />
             </div>
+            <div className="topPart">
+              <b>Your request process(1)_View all</b>
+              <p className="descPrice">
+                Make a request about an issue that you have at your house
+              </p>
+            </div>
+            <button>Make a request</button>
             <div className="greyBackG"></div>
           </div>
         </div>
