@@ -11,4 +11,8 @@ class AttendanceType extends Model
 
     protected $guarded = [];
 
+    public function attendances(){
+        return $this->hasMany(Attendance::class);
+    }
+
 }

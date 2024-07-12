@@ -11,5 +11,9 @@ class News extends Model
     
     protected $table = "news";
     protected $guarded = [];
+
+    public function users(){
+        return $this->belongsToMany(User::class);
+    }
     
 }

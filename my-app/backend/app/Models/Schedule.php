@@ -11,4 +11,12 @@ class Schedule extends Model
     
     protected $guarded = [];
 
+    public function users(){
+        return $this->belongsToMany(User::class);
+    }
+
+    public function shifts(){
+        return $this->belongsToMany(Shift::class);
+    }
+
 }

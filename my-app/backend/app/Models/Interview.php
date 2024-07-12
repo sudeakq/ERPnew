@@ -11,4 +11,12 @@ class Interview extends Model
 
     protected $guarded = [];
 
+    public function users(){
+        return $this->belongsToMany(User::class);
+    }
+
+    public function students(){
+        return $this->belongsToMany(Student::class);
+    }
+
 }
