@@ -23,6 +23,7 @@ import Workers from './Workers';
 import NewsData from './NewsData';
 import ApplicantsForm from './ApllicantForm';
 
+ // Use this after the variable declaration
 /* import UpcomingBirthdays from './UpcomingBirthdays'; */
 // import ScheduleView from './Schedule-2';
 // import DailyReminders from './Events';
