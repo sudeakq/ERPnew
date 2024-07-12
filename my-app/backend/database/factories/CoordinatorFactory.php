@@ -23,7 +23,9 @@ class CoordinatorFactory extends Factory
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->email,
-            'phone_number' => $this->faker->phoneNumber()
+            'phone_number' => $this->faker->phoneNumber(),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
     }
 }

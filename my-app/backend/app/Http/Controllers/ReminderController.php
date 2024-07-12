@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Reminder;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class ReminderController extends Controller
 {
-    protected $user;
+
+    protected $reminder;
 
     public function __construct(){
-        $this->user = new User();
+        $this->reminder = new Reminder();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->reminder->all();
     }
 
     /**
@@ -26,30 +27,30 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        return $this->reminder->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Reminder $reminder)
     {
-        return $user;
+        return $reminder;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Reminder $reminder)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        return $reminder->update($request->all());
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Reminder $reminder)
     {
-        return $this->user->findOrFail($id)->delete();
+        $reminder->delete();
     }
 }

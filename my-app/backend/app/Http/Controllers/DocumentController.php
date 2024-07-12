@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Document;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class DocumentController extends Controller
 {
-    protected $user;
+
+    protected $document;
 
     public function __construct(){
-        $this->user = new User();
+        $this->document = new Document();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->document->all();
     }
 
     /**
@@ -26,30 +27,30 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        return $this->document->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Document $document)
     {
-        return $user;
+        return $document;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Document $document)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        return $document->update($request->all());
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Document $document)
     {
-        return $this->user->findOrFail($id)->delete();
+        return $document->delete();
     }
 }

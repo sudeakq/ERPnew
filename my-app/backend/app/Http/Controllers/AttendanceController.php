@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Attendance;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class AttendanceController extends Controller
 {
-    protected $user;
+
+    protected $attendance;
 
     public function __construct(){
-        $this->user = new User();
+        $this->attendance = new Attendance();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->attendance->all();
     }
 
     /**
@@ -26,15 +27,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        $this->attendance->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Attendance $attendance)
     {
-        return $user;
+        return $attendance;
     }
 
     /**
@@ -42,7 +43,7 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+    $this->attendance->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -50,6 +51,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        return $this->user->findOrFail($id)->delete();
+        $this->attendance->destroy($id);
     }
 }

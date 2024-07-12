@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\UserType;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class UserTypeController extends Controller
 {
-    protected $user;
+
+    protected $userType;
 
     public function __construct(){
-        $this->user = new User();
+        $this->userType = new UserType();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->userType->all(10);
     }
 
     /**
@@ -26,15 +27,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        return $this->userType->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(UserType $userType)
     {
-        return $user;
+        return $userType;
     }
 
     /**
@@ -42,7 +43,7 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        return $this->userType->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -50,6 +51,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        return $this->user->findOrFail($id)->delete();
+        return $this->userType->destroy($id);
     }
 }

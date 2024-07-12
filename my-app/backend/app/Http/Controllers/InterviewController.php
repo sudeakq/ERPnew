@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Interview;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class InterviewController extends Controller
 {
-    protected $user;
+
+    protected $interview;
 
     public function __construct(){
-        $this->user = new User();
+        $this->interview = new Interview();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->interview->all();
     }
 
     /**
@@ -26,30 +27,30 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        return $this->interview->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Interview $interview)
     {
-        return $user;
+        return $interview;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Interview $interview)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        return $interview->update($request->all());
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Interview $interview)
     {
-        return $this->user->findOrFail($id)->delete();
+        return $interview->delete();
     }
 }
