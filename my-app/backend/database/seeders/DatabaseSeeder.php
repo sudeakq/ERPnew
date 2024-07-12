@@ -21,7 +21,13 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             StudentSeeder::class,
-            AdminSeeder::class
+            AdminSeeder::class,
+            /* UserSeeder::class, */
+            AttendanceSeeder::class,
+            ScheduleSeeder::class,
+            InterviewSeeder::class,
+            ReminderSeeder::class,
+            DocumentSeeder::class
         ]);
 
     }

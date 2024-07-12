@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Room;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class RoomController extends Controller
 {
-    protected $user;
+
+    protected $room;
 
     public function __construct(){
-        $this->user = new User();
+        $this->room = new Room();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->room->all();
     }
 
     /**
@@ -26,15 +27,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        return $this->room->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Room $room)
     {
-        return $user;
+        return $room;
     }
 
     /**
@@ -42,7 +43,7 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        return $this->room->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -50,6 +51,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        return $this->user->findOrFail($id)->delete();
+        return $this->room->destroy($id);
     }
 }

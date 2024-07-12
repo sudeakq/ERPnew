@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Shift;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class ShiftController extends Controller
 {
-    protected $user;
+
+    protected $shift;
 
     public function __construct(){
-        $this->user = new User();
+        $this->shift = new Shift();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->shift->all();
     }
 
     /**
@@ -26,15 +27,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        $this->shift->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Shift $shift)
     {
-        return $user;
+        return $shift;
     }
 
     /**
@@ -42,7 +43,7 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        $this->shift->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -50,6 +51,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        return $this->user->findOrFail($id)->delete();
+        $this->shift->findOrFail($id)->delete();
     }
 }

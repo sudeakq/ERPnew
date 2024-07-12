@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\AttendanceType;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class AttendanceTypeController extends Controller
 {
-    protected $user;
+
+    protected $attendanceType;
 
     public function __construct(){
-        $this->user = new User();
+        $this->attendanceType = new AttendanceType();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->attendanceType->all();
     }
 
     /**
@@ -26,23 +27,23 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        $this->attendanceType->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(AttendanceType $attendanceType)
     {
-        return $user;
+        return $attendanceType;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request,string $id)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        return $this->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -50,6 +51,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        return $this->user->findOrFail($id)->delete();
+        $this->attendanceType->destroy($id);
     }
 }
