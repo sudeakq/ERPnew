@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
             NewsSeeder::class,
             ApartmentProblemSeeder::class,
             BillSeeder::class,
+            UtilityPriceSeeder::class,
         ]);
 
     }
