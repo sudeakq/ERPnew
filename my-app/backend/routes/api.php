@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArrivalController;
+use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
@@ -10,6 +11,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CoordinatorController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\PositionController;
+use App\Http\Controllers\RoomController;
+use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TheUsersController;
@@ -30,6 +33,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('/employee', EmployeeController::class);
+
+Route::controller(UserController::class)->group(function () {
+    Route::get('/users','index');
+    Route::post('/users','store');
+    Route::get('/users/{user}','show');
+});
 
 Route::controller(AdminController::class)->group(function () {
     Route::get('/admins', 'index');
@@ -73,3 +82,26 @@ Route::controller(PositionController::class)->group(function (){
     Route::get('/positions/{position}','show');
 });
 
+Route::controller(RoomController::class)->group(function (){
+    Route::get('/rooms','index');
+    Route::post('/rooms','store');
+    Route::get('/rooms/{room}','show');
+});
+
+Route::controller(AttendanceController::class)->group(function (){
+    Route::get('/attendances','index');
+    Route::post('/attendances','store');
+    Route::get('/attendances/{attendance}','show');
+});
+
+Route::controller(AttendanceController::class)->group(function (){
+    Route::get('/attendances/types','index');
+    Route::post('/attendances/types','store');
+    Route::get('/attendances/types/{attendanceType}','show');
+});
+
+Route::controller(ScheduleController::class)->group(function (){
+    Route::get('/schedules','index');
+    Route::post('/schedules','store');
+    Route::get('/schedules/{schedule}','show');
+});

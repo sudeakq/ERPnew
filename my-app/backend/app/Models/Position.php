@@ -10,7 +10,14 @@ class Position extends Model
     use HasFactory;
 
     protected $table = "positions";
-    protected $primaryKey = 'id';
     protected $guarded = [];
+
+    public function students(){
+        return $this->hasMany(Student::class);
+    }
+
+    public function departments(){
+        return $this->belongsToMany(Department::class);
+    }
 
 }
