@@ -1,0 +1,61 @@
+.MeetPeople {
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.Peoples {
+    margin-top: .5rem;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.People {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17vw;
+    padding-top: 2rem;
+    background-color: #483894;
+    border-radius: 16px;
+}
+.PeopleImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+}
+.PeopleImg > img {
+    width: 225px;
+}
+.PeopleDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .35rem;
+    color: white;
+}
+.peopleJob {
+    font-weight: 100;
+    font-size: 13px;
+}
+.peopleName {
+    margin-top: 2rem;
+}
+.btnIcon {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+}
+.btnIcon > img {
+    width: 40px;
+}
+h1 {
+    font-size: 24px;
+}
