@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\ConsumedUtility;
 use App\Models\Student;
+use App\Models\UtilityPrice;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -23,8 +25,8 @@ return new class extends Migration
             $table->float('electricity_price');
             $table->foreignIdFor(Student::class)->constrained()->onDelete('cascade');
             $table->boolean('is_paid');
-            $table->integer('utilityprices_id');
-            $table->integer('consumedutilities_id');
+            $table->foreignIdFor(UtilityPrice::class)->constrained()->onDelete('cascade');
+            $table->foreignIdFor(ConsumedUtility::class)->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

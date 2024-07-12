@@ -15,4 +15,8 @@ class Apartment extends Model
         return $this->hasMany(Room::class);
     }
 
+    public function consumedUtilities(){
+        return $this->hasMany(ConsumedUtility::class);
+    }
+
 }

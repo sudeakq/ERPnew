@@ -11,4 +11,8 @@ class Utility extends Model
 
     protected $guarded = [];
 
+    public function utilitiyPrices(){
+        return $this->hasMany(UtilityPrice::class);
+    }
+
 }

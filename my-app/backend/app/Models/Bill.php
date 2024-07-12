@@ -12,7 +12,15 @@ class Bill extends Model
     protected $guarded = [];
 
     public function students(){
-        return $this->belongsTo(Student::class);
+        return $this->belongsToMany(Student::class);
+    }
+
+    public function utilityPrices(){
+        return $this->belongsTOMany(UtilityPrice::class);
+    }
+
+    public function consumedUtilities(){
+        return $this->belongsToMany(ConsumedUtility::class);
     }
 
 }

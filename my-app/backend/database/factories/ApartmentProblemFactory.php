@@ -19,8 +19,8 @@ class ApartmentProblemFactory extends Factory
     {
         return [
             'student_id' => Student::factory(),
-            'title' => $this->faker->sentence,
-            'description' => $this->faker->paragraph
+            'title' => $this->faker->title,
+            'description' => $this->faker->text
         ];
     }
 }

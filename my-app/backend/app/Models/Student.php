@@ -50,5 +50,9 @@ class Student extends Model
     public function apartmentProblems(){
         return $this->hasMany(ApartmentProblem::class);
     }
-    
+
+    public function bills(){
+        return $this->hasMany(Bill::class);
+    }
+
 }

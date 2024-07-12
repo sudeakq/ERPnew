@@ -2,7 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\ConsumedUtility;
 use App\Models\Student;
+use App\Models\UtilityPrice;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -20,15 +22,15 @@ class BillFactory extends Factory
         return [
             "opening_date" => $this->faker->date(),
             "closing_date" => $this->faker->date(),
-            "deadling" => $this->faker->date(),
-            "internet_price" => $this->faker->randomFloat(),
-            "gas_price" => $this->faker->randomFloat(),
-            "water_price" => $this->faker->randomFloat(),
-            "electricity_price" => $this->faker->randomFloat(),
+            "deadline" => $this->faker->date(),
+            "internet_price" => $this->faker->numberBetween(1, 1000),
+            "gas_price" => $this->faker->numberBetween(1, 1000),
+            "water_price" => $this->faker->numberBetween(1, 1000),
+            "electricity_price" => $this->faker->numberBetween(1, 1000),
             "student_id" => Student::factory(),
             "is_paid" => $this->faker->boolean(),
-            "utilityprices_id" => $this->faker->randomNumber(),
-            "consumedutilities_id"=> $this->faker->randomNumber(),
+            "utility_price_id" => UtilityPrice::factory(),
+            "consumed_utility_id"=> ConsumedUtility::factory(),
         ];
     }
 }
