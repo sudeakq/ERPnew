@@ -13,4 +13,12 @@ class Attendance extends Model
 
     protected $guarded = [];
 
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function attendanceTypes(){
+        return $this->belongsToMany(AttendanceType::class);
+    }
+
 }

@@ -19,8 +19,8 @@ class DocumentFactory extends Factory
     {
         return [
             "name"=> $this->faker->name,
-            "path" => $this->faker->path,
-            "student_id" => Student::factory()
+            "path" => $this->faker->address(),
+            "student_id" => Student::factory(),
         ];
     }
 }

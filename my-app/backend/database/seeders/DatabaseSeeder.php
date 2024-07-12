@@ -27,7 +27,8 @@ class DatabaseSeeder extends Seeder
             ScheduleSeeder::class,
             InterviewSeeder::class,
             ReminderSeeder::class,
-            DocumentSeeder::class
+            DocumentSeeder::class,
+            NewsSeeder::class,
         ]);
 
     }
