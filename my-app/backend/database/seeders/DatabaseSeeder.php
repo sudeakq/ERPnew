@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             DocumentSeeder::class,
             NewsSeeder::class,
             ApartmentProblemSeeder::class,
+            BillSeeder::class,
         ]);
 
     }

@@ -47,4 +47,8 @@ class Student extends Model
         return $this->hasMany(Interview::class);
     }
 
+    public function apartmentProblems(){
+        return $this->hasMany(ApartmentProblem::class);
+    }
+    
 }
