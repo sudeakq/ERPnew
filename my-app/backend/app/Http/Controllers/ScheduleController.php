@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Schedule;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class ScheduleController extends Controller
 {
-    protected $user;
+
+    protected $schedule;
 
     public function __construct(){
-        $this->user = new User();
+        $this->schedule = new Schedule();
     }
 
     /**
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return $this->user->paginate(10);
+        return $this->schedule->all();
     }
 
     /**
@@ -26,15 +27,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->user->create($request->all());
+        $this->schedule->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Schedule $schedule)
     {
-        return $user;
+        return $schedule;
     }
 
     /**
@@ -42,7 +43,7 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        return $this->user->findOrFail($id)->update($request->all());
+        $this->schedule->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -50,6 +51,6 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        return $this->user->findOrFail($id)->delete();
+        $this->schedule->findOrFail($id)->delete();
     }
 }

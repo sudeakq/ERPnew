@@ -7,11 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee extends Model
 {   protected $table = 'employee';
-    protected $primaryKey = 'id';
-     protected $fillable = [
-          'name',
-          'address',
-          'phone',
-      ];
+    protected $fillable = [
+        'name',
+        'address',
+        'phone',
+    ];
+
+    public function students(){
+        return $this->hasMany(Student::class);
+    }
+
     use HasFactory;
 }

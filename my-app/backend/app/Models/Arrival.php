@@ -11,8 +11,6 @@ class Arrival extends Model
 
     protected $table = 'arrivals';
 
-    protected $primaryKey = 'id';
-
     protected $fillable = [
         'time',
         'pickup_location',
@@ -20,6 +18,6 @@ class Arrival extends Model
     ];
 
     public function students(){
-        return $this->hasOne(Student::class, 'arrivals_id','id');
+        return $this->hasMany(Student::class);
     }
 }
