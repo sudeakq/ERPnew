@@ -1,84 +1,16 @@
-import PurpleButton from "../images/ButtonPurple.png";
-import PeopleImg from "../images/PeopleImg.png";
+import React from "react";
+import People from "./People";
 import "./MeetPeople.css";
+import Peoples from "./MeetPeopleData";
 function MeetPeople() {
   return (
     <>
       <div className="MeetPeople">
         <h1>MEET THE PEOPLE</h1>
         <div className="Peoples">
-          <div className="People">
-            <div className="PeopleImg">
-              <img src={PeopleImg} alt="" />
-            </div>
-            <div className="PeopleDesc">
-              <p className="peopleName">John Doe</p>
-              <p className="peopleJob">Full Stack</p>
-            </div>
-            <div className="btnIcon">
-              <img src={PurpleButton} alt="" />
-            </div>
-          </div>
-          <div className="People">
-            <div className="PeopleImg">
-              <img src={PeopleImg} alt="" />
-            </div>
-            <div className="PeopleDesc">
-              <p className="peopleName">John Doe</p>
-              <p className="peopleJob">Full Stack</p>
-            </div>
-            <div className="btnIcon">
-              <img src={PurpleButton} alt="" />
-            </div>
-          </div>
-          <div className="People">
-            <div className="PeopleImg">
-              <img src={PeopleImg} alt="" />
-            </div>
-            <div className="PeopleDesc">
-              <p className="peopleName">John Doe</p>
-              <p className="peopleJob">Full Stack</p>
-            </div>
-            <div className="btnIcon">
-              <img src={PurpleButton} alt="" />
-            </div>
-          </div>
-          <div className="People">
-            <div className="PeopleImg">
-              <img src={PeopleImg} alt="" />
-            </div>
-            <div className="PeopleDesc">
-              <p className="peopleName">John Doe</p>
-              <p className="peopleJob">Full Stack</p>
-            </div>
-            <div className="btnIcon">
-              <img src={PurpleButton} alt="" />
-            </div>
-          </div>
-          <div className="People">
-            <div className="PeopleImg">
-              <img src={PeopleImg} alt="" />
-            </div>
-            <div className="PeopleDesc">
-              <p className="peopleName">John Doe</p>
-              <p className="peopleJob">Full Stack</p>
-            </div>
-            <div className="btnIcon">
-              <img src={PurpleButton} alt="" />
-            </div>
-          </div>
-          <div className="People">
-            <div className="PeopleImg">
-              <img src={PeopleImg} alt="" />
-            </div>
-            <div className="PeopleDesc">
-              <p className="peopleName">John Doe</p>
-              <p className="peopleJob">Full Stack</p>
-            </div>
-            <div className="btnIcon">
-              <img src={PurpleButton} alt="" />
-            </div>
-          </div>
+          {Peoples.map((item, index) => (
+            <People name={item.name} jobTitle={item.Job} image={item.image} />
+          ))}
         </div>
       </div>
     </>
