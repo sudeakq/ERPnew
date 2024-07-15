@@ -1,3 +1,5 @@
+import leftIcon from "../images/chevron-left-solid.svg";
+import rightIcon from "../images/chevron-right-solid.svg";
 import profileImg from "../images/Profile-img.png";
 import dot from "../images/dot.png";
 import "./ReadMore.css";
@@ -37,7 +39,11 @@ function ReadMore() {
           </p>
         </div>
       </div>
-      <> {"< 1/4 >"} </>
+      <div className="pageNumber">
+        <img src={leftIcon} alt="" className="arrowSvg" />
+        <p>1/4</p>
+        <img src={rightIcon} alt="" className="arrowSvg" />
+      </div>
     </div>
   );
 }

@@ -54,7 +54,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: .75rem;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #DCEBFC;
     border: #DCDDE1 2px solid;
     padding-top: 1rem;
@@ -71,7 +71,10 @@ li {
     margin-left: 1rem;
 }
 .SecondShift {
-    gap: 1rem;
+    gap: 1.15rem;
+}
+.arrowIcons {
+    cursor: pointer;
 }
 @media screen and (max-width: 900px) {
     .ContainShift-Schedule {
