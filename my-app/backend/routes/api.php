@@ -21,7 +21,6 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\TheUsersController;
 use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\ApartmentProblemController;
 use App\Http\Controllers\NewsController;
@@ -65,6 +64,8 @@ Route::controller(UserController::class)->group(function () {
     Route::get('/users','index');
     Route::post('/users','store');
     Route::get('/users/{user}','show');
+    Route::put('/users/{user}', 'update'); 
+    Route::delete('/users/{user}', 'destroy'); 
 });
 
 Route::controller(AdminController::class)->group(function () {
@@ -147,6 +148,14 @@ Route::controller(ArrivalController::class)->group(function (){
     Route::get('/arrivals','index');
     Route::post('/arrivals','store');
     Route::get('/arrivals/{arrival}','show');
+});
+
+Route::controller(NewsController::class)->group(function () {
+    Route::get('/news', 'index')->name('news.index');
+    Route::post('/news', 'store')->name('news.store');
+    Route::get('/news/{news}', 'show')->name('news.show');
+    Route::put('/news/{news}', 'update')->name('news.update');
+    Route::delete('/news/{news}', 'destroy')->name('news.destroy');
 });
 
 Route::controller(StatusController::class)->group(function (){
