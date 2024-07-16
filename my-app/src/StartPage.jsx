@@ -1,7 +1,5 @@
-import React from 'react';
-import StartPages from './Components/StartPages';
-
-
+import React from "react";
+import StartPages from "./Components/StartPages";
 
 function StartPage() {
   return (
@@ -15,4 +13,4 @@ function StartPage() {
   );
 }
 
-export default StartPage
+export default StartPage;

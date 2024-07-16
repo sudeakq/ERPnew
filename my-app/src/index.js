@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import UserDashboard from "./UserSide/UserDashboard";
-/* import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import StartPage from './StartPage';
 import WhatsNewClick from './WhatsNewClick';
@@ -22,7 +22,7 @@ import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
 import NewsData from './NewsData';
-import ApplicantsForm from './ApllicantForm'; */
+import ApplicantsForm from './ApllicantForm';
 
  // Use this after the variable declaration
 /* import UpcomingBirthdays from './UpcomingBirthdays'; */
@@ -58,7 +58,14 @@ import ApplicantsForm from './ApllicantForm'; */
 // import StartPage from './StartPage';
 // ,khkdbhhdbfhbahbrvhabrhbvb
 
-/* <BrowserRouter>
+ 
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
       <Routes  >
         <Route path='/' element={<StartPage />} />
         <Route path='/departments' element={<Departments />} />
@@ -70,8 +77,8 @@ import ApplicantsForm from './ApllicantForm'; */
         <Route path='/events' element={<Events />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/birthdays' element={<UpcomingBirthdays />} />
-        <Route path='/forgotPassword' element={<ForgotPassword />} /> {/* type the "path" on url and you'll go to the page */
-   /*      <Route path='/schedule' element={<ScheduleView />} />
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
+        <Route path='/schedule' element={<ScheduleView />} />
         <Route path='/alumni' element={<Alumni />} />
         <Route path='/bills' element={<Bills />} />
         <Route path='/houses' element={<AllHous />} />
@@ -79,14 +86,7 @@ import ApplicantsForm from './ApllicantForm'; */
         <Route path='/arrivals' element={<UpcomingArrivals />} />
         <Route path="/ApplicantForm" element={<ApplicantsForm />} />
       </Routes>
-    </BrowserRouter> */
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(
-  <React.StrictMode>
-    <UserDashboard/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
