@@ -8,8 +8,10 @@ import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
-  const [date] = useState('01 September 2021');
-  const [name] = useState('Ebube Samuel');
+  const [date] = useState(
+    `${new Date().getDate()} / ${new Date().getMonth()+1} / ${new Date().getFullYear()}`
+  );
+
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const navigate = useNavigate();
