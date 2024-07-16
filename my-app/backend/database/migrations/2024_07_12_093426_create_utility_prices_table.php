@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Apartment;
+use App\Models\Utility;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,10 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms', function (Blueprint $table) {
+        Schema::create('utility_prices', function (Blueprint $table) {
             $table->id();
-            $table->integer('capacity');
-            $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
+            $table->float('price');
+            $table->string('unit');
+            $table->date('date');
+            $table->foreignIdFor(Utility::class)->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rooms');
+        Schema::dropIfExists('utility_prices');
     }
 };

@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Apartment;
+use App\Models\Student;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,10 +12,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms', function (Blueprint $table) {
+        Schema::create('apartment_problems', function (Blueprint $table) {
             $table->id();
-            $table->integer('capacity');
-            $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
+            $table->foreignIdFor(Student::class)->constrained()->cascadeOnDelete();
+            $table->string('title');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rooms');
+        Schema::dropIfExists('apartment_problems');
     }
 };
