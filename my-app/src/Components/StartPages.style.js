@@ -90,7 +90,9 @@ export const StartPagesContainer = styled.div`
   display: flex;
   align-items: center;
 }
-
+.remember-me > input {
+  cursor: pointer;
+}
 .remember-me p {
   font-weight: bold;
   margin-right: 5px;

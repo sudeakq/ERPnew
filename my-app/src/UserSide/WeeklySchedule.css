@@ -3,8 +3,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 1rem;
-    min-height: 87vh;
     min-width: 350px;
 }
 .HeadingSchedule {
@@ -12,17 +10,18 @@
     align-items: center;
     flex-direction: column;
     gap: .5rem;
+    margin-top: 1rem;
 }
 .HeadingSchedule > h1 {
     color: #333333;
-    font-size: 30px;
+    font-size: 26px;
 }
 .ContainShift-Schedule {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 2.5rem;
-    padding-left: 1rem;
+    gap: 3rem;
+    padding-left: 1.5rem;
 }
 .Shifts {
     display: flex;
@@ -54,8 +53,8 @@ h2 {
 .Shift {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    font-size: 13px;
+    gap: .75rem;
+    font-size: 14px;
     background-color: #DCEBFC;
     border: #DCDDE1 2px solid;
     padding-top: 1rem;
@@ -72,7 +71,10 @@ li {
     margin-left: 1rem;
 }
 .SecondShift {
-    gap: 1.5rem;
+    gap: 1.15rem;
+}
+.arrowIcons {
+    cursor: pointer;
 }
 @media screen and (max-width: 900px) {
     .ContainShift-Schedule {

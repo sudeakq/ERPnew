@@ -68,6 +68,7 @@
 .cizgi {
     font-weight: bold;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 .Schedule-Section {
     margin-left: 2.5rem;
@@ -87,6 +88,7 @@
 }
 .blue {
     color: #2F80ED;
+    cursor: pointer;
 }
 .left-Schedule {
     display: flex;

@@ -45,3 +45,19 @@ p{
 .desc {
     width: 90%;
 }
+.cizgi {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.arrowSvg {
+    cursor: pointer;
+    width: 10px;
+}
+.pageNumber {
+    display: flex;
+    align-items: center;
+    gap: .1em;
+}
+.pageNumber > p {
+    color: #000;
+}

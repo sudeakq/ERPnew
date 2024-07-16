@@ -2,19 +2,25 @@
 import styled from "styled-components";
 import image from "../images/ForgotPassword-Background-Img.png";
 
+
 export const ForgotPasswordContainer = styled.div`
 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.75rem 2rem;
-    border-radius: 1rem;
-    gap: 10px;
     height: 100vh;
+    width: 100vw;
     background-image : url(${image});
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -23,8 +29,8 @@ export const ForgotPasswordContainer = styled.div`
         background-color: white;
         padding: 1.75rem 2rem;
         border-radius: 1rem;
-        gap: 10px;
-        width: 48rem;
+        width: 50%;
+        gap: .75em
     }
 
     h1 {
