@@ -26,7 +26,7 @@ function Bills() {
                 <img src={profileImg} alt="" />
                 <img src={profileImg2} alt="" />
                 <img src={profileImg3} alt="" />
-                <img src={addProfile} alt="" />
+                <img src={addProfile} alt="" className="Pointer" />
               </div>
             </div>
             <p className="grayColor">01 - 25 March, 2020</p>
@@ -35,7 +35,7 @@ function Bills() {
           <div className="SumHouse">
             <div className="title_Sum">
               <p>The sum of Ferraro house</p>
-              <img src={threeDot} alt="" />
+              <img src={threeDot} alt="" className="Pointer" />
             </div>
             <hr />
             <div className="BillsPrices">
@@ -126,7 +126,7 @@ function Bills() {
                 Make a request about an issue that you have at your house
               </p>
             </div>
-            <button>Make a request</button>
+            <button className="Pointer">Make a request</button>
             <div className="greyBackG"></div>
           </div>
         </div>

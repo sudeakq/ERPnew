@@ -1,7 +1,7 @@
 .BillsUserPage {
     display: flex;
     background-color: white;
-    max-height: 90vh;
+    min-height: 90vh;
 }
 .leftBills {
     padding-top: 2em;
@@ -28,6 +28,7 @@
 .titleImages {
     display: flex;
     align-items: center;
+    gap: .25em;
 }
 .titleImages > img {
     width: 35px;
@@ -104,7 +105,6 @@
     flex-direction: column;
     align-items: center;
     gap: 7.5rem;
-    overflow: hidden;
     min-width: 30vw;
 }
 .greyBackground {
@@ -115,6 +115,7 @@
     gap: 2rem;
     position: relative;
     min-width: 75%;
+    height: 280px;
 }
 .images {
     display: flex;
@@ -155,6 +156,9 @@ button {
     bottom: 15rem;
     z-index: -1;
     overflow: hidden;
+}
+.Pointer {
+    cursor: pointer;
 }
 @media screen and (max-width: 1210px) {
     
