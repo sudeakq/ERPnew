@@ -40,3 +40,15 @@
     font-size: 12px;
     color: #4F4F4F;
 }
+.arrowSvg {
+    cursor: pointer;
+    width: 10px;
+}
+.pageNumber {
+    display: flex;
+    align-items: center;
+    gap: .1em;
+}
+.pageNumber > p {
+    color: #000;
+}

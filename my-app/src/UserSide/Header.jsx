@@ -25,8 +25,8 @@ function Header() {
             <img src={red_logo} alt="" className="red-icon" />
             {isHovered && <p className="red-iconP">Send a Notification</p>}
           </div>
-          <img src={green_logo} alt="" />
-          <img src={blue_logo} alt="" />
+          <img src={green_logo} alt="" className="Header_Logo" />
+          <img src={blue_logo} alt="" className="Header_Logo" />
         </div>
       </div>
       <div className="right-Header">

@@ -1,3 +1,5 @@
+import leftIcon from "../images/chevron-left-solid.svg";
+import rightIcon from "../images/chevron-right-solid.svg";
 import "./NewsPage.css";
 function NewsPage() {
   return (
@@ -52,7 +54,11 @@ function NewsPage() {
         </div>
         <p className="cizgi darker">Read More</p>
       </div>
-      <> {"< 1/4 >"} </>
+      <div className="pageNumber">
+        <img src={leftIcon} alt="" className="arrowSvg" />
+        <p>1/4</p>
+        <img src={rightIcon} alt="" className="arrowSvg" />
+      </div>
     </div>
   );
 }

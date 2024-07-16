@@ -6,10 +6,10 @@
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 .side-4 {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .sidebar-menu {
     display: flex;
@@ -26,12 +26,12 @@
 }
 .unSelected {
     color: #8E8D8D;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 .selectedTitle {
     color: #2F80ED;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 .icons {

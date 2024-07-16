@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import UserDashboard from "./UserSide/UserDashboard";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import StartPage from './StartPage';
@@ -12,7 +13,7 @@ import Intern from './Intern';
 import Dashboard from './Dashboard';
 import UpcomingBirthdays from './UpcomingBirthdays';
 import UpcomingArrivals from './UpcomingArrivals';
-import ForgotPassword from './UserSide/ForgotPassword'
+import ForgotPassword from './UserSide/ForgotPassword';
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
 import Bills from './Bills';
@@ -57,6 +58,8 @@ import ApplicantsForm from './ApllicantForm';
 // import StartPage from './StartPage';
 // ,khkdbhhdbfhbahbrvhabrhbvb
 
+ 
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -74,7 +77,7 @@ root.render(
         <Route path='/events' element={<Events />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/birthdays' element={<UpcomingBirthdays />} />
-        <Route path='/forgotPassword' element={<ForgotPassword />} /> {/* type the "path" on url and you'll go to the page */}
+        <Route path='/forgotPassword' element={<ForgotPassword />} />
         <Route path='/schedule' element={<ScheduleView />} />
         <Route path='/alumni' element={<Alumni />} />
         <Route path='/bills' element={<Bills />} />

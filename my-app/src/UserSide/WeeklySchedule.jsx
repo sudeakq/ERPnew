@@ -7,9 +7,9 @@ function WeeklySchedule() {
       <div className="HeadingSchedule">
         <h1>Weekly Schedule</h1>
         <div className="dateSchedule">
-          <img src={leftIcon} alt="" />
+          <img src={leftIcon} alt="" className="arrowIcons" />
           <p>20 July 2022</p>
-          <img src={RightIcon} alt="" />
+          <img src={RightIcon} alt="" className="arrowIcons" />
         </div>
       </div>
       <div className="ContainShift-Schedule">
