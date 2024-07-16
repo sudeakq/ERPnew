@@ -72,6 +72,7 @@ Route::controller(AdminController::class)->group(function () {
     Route::get('/admins', 'index');
     Route::post('/admins', 'store');
     Route::post('/admins/login', 'loginAdmin');
+    Route::get('/admins/{admin}', 'show');
 });
 
 Route::controller(ApartmentController::class)->group(function () {

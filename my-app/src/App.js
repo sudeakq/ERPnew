@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import StartPage from './StartPage';
@@ -22,8 +22,6 @@ import ApplicantsForm from './ApllicantForm';
 import WindowContainer from './WindowContainer';
 
 const App = () => {
-  
-  const [currentUser,setCurrentUser] = useState(localStorage.getItem('current-user') ? localStorage.getItem('current-user') : false);
 
   return (
     <BrowserRouter>
