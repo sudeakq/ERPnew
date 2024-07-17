@@ -23,11 +23,11 @@ function ScheduleView() {
         
         setStudents((v)=>({
           ...v,
-          morningStudents : response.data[0].data
+          morningStudents : response.data[0]
         }))
         setStudents((v)=>({
           ...v,
-          afternoonStudents : response.data[1].data
+          afternoonStudents : response.data[1]
         }))
       }
     })();

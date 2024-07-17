@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 /* import "./WeeklySchedule-2.css"; */
 import { ScheduleContainer } from "./WeeklySchedule-2.style";
+import axios from "axios";
 
 function WeeklyScheduleView({students}) {
 
@@ -33,9 +34,35 @@ function WeeklyScheduleView({students}) {
     ],
   })
 
+  const [selectedStudents,setSelectedStudents] = useState([]);
+
   useEffect(()=>{
     console.log(departments)
   },[departments])
+
+  useEffect(()=>{
+    console.log(selectedStudents)
+  },[selectedStudents])
+
+  const handleAddRemove = (name, shift) => {
+    if (!selectedStudents.some(student => student.name === name && student.shift === shift)) {
+      setSelectedStudents((v) => [
+        ...v,
+        {
+          name,
+          shift
+        }
+      ]);
+    } else {
+      setSelectedStudents(v => v.filter(d => !(d.name === name && d.shift === shift)));
+    }
+  }
+  
+  const handleSave = async ()=>{
+    const response =  await axios.post("http://localhost:8000/api/students/schedule",selectedStudents);
+    if(response.status)
+      window.location.reload(); 
+  }
 
   return (
     <ScheduleContainer>
@@ -60,7 +87,7 @@ function WeeklyScheduleView({students}) {
                     <ul>
                       {data[1].map((innerData)=>{
                         return(
-                          <li>{innerData.name}</li>
+                          <li >{innerData.name} <button style={ selectedStudents.some(d=>d.name === innerData.name) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.name,"morning")} className="change-button" >Change</button> </li>
                       )
                     })}
                     </ul>
@@ -69,7 +96,7 @@ function WeeklyScheduleView({students}) {
               })
             }
         </section>
-        <button className="edit">&#8644;</button>
+        <button style={{cursor : "pointer"}} className="edit" onClick={handleSave} >&#8644;</button>
         <section className="shift" id="afternoon-shift">
           <h2>Afternoon shift 13:00 to 18:00</h2>
           {  
@@ -81,7 +108,7 @@ function WeeklyScheduleView({students}) {
                     <ul>
                       {data[1].map((innerData)=>{
                         return(
-                          <li>{innerData.name}</li>
+                          <li>{innerData.name}  <button style={ selectedStudents.some(d=>d.name === innerData.name) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.name,"afternoon")} className="change-button" >Change</button> </li>
                       )
                     })}
                     </ul>
