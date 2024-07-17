@@ -16,7 +16,21 @@ class StudentController extends Controller
 
     public function index()
     {
-        return $this->student->all();
+
+        $morningStudents = $this->student->with('department')
+        ->whereNot("morning_shift_id",null)
+        ->orderBy('department_id')
+        ->paginate(20);
+
+        $afterNoonStudents = $this->student->with('department')
+        ->where("morning_shift_id",null)
+        ->orderBy('department_id')
+        ->paginate(20);
+
+        return [
+            $morningStudents,
+            $afterNoonStudents
+        ];
     }
 
     /**
