@@ -1,106 +1,54 @@
 import React from 'react';
-import styled from 'styled-components';
-import backgroundImage from './images/leftimage_page-0001.jpg';
- // Adjust the path according to your project structure
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import StartPage from './StartPage';
+import WhatsNewClick from './WhatsNewClick';
+import DailyReminders from './DailyReminders';
+import Events from './Events';
+import Intern from './Intern';
+import Dashboard from './Dashboard';
+import UpcomingBirthdays from './UpcomingBirthdays';
+import UpcomingArrivals from './UpcomingArrivals';
+import ForgotPassword from './UserSide/ForgotPassword'
+import ScheduleView from './Schedule-2';
+import Alumni from './Alumni';
+import Bills from './Bills';
+import AllHous from './AllHouse';
+import Applicants from './Applicants';
+import Departments from './Departments';
+import Workers from './Workers';
+import NewsData from './NewsData';
+import ApplicantsForm from './ApllicantForm';
+import WindowContainer from './WindowContainer';
+
 const App = () => {
+
   return (
-   
-    <Container>
-      <ImageContainer>
-        <StyledImage src={backgroundImage} alt="Background" />
-      </ImageContainer>
-      <FormContainer>
-        <Logo>EXTRAMUS</Logo>
-        <Title>HR Platform</Title>
-        <Subtitle>Reset Password</Subtitle>
-        <Form>
-          <Input type="email" placeholder="Email" />
-          <Input type="password" placeholder="Password" />
-          <Input type="password" placeholder="Confirm Password" />
-          <Button>Reset</Button>
-        </Form>
-      </FormContainer>
-    </Container>
+    <BrowserRouter>
+      <Routes  >
+        <Route path='/' element={<WindowContainer />} >
+          <Route path='login' element={<StartPage />} />
+          <Route path='departments' element={<Departments />} />
+          <Route path='workers' element={<Workers />} />
+          <Route path='news' element={<WhatsNewClick />} />
+          <Route path='news/1' element={<NewsData />} />
+          <Route path='interns' element={<Intern />} />
+          <Route path='reminder' element={<DailyReminders />} />
+          <Route path='events' element={<Events />} />
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='birthdays' element={<UpcomingBirthdays />} />
+          <Route path='forgotPassword' element={<ForgotPassword />} /> {/* type the "path" on url and you'll go to the page */}
+          <Route path='schedule' element={<ScheduleView />} />
+          <Route path='alumni' element={<Alumni />} />
+          <Route path='bills' element={<Bills />} />
+          <Route path='houses' element={<AllHous />} />
+          <Route path='applicants' element={<Applicants />} />
+          <Route path='arrivals' element={<UpcomingArrivals />} />
+          <Route path="ApplicantForm" element={<ApplicantsForm />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
-
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f0f2f5;
-`;
-
-const ImageContainer = styled.div`
-  flex: 1;
-  display: none;
-
-  @media(min-width: 768px) {
-    display: block;
-  }
-`;
-
-const StyledImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
-
-const FormContainer = styled.div`
-  flex: 1;
-  max-width: 400px;
-  background: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-`;
-
-const Logo = styled.h1`
-  font-family: 'Arial', sans-serif;
-  color: #34a853;
-  margin-bottom: 20px;
-`;
-
-const Title = styled.h2`
-  font-family: 'Arial', sans-serif;
-  color: #3c4043;
-  margin-bottom: 10px;
-`;
-
-const Subtitle = styled.h3`
-  font-family: 'Arial', sans-serif;
-  color: #5f6368;
-  margin-bottom: 20px;
-`;
-
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-`;
-
-const Input = styled.input`
-  font-size: 16px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
-
-const Button = styled.button`
-  font-size: 16px;
-  padding: 10px;
-  background-color: #1a73e8;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #155bb5;
-  }
-`;
 
 export default App;

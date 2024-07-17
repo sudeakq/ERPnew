@@ -1,17 +1,25 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 /* import axios from './Services/axios.js'; */ // Corrected import path
 import axios from "axios";
 import startPageImage from "../images/UserStartPage.png";
 import erasmusTitleImage from "../images/extramus_title_image.png";
 import { StartPagesContainer } from "./StartPages.style.js";
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../WindowContainer.jsx";
+import Cookies from "js-cookie";
 
 const StartPages = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  const {currentUser,setCurrentUser} = useContext(UserContext);
+
   const navigate = useNavigate();
+
+  useEffect(()=>{
+    if(currentUser) navigate("/dashboard");
+  },[currentUser])
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -22,6 +30,10 @@ const StartPages = () => {
       );
       console.log("Response:", response);
       if (response.data.success) {
+        setCurrentUser(response.data.user);
+        Cookies.set("current-user",JSON.stringify(response.data.user),{
+          expires : 30
+        }); 
         navigate("/dashboard");
       } else {
         setError("Invalid email or password");
