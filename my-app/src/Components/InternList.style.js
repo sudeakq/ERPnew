@@ -153,10 +153,11 @@ th, td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  padding: 10px 40px ;
+  padding: 0px 40px ;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
+  height: 12.5vh;
 }
 
 th {
@@ -186,7 +187,7 @@ tr:hover {
 .action button {
   background-color: rgba(245,248,254,255);
   border: none;
-  padding: 6px 10px;
+  padding: 0px 10px;
   cursor: pointer;
   border-radius: 4px;
   margin-right: 5px;

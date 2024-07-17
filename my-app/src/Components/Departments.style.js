@@ -17,7 +17,6 @@ export const DepartmantsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
-  overflow-y: auto;
   height: 120vh;
 
   .title {
