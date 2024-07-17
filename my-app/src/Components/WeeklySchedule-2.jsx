@@ -3,10 +3,39 @@ import React, { useEffect, useState } from "react";
 import { ScheduleContainer } from "./WeeklySchedule-2.style";
 
 function WeeklyScheduleView({students}) {
-  
+
+  const [departments,setDepartments] = useState({
+    morning : [
+      [ "Human Resources", students.morningStudents.filter((student)=>student.department.name === "Human Resources" )],
+      [ "Data Analyst", students.morningStudents.filter((student)=>student.department.name === "Data Analyst" )],
+      [ "Digital Marketing", students.morningStudents.filter((student)=>student.department.name === "Digital Marketing" )],
+      [ "Copy Writer", students.morningStudents.filter((student)=>student.department.name === "Copy Writer" )],
+      [ "Growth Hacker", students.morningStudents.filter((student)=>student.department.name === "Growth Hacker" )],
+      [ "Business Project Management", students.morningStudents.filter((student)=>student.department.name === "Business Project Management" )],
+      [ "Architecture & Urban Design", students.morningStudents.filter((student)=>student.department.name === "Architecture & Urban Design" )],
+      [ "Information Technology", students.morningStudents.filter((student)=>student.department.name === "Information Technology" )],
+      [ "User Experience Designer", students.morningStudents.filter((student)=>student.department.name === "User Experience Designer" )],
+      [ "European Project Manager", students.morningStudents.filter((student)=>student.department.name === "European Project Manager" )],
+      [ "Business Lawyer", students.morningStudents.filter((student)=>student.department.name === "Business Lawyer" )],
+    ],
+    afternoon : [
+      [ "Human Resources", students.afternoonStudents.filter((student)=>student.department.name === "Human Resources" )],
+      [ "Data Analyst", students.afternoonStudents.filter((student)=>student.department.name === "Data Analyst" )],
+      [ "Digital Marketing", students.afternoonStudents.filter((student)=>student.department.name === "Digital Marketing" )],
+      [ "Copy Writer", students.afternoonStudents.filter((student)=>student.department.name === "Copy Writer" )],
+      [ "Growth Hacker", students.afternoonStudents.filter((student)=>student.department.name === "Growth Hacker" )],
+      [ "Business Project Management", students.afternoonStudents.filter((student)=>student.department.name === "Business Project Management" )],
+      [ "Architecture & Urban Design", students.afternoonStudents.filter((student)=>student.department.name === "Architecture & Urban Design" )],
+      [ "Information Technology", students.afternoonStudents.filter((student)=>student.department.name === "Information Technology" )],
+      [ "User Experience Designer", students.afternoonStudents.filter((student)=>student.department.name === "User Experience Designer" )],
+      [ "European Project Manager", students.afternoonStudents.filter((student)=>student.department.name === "European Project Manager" )],
+      [ "Business Lawyer", students.afternoonStudents.filter((student)=>student.department.name === "Business Lawyer" )],
+    ],
+  })
+
   useEffect(()=>{
-    console.log()
-  },[])
+    console.log(departments)
+  },[departments])
 
   return (
     <ScheduleContainer>
@@ -18,130 +47,48 @@ function WeeklyScheduleView({students}) {
           <button className="nav-button">&#9654;</button>
         </div>
       </header>
+
       <main className="schedule-container">
         <section className="shift" id="morning-shift">
           <h2>Morning shift 8:00 to 13:00</h2>
-          <div className="group">
-            <h3>Human Resources: 4</h3>
-            <ul>
-              {students.morningStudents.filter((student)=>student.department.name === "Human Resources" ).map((data)=>{
+            {  
+              departments.morning.map((data)=>{
+                if(data[1].length)
                 return (
-                  <li>{data.name}</li>
+                  <div className="group">
+                    <h3>{data[0]}</h3>
+                    <ul>
+                      {data[1].map((innerData)=>{
+                        return(
+                          <li>{innerData.name}</li>
+                      )
+                    })}
+                    </ul>
+                  </div>
                 )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Data Analyst: 4</h3>
-            <ul>
-              {students.morningStudents.filter((student)=>student.department.name === "Data Analyst" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Digital Marketing: 3</h3>
-            <ul>
-              {students.morningStudents.filter((student)=>student.department.name === "Digital Marketing" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Copy Writer: 1</h3>
-            <ul>
-              {students.morningStudents.filter((student)=>student.department.name === "Copy Writer" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Growth Hacker: 1</h3>
-            <ul>
-              <li>Akif Kilic</li>
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Business Project Management: 3</h3>
-            <ul>
-              {students.morningStudents.filter((student)=>student.department.name === "Business Project Management" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Architecture & Urban Design: 1</h3>
-            <ul>
-              {students.morningStudents.filter((student)=>student.department.name === "Architecture & Urban Design" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-
+              })
+            }
         </section>
         <button className="edit">&#8644;</button>
         <section className="shift" id="afternoon-shift">
           <h2>Afternoon shift 13:00 to 18:00</h2>
-          <div className="group">
-            <h3>Information Technology: 13</h3>
-            <ul>
-              {students.afternoonStudents.filter((student)=>student.department.name === "Information Technology" ).map((data)=>{
+          {  
+              departments.afternoon.map((data)=>{
+                if(data[1].length)
                 return (
-                  <li>{data.name}</li>
+                  <div className="group">
+                    <h3>{data[0]}</h3>
+                    <ul>
+                      {data[1].map((innerData)=>{
+                        return(
+                          <li>{innerData.name}</li>
+                      )
+                    })}
+                    </ul>
+                  </div>
                 )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Human Resources: 6</h3>
-            <ul>
-              {students.afternoonStudents.filter((student)=>student.department.name === "Human Resources" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>User Experience Designer: 1</h3>
-            <ul>
-              {students.afternoonStudents.filter((student)=>student.department.name === "User Experience Designer" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>European Project Manager: 5</h3>
-            <ul>
-              {students.afternoonStudents.filter((student)=>student.department.name === "European Project Manager" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
-          <div className="group">
-            <h3>Business Lawyer: 1</h3>
-            <ul>
-              {students.afternoonStudents.filter((student)=>student.department.name === "Business Lawyer" ).map((data)=>{
-                return (
-                  <li>{data.name}</li>
-                )
-              })}
-            </ul>
-          </div>
+              })
+            }
         </section>
       </main>
     </ScheduleContainer>

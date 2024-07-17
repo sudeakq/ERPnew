@@ -36,7 +36,6 @@ function ScheduleView() {
 
   useEffect(()=>{
     if(students.afternoonStudents.length) setLoading(false);
-    console.log(students)
   },[students])
 
   if(loading) return (
