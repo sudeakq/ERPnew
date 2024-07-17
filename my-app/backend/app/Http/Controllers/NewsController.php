@@ -18,9 +18,9 @@ class NewsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return $this->news->all();
+        return $this->news->paginate($request->page);
     }
 
     /**
