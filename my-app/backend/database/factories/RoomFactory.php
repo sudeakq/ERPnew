@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Apartment;
 use App\Models\Room;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -21,7 +22,7 @@ class RoomFactory extends Factory
     public function definition(): array
     {
         return [
-            "apartments_id"=> $this->faker->numberBetween(1,100),
+            "apartment_id"=> Apartment::factory(),
             "capacity" => $this->faker->numberBetween(1,100),
         ];
     }

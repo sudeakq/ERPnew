@@ -11,11 +11,15 @@
 }
 .dropdown {
     width: 17.5px;
+    cursor: pointer;
 }
 .left-Header {
     display: flex;
     align-items: center;
     gap: 3.75rem;
+}
+.left-Header > img{
+    cursor: pointer;
 }
 .right-Header {
     display: flex;
@@ -28,6 +32,9 @@
     gap: .25rem;
     width: 15px;
 }
+.Header_Logo {
+    cursor: pointer;
+}
 .grey {
     color: #F2F2F2;
 }
@@ -39,16 +46,19 @@
     width: 10.25rem;
     border-radius: 10px;
     padding: 2px;
+    cursor: pointer;
 }
 .redLogo > img {
     width: 14px;
 }
 .red-icon {
     width: 15px;
+    cursor: pointer;
 }
 .red-iconP {
     color: #F54048;
 }
 .bell {
     width: 20px;
+    cursor: pointer;
 }

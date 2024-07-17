@@ -37,35 +37,42 @@ class AdminController extends Controller
             "password" => $request->password
         ])->first();
 
-            if(isset($admin)) return ["success" => true];
+            if(isset($admin)) return [
+                "success" => true,
+                "user" => [
+                    "id"=> $admin->id,
+                    "name" => $admin->name,
+                    "email"=> $admin->email
+                ]
+            ];
             return ["success" => false];
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id,Request $request)
+    public function show(Admin $admin)
     {
-        $admin = Admin::find($id);
-
-        if($admin->email == $request->email && $admin->password == $request->password ) return $admin;
-
-        return false;
+        if(isset($admin)) return [
+            "success" => true,
+            "user" => [
+                "id"=> $admin->id,
+                "name" => $admin->name,
+                "email"=> $admin->email
+            ]
+        ];
+        return ["success" => false];
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    
+    public function update(Request $request, Admin $admin)
     {
-        //
+        return $admin->update($request->all());
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+   
+    public function destroy(Admin $admin)
     {
-        //
+        return $admin->delete();
     }
 }
