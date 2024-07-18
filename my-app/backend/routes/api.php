@@ -143,6 +143,7 @@ Route::controller(StudentController::class)->group(function (){
     Route::get('/students','index');
     Route::post('/students','store');
     Route::get('/students/{student}','show');
+    Route::post('/students/schedule','updateStudentSchedule');
 });
 
 Route::controller(ArrivalController::class)->group(function (){

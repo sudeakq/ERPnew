@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
+use App\Models\AfternoonShift;
 use App\Models\Arrival;
 use App\Models\Coordinator;
 use App\Models\Department;
+use App\Models\MorningShift;
 use App\Models\Position;
 use App\Models\Room;
 use App\Models\Status;
 use App\Models\Student;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Student>
- */
 class StudentFactory extends Factory
 {
     protected $model = Student::class;
@@ -25,12 +24,14 @@ class StudentFactory extends Factory
      */
     public function definition(): array
     {
+        $isMorning = mt_rand() / mt_getrandmax() > 0.5; // 50% olasılıkla true veya false
+
         return [
             'application_date' => $this->faker->date(),
             'start_date' => $this->faker->date(),
             'end_date' => $this->faker->date(),
             'arrival_id' => Arrival::factory(),
-            'status_id' =>  Status::factory(),
+            'status_id' => Status::factory(),
             'position_id' => Position::factory(),
             'name' => $this->faker->firstName,
             'surname' => $this->faker->lastName,
@@ -39,12 +40,14 @@ class StudentFactory extends Factory
             'country' => $this->faker->country,
             'institution' => $this->faker->company,
             'nationality' => $this->faker->country,
-            'department_id' => Department::factory(),
+            'department_id' => Department::find(mt_rand(1, 11)),
             'email' => $this->faker->unique()->safeEmail,
             'date_of_birth' => $this->faker->date(),
             'coordinator_id' => Coordinator::factory(),
             'room_id' => Room::factory(),
             'health_issues' => $this->faker->sentence,
+            'morning_shift_id' => $isMorning ? MorningShift::first() : null,
+            'afternoon_shift_id' => !$isMorning ? AfternoonShift::first() : null,
             'created_at' => now(),
             'updated_at' => now(),
         ];

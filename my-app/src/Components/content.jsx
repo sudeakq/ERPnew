@@ -17,7 +17,7 @@ const Content = () => {
           <div className="content-container-top">
             <h4>What's New?</h4>
             <div className="view-all">
-              <a href="./">View All (18) </a>
+              <a href="/news">View All (18) </a>
               <p className="view-all-arrow">
                 <FaArrowRightLong />
               </p>
@@ -47,7 +47,7 @@ const Content = () => {
           <div className="content-container-top" style={{ marginTop: "30px" }}>
             <h4>Weekly Schedule</h4>
             <div className="view-all">
-              <a href="./">View All </a>
+              <a href="/schedule">View All </a>
             </div>
           </div>
           <WeeklyScheduleCard></WeeklyScheduleCard>
@@ -57,7 +57,7 @@ const Content = () => {
           <div className="content-container-top">
             <h4>Daily Reminder</h4>
             <div className="view-all">
-              <a href="./">View All (12)</a>
+              <a href="/daily/reminder">View All (12)</a>
             </div>
           </div>
 
@@ -66,15 +66,15 @@ const Content = () => {
           <div className="content-container-middle" style={{}}>
             <h4>Upcoming Arrival and Departure</h4>
             <div className="view-all">
-              <a href="./">View All (8)</a>
+              <a href="/arrivals">View All (8)</a>
             </div>
           </div>
           <UpcomingArrivalCard />
 
           <div className="content-container-bottom" style={{}}>
-            <h4>Upcoming Birthdays🎂🎉🍾 </h4>
+            <h4>Upcoming Birthdays </h4>
             <div className="view-all">
-              <a href="./">View All (8)</a>
+              <a href="/birthdays">View All (8)</a>
             </div>
           </div>
           <UpcomingBirthdayCard />
