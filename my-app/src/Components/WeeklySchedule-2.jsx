@@ -44,17 +44,17 @@ function WeeklyScheduleView({students}) {
     console.log(selectedStudents)
   },[selectedStudents])
 
-  const handleAddRemove = (name, shift) => {
-    if (!selectedStudents.some(student => student.name === name && student.shift === shift)) {
+  const handleAddRemove = (id, shift) => {
+    if (!selectedStudents.some(student => student.id === id && student.shift === shift)) {
       setSelectedStudents((v) => [
         ...v,
         {
-          name,
+          id,
           shift
         }
       ]);
     } else {
-      setSelectedStudents(v => v.filter(d => !(d.name === name && d.shift === shift)));
+      setSelectedStudents(v => v.filter(d => !(d.id === id && d.shift === shift)));
     }
   }
   
@@ -87,7 +87,7 @@ function WeeklyScheduleView({students}) {
                     <ul>
                       {data[1].map((innerData)=>{
                         return(
-                          <li >{innerData.name} <button style={ selectedStudents.some(d=>d.name === innerData.name) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.name,"morning")} className="change-button" >Change</button> </li>
+                          <li >{innerData.name} <button style={ selectedStudents.some(d=>d.id === innerData.id) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.id,"morning")} className="change-button" >Change</button> </li>
                       )
                     })}
                     </ul>
@@ -108,7 +108,7 @@ function WeeklyScheduleView({students}) {
                     <ul>
                       {data[1].map((innerData)=>{
                         return(
-                          <li>{innerData.name}  <button style={ selectedStudents.some(d=>d.name === innerData.name) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.name,"afternoon")} className="change-button" >Change</button> </li>
+                          <li>{innerData.name}  <button style={ selectedStudents.some(d=>d.id === innerData.id) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.id,"afternoon")} className="change-button" >Change</button> </li>
                       )
                     })}
                     </ul>

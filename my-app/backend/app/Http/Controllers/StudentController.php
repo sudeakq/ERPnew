@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-
     protected $student;
 
     public function __construct(Student $student){
@@ -39,7 +38,7 @@ class StudentController extends Controller
     public function updateStudentSchedule(Request $request){
 
         foreach ($request->all() as $data) {
-            $student = $this->student->where('name', $data['name'])->first();
+            $student = $this->student->where('id', $data['id'])->first();
     
             if ($student) {
                 $student->update([
@@ -48,19 +47,6 @@ class StudentController extends Controller
                 ]);
             }
         }
-        
-        /* foreach ($request->all() as $data) {
-            $student = $this->student->where('name', $data['name'])
-                                     ->whereNotNull('afternoon_shift_id')
-                                     ->first();
-    
-            if ($student) {
-                $student->update([
-                    'afternoon_shift_id' => null,
-                    'morning_shift_id' => MorningShift::first()->id
-                ]);
-            }
-        } */
 
         return true;
     }
@@ -86,7 +72,7 @@ class StudentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return $this->student->findOrFail($id)->update($request->all());
     }
 
     /**
@@ -94,6 +80,6 @@ class StudentController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        return $this->student->findOrFail($id)->delete();
     }
 }
