@@ -4,6 +4,7 @@ import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
 import WeeklyScheduleView from './Components/WeeklySchedule-2';
 import axios from 'axios';
+import WeeklySchedule from './UserSide/WeeklySchedule';
 
 function ScheduleView() {
   
@@ -57,7 +58,8 @@ function ScheduleView() {
       <div className="container">
         <Sidebar {...{selected,setSelected}} />
         <main>
-          <WeeklyScheduleView {...{students}} />
+          <WeeklyScheduleView {...{students}} /> 
+          {/* <WeeklySchedule /> */}
         </main>
       </div>
     </>
