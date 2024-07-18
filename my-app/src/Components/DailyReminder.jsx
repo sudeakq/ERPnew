@@ -7,6 +7,7 @@ const DailyReminder = () => {
   return (
     <section className="daily-reminder">
       <h2>What's New</h2>
+      <button class="edit-button">✎ffffff</button>
       <div className="cards">
         <Card
           title="HR Presentation"

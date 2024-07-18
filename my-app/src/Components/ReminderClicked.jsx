@@ -11,7 +11,8 @@ function ReminderClicked(){
   return (
     <ReminderClickedContainer>
     <div className="total-container">
-      <h1 className="title" >What's New</h1>
+      <h1 className="title" >What's News</h1>
+      <button class="edit-button">✎</button>
       <div className="reminder-list">
         <section className="reminder-container">
           <div className="top-inner-container">
