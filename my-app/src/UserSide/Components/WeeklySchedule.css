@@ -15,6 +15,7 @@
 .HeadingSchedule > h1 {
     color: #333333;
     font-size: 26px;
+    margin-bottom: 10px;
 }
 .ContainShift-Schedule {
     display: flex;
@@ -57,7 +58,7 @@ h2 {
     font-size: 14px;
     background-color: #DCEBFC;
     border: #DCDDE1 2px solid;
-    padding-top: 1rem;
+    padding-top: .5em;
     padding-left: 1.5rem;
     padding-right: 13rem;
     padding-bottom: 1rem;
