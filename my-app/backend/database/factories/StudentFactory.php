@@ -8,6 +8,7 @@ use App\Models\Coordinator;
 use App\Models\Department;
 use App\Models\MorningShift;
 use App\Models\Position;
+use App\Models\Progress;
 use App\Models\Room;
 use App\Models\Status;
 use App\Models\Student;
@@ -31,7 +32,7 @@ class StudentFactory extends Factory
             'start_date' => $this->faker->date(),
             'end_date' => $this->faker->date(),
             'arrival_id' => Arrival::factory(),
-            'status_id' => Status::factory(),
+            'status_id' => Status::find(mt_rand(1,3)),
             'position_id' => Position::factory(),
             'name' => $this->faker->firstName,
             'surname' => $this->faker->lastName,
@@ -48,6 +49,7 @@ class StudentFactory extends Factory
             'health_issues' => $this->faker->sentence,
             'morning_shift_id' => $isMorning ? MorningShift::first() : null,
             'afternoon_shift_id' => !$isMorning ? AfternoonShift::first() : null,
+            'progress_id' => Progress::find(mt_rand(1, 10)),
             'created_at' => now(),
             'updated_at' => now(),
         ];
