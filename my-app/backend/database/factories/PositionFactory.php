@@ -23,7 +23,7 @@ class PositionFactory extends Factory
     {
         return [
             "name"=> $this->faker->name,
-            "department_id" => Department::factory(),
+            "department_id" => Department::find(mt_rand(1, 11)),
             "created_at" => now(),
             "updated_at" => now()
         ];

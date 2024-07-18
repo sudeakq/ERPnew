@@ -8,13 +8,15 @@ function Intern() {
   
   const [selected,setSelected] = useState("News")
 
+  const [page,setPage] = useState(1);
+
   return (
     <>
       <Header />
       <div className="container">
         <Sidebar {...{selected,setSelected}} />
         <main>
-          <NewsText />
+          <NewsText {...{page}} />
         </main>
       </div>
     </>
