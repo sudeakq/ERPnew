@@ -1,7 +1,7 @@
-import leftIcon from "../images/chevron-left-solid.svg";
-import rightIcon from "../images/chevron-right-solid.svg";
-import profileImg from "../images/Profile-img.png";
-import dot from "../images/dot.png";
+import leftIcon from "../../images/chevron-left-solid.svg";
+import rightIcon from "../../images/chevron-right-solid.svg";
+import profileImg from "../../images/Profile-img.png";
+import dot from "../../images/dot.png";
 import "./ReadMore.css";
 function ReadMore() {
   return (

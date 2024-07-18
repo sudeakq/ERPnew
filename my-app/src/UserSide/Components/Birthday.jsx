@@ -1,4 +1,4 @@
-import clock from "../images/icon-clock.png";
+import clock from "../../images/icon-clock.png";
 import "./Birthday.css";
 function Birthday() {
   return (
