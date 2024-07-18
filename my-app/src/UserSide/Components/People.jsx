@@ -1,4 +1,4 @@
-import PurpleButton from "../images/ButtonPurple.png";
+import PurpleButton from "../../images/ButtonPurple.png";
 
 function People({ name, jobTitle, image }) {
   return (

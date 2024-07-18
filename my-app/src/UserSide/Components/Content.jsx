@@ -1,5 +1,5 @@
-import blueLine from "../images/blue-arrow-right.png";
-import clock from "../images/icon-clock.png";
+import blueLine from "../../images/blue-arrow-right.png";
+import clock from "../../images/icon-clock.png";
 import "./Content.css";
 function Content() {
   return (
