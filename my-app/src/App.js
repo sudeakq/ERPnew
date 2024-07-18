@@ -20,7 +20,7 @@ import Workers from './Workers';
 import NewsData from './NewsData';
 import ApplicantsForm from './ApllicantForm';
 import WindowContainer from './WindowContainer';
-import WeeklySchedule from './UserSide/WeeklySchedule';
+import WeeklySchedule from './UserSide/UserSchedule';
 
 const App = () => {
 
