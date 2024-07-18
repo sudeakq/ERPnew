@@ -1,32 +1,29 @@
+
 import styled from "styled-components";
 
-export const UpcomingEventsContainer = styled.div`
+export const BirthdayContainer = styled.div`
 
-.BirthdayPage {
-    padding-left: 10em;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
-    min-width: 970px;
-}
-.Heading {
-  margin-right: 8em;
-}
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 84.3vh;
+    min-width: 800px;
+
 .Contain-Birthday {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
-    gap: 7.5rem;
+    gap: 5rem;
 }
 .Content-Birthday {
-    width: 37.5vw;
-    min-width: 500px;
+    width: 35vw;
+    min-width: 300px;
     background-color: white;
     border: #DCDDE1 1px solid;
     border-radius: 20px;
-    padding: 2em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding: 1.5rem;
     color: #4F4F4F;
     display: flex;
     flex-direction: column;
@@ -36,24 +33,14 @@ export const UpcomingEventsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 500px;
+    gap: 1rem;
+    min-width: 350px;
 }
 .Birthday {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.arriveInfos {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 57.5%;
-}
-.Arriving {
-  color: #07B94E;
-}
-.Departing {
-  color: #DB5F5F;
+
 }
 .right-B {
     display: flex;
@@ -62,9 +49,6 @@ export const UpcomingEventsContainer = styled.div`
 }
 .right-B > img {
     width: 25px;
-}
-.left-B > b {
-    color: black;
 }
 .Calendar-Section {
     display: flex;
@@ -78,7 +62,7 @@ export const UpcomingEventsContainer = styled.div`
     background-color: white;
     border: #DCDDE1 1px solid;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;

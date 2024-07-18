@@ -4,7 +4,6 @@ import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
 import WeeklyScheduleView from './Components/WeeklySchedule-2';
 import axios from 'axios';
-import WeeklySchedule from './UserSide/WeeklySchedule';
 
 function ScheduleView() {
   

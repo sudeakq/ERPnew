@@ -24,19 +24,15 @@ import WindowContainer from './WindowContainer';
 
 // USER COMPONENTS
 
-import UserWeeklySchedule from './UserSide/WeeklySchedule';
-import UserBills from './UserSide/Bills';
-import UserBirthday from './UserSide/Birthday';
-import UserContent from "./UserSide/Content";
+import UserBills from './UserSide/UserBills';
+import UserBirthday from './UserSide/UserBirthday'; 
 import UserForgotPassword from './UserSide/ForgotPassword';
-import UserMeetPeople from "./UserSide/MeetPeople";
-/* import UserNewsPage from "./Userside/NewsPage"; */
-import UserPeople from "./UserSide/People";
-import UserReadMore from "./UserSide/ReadMore";
-import UserRectangle from "./UserSide/Rectangle";
+import UserMeetPeople from "./UserSide/UserMeetPeople";  
+/* import UserNewsPage from "./Userside/UserNewsPage"; // Needs to be fixed */ 
+import UserReadMore from "./UserSide/UserReadMore";
 import UserResetPassword from "./UserSide/ResetPassword";
 import UserDashboard from "./UserSide/UserDashboard";
-import UserStartPage from "./UserSide/UserStartPage"; 
+import UserStartPage from "./UserSide/UserStartPage";  
 
 const App = () => {
 
@@ -62,21 +58,17 @@ const App = () => {
           <Route path='events' element={<Events />} />
           <Route path="ApplicantForm" element={<ApplicantsForm />} />
         </Route>
-          <Route path='/user' element={<WindowContainer />} >
-          <Route path='schedule' element={<UserWeeklySchedule />} />
+        <Route path='/user' element={<WindowContainer />} >
           <Route path='forgotPassword' element={<UserForgotPassword />} />
           <Route path='bills' element={<UserBills />} />
           <Route path='birthday' element={<UserBirthday />} />
-          <Route path='content' element={<UserContent />} />
-          <Route path='workers' element={<UserMeetPeople />} /> 
-          {/* <Route path='news' element={<UserNewsPage />} /> */}
-          <Route path='people' element={<UserPeople />} />
+          <Route path='workers' element={<UserMeetPeople />} />  
+          {/* <Route path='news' element={<UserNewsPage />} /> */}   
           <Route path='news/1' element={<UserReadMore />} />
-          <Route path='rectangle' element={<UserRectangle />} />
           <Route path='resetPassword' element={<UserResetPassword />} />
           <Route path='dashboard' element={<UserDashboard />} />
-          <Route path='login' element={<UserStartPage />} />
-        </Route> 
+          <Route path='login' element={<UserStartPage />} />  
+        </Route>  
       </Routes>
     </BrowserRouter>
   );

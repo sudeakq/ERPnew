@@ -1,5 +1,4 @@
-import down_blueLine from "../images/down-blue-line.png";
-import "./Rectangle.css";
+import down_blueLine from "../../images/down-blue-line.png";
 function Rectangle({ id, selectedId }) {
   return (
     <>

@@ -1,22 +1,24 @@
-import boxImage from "../images/boxBox.png";
-import flower from "../images/flower_1.png";
-import profileImg from "../images/profile_1.png";
-import profileImg2 from "../images/profile_2.png";
-import profileImg3 from "../images/profile_3.png";
-import addProfile from "../images/add_profile.png";
-import Stats from "../images/Stats.png";
-import threeDot from "../images/threedots.png";
-import dot from "../images/dot.png";
-import electricity from "../images/electricity.png";
-import water from "../images/Water.png";
-import gas from "../images/Gas.png";
-import electricityBar from "../images/electrictyBar.png";
-import waterBar from "../images/WaterBar.png";
-import gasBar from "../images/GasBar.png";
-import "./Bills.css";
+import boxImage from "../../images/boxBox.png";
+import flower from "../../images/flower_1.png";
+import profileImg from "../../images/profile_1.png";
+import profileImg2 from "../../images/profile_2.png";
+import profileImg3 from "../../images/profile_3.png";
+import addProfile from "../../images/add_profile.png";
+import Stats from "../../images/Stats.png";
+import threeDot from "../../images/threedots.png";
+import dot from "../../images/dot.png";
+import electricity from "../../images/electricity.png";
+import water from "../../images/Water.png";
+import gas from "../../images/Gas.png";
+import electricityBar from "../../images/electrictyBar.png";
+import waterBar from "../../images/WaterBar.png";
+import gasBar from "../../images/GasBar.png";
+
+import { BillsContainer } from "./Bills.style";
+
 function Bills() {
   return (
-    <>
+    <BillsContainer>
       <div className="BillsUserPage">
         <div className="leftBills">
           <div className="PaymentProfile">
@@ -131,7 +133,7 @@ function Bills() {
           </div>
         </div>
       </div>
-    </>
+    </BillsContainer>
   );
 }
 export default Bills;

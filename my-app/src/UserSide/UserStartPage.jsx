@@ -1,8 +1,9 @@
 import React from "react";
 import leftImage from "../images/UserStartPage.png";
 import ExtramusText from "../images/ExtramusText_image.png";
-import "./UserStartPage.css";
 import { useState } from "react";
+import { UserStartPageContainer } from "./UserStartPage.style";
+/* import "./UserStartPage.css"; */
 
 function UserStartPage() {
   const [email, setEmail] = useState();
@@ -22,7 +23,7 @@ function UserStartPage() {
     setIsSubmit(true);
   }
   return (
-    <>
+    <UserStartPageContainer>
       <div className="container">
         <div className="UserStartLeft">
           <img
@@ -70,7 +71,7 @@ function UserStartPage() {
           </div>
         </div>
       </div>
-    </>
+    </UserStartPageContainer>
   );
 }
 

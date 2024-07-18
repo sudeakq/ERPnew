@@ -1,8 +1,7 @@
 import React from "react";
-import ExtramusText from "../images/ExtramusText_image.png";
-/* import "./ResetPassword.css"; */
+import ExtramusText from "./images/ExtramusText_image.png";
+import "./ResetPassword.css";
 import { useState } from "react";
-import { ResetPasswordContainer } from "./ResetPassword.style";
 
 function ResetPassword() {
   const [email, setEmail] = useState();
@@ -18,7 +17,7 @@ function ResetPassword() {
     setConfirmPassword(input);
   }
   return (
-    <ResetPasswordContainer>
+    <>
       <div className="container">
         <div className="top">
           <img
@@ -58,7 +57,7 @@ function ResetPassword() {
           </div>
         </div>
       </div>
-    </ResetPasswordContainer>
+    </>
   );
 }
 

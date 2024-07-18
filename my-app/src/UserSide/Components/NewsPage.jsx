@@ -1,5 +1,5 @@
-import leftIcon from "../images/chevron-left-solid.svg";
-import rightIcon from "../images/chevron-right-solid.svg";
+import leftIcon from "../../images/chevron-left-solid.svg";
+import rightIcon from "../../images/chevron-right-solid.svg";
 import "./NewsPage.css";
 function NewsPage() {
   return (

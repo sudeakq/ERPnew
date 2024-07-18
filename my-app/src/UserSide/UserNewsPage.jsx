@@ -1,8 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Content from "./Components/Content";
-/* import NewsPage from "./NewsPage"; */
+/* import Content from "./Content"; */
+import NewsPage from "./Components/NewsPage";
 /* import ReadMore from "./ReadMore"; */
 /* import Birthday from "./Birthday"; */
 /* import WeeklySchedule from "./WeeklySchedule"; */
@@ -16,7 +14,7 @@ function UserDashboard() {
       <Header />
       <div className="Main">
         <Sidebar />
-        <Content />
+        <NewsPage />
       </div>
     </>
   );

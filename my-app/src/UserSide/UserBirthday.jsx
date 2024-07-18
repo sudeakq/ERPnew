@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import Content from "./Components/Content";
+/* import Content from "./Content"; */
 /* import NewsPage from "./NewsPage"; */
-/* import ReadMore from "./ReadMore"; */
-/* import Birthday from "./Birthday"; */
+/* import ReadMore from "./Components/ReadMore"; */
+import Birthday from "./Components/Birthday";
 /* import WeeklySchedule from "./WeeklySchedule"; */
 /* import Bills from "./Bills"; */
 /* import MeetPeople from "./MeetPeople"; */
@@ -16,7 +16,7 @@ function UserDashboard() {
       <Header />
       <div className="Main">
         <Sidebar />
-        <Content />
+        <Birthday />
       </div>
     </>
   );
