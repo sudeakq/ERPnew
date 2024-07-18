@@ -1,7 +1,10 @@
+import { useEffect, useState } from "react";
 import leftIcon from "../images/chevron-left-solid.svg";
 import RightIcon from "../images/chevron-right-solid.svg";
 import "./WeeklySchedule.css";
+import axios from "axios";
 function WeeklySchedule() {
+
   return (
     <div className="WeeklySchedule">
       <div className="HeadingSchedule">

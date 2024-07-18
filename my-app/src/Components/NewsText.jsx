@@ -1,14 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NewsTextContainer } from './NewsText.style'
 import leftIcon from '../images/chevron-left-solid.svg'
 import rightIcon from '../images/chevron-right-solid.svg'
+import axios from 'axios';
 
-function NewsText() {
+function NewsText({page}) {
 
     const [postUserName,setPostUserName] = useState("Antonio Gallo");
     const [postDate,setPostDate] = useState("23 August 2024")
     const [currentPage,setCurrentPage] = useState("1")
     const [totalPage,setTotalPage] = useState("4")
+
+    const [newsData,setNewsdata] = useState([]);
+
+    useEffect(()=>{
+        (async ()=>{
+            const response = await axios.get("");
+        })();
+    },[])
 
   return (
     <NewsTextContainer>

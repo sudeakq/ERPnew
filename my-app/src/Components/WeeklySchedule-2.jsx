@@ -1,124 +1,121 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 /* import "./WeeklySchedule-2.css"; */
 import { ScheduleContainer } from "./WeeklySchedule-2.style";
+import axios from "axios";
 
-function WeeklyScheduleView() {
+function WeeklyScheduleView({students}) {
+
+  const [departments,setDepartments] = useState({
+    morning : [
+      [ "Human Resources", students.morningStudents.filter((student)=>student.department.name === "Human Resources" )],
+      [ "Data Analyst", students.morningStudents.filter((student)=>student.department.name === "Data Analyst" )],
+      [ "Digital Marketing", students.morningStudents.filter((student)=>student.department.name === "Digital Marketing" )],
+      [ "Copy Writer", students.morningStudents.filter((student)=>student.department.name === "Copy Writer" )],
+      [ "Growth Hacker", students.morningStudents.filter((student)=>student.department.name === "Growth Hacker" )],
+      [ "Business Project Management", students.morningStudents.filter((student)=>student.department.name === "Business Project Management" )],
+      [ "Architecture & Urban Design", students.morningStudents.filter((student)=>student.department.name === "Architecture & Urban Design" )],
+      [ "Information Technology", students.morningStudents.filter((student)=>student.department.name === "Information Technology" )],
+      [ "User Experience Designer", students.morningStudents.filter((student)=>student.department.name === "User Experience Designer" )],
+      [ "European Project Manager", students.morningStudents.filter((student)=>student.department.name === "European Project Manager" )],
+      [ "Business Lawyer", students.morningStudents.filter((student)=>student.department.name === "Business Lawyer" )],
+    ],
+    afternoon : [
+      [ "Human Resources", students.afternoonStudents.filter((student)=>student.department.name === "Human Resources" )],
+      [ "Data Analyst", students.afternoonStudents.filter((student)=>student.department.name === "Data Analyst" )],
+      [ "Digital Marketing", students.afternoonStudents.filter((student)=>student.department.name === "Digital Marketing" )],
+      [ "Copy Writer", students.afternoonStudents.filter((student)=>student.department.name === "Copy Writer" )],
+      [ "Growth Hacker", students.afternoonStudents.filter((student)=>student.department.name === "Growth Hacker" )],
+      [ "Business Project Management", students.afternoonStudents.filter((student)=>student.department.name === "Business Project Management" )],
+      [ "Architecture & Urban Design", students.afternoonStudents.filter((student)=>student.department.name === "Architecture & Urban Design" )],
+      [ "Information Technology", students.afternoonStudents.filter((student)=>student.department.name === "Information Technology" )],
+      [ "User Experience Designer", students.afternoonStudents.filter((student)=>student.department.name === "User Experience Designer" )],
+      [ "European Project Manager", students.afternoonStudents.filter((student)=>student.department.name === "European Project Manager" )],
+      [ "Business Lawyer", students.afternoonStudents.filter((student)=>student.department.name === "Business Lawyer" )],
+    ],
+  })
+
+  const [selectedStudents,setSelectedStudents] = useState([]);
+
+  useEffect(()=>{
+    console.log(departments)
+  },[departments])
+
+  useEffect(()=>{
+    console.log(selectedStudents)
+  },[selectedStudents])
+
+  const handleAddRemove = (id, shift) => {
+    if (!selectedStudents.some(student => student.id === id && student.shift === shift)) {
+      setSelectedStudents((v) => [
+        ...v,
+        {
+          id,
+          shift
+        }
+      ]);
+    } else {
+      setSelectedStudents(v => v.filter(d => !(d.id === id && d.shift === shift)));
+    }
+  }
   
+  const handleSave = async ()=>{
+    const response =  await axios.post("http://localhost:8000/api/students/schedule",selectedStudents);
+    if(response.status)
+      window.location.reload(); 
+  }
+
   return (
     <ScheduleContainer>
-      <header class="header-week">
+      <header className="header-week">
         <h1>Weekly Schedule</h1>
-        <div class="header-right">
-          <button class="nav-button">&#x25C0;</button>
-          <span class="date">20 July 2022</span>
-          <button class="nav-button">&#9654;</button>
+        <div className="header-right">
+          <button className="nav-button">&#x25C0;</button>
+          <span className="date">20 July 2022</span>
+          <button className="nav-button">&#9654;</button>
         </div>
       </header>
-      <main class="schedule-container">
-        <section class="shift" id="morning-shift">
-          <h2>Morning shift 8:00 to 13:00</h2>
-          <div class="group">
-            <h3>Human Resources: 4</h3>
-            <ul>
-              <li>Isata Sajor Bah</li>
-              <li>Katerina Svarcova</li>
-              <li>Klara Tlaskalova</li>
-              <li>Marvellous Oreoluwa Oseyemi</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Data Analyst: 4</h3>
-            <ul>
-              <li>Dang Thi Phi Yen</li>
-              <li>Danil Podtesov</li>
-              <li>Bedriye Ekin Uslu</li>
-              <li>Rustem Mammedov</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Digital Marketing: 3</h3>
-            <ul>
-              <li>Nida Oral</li>
-              <li>Burak Colak</li>
-              <li>Metehan Duzcan</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Copy Writer: 1</h3>
-            <ul>
-              <li>Oyku Dilekci</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Growth Hacker: 1</h3>
-            <ul>
-              <li>Akif Kilic</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Business Project Management: 3</h3>
-            <ul>
-              <li>Sanvir Kaur</li>
-              <li>Hafiza Noorie</li>
-              <li>Julia Wielgus</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Architecture & Urban Design: 1</h3>
-            <ul>
-              <li>Bilge Bahar Saatci</li>
-            </ul>
-          </div>
 
+      <main className="schedule-container">
+        <section className="shift" id="morning-shift">
+          <h2>Morning shift 8:00 to 13:00</h2>
+            {  
+              departments.morning.map((data)=>{
+                if(data[1].length)
+                return (
+                  <div className="group">
+                    <h3>{data[0]}</h3>
+                    <ul>
+                      {data[1].map((innerData)=>{
+                        return(
+                          <li >{innerData.name} <button style={ selectedStudents.some(d=>d.id === innerData.id) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.id,"morning")} className="change-button" >Change</button> </li>
+                      )
+                    })}
+                    </ul>
+                  </div>
+                )
+              })
+            }
         </section>
-        <button class="edit">&#8644;</button>
-        <section class="shift" id="afternoon-shift">
+        <button style={{cursor : "pointer"}} className="edit" onClick={handleSave} >&#8644;</button>
+        <section className="shift" id="afternoon-shift">
           <h2>Afternoon shift 13:00 to 18:00</h2>
-          <div class="group">
-            <h3>Information Technology: 13</h3>
-            <ul>
-              <li>Krist Baliev</li>
-              <li>Asli Karacali</li>
-              <li>Maksim Syryavchev</li>
-              <li>Eneada Sulaj</li>
-              <li>Anouar Abou-er-Raja</li>
-              <li>Sajjad Khan</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Human Resources: 6</h3>
-            <ul>
-              <li>Alexandru Szoke-Manea</li>
-              <li>Sergiu Mateiu</li>
-              <li>Lia Ciobanu</li>
-              <li>Rimma Cezhir</li>
-              <li>Oladiimeji Rahim Aremu</li>
-              <li>Sinem Turkcu</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>User Experience Designer: 1</h3>
-            <ul>
-              <li>Chidiebube Chiemela Samuel</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>European Project Manager: 5</h3>
-            <ul>
-              <li>Fidelix Ayobami</li>
-              <li>Beril Yazar</li>
-              <li>Adriana Goncalves</li>
-              <li>Hatice Cetindere</li>
-              <li>Quincy Lawan</li>
-            </ul>
-          </div>
-          <div class="group">
-            <h3>Business Lawyer: 1</h3>
-            <ul>
-              <li>Sibusio Dominic Mabaso</li>
-              <li>Vimbainashe Vanessa Shumbahete</li>
-            </ul>
-          </div>
+          {  
+              departments.afternoon.map((data)=>{
+                if(data[1].length)
+                return (
+                  <div className="group">
+                    <h3>{data[0]}</h3>
+                    <ul>
+                      {data[1].map((innerData)=>{
+                        return(
+                          <li>{innerData.name}  <button style={ selectedStudents.some(d=>d.id === innerData.id) ? {backgroundColor : "#4b3fa1", color : "white"} : {}} onClick={()=> handleAddRemove(innerData.id,"afternoon")} className="change-button" >Change</button> </li>
+                      )
+                    })}
+                    </ul>
+                  </div>
+                )
+              })
+            }
         </section>
       </main>
     </ScheduleContainer>
