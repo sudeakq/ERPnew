@@ -4,10 +4,16 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import UpcomingArrivalCard from './UpcomingArrivalCard';
-import { Button, Modal, Box, Typography } from "@mui/material";
+import { Button, Modal, Box, Typography, TextField, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
 
 function Arrivals() {
   const [open, setOpen] = useState(false);
+  const [name, setName] = useState('');
+  const [surname, setSurname] = useState('');
+  const [date, setDate] = useState(null);
+  const [status, setStatus] = useState('');
+  const [department, setDepartment] = useState('');
+  const [entries, setEntries] = useState([]);
 
   const handleOpen = () => {
     setOpen(true);
@@ -15,6 +21,49 @@ function Arrivals() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = {
+      name,
+      surname,
+      date: date ? date.format('YYYY-MM-DD') : null,
+      status,
+      department,
+    };
+
+    try {
+      const response = await fetch('http://localhost:8000/api/entries', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        console.log('Form submitted successfully:', data);
+        
+        // Yeni girişi entries state'ine ekleyin
+        setEntries([...entries, formData]);
+        
+        // Formu temizleyin
+        setName('');
+        setSurname('');
+        setDate(null);
+        setStatus('');
+        setDepartment('');
+
+        handleClose(); // Close the modal on successful submission
+      } else {
+        console.error('Form submission failed:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   const style = {
@@ -43,7 +92,6 @@ function Arrivals() {
         <div className="list-reminder">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h1>List</h1>
-            {/* modal-button */}
             <Button
               onClick={handleOpen}
               style={{
@@ -64,16 +112,63 @@ function Arrivals() {
             >
               <Box sx={style}>
                 <Typography id="modal-modal-title" variant="h6" component="h2">
-                  Text in a modal
+                  New Entry
                 </Typography>
-                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                </Typography>
+                <form onSubmit={handleSubmit}>
+                  <TextField
+                    label="Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    fullWidth
+                    margin="normal"
+                  />
+                  <TextField
+                    label="Surname"
+                    value={surname}
+                    onChange={(e) => setSurname(e.target.value)}
+                    fullWidth
+                    margin="normal"
+                  />
+                  <LocalizationProvider dateAdapter={AdapterDayjs}>
+                    <DateCalendar
+                      value={date}
+                      onChange={(newValue) => setDate(newValue)}
+                      margin="normal"
+                    />
+                  </LocalizationProvider>
+                  <FormControl fullWidth margin="normal">
+                    <InputLabel>Status</InputLabel>
+                    <Select
+                      value={status}
+                      onChange={(e) => setStatus(e.target.value)}
+                    >
+                      <MenuItem value="arriving">Arriving</MenuItem>
+                      <MenuItem value="departing">Departing</MenuItem>
+                      <MenuItem value="none">None</MenuItem>
+                    </Select>
+                  </FormControl>
+                  <FormControl fullWidth margin="normal">
+                    <InputLabel>Department</InputLabel>
+                    <Select
+                      value={department}
+                      onChange={(e) => setDepartment(e.target.value)}
+                    >
+                      <MenuItem value="HR">HR</MenuItem>
+                      <MenuItem value="Finance">Finance</MenuItem>
+                      <MenuItem value="Engineering">Engineering</MenuItem>
+                      <MenuItem value="Marketing">Marketing</MenuItem>
+                      <MenuItem value="Sales">Sales</MenuItem>
+                    </Select>
+                  </FormControl>
+                  <Button type="submit" variant="contained" color="primary" fullWidth>
+                    Submit
+                  </Button>
+                </form>
               </Box>
             </Modal>
           </div>
 
-          <UpcomingArrivalCard />
+          <UpcomingArrivalCard entries={entries} />
         </div>
       </div>
     </ArrivalsContainer>
@@ -81,4 +176,3 @@ function Arrivals() {
 }
 
 export default Arrivals;
-  

@@ -28,6 +28,11 @@ use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ShiftController;
 use App\Http\Controllers\UtilityController;
 use App\Http\Controllers\UtilityPriceController;
+use App\Http\Controllers\EntryController;
+
+Route::post('/entries', [EntryController::class, 'store']);
+Route::get('/api/entries', 'EntryController@index');
+
 
 /*
 |--------------------------------------------------------------------------
