@@ -15,9 +15,9 @@ function Arrivals() {
   const [department, setDepartment] = useState('');
   const [entries, setEntries] = useState([]);
 
-  // useEffect hook'u ekle
+ 
   useEffect(() => {
-    // API'ye istek yaparak verileri çek
+   
     const fetchEntries = async () => {
       try {
         const response = await fetch('http://localhost:8000/api/entries');
@@ -33,7 +33,7 @@ function Arrivals() {
     };
 
     fetchEntries();
-  }, []); // Boş bağımlılık dizisi, bu useEffect'in sadece ilk render'da çalışmasını sağlar
+  }, []); 
 
   const handleOpen = () => {
     setOpen(true);
@@ -67,17 +67,16 @@ function Arrivals() {
         const data = await response.json();
         console.log('Form submitted successfully:', data);
         
-        // Yeni girişi entries state'ine ekleyin
         setEntries([...entries, formData]);
         
-        // Formu temizleyin
+        
         setName('');
         setSurname('');
         setDate(null);
         setStatus('');
         setDepartment('');
 
-        handleClose(); // Başarılı gönderimden sonra modalı kapat
+        handleClose(); 
       } else {
         console.error('Form submission failed:', response.statusText);
       }
