@@ -31,7 +31,7 @@ use App\Http\Controllers\UtilityPriceController;
 use App\Http\Controllers\EntryController;
 
 Route::post('/entries', [EntryController::class, 'store']);
-Route::get('/api/entries', 'EntryController@index');
+Route::get('/entries', [EntryController::class, 'index']);
 
 
 /*

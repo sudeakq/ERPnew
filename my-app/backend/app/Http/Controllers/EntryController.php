@@ -5,8 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Entry;
 use Illuminate\Http\Request;
 
+
+
 class EntryController extends Controller
 {
+    public function index()
+    {
+        $entries = Entry::all();
+        return response()->json($entries);
+    }
+    
     public function store(Request $request)
     {
         

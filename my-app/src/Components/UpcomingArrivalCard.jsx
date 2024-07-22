@@ -4,6 +4,8 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import dayjs from 'dayjs';
 
 const UpcomingArrivalCard = ({ entries }) => {
+    
+    
     return (
         <div className="daily-reminder-card-frame">
             {entries.map((entry, index) => (

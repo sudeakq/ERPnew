@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrivalsContainer } from "./Arrivals.style";
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -14,6 +14,26 @@ function Arrivals() {
   const [status, setStatus] = useState('');
   const [department, setDepartment] = useState('');
   const [entries, setEntries] = useState([]);
+
+  // useEffect hook'u ekle
+  useEffect(() => {
+    // API'ye istek yaparak verileri çek
+    const fetchEntries = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/api/entries');
+        if (response.ok) {
+          const data = await response.json();
+          setEntries(data);
+        } else {
+          console.error('Error fetching entries:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error fetching entries:', error);
+      }
+    };
+
+    fetchEntries();
+  }, []); // Boş bağımlılık dizisi, bu useEffect'in sadece ilk render'da çalışmasını sağlar
 
   const handleOpen = () => {
     setOpen(true);
@@ -57,7 +77,7 @@ function Arrivals() {
         setStatus('');
         setDepartment('');
 
-        handleClose(); // Close the modal on successful submission
+        handleClose(); // Başarılı gönderimden sonra modalı kapat
       } else {
         console.error('Form submission failed:', response.statusText);
       }
