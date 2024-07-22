@@ -33,7 +33,7 @@ class StudentFactory extends Factory
             'end_date' => $this->faker->date(),
             'arrival_id' => Arrival::factory(),
             'status_id' => Status::find(mt_rand(1,3)),
-            'position_id' => Position::factory(),
+            'position_id' =>  Position::find(mt_rand(1, 9)),
             'name' => $this->faker->firstName,
             'surname' => $this->faker->lastName,
             'phone_number' => $this->faker->phoneNumber,

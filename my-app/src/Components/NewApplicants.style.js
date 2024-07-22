@@ -10,7 +10,7 @@ export const ApplicantsContainer = styled.div`
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-headerk {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;

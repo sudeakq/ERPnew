@@ -141,6 +141,8 @@ Route::controller(UserTypeController::class)->group(function () {
 
 Route::controller(StudentController::class)->group(function (){
     Route::get('/students','index');
+    Route::get('/students/departments','getStudentsWithDepartment');
+    Route::get('/students/applicant','getStudentsForApplicantlist');
     Route::post('/students','store');
     Route::get('/students/{student}','show');
     Route::post('/students/schedule','updateStudentSchedule');
@@ -181,6 +183,8 @@ Route::controller(DepartmentController::class)->group(function (){
 Route::controller(PositionController::class)->group(function (){
     Route::get('/positions','index');
     Route::post('/positions','store');
+    Route::post('/get/all/positions','getPositions');
+    Route::post('/get/positions','getPositionByName');
     Route::get('/positions/{position}','show');
 });
 

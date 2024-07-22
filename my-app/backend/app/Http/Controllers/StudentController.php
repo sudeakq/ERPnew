@@ -17,7 +17,10 @@ class StudentController extends Controller
 
     public function index()
     {
+        return $this->student->all();
+    }
 
+    public function getStudentsWithDepartment(){
         $morningStudents = $this->student->with('department')
         ->whereNot("morning_shift_id",null)
         ->orderBy('department_id')
@@ -65,6 +68,15 @@ class StudentController extends Controller
     public function show(Student $student)
     {
         return $student;
+    }
+
+    public function getStudentsForApplicantlist(){
+        return $this->student->with(['department','position','status','progress'])
+        ->whereHas('status', function ($query) {
+            $query->where('name','Applicant');
+        })
+        /* ->whereNot('status',null) */
+        ->get();
     }
 
     /**

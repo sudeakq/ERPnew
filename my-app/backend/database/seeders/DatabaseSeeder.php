@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             DepartmentSeeder::class,
             MorningShiftSeeder::class,
             AfternoonShiftSeeder::class,
+            PositionSeeder::class,
             ProgressSeeder::class,
             StatusSeeder::class,
             StudentSeeder::class,

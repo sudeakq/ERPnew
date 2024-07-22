@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('progress', function (Blueprint $table) {
             $table->id();
             $table->string('progress');
+            $table->date('date');
             $table->string('status');
             $table->timestamps();
         });

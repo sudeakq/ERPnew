@@ -18,6 +18,7 @@ class ProgressFactory extends Factory
     {
         return [
             "progress" => $this->faker->word(),
+            "date" => $this->faker->date(),
         ];
     }
 }

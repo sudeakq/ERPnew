@@ -11,14 +11,17 @@ function ApplicantsForms(){
   const [selectedRoom,setSelectedRoom] = useState("Room");
   const [selectedInterviewer,setSelectedInterviewer] = useState("Interviewer");
   const [selectedStatus,setSelectedStatus] = useState("Status");
-  
+  const [selectedDriver,setSelectedDriver] = useState("Driver")
+
   const [apartments,setApartments] = useState([
     "Apartment"
   ])
 
   const [rooms,setRoom] = useState([
-    "Room"
-  ])
+    "Room",
+    "Single",
+    "Double"
+  ]);
 
   const [countries,setCountries] = useState([
     "Country",
@@ -35,8 +38,17 @@ function ApplicantsForms(){
 
   const [departments,setDepartments] = useState([
     "Department",
-    "HR",
-    "IT"
+    "Human Resources",
+    "Data Analyst",
+    "Digital Marketing",
+    "Copy Writer",
+    "Growth Hacker",
+    "Business Project Management",
+    "Architecture & Urban Design",
+    "Information Technology",
+    "User Experience Designer",
+    "European Project Manager",
+    "Business Lawyer"
   ]);
 
   const [positions,setPositions] = useState([
@@ -53,6 +65,19 @@ function ApplicantsForms(){
     "Done"
   ]);
 
+  const [drivers,setDrivers] = useState([
+    "Driver",
+    "Lorenzo"
+  ]);
+
+  const [idList,setIdList] = useState({
+    arrivalId : 0,
+    statusId : 0,
+    departmentId : 0,
+    positionId : 0,
+    coordinatorId : 0
+  });
+
   const [formData,setFormData] = useState({
     "name" : "",
     "surName" : "",
@@ -68,6 +93,8 @@ function ApplicantsForms(){
       "startDate" : "",
       "endDate" : "",
       "arrival" : "",
+      "pickupLocation" :  "",
+      "pickupBy" : selectedDriver 
     },
     "coordinator" : {
       "name" : "",
@@ -89,21 +116,73 @@ function ApplicantsForms(){
     },
   });
 
-  const handleChangeSelected = (e,setSelectedData)=>{
-    
-    setSelectedData(e.target.value);
+  useEffect(()=>{
+    console.log(selectedPosition)
+  },[selectedPosition])
 
+  useEffect(()=>{
+    console.log(formData)
+  },[formData])
+
+  const handleChangePositions = async (value) => {
+    const response = await axios.post("http://localhost:8000/api/get/all/positions",{
+      name : value
+    });
+
+    if(response.status) setPositions(()=>["Position",...response.data])
+
+  }
+
+  const handleChangeRooms = async (value) => {
+    
+  }
+
+  const handleChangeSelected = (e,setSelectedData)=>{
+    setSelectedData(e.target.value);
   }
 
   const handleAdd = async () => {
     try {
-      const {data} = await axios.post("http://localhost:8000/api/students",{
+
+      let response = await axios.post("http://localhost:8000/api/arrivals",{
+        time : formData.internshipInfo.arrival,
+        pickup_location : formData.internshipInfo.pickupLocation,
+        pickup_by : formData.internshipInfo.pickupBy 
+      })
+
+      if(response.status)
+        setIdList(v=>({...v,arrivalId : response.data.id}))
+
+      response = await axios.post("http://localhost:8000/api/status",{
+        name : "Intern"
+      });
+
+      if(response.status) 
+        setIdList(v=>({...v,statusId : response.data.id}))
+      
+      response = await axios.post("http://localhost:8000/api/get/positions",{name : selectedPosition});
+
+      if(response.status) {
+        setIdList(v=>({...v,positionId : response.data.id}))
+        setIdList(v=>({...v,departmentId : response.data.department_id}))
+      }
+    
+      response = await axios.post("http://localhost:8000/api/coordinators",{
+        name : formData.coordinator.name,
+        email : formData.coordinator.email,
+        phone_number : formData.coordinator.phone
+      });
+
+      if(response.status) 
+        setIdList(v=>({...v,coordinatorId : response.data.id}));
+
+      /* const {data} = await axios.post("http://localhost:8000/api/students",{
         "application_date": formData.internshipInfo.applicationDate,
         "start_date": formData.internshipInfo.startDate,
         "end_date": formData.internshipInfo.endDate,
-        "arrival_id": 1,
-        "status_id": 1,
-        "positions_id": 1,
+        "arrival_id": idList.arrivalId,
+        "status_id": idList.statusId,
+        "positions_id": idList.positionId,
         "name": formData.name,
         "surname": formData.surName,
         "phone_number": formData.phone,
@@ -111,7 +190,7 @@ function ApplicantsForms(){
         "country": selectedCountry,
         "institution": formData.studentInfo.institution,
         "nationality": formData.studentInfo.country,
-        "departments_id": 1,
+        "departments_id": idList.departmentId,
         "email": formData.email,
         "date_of_birth": formData.dateOfBirth,
         "coordinators_id": 1,
@@ -119,8 +198,8 @@ function ApplicantsForms(){
         "health_issues": "None"
     });
       
-      console.log(data)
-
+    console.log(data) 
+ */
     } catch (error) {
       console.log(error)
     }
@@ -269,7 +348,10 @@ function ApplicantsForms(){
       </div>
       <div className="field">
         <label>Department</label>
-        <select onChange={(e)=>handleChangeSelected(e,setSelectedDepartment)} >
+        <select onChange={(e)=>{
+          handleChangeSelected(e,setSelectedDepartment);
+          handleChangePositions(e.target.value)
+        }} >
           {departments.map(department=>{
             return (
               <option>{department}</option>
@@ -335,13 +417,42 @@ function ApplicantsForms(){
           placeholder="DD/MM/YYYY" 
         />
       </div>
+      <div className="field">
+        <label>Pick up Location</label>
+        <input
+          name="pickupLocation" 
+          type="text" 
+          value={formData.internshipInfo.pickupLocation} 
+          onChange={(e)=>setFormData(v=>({
+            ...v,
+            internshipInfo : {
+              ...v.internshipInfo,
+              [e.target.name] : e.target.value
+            }
+          }))}  
+          placeholder="Location..." 
+        />
+      </div>
+      <div className="field">
+        <label>Pick up By</label>
+        <select onChange={(e)=>handleChangeSelected(e,setSelectedDriver)} >
+          {drivers.map(driver=>{
+            return (
+              <option>{driver}</option>
+            )
+          })}
+        </select>
+      </div>
     </div>
 
     <div className="section">
       <h3>Housing :</h3>
       <div className="field">
         <label>Apartment</label>
-        <select onChange={(e)=>handleChangeSelected(e,setSelectedApartment)} >
+        <select onChange={(e)=>{
+          handleChangeSelected(e,setSelectedApartment);
+          handleChangeRooms(e.target.name)
+        }} >
           {apartments.map(apartment=>{
             return (
               <option>{apartment}</option>
