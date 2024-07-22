@@ -43,6 +43,19 @@ background-color: rgba(228,234,246,255);
     font-weight: bold;
 }
 
+.edit-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding:15px;
+     margin-right: 10px;
+    color: black;
+    margin-left: 77rem;
+    margin-bottom: 20px; /* Set text color to black */
+    /* Space between button and title */
+}
+
 .date-text {
     font-size: 17px;    
     font-weight: bold;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header  from './Components/Header';
+import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 // import Card from './Components/Card';
 import ReminderClicked from './Components/ReminderClicked';
@@ -8,7 +8,7 @@ function WhatsNewClick() {
 
   // const [selected,setSelected] = useState();
 
-  return(
+  return (
     <>
       <Header />
       <div className="container">
@@ -16,7 +16,7 @@ function WhatsNewClick() {
         <main>
           <ReminderClicked />
         </main>
-    </div>
+      </div>
     </>
 
   );
