@@ -1,4 +1,3 @@
-// src/Content.js
 import React from "react";
 import { ContentContainer } from "./content.style";
 import DashCard from "./DashCard";
@@ -7,8 +6,29 @@ import WeeklyScheduleCard from "./WeeklyScheduleCard";
 import DailyReminderCard from "./DailyReminderCard";
 import UpcomingBirthdayCard from "./UpcomingBirthdaysCard";
 import UpcomingArrivalCard from "./UpcomingArrivalCard";
+import { useEffect , useState} from "react";
 
-const Content = () => {
+function Content(){
+
+  const [entries, setEntries] = useState([]);
+  useEffect(() => {
+    const fetchEntries = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/api/entries');
+        if (response.ok) {
+          const data = await response.json();
+          setEntries(data);
+        } else {
+          console.error('Error fetching entries:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error fetching entries:', error);
+      }
+    };
+
+    fetchEntries();
+  }, []);
+  
   return (
     <ContentContainer>
       <div className="content-container">
@@ -69,7 +89,7 @@ const Content = () => {
               <a href="/arrivals">View All (8)</a>
             </div>
           </div>
-          <UpcomingArrivalCard />
+          <UpcomingArrivalCard entries={entries} limit={3} />
 
           <div className="content-container-bottom" style={{}}>
             <h4>Upcoming Birthdays </h4>

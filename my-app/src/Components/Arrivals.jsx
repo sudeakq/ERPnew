@@ -6,6 +6,7 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import UpcomingArrivalCard from './UpcomingArrivalCard';
 import { Button, Modal, Box, Typography, TextField, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
 
+
 function Arrivals() {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
@@ -15,9 +16,7 @@ function Arrivals() {
   const [department, setDepartment] = useState('');
   const [entries, setEntries] = useState([]);
 
- 
   useEffect(() => {
-   
     const fetchEntries = async () => {
       try {
         const response = await fetch('http://localhost:8000/api/entries');
@@ -33,7 +32,7 @@ function Arrivals() {
     };
 
     fetchEntries();
-  }, []); 
+  }, []);
 
   const handleOpen = () => {
     setOpen(true);
@@ -66,17 +65,16 @@ function Arrivals() {
       if (response.ok) {
         const data = await response.json();
         console.log('Form submitted successfully:', data);
-        
+
         setEntries([...entries, formData]);
-        
-        
+
         setName('');
         setSurname('');
         setDate(null);
         setStatus('');
         setDepartment('');
 
-        handleClose(); 
+        handleClose();
       } else {
         console.error('Form submission failed:', response.statusText);
       }
@@ -103,9 +101,10 @@ function Arrivals() {
       <div className="container-reminder">
         <div className="calendar-reminder border-reminder">
           <h1>Calendar</h1>
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DateCalendar />
-          </LocalizationProvider>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=sudeakq%40gmail.com&ctz=Europe%2FIstanbul"
+            style={{ border: '0', width: '400px', height: '300px' }}
+          ></iframe>
         </div>
 
         <div className="list-reminder">
@@ -187,9 +186,10 @@ function Arrivals() {
             </Modal>
           </div>
 
-          <UpcomingArrivalCard entries={entries} />
+          <UpcomingArrivalCard entries={entries}  />
         </div>
       </div>
+      
     </ArrivalsContainer>
   );
 }
