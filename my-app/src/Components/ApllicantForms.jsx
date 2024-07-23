@@ -506,7 +506,7 @@ function ApplicantsForms(){
         <select onChange={(e)=>handleChangeSelected(e,setSelectedDriver)} >
           {drivers.map(driver=>{
             return (
-              <option>{driver}</option>
+              <option value={driver} >{driver}</option>
             )
           })}
         </select>
