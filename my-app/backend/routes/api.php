@@ -23,6 +23,7 @@ use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\ApartmentProblemController;
+use App\Http\Controllers\InterviewerController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ShiftController;
@@ -227,3 +228,11 @@ Route::controller(UtilityPriceController::class)->group(function () {
     Route::put('/utility-prices/{utilityPrice}', 'update')->name('utility-prices.update');
     Route::delete('/utility-prices/{utilityPrice}', 'destroy')->name('utility-prices.destroy');
 });
+
+Route::controller(InterviewerController::class)->group(function (){
+    Route::get('/interviewers','index');
+    Route::post('/interviewers','store');
+    Route::get('/interviewers/{interviewer}','show');
+});
+
+

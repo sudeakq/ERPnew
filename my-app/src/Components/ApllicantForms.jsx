@@ -3,6 +3,8 @@ import './ApllicantForm.css';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+// DO INTERVIEWER ID 
+
 function ApplicantsForms(){
   
   const [ready,setReady] = useState(false)
@@ -17,6 +19,7 @@ function ApplicantsForms(){
   const [selectedDriver,setSelectedDriver] = useState("Driver")
   const [selectedNationality,setSelectedNationality] = useState("Nationality")
   const [selectedGender,setSelectedGender] = useState("Gender");
+  const [selectedShift,setSelectedShift] = useState("Shift");
 
   const navigate = useNavigate();
 
@@ -24,6 +27,12 @@ function ApplicantsForms(){
     "Apartment"
   ])
   
+  const [shifts,setShifts] = useState([
+    "Shift",
+    "First (Morning)",
+    "Second (Afternoon) "
+  ]);
+
   const [genders,setGenders] = useState([
     "Gender",
     "male",
@@ -81,7 +90,6 @@ function ApplicantsForms(){
 
   const [interviewers,setInterviewers] = useState([
     "Interviewer",
-    "Patrycja"
   ]);
 
   const [status,setStatus] = useState([
@@ -101,7 +109,8 @@ function ApplicantsForms(){
     departmentId : 0,
     positionId : 0,
     coordinatorId : 0,
-    apartmentId : 0
+    apartmentId : 0,
+    interviewerId : 0,
   });
 
   const [formData,setFormData] = useState({
@@ -151,6 +160,19 @@ function ApplicantsForms(){
       }
     })();
   },[]);
+
+  useEffect(()=>{
+    (async () => {
+      const response = await axios.get("http://localhost:8000/api/interviewers");
+      if(response.status){
+        setInterviewers(()=>([{name : "Interviewer"},...response.data]))
+      }
+    })();
+  },[]);
+
+  useEffect(()=>{
+    console.log(interviewers)
+  },[interviewers])
 
     const handleChangePositions = async (value) => {
     const response = await axios.post("http://localhost:8000/api/get/all/positions",{
@@ -222,6 +244,7 @@ function ApplicantsForms(){
   }
 
   useEffect(()=>{
+
     if(ready){
       (async ()=> {
         const {data} = await axios.post("http://localhost:8000/api/students",{
@@ -236,6 +259,7 @@ function ApplicantsForms(){
           "phone_number": formData.phone,
           "sex": selectedGender,
           "country": selectedCountry,
+          "interviewer_id" : idList.interviewerId,
           "institution": formData.studentInfo.institution,
           "nationality": selectedNationality,
           "department_id": idList.departmentId,
@@ -470,6 +494,16 @@ function ApplicantsForms(){
         />
       </div>
       <div className="field">
+        <label>Shift</label>
+        <select onChange={(e)=>handleChangeSelected(e,setSelectedShift)} >
+          {shifts.map(shift=>{
+            return (
+              <option value={shift} >{shift}</option>
+            )
+          })}
+        </select>
+      </div>
+      <div className="field">
         <label>Arrival</label>
         <input
           name="arrival" 
@@ -622,7 +656,7 @@ function ApplicantsForms(){
         <select onChange={(e)=>handleChangeSelected(e,setSelectedInterviewer)} >
           {interviewers.map(interviewer=>{
             return (
-              <option>{interviewer}</option>
+              <option>{interviewer.name}</option>
             )
           })}
         </select>
