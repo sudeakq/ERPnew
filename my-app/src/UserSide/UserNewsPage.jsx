@@ -5,6 +5,8 @@ import NewsPage from "./Components/NewsPage";
 /* import Birthday from "./Birthday"; */
 /* import WeeklySchedule from "./WeeklySchedule"; */
 /* import Bills from "./Bills"; */
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 /* import MeetPeople from "./MeetPeople"; */
 import "./UserDashboard.css";
 

@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             DepartmentSeeder::class,
             MorningShiftSeeder::class,
+            ApartmentSeeder::class,
             AfternoonShiftSeeder::class,
             PositionSeeder::class,
             ProgressSeeder::class,

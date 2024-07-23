@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\AfternoonShift;
+use App\Models\Apartment;
 use App\Models\Arrival;
 use App\Models\Coordinator;
 use App\Models\Department;
@@ -45,7 +46,7 @@ class StudentFactory extends Factory
             'email' => $this->faker->unique()->safeEmail,
             'date_of_birth' => $this->faker->date(),
             'coordinator_id' => Coordinator::factory(),
-            'room_id' => Room::factory(),
+            'apartment_id' =>  Apartment::find(mt_rand(1, 9)),
             'health_issues' => $this->faker->sentence,
             'morning_shift_id' => $isMorning ? MorningShift::first() : null,
             'afternoon_shift_id' => !$isMorning ? AfternoonShift::first() : null,

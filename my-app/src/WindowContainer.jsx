@@ -16,8 +16,15 @@ function WindowContainer() {
         const userData = Cookies.get("current-user") ? Cookies.get("current-user") : false;
         if(userData){
             setCurrentUser(JSON.parse(userData))
-        }else navigate("/login")
+        }else {
+            navigate("/login")
+            console.log('navigate ')
+        }
+        
         setIsLoading(false)
+
+        if(window.location.pathname === "/") navigate("/login")
+
     }, []);
 
     if (isLoading) {

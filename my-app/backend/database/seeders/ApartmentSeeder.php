@@ -18,14 +18,6 @@ class ApartmentSeeder extends Seeder
         ]);
 
         Apartment::factory()->create([
-            "name" => "Bianco 1"
-        ]);
-
-        Apartment::factory()->create([
-            "name" => "Bianco 1"
-        ]);
-
-        Apartment::factory()->create([
             "name" => "Bianco 2"
         ]);
 

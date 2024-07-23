@@ -13,11 +13,7 @@ function NewsText({page}) {
 
     const [newsData,setNewsdata] = useState([]);
 
-    useEffect(()=>{
-        (async ()=>{
-            const response = await axios.get("");
-        })();
-    },[])
+    
 
   return (
     <NewsTextContainer>

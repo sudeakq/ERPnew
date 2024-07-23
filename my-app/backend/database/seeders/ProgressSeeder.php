@@ -32,11 +32,6 @@ class ProgressSeeder extends Seeder
         ]);
 
         Progress::factory()->create([
-            "progress" => "New Applicant",
-            "status" => $status[mt_rand(0, 4)]
-        ]);
-
-        Progress::factory()->create([
             "progress" => "Waiting for Grant",
             "status" => $status[mt_rand(0, 4)]
         ]);
@@ -64,6 +59,11 @@ class ProgressSeeder extends Seeder
         Progress::factory()->create([
             "progress" => "None",
             "status" => $status[mt_rand(0, 4)]
+        ]);
+
+        Progress::factory()->create([
+            "progress" => "New Applicant",
+            "status" => "Pending"
         ]);
 
     }

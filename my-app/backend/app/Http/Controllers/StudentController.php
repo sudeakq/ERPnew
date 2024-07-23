@@ -6,6 +6,7 @@ use App\Models\AfternoonShift;
 use App\Models\MorningShift;
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Mockery\Expectation;
 
 class StudentController extends Controller
 {
@@ -59,8 +60,23 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->student->create($request->all());
+        try {
+            $student = $this->student->create($request->all());
+            
+            return response()->json([
+                'success' => true,
+                'data' => $student
+            ], 201);
+    
+        } catch (\Exception $e) {
+            
+            return response()->json([
+                'success' => false,
+                'message' => 'Student creation failed: ' . $e->getMessage()
+            ], 500);
+        }
     }
+    
 
     /**
      * Display the specified resource.
@@ -75,7 +91,7 @@ class StudentController extends Controller
         ->whereHas('status', function ($query) {
             $query->where('name','Applicant');
         })
-        /* ->whereNot('status',null) */
+        ->orderByDesc("created_at")
         ->get();
     }
 

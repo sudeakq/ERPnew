@@ -27,12 +27,12 @@ import WindowContainer from './WindowContainer';
 import UserBills from './UserSide/UserBills';
 import UserBirthday from './UserSide/UserBirthday'; 
 import UserForgotPassword from './UserSide/ForgotPassword';
-import UserMeetPeople from "./UserSide/UserMeetPeople";  
-/* import UserNewsPage from "./Userside/UserNewsPage"; // Needs to be fixed */ 
+import UserMeetPeople from "./UserSide/UserMeetPeople";   
 import UserReadMore from "./UserSide/UserReadMore";
 import UserResetPassword from "./UserSide/ResetPassword";
 import UserDashboard from "./UserSide/UserDashboard";
-import UserStartPage from "./UserSide/UserStartPage";  
+import UserStartPage from "./UserSide/UserStartPage"; 
+import UserNewsPage from "./UserSide/UserNewsPage"; 
 
 const App = () => {
 
@@ -63,7 +63,7 @@ const App = () => {
           <Route path='bills' element={<UserBills />} />
           <Route path='birthday' element={<UserBirthday />} />
           <Route path='workers' element={<UserMeetPeople />} />  
-          {/* <Route path='news' element={<UserNewsPage />} /> */}   
+          <Route path='news' element={<UserNewsPage />} />   
           <Route path='news/1' element={<UserReadMore />} />
           <Route path='resetPassword' element={<UserResetPassword />} />
           <Route path='dashboard' element={<UserDashboard />} />
