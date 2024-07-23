@@ -13,8 +13,7 @@ function NewsText({page}) {
 
     const [newsData,setNewsdata] = useState([]);
 
-    
-
+  
   return (
     <NewsTextContainer>
         <div className="text-container">
