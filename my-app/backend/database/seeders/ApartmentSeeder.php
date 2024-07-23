@@ -13,6 +13,41 @@ class ApartmentSeeder extends Seeder
      */
     public function run(): void
     {
-        Apartment::factory(10)->create();
+        Apartment::factory()->create([
+            "name" => "Bianco 1"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Bianco 2"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Ferraro"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Gallo"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Gentile"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Pignataro"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Romeo"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Russo 1"
+        ]);
+
+        Apartment::factory()->create([
+            "name" => "Russo 2"
+        ]);
+
     }
 }

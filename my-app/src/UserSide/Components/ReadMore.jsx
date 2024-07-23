@@ -2,10 +2,15 @@ import leftIcon from "../../images/chevron-left-solid.svg";
 import rightIcon from "../../images/chevron-right-solid.svg";
 import profileImg from "../../images/Profile-img.png";
 import dot from "../../images/dot.png";
-import "./ReadMore.css";
+
+/* import "./ReadMore.css"; */
+
+import { ReadMoreContainer } from "./ReadMore.style";
+
 function ReadMore() {
+
   return (
-    <div className="ReadMorePage">
+    <ReadMoreContainer>
       <div className="Container-ReadMore">
         <div className="Heading bold">
           <img src={profileImg} alt="" />
@@ -44,7 +49,7 @@ function ReadMore() {
         <p>1/4</p>
         <img src={rightIcon} alt="" className="arrowSvg" />
       </div>
-    </div>
+    </ReadMoreContainer>
   );
 }
 export default ReadMore;

@@ -19,6 +19,8 @@ class ApartmentFactory extends Factory
         return [
             'name' => $this->faker->name,
             'location' => $this->faker->city,
+            'single_room' => mt_rand(0, 3),
+            'double_room' => mt_rand(0, 3)
         ];
     }
 }

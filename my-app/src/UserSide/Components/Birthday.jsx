@@ -1,8 +1,11 @@
 import clock from "../../images/icon-clock.png";
-import "./Birthday.css";
+import { BirthdayContainer } from "./Birthday.style";
+
+/* import "./Birthday.css";*/
+
 function Birthday() {
   return (
-    <div className="BirthdayPage">
+    <BirthdayContainer>
       <div className="Heading">
         <h1>Upcoming Birthdays🎂🎉🍾</h1>
       </div>
@@ -95,7 +98,7 @@ function Birthday() {
           </div>
         </div>
       </div>
-    </div>
+    </BirthdayContainer>
   );
 }
 export default Birthday;

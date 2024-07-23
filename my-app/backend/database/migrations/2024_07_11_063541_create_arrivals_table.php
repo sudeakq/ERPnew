@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('arrivals', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('time');
+            $table->date('time');
             $table->string('pickup_location');
             $table->string('pickup_by');
             $table->timestamps();

@@ -16,8 +16,8 @@ class Position extends Model
         return $this->hasMany(Student::class);
     }
 
-    public function departments(){
-        return $this->belongsToMany(Department::class);
+    public function department(){
+        return $this->belongsTo(Department::class);
     }
 
 }

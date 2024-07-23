@@ -11,9 +11,9 @@ class Apartment extends Model
 
     protected $guarded = [];
 
-    public function rooms(){
-        return $this->hasMany(Room::class);
-    }
+/*     public function rooms(){
+        return $this->hasOne(Room::class);
+    } */
 
     public function consumedUtilities(){
         return $this->hasMany(ConsumedUtility::class);
