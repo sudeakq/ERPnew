@@ -7,8 +7,6 @@ export const WorkersDataContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
-  height: 120vh;
-  overflow-y: auto;
 
   .title {
     background-color: #BDE3FF;
@@ -27,7 +25,7 @@ export const WorkersDataContainer = styled.div`
 
   .grid {
     width: 90%;
-    height: 90%;
+    height: 100%;
     margin-top : 30px;
     display: grid;
     grid-template-columns: 30% 30% 30%;

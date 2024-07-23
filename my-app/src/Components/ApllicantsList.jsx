@@ -5,7 +5,7 @@ import './ApllicantsList.css';
 
 const ApplicantsList = () => {
   const applicants = [
-    { name: 'Aryan Arora', department: 'ICT', position: '-', start: '8.05.2024', end: '5.08.2024', status: 'new', created: '-', actions: '-' },
+    { name: 'Sandeep Gautam', department: 'ICT', position: 'Deep Palace', start: '8.05.2024', end: '5.08.2024', status: 'new', created: '-', actions: '-' },
     { name: 'Argyro Karachaliou', department: 'HR Management', position: '-', start: '18.03.2024', end: '30.05.2024', status: 'new', created: '-', actions: '-' },
     { name: 'Jeffrey Ackah Blay', department: 'HR Management', position: '-', start: '18.04.2024', end: '19.07.2024', status: 'hr. interview', created: '-', actions: '-' },
     { name: 'Eneada Sulaj', department: 'Business & Data Analyst', position: '-', start: '20.04.2024', end: '30.07.2024', status: 'manager interview', created: '-', actions: '-' },

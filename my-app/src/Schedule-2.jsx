@@ -18,7 +18,7 @@ function ScheduleView() {
 
   useEffect(()=>{
     (async () => {
-      const response = await axios.get("http://localhost:8000/api/students");
+      const response = await axios.get("http://localhost:8000/api/students/departments");
       if(response.status){
         
         setStudents((v)=>({
@@ -57,7 +57,8 @@ function ScheduleView() {
       <div className="container">
         <Sidebar {...{selected,setSelected}} />
         <main>
-          <WeeklyScheduleView {...{students}} />
+          <WeeklyScheduleView {...{students}} /> 
+          {/* <WeeklySchedule /> */}
         </main>
       </div>
     </>

@@ -2,23 +2,20 @@
 import styled from "styled-components";
 
 export const NewsTextContainer = styled.div`
-
-    width: 100%;
-    height: 100vh;
-    padding: 50px 0px;
     background-color: #F5F5F5;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 5rem;
 
     .text-container {
+        
         background-color: white;
         border-radius: 10px;
         width: 90%;
         height: 90%;
         padding: 50px;
-        overflow-y: auto;
         border: 1px solid rgba(220,221,225,1);
 
         .title-data {

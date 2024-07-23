@@ -2,7 +2,6 @@
 import styled from "styled-components";
 
 export const ReminderClickedContainer = styled.div`
-padding-bottom : 50px;
 background-color: rgba(228,234,246,255);
 
 .total-container {
@@ -41,6 +40,19 @@ background-color: rgba(228,234,246,255);
     width: 15%;
     color: #4F4F4F;
     font-weight: bold;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding:15px;
+     margin-right: 10px;
+    color: black;
+    margin-left: 77rem;
+    margin-bottom: 20px; /* Set text color to black */
+    /* Space between button and title */
 }
 
 .date-text {
@@ -84,10 +96,11 @@ background-color: rgba(228,234,246,255);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 50px;
     font-weight: bold;
     font-size: 11px;
     gap: 3px;
+    padding-bottom: 30px;
 }
 
 

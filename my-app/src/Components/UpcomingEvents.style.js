@@ -2,114 +2,105 @@ import styled from "styled-components";
 
 export const UpcomingEventsContainer = styled.div`
 
-
+.BirthdayPage {
+    padding-left: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    min-width: 970px;
+}
+.Heading {
+  margin-right: 8em;
+}
+.Contain-Birthday {
+    margin-top: 1rem;
+    display: flex;
+    gap: 7.5rem;
+}
+.Content-Birthday {
+    width: 37.5vw;
+    min-width: 500px;
+    background-color: white;
+    border: #DCDDE1 1px solid;
+    border-radius: 20px;
+    padding: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: #4F4F4F;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Birthdays-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+}
+.Birthday {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arriveInfos {
   display: flex;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 98%;
-  max-width: 90%;
-  height: 87vh;
-
-.section {
-    background-color: red;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  height: 70vh;
+  align-items: center;
+  justify-content: space-between;
+  width: 57.5%;
 }
-
-h2 {
-  color: #333;
-  margin-bottom: 20px;
+.Arriving {
+  color: #07B94E;
 }
-
-.calendar {
-  width: 100%;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
+.Departing {
+  color: #DB5F5F;
 }
-
-.calendar th,
-.calendar td {
-  text-align: center;
-  padding: 7px;
-  border: 1px solid #ddd;
+.right-B {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
-
-.calendar th {
-  background-color: #f0f0f0;
-  font-weight: bold;
+.right-B > img {
+    width: 25px;
 }
-
-.calendar th[colspan="7"] {
-  background-color: #fff;
-  border-bottom: none;
+.left-B > b {
+    color: black;
 }
-
-.calendar th h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: normal;
+.Calendar-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 20vw;
+    min-width: 300px;
 }
-
-.calendar td {
-  cursor: pointer;
+.CalendarContain {
+    background-color: white;
+    border: #DCDDE1 1px solid;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    
+}   
+table {
+    border-collapse: separate;
+    border-spacing: 1.5rem 1rem;
 }
-
-.calendar td.today {
-  background-color: #e0e0e0;
+.selectedDate {
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
 }
-
-.calendar td.selected {
-  background-color: #e0f7ff;
-  font-weight: bold;
-  color: #0077ff;
-  border-radius: 50%;
+.calendarDays {
+    color: #333333;
+    opacity: 0.8;
 }
-
-.calendar td.prev-month,
-.calendar td.next-month {
-  color: #b0b0b0;
+.greyDay {
+    color: #333333;
+    opacity: 0.5;
 }
-
-
-.list {
-  width: 100%;
-  /* border-collapse: collapse; */
-  border: 1px solid #000000;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-.list th,
-.list td {
-  text-align: left;
-  padding: 14px;
-  border: 1px solid #ddd;
-}
-
-.list th {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
-
-.list td.status {
-  text-align: center;
-}
-
-.list td.status.arriving {
-  color: green;
-}
-
-.list td.status.departing {
-  color: red;
-}
-
-.list td.date {
-  text-align: right;
-}
-
 
 `

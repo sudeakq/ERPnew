@@ -1,6 +1,15 @@
 
 import styled from "styled-components";
-import cartImage  from "../images/image17.png";
+import ITcard  from "../images/image17.png";
+import HRcard from "../images/HrImage.avif";
+import BAcard from "../images/BaImage.jpg";
+import DAcard from "../images/DAimage.avif";
+import DMcard from "../images/DmImage.jpg";
+import EPMcard from "../images/EPMimage.jpg";
+import FAcard from "../images/FaImage.webp";
+import UDcard from "../images/UDimage.jpg";
+import UXcard from "../images/UXimage.jpg";
+
 
 export const DepartmantsContainer = styled.div`
 
@@ -8,7 +17,6 @@ export const DepartmantsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 30px 0;
-  overflow-y: auto;
   height: 120vh;
 
   .title {
@@ -43,12 +51,38 @@ export const DepartmantsContainer = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url(${cartImage});
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       border-radius: 30px;
       transition: 0.5s ease-in-out;
+    }
+    .C1::before {
+      background-image: url(${ITcard});
+    }
+    .C2::before {
+      background-image: url(${HRcard});
+    }
+    .C3::before {
+      background-image: url(${DMcard});
+    }
+    .C4::before {
+      background-image: url(${FAcard});
+    }
+    .C5::before {
+      background-image: url(${BAcard});
+    }
+    .C6::before {
+      background-image: url(${DAcard});
+    }
+    .C7::before {
+      background-image: url(${UXcard});
+    }
+    .C8::before {
+      background-image: url(${UDcard});
+    }
+    .C9::before {
+      background-image: url(${EPMcard});
     }
     
     .card:hover p {
