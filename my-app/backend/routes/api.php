@@ -240,5 +240,6 @@ Route::controller(ProgressController::class)->group(function (){
     Route::get('/progresses','index');
     Route::post('/progresses','store');
     Route::get('/progresses/{progress}','show');
+    Route::put('/progresses/{progress}', 'update');   
 });
 
