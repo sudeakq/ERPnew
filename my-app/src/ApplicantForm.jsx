@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
-import ApplicantsForms from './Components/ApllicantForms'; // Corrected import
+import ApplicantsForms from './Components/ApplicantForms'; // Corrected import
 // Corrected import
 
 function ApplicantsForm() {

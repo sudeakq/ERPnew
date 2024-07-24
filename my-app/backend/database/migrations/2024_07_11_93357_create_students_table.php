@@ -5,6 +5,7 @@ use App\Models\Apartment;
 use App\Models\Arrival;
 use App\Models\Coordinator;
 use App\Models\Department;
+use App\Models\Interviewer;
 use App\Models\MorningShift;
 use App\Models\Position;
 use App\Models\Progress;
@@ -29,6 +30,7 @@ return new class extends Migration
             $table->foreignIdFor(Arrival::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Status::class)->constrained('status')->onDelete('cascade');
             $table->foreignIdFor(Position::class)->constrained()->onDelete('cascade');
+            $table->foreignIdFor(Interviewer::class)->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('surname');
             $table->string('phone_number');

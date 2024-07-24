@@ -7,6 +7,7 @@ use App\Models\Apartment;
 use App\Models\Arrival;
 use App\Models\Coordinator;
 use App\Models\Department;
+use App\Models\Interviewer;
 use App\Models\MorningShift;
 use App\Models\Position;
 use App\Models\Progress;
@@ -35,6 +36,7 @@ class StudentFactory extends Factory
             'arrival_id' => Arrival::factory(),
             'status_id' => Status::find(mt_rand(1,3)),
             'position_id' =>  Position::find(mt_rand(1, 9)),
+            'interviewer_id' => Interviewer::find(1),
             'name' => $this->faker->firstName,
             'surname' => $this->faker->lastName,
             'phone_number' => $this->faker->phoneNumber,
