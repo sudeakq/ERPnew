@@ -19,7 +19,7 @@ import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
 import NewsData from './NewsData';
-import ApplicantsForm from './ApllicantForm';
+import ApplicantsForm from './ApplicantForm';
 import WindowContainer from './WindowContainer';
 
 // USER COMPONENTS
@@ -49,6 +49,7 @@ const App = () => {
           <Route path='birthdays' element={<UpcomingBirthdays />} />
           <Route path='departments' element={<Departments />} />
           <Route path='applicants' element={<Applicants />} />
+          <Route path="ApplicantForm" element={<ApplicantsForm />} />
           <Route path='interns' element={<Intern />} />
           <Route path='alumni' element={<Alumni />} />
           <Route path='houses' element={<AllHous />} />
@@ -56,7 +57,6 @@ const App = () => {
           <Route path='login' element={<StartPage />} />
           <Route path='workers' element={<Workers />} />
           <Route path='events' element={<Events />} />
-          <Route path="ApplicantForm" element={<ApplicantsForm />} />
         </Route>
         <Route path='/user' element={<WindowContainer />} >
           <Route path='forgotPassword' element={<UserForgotPassword />} />
