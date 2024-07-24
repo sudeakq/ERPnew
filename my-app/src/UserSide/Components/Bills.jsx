@@ -13,10 +13,12 @@ import gas from "../../images/Gas.png";
 import electricityBar from "../../images/electrictyBar.png";
 import waterBar from "../../images/WaterBar.png";
 import gasBar from "../../images/GasBar.png";
-import "./Bills.css";
+
+import { BillsContainer } from "./Bills.style";
+
 function Bills() {
   return (
-    <>
+    <BillsContainer>
       <div className="BillsUserPage">
         <div className="leftBills">
           <div className="PaymentProfile">
@@ -131,7 +133,7 @@ function Bills() {
           </div>
         </div>
       </div>
-    </>
+    </BillsContainer>
   );
 }
 export default Bills;

@@ -21,7 +21,7 @@ class ConsumedUtilityFactory extends Factory
             'water_clock' => $this->faker->numberBetween(1,100),
             'electricity_clock' => $this->faker->numberBetween(1,100),
             'gas_clock' => $this->faker->numberBetween(1,100),
-            'apartment_id' => Apartment::factory(),
+            'apartment_id' => Apartment::find(mt_rand(1,9)),
             'date' => $this->faker->date(),
         ];
     }

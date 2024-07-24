@@ -1,10 +1,12 @@
 import React from "react";
 import People from "./People";
-import "./MeetPeople.css";
+/* import "./MeetPeople.css"; */
 import Peoples from "./MeetPeopleData";
+import { MeetPeopleContainer } from "./MeetPeople.style";
+
 function MeetPeople() {
   return (
-    <>
+    <MeetPeopleContainer>
       <div className="MeetPeople">
         <h1>MEET THE PEOPLE</h1>
         <div className="Peoples">
@@ -13,7 +15,7 @@ function MeetPeople() {
           ))}
         </div>
       </div>
-    </>
+    </MeetPeopleContainer>
   );
 }
 export default MeetPeople;

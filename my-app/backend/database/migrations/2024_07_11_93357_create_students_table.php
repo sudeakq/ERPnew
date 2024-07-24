@@ -1,11 +1,13 @@
 <?php
 
 use App\Models\AfternoonShift;
+use App\Models\Apartment;
 use App\Models\Arrival;
 use App\Models\Coordinator;
 use App\Models\Department;
 use App\Models\MorningShift;
 use App\Models\Position;
+use App\Models\Progress;
 use App\Models\Room;
 use App\Models\Status;
 use Illuminate\Database\Migrations\Migration;
@@ -38,8 +40,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->date('date_of_birth');
             $table->foreignIdFor(Coordinator::class)->constrained()->onDelete('cascade');
-            $table->foreignIdFor(Room::class)->constrained()->onDelete('cascade');
+            $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
             $table->string('health_issues');
+            $table->foreignIdFor(Progress::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(MorningShift::class)->nullable()->constrained()->onDelete('cascade');
             $table->foreignIdFor(AfternoonShift::class)->nullable()->constrained()->onDelete('cascade');
             $table->timestamps();
