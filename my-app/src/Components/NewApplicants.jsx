@@ -7,9 +7,9 @@ function NewApplicants({applicants,setApplicants}) {
 
   const [canUpdate,setCanUpdate] = useState(-1);
 
-  const [selectedDate,setSelectedDate] = useState("");
+  const [selectedDate,setSelectedDate] = useState();
   
-  const [selectedProgress,setSelectedProgress] = useState("");
+  const [selectedProgress,setSelectedProgress] = useState("New Applicant");
 
   const [progressesData,setProgressesData] = useState([
     "New Applicant",
@@ -23,7 +23,7 @@ function NewApplicants({applicants,setApplicants}) {
     "Rejected",
   ]);
 
-  const [selectedStatus,setSelectedStatus] = useState("");
+  const [selectedStatus,setSelectedStatus] = useState("Pending");
 
   const [statusData,setStatusData] = useState([
     "Pending",
@@ -126,8 +126,12 @@ function NewApplicants({applicants,setApplicants}) {
                       </select>
                     </td> 
                   )}
-                <td><button onClick={()=>setCanUpdate(()=>{
+                <td><button 
+                  onClick={()=>setCanUpdate(()=>{
                   if(index === canUpdate) return -1;
+                  setSelectedDate(date)
+                  setSelectedProgress(progress)
+                  setSelectedStatus(status)
                   return index;
                 })} className="action-btn">...</button></td>
               </tr>    
