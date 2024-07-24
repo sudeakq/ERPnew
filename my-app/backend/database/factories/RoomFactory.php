@@ -22,7 +22,7 @@ class RoomFactory extends Factory
     public function definition(): array
     {
         return [
-            "apartment_id"=> Apartment::factory(),
+            "apartment_id"=> Apartment::find(mt_rand(1,9)),
             "capacity" => $this->faker->numberBetween(1,100),
         ];
     }

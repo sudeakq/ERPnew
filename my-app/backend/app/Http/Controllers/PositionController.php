@@ -30,6 +30,26 @@ class PositionController extends Controller
         return $this->position->create($request->all());
     }
 
+    public function getPositionByName(Request $request){
+        return $this->position->where("name", $request->name)->first();
+    }
+
+    public function getPositions(Request $request){
+        $positions = $this->position->with("department")
+        ->whereHas("department", function($query) use($request){
+            $query->where('name',$request->all()['name']);
+        })
+        ->get();
+        
+        $positionNames = [];
+
+        foreach($positions as $postition){
+            $positionNames[] = $postition->name;
+        }
+
+        return $positionNames;
+    }
+
     /**
      * Display the specified resource.
      */

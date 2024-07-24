@@ -1,9 +1,11 @@
 import blueLine from "../../images/blue-arrow-right.png";
 import clock from "../../images/icon-clock.png";
-import "./Content.css";
+/* import "./Content.css"; */
+import { ContentContainer } from "./Content.style";
+
 function Content() {
   return (
-    <div className="Container">
+    <ContentContainer>
       <div className="Top-Sections">
         <div className="New-Section">
           <div className="Header-News HeadFlex">
@@ -102,7 +104,7 @@ function Content() {
           </div>
         </div>
       </div>
-    </div>
+    </ContentContainer>
   );
 }
 export default Content;

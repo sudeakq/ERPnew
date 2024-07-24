@@ -1,6 +1,5 @@
-
 .total-container {
-    background-color: rgba(228,234,246,255); 
+    background-color: rgba(228, 234, 246, 255);
     height: 100%;
     padding-top: 30px;
 }
@@ -8,6 +7,26 @@
 .title {
     text-align: center;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #4F4F4F;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+    transform: rotate(180deg);
+    /* Space between button and title */
+}
+
+.title {
+    margin: 0;
+    /* Ensure no default margin is added */
 }
 
 .reminder-list {
@@ -38,7 +57,7 @@
 }
 
 .date-text {
-    font-size: 17px;    
+    font-size: 17px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -46,7 +65,7 @@
 .post-by-text {
     font-size: 15px;
     font-weight: bold;
-} 
+}
 
 .text-data {
     width: 70%;
