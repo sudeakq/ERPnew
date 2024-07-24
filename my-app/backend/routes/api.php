@@ -25,6 +25,7 @@ use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\ApartmentProblemController;
 use App\Http\Controllers\InterviewerController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ProgressController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ShiftController;
 use App\Http\Controllers\UtilityController;
@@ -235,4 +236,9 @@ Route::controller(InterviewerController::class)->group(function (){
     Route::get('/interviewers/{interviewer}','show');
 });
 
+Route::controller(ProgressController::class)->group(function (){
+    Route::get('/progresses','index');
+    Route::post('/progresses','store');
+    Route::get('/progresses/{progress}','show');
+});
 

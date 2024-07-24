@@ -19,7 +19,7 @@ import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
 import NewsData from './NewsData';
-import ApplicantsForm from './ApllicantForm';
+import ApplicantsForm from './ApplicantForm';
 import WindowContainer from './WindowContainer';
 
 // USER COMPONENTS

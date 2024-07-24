@@ -5,8 +5,6 @@ import { ApplicantsContainer } from './NewApplicants.style';
 
 function NewApplicants({applicants,setApplicants}) {
 
-  console.log(applicants)
-
   return (
     <ApplicantsContainer>
       <header>
