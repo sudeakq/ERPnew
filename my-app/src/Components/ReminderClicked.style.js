@@ -20,6 +20,7 @@ background-color: rgba(228,234,246,255);
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    position: relative;
 }
 
 .reminder-container {
@@ -50,7 +51,7 @@ background-color: rgba(228,234,246,255);
     padding:15px;
      margin-right: 10px;
     color: black;
-    margin-left: 77rem;
+    margin-left: 70rem;
     margin-bottom: 20px; /* Set text color to black */
     /* Space between button and title */
 }
