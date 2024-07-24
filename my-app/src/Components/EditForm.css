@@ -1,23 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-  height: 20vh;
-  overflow: hidden;
-}
-
-.announcement {
-  background: #fff;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
 .edit-button {
   background-color: #4CAF50;
@@ -33,15 +13,14 @@ body {
 }
 
 .form-popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: 3px solid #f1f1f1;
   z-index: 9;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 30%;
+  position: absolute;
+  top: 5.5rem;
+  left: 41rem;
 }
 
 .form-container {
@@ -52,7 +31,7 @@ body {
 
 .form-container h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .form-container label {
@@ -65,14 +44,17 @@ body {
 .form-container textarea {
   width: 100%;
   padding: 10px;
-  margin: 5px 0 20px 0;
+  margin: 5px 0 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+.form-container textarea {
+  resize: none;
+  height: 8rem;
+}
 .form-container input[type="text"]:focus, 
-.form-container textarea:focus {
+.form-container input:focus {
   border-color: #4CAF50;
   outline: none;
 }

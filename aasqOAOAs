@@ -1,0 +1,2213 @@
+[33mcommit 8a985b592c403fa997b212e9ba0c24dce49968c8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhidayet[m[33m, [m[1;31morigin/hidayet[m[33m)[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 18 10:06:38 2024 +0200
+
+    userside components
+
+[33mcommit 97d55cf57bd22690aa561668e3a46c9c2c160340[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 18 10:00:43 2024 +0200
+
+    userside component structure
+
+[33mcommit b8e21bb9ef553fec0d576cb377968fbc237c7471[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 18 09:49:27 2024 +0200
+
+    updated sidebar
+
+[33mcommit 63506565601f99c37c71463c6e8e9d4b5f479a8a[m
+Merge: a3abfa0 c202e63
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 18 08:44:06 2024 +0200
+
+    s
+
+[33mcommit a3abfa0dbf7912762b20c2c6436812206636ec8c[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 18 08:42:13 2024 +0200
+
+    backend
+
+[33mcommit c202e632dc0a88374fea0395f5dd44b7a3950c89[m[33m ([m[1;32mmain[m[33m)[m
+Merge: f166949 4be98e3
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Thu Jul 18 08:28:52 2024 +0200
+
+    Merge pull request #25 from dpsd18108/deniz
+    
+    Schedule Backend 100% done
+
+[33mcommit 4be98e3fcd3f8fbc7b2d786fbd7544641fd4dc11[m[33m ([m[1;31morigin/deniz[m[33m)[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 18 09:23:49 2024 +0300
+
+    schedule backend 100% done
+
+[33mcommit 9b4b4b69113e03806e8e819432d085d0463a6a8c[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 17 17:14:21 2024 +0300
+
+    Schedule backend 95% done
+
+[33mcommit ad801721c3ec94b7d75d9cb5de95c34fa1549152[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 17 15:56:45 2024 +0300
+
+    Schedule Backend 70% done
+
+[33mcommit e086ef2cd575e48e261b5374439294cb627b607e[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 17 15:26:00 2024 +0300
+
+    Schedule backend
+
+[33mcommit a964d7e17af57eed5a13246286d8a6b0cd21574f[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 13:22:42 2024 +0300
+
+    Header Date
+
+[33mcommit 74ff62a10ee323c2af3b4e0917d58cd881c226ff[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 13:05:38 2024 +0300
+
+    WindowContainer.jsx
+
+[33mcommit 78f077a7298f701908b1fafc9862aa074ce6f7c1[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 11:22:33 2024 +0300
+
+    App.js
+
+[33mcommit 78d22fad630a7dde9a3b15a186b1122f23a5febc[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 17 14:54:03 2024 +0300
+
+    main
+
+[33mcommit 60e8fbcde9a27cdb0813ffd74062cc4ebbc09999[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 17 14:25:21 2024 +0300
+
+    update css, responsive, bugs
+
+[33mcommit 8f91d1b65e6d15b1404c6939d51ed2087911eab5[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 17 13:39:30 2024 +0300
+
+    Morning/Afternoon Shift
+
+[33mcommit 729aa3cce37994411b4b07a9596b81a5ad27148b[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 17 11:20:21 2024 +0300
+
+    responsive updates
+
+[33mcommit 2a60d24ab8096fac1604a553404f659ae4a05915[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 17 10:47:38 2024 +0300
+
+    commit
+
+[33mcommit f1669494f5340f8815f3c0eaa666b18001574c95[m[33m ([m[1;31morigin/sude[m[33m)[m
+Merge: de3c280 e6d81c0
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Wed Jul 17 08:17:03 2024 +0200
+
+    Merge pull request #23 from dpsd18108/deniz
+    
+    App.js
+
+[33mcommit bc7f49f4b59bbff1038e8ed50f8db892ff53af89[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 16 14:40:06 2024 +0300
+
+    Departments update
+
+[33mcommit e6d81c07322d54d1555a409e49e5afb9000f04a3[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 13:22:42 2024 +0300
+
+    Header Date
+
+[33mcommit 704af3721a856072ef778b87dfded85a6ab4b69d[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 13:05:38 2024 +0300
+
+    WindowContainer.jsx
+
+[33mcommit 5cc28ab261a7c03c33c1eea0c13434388e2232fe[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 16 11:30:37 2024 +0300
+
+    resetPassword Page for hr section side
+
+[33mcommit 25849ec967c37ebdde490a80da5607c41aa549ac[m
+Merge: a9d9959 de3c280
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 11:24:08 2024 +0300
+
+    merge main
+
+[33mcommit a9d995996ea6d4624e504cfb43dff242027b7871[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 11:22:33 2024 +0300
+
+    App.js
+
+[33mcommit de3c2806658950bb0bf2ccb546ea135448096de2[m
+Merge: 227a28e 22f189d
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 16 11:19:25 2024 +0300
+
+    Merge pull request #22 from dpsd18108/hidayet
+    
+    Hidayet updated css and html files. ready to test userside
+
+[33mcommit a609ee07a413464519c17029810edf036df89a84[m
+Merge: fd1a80b 227a28e
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 11:14:00 2024 +0300
+
+    Merge branch 'main' into deniz
+
+[33mcommit fd1a80b43f5d8c90e0e27a55e6e4becb30e3f96d[m[33m ([m[1;32mdeniz[m[33m)[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 16 11:13:28 2024 +0300
+
+    App.js
+
+[33mcommit 22f189d01b9518fc0c8e32c1ee241fdfe72f06e3[m
+Merge: 817141c 227a28e
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 16 11:09:35 2024 +0300
+
+    changes
+
+[33mcommit 817141c5ef4edc426fd562931399bad734b6205a[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 16 11:07:14 2024 +0300
+
+    test start
+
+[33mcommit 0f076114dca6e0c0663e99d02b30f3d435271883[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 16 10:02:41 2024 +0300
+
+    bills page updated
+
+[33mcommit 746f1c1f0ef578d442ae13b265bd1da2126c4ecf[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 15 13:50:40 2024 +0300
+
+    hover changes
+
+[33mcommit d4a56232d5aed1b514816369eb40606cda7071d2[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 15 11:53:55 2024 +0300
+
+    responsive meetPeople Page
+
+[33mcommit 227a28e8fa1b5e6581076fcb8c549f2cd83034fa[m[33m ([m[1;31morigin/sudedev[m[33m)[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 15 11:46:58 2024 +0300
+
+    controller update
+
+[33mcommit 3c20e4aaf8b99d1b24f842130bafc6e4e1ea0c4a[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 15 11:17:50 2024 +0300
+
+    update
+
+[33mcommit ee957f6baecb7477e3f9472db827e9fa175fbce2[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 15 11:15:29 2024 +0300
+
+    meetPeople Page
+
+[33mcommit 32e049e4ef43665e73763b13613d8dd4e1918680[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 15 11:08:30 2024 +0300
+
+    add routers for controllers
+
+[33mcommit dd73adf2e0d5c0d080f8c89e10196b58ef85e7d0[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 14:23:12 2024 +0300
+
+    MeetPeople save
+
+[33mcommit b2c7b9a21474a471f1c0e73d234e65f6e683473e[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 14:22:46 2024 +0300
+
+    MeetPeople
+
+[33mcommit ba6ad8298f7a07e429acd3cc88ea27f568bcd7f4[m
+Merge: 0527b01 4234d1b
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 13:01:55 2024 +0300
+
+    bills responsive
+
+[33mcommit f57d07f68065e2d366cf41ce3d0ed523de4617c4[m
+Merge: 4234d1b c0f48ba
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Fri Jul 12 12:01:46 2024 +0200
+
+    Merge pull request #21 from dpsd18108/deniz
+    
+    Priorities
+
+[33mcommit c0f48bac0c921e11b67e200bf578be4040713b6c[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 12:59:53 2024 +0300
+
+    Priorities all done
+
+[33mcommit 1968a03cb7b2ab8711f85925355277905575d158[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 12:38:59 2024 +0300
+
+    UtilityPrice
+
+[33mcommit f8be2e1f37dde950c1f8b3b6cd8f17db0b6ae527[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 12:33:07 2024 +0300
+
+    Utilitiy
+
+[33mcommit 06b9454385666a54cc6c2ee66837063f446ced50[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 11:49:37 2024 +0300
+
+    Aparment
+
+[33mcommit 48278fd4c52de3eaa9ef2a8a80ba3b17bb6d4534[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 11:41:44 2024 +0300
+
+    ApartmentProblems Done
+
+[33mcommit 4234d1b92fde10c1aa2a7e7089f3779a82831716[m[33m ([m[1;32mdeep[m[33m)[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 12 10:06:16 2024 +0200
+
+    updateeee
+
+[33mcommit 0e449b2f9b0f5845d40d22b6118702e3815834c4[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 11:05:30 2024 +0300
+
+    Student.php
+
+[33mcommit 0527b01670ec19818edb456f9a5f4418e91fd4a5[m
+Merge: 9b6cf91 13d1edb
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 11:01:42 2024 +0300
+
+    sa
+
+[33mcommit 9b6cf9124f88b58f5a5dd33f62329e3b27ad8c61[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 10:57:22 2024 +0300
+
+    sa
+
+[33mcommit 13d1edb3c52d4c1d42cdfb53e75f5cd6e9eee106[m
+Merge: 7ca428d 9a26ed5
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Fri Jul 12 09:53:20 2024 +0200
+
+    Merge pull request #20 from dpsd18108/manos
+    
+    TEST Manos
+
+[33mcommit 9a26ed52233329b63cb37e38c4bf6a9a7b3592e4[m[33m ([m[1;31morigin/manos[m[33m)[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 12 09:52:45 2024 +0200
+
+    update
+
+[33mcommit 6c41edbfb77e08a9450cd56cf7060b39b1635377[m
+Merge: 50c06af 7ca428d
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 12 09:52:18 2024 +0200
+
+    update
+
+[33mcommit 7ca428de7c0ded69e05385370d5cf253d47b76c0[m
+Merge: 4900f12 70df74f
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Fri Jul 12 09:50:08 2024 +0200
+
+    Merge pull request #19 from dpsd18108/deniz
+    
+    Update prioriıty now
+
+[33mcommit 70df74f8e22089a4a52c1fd2625857d9accb585d[m
+Merge: 5d53488 4900f12
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 10:42:03 2024 +0300
+
+    update
+
+[33mcommit 5d534886e73a4081f41c36a544605ad0593c4e10[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 10:27:34 2024 +0300
+
+    Priority 1 Done
+
+[33mcommit 26f76b294a1b414d6b85c52956c1cfd1695dad53[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 10:24:11 2024 +0300
+
+    Priority 1 Done
+
+[33mcommit 4900f1206d17a9e911701459c8816e96aec93785[m
+Merge: b1978d6 389edae
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Fri Jul 12 09:17:04 2024 +0200
+
+    Merge pull request #18 from dpsd18108/deep
+    
+    Deep
+
+[33mcommit 389edae89193c7090623b02470339f9efaf93340[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 12 09:16:04 2024 +0200
+
+    Update Header.jsx
+
+[33mcommit 0332c749db62c01e6820e129142064bd7e129880[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 10:09:21 2024 +0300
+
+    billspage css update
+
+[33mcommit 752f9f3966603c0935b58c296d8240c2cab406c1[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 12 10:07:39 2024 +0300
+
+    Priority 1 90% done
+
+[33mcommit 3e8abd57c8b26aab5d28a03f1e81692a02d42d02[m
+Merge: 8b6850b b1978d6
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 12 09:02:51 2024 +0200
+
+    Merge branch 'main' into deep
+
+[33mcommit 8b6850be326ac5ecfed9105cf394221ae1e57b8d[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 12 09:00:19 2024 +0200
+
+    small change
+
+[33mcommit ab72f9910b99773316f00c0f100760ae9d66be6f[m
+Merge: 52970d7 b1978d6
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 09:56:49 2024 +0300
+
+    updated main branch
+
+[33mcommit 0c82712022c573de8007b0133dac1d82b8329f6c[m
+Merge: 9fec9df a792575
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 12 08:56:07 2024 +0200
+
+    Merge branch 'main' into deep
+
+[33mcommit 52970d7271bf6ce0344928def15a988df8611b2b[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 12 09:53:45 2024 +0300
+
+    push save
+
+[33mcommit b1978d68f295259cc5a3000010c2bd4b723a0fce[m
+Merge: a792575 c99e9ff
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Fri Jul 12 08:52:58 2024 +0200
+
+    Merge pull request #16 from dpsd18108/deniz
+    
+    Students Table is Fully Done
+
+[33mcommit 50c06af07cbc72ae2139496b7dc832e2b8342621[m
+Merge: a59b8a6 a792575
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 12 08:50:03 2024 +0200
+
+    dfafas
+
+[33mcommit 9fec9df2e1adf34a25b6cfaf9e3c7c101e3d030d[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 12 08:09:24 2024 +0200
+
+    update
+
+[33mcommit c99e9ff07b21bec93eac84b3de78e0b97274128c[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 16:08:50 2024 +0300
+
+    backend
+
+[33mcommit 0a583a1cd7bab4b1c4c46c7ec3f792d5ba3d114e[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 15:39:16 2024 +0300
+
+    userType done
+
+[33mcommit e9f8f9d50fde2d4bf97b11f9d14a83f529aeed5a[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 15:12:58 2024 +0300
+
+    Priority 1 in process
+
+[33mcommit 1711e0147cdc251b6e7e2a4d1d2f90aeb8a8532c[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 15:05:08 2024 +0300
+
+    BillsPage
+
+[33mcommit 7688bce350d62fe7ccfa02d9ddb4cea61b487444[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 14:27:00 2024 +0300
+
+    attendances done
+
+[33mcommit 7a5fce58d9ffe02b34e48ac290ea491e2c14fdca[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 14:15:44 2024 +0300
+
+    users controller migration factory done
+
+[33mcommit c026aac79b2bbcf3853d9a8cd839f319ae362a92[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 13:45:19 2024 +0300
+
+    users migration
+
+[33mcommit 6cde46c4a9691179dad4d38d66e3a0cdc7dde3f5[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 13:14:29 2024 +0300
+
+    Bills save
+
+[33mcommit 86baed7e3ddf7ef68eae5fdf1131fd1fcc578706[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 12:58:58 2024 +0300
+
+    Student belongsTo hasMany done
+
+[33mcommit 59be5c6637e949a596ed392a5653533e504c0bc3[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 12:02:48 2024 +0300
+
+    css changes
+
+[33mcommit e673977cb71e16ea19063313fa919cfee2b57d44[m
+Merge: cce80f8 a792575
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 11:51:37 2024 +0300
+
+    backend students done
+
+[33mcommit 28fc47b38a553fd4368ef4509121ff786eb78013[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 11:30:16 2024 +0300
+
+    saving
+
+[33mcommit cce80f82d1899e3e9e8b419913b3ec29180d6216[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 11:24:07 2024 +0300
+
+    Update index.js
+
+[33mcommit 354965beed27d835c46d0589afdabf4764f7df02[m
+Merge: cc33525 04ade09
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 11:21:21 2024 +0300
+
+    updated HR project
+
+[33mcommit a7925751c8d4808c2d52e9bc7d80aba2a00fb86a[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 10:20:18 2024 +0200
+
+    index
+
+[33mcommit cc3352587414772256ae5c867e1acc45f2e6a494[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 11:10:09 2024 +0300
+
+    q
+
+[33mcommit a59b8a6513655ae0bf96b00a0e0cded846e4d5db[m
+Merge: d6902a2 04ade09
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Thu Jul 11 10:06:23 2024 +0200
+
+    WE DIDI THIS
+
+[33mcommit 04ade095ac61506625bb76229a125559be60486d[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 10:03:41 2024 +0200
+
+    index
+
+[33mcommit 18331c05a187e1cc1f3fd4c5856748eed7eb6a5a[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 09:42:11 2024 +0200
+
+    update
+
+[33mcommit 8715c3f4e8a9f05e7fc860d11c6d9a661810da29[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 09:35:52 2024 +0200
+
+    index.js update
+
+[33mcommit c7e4c7cd029ed1e6c88608db8507196620d56e3c[m
+Merge: afb7469 f1bf8ea
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 09:29:39 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit f1bf8ea1e351aa469cb9ff90ac08f0f4b0ed3da1[m
+Merge: c480858 768bca6
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 10:29:06 2024 +0300
+
+    index.js
+
+[33mcommit c480858b1a34a1a5d4a8f66b1a2098f1c9840b45[m
+Merge: 4fed220 89e43fd
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 10:15:04 2024 +0300
+
+    Merge branch 'deniz'
+
+[33mcommit 4fed2207d564af2685426fc4ba5b517686ed6958[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 10:11:59 2024 +0300
+
+    index.js
+
+[33mcommit 89e43fde6c5c6802e931d997aaecc934d8f00245[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 10:10:20 2024 +0300
+
+    Positions Model Factory Migration
+
+[33mcommit afb746927a6c4829f048297195229fe5c0f384a1[m
+Merge: d376d50 768bca6
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 09:08:27 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 768bca68f681a09309170e9ac560db05761f2a7f[m
+Merge: 9a9ff59 79c75a7
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 10:07:26 2024 +0300
+
+    updated main
+
+[33mcommit 9a9ff59d2acfbc2c7b5835cea8f43f8e85f0d38b[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 10:05:35 2024 +0300
+
+    main
+
+[33mcommit d376d506decb136df02267f8fd03c213a5380aff[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 11 09:05:09 2024 +0200
+
+    i = iturkish
+
+[33mcommit 79c75a74996c12ffe71532fa2af3faa17f300552[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 10:04:39 2024 +0300
+
+    sa
+
+[33mcommit cd878d13770191a3f6a137dcb5f9eaf21af4cf99[m
+Merge: cc12fbf 8f0c3c7
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 11 09:58:32 2024 +0300
+
+    merge deniz
+
+[33mcommit 8f0c3c706706f90b1095fc38accc41b03a43c134[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 11 09:56:22 2024 +0300
+
+    Position Controller Migrate Factory
+
+[33mcommit 4d459806cbbc56956e757bbf9eed5740608392bd[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 17:16:47 2024 +0300
+
+    Departments
+
+[33mcommit d6902a20ab35b10178eaef7fae9ac27cc6f2a0c9[m
+Merge: 8fb4077 4d33df6
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 10 15:47:24 2024 +0200
+
+    lets go
+
+[33mcommit 4d33df6d84075a12722a94b074a80773ed8325ab[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 16:43:31 2024 +0300
+
+    coordinator controller
+
+[33mcommit 82d3c9343377ae6b3f3025b1ab92a97831ada8f8[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 16:42:57 2024 +0300
+
+    departments migration
+
+[33mcommit 8fb4077167f92b001d3a6cd6ae7f14e447e1cf72[m
+Merge: 0fdd6d5 cc12fbf
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 10 15:14:20 2024 +0200
+
+    Merge branch 'hidayet' of https://github.com/dpsd18108/ERP into manos
+
+[33mcommit 0fdd6d5e578b09e72bb97e62f9f14a9c889dbb2c[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 10 14:27:37 2024 +0200
+
+    UPDATE OF DENIZ
+
+[33mcommit 193d910e5ce2ccb26966560e314ccaca528a28f0[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 15:22:07 2024 +0300
+
+    index.js
+
+[33mcommit cc12fbf8b6bc86e8a0d04cd8f3a98b568fc8d7c9[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 10 13:59:26 2024 +0300
+
+    a
+
+[33mcommit a00685ae4f05b3bff810462361f7df51095aa465[m
+Merge: bf07e36 3377a32
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 10 13:57:16 2024 +0300
+
+    Merge branch 'hidayet'
+
+[33mcommit 3377a32eeb7a3730ec1cb3139f064238de5560c9[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 10 13:54:31 2024 +0300
+
+    sa
+
+[33mcommit 47848980bff439c8396284a54abfcdf49bdaa05b[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 13:14:17 2024 +0300
+
+    status model controller factory
+
+[33mcommit 000a4da1ec2273b109b0207640080442d5d84b7e[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 10 12:08:24 2024 +0300
+
+    WeeklySchedulePage
+
+[33mcommit 0f73eaebe93740e073cc202bff2bb69b53dd3078[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 11:58:32 2024 +0300
+
+    StudentFactory, ArrivalFactory, StudentSeeder
+
+[33mcommit 9704e89563fa9faa383368508658e72422b186f6[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 11:33:29 2024 +0300
+
+    arrival_student migration
+
+[33mcommit 2aa9f8bd74e00774bea6ca9edb5c93b559a3350d[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 10:49:54 2024 +0300
+
+    arrivals migration model controller
+
+[33mcommit bf07e36790150bdfff3381151b6ba9dece29152d[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 10 09:43:16 2024 +0300
+
+    startspage.js
+
+[33mcommit 4a6662e73d5dab3cf5a315f0efbe8be868ce3cb4[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 15:34:29 2024 +0300
+
+    ApplicantForm.jsx
+
+[33mcommit 65cc6f81b47a42eafd5d09448aa453828520f27a[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 9 14:02:23 2024 +0300
+
+    BirthdayPage update and responsive
+
+[33mcommit 6acd79f388cbf57eb1c2b9fa430c9ed08ed29aa7[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 9 13:48:54 2024 +0300
+
+    BirthdayPage finish
+
+[33mcommit e1687ca15444e7a2bf7cf74b6ab87c2a7c26ad56[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 9 11:49:13 2024 +0300
+
+    ReadMore Page
+
+[33mcommit 1220fe66cb0d299d2871cf215231bad515e6ad11[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 11:24:10 2024 +0300
+
+    students api done
+
+[33mcommit 59c5c1f79495faf989088a9c31b086a99a58a600[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 9 10:55:16 2024 +0300
+
+    responsive
+
+[33mcommit a0b5679e8f57e3bc19de1e47e2f5433a338951ce[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:48:41 2024 +0300
+
+    backend student migrate model controller
+
+[33mcommit 21c7664195dca895ae24e9fde1b79f6a57055ff4[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:38:14 2024 +0300
+
+    create_students_table
+
+[33mcommit 7cb63a0f60b2adca27485c40b6082d25e1d0188f[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 9 10:34:00 2024 +0300
+
+    whats new page
+
+[33mcommit 3f7726c391f646ceaba9b8aed68e5e044a5ac2b2[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:27:31 2024 +0300
+
+    backend admin created
+
+[33mcommit 322fb16ebad4d13fe105992c1c479b1d3bc25605[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 9 10:21:11 2024 +0300
+
+    what's new page
+
+[33mcommit ad0305707b44958330e1e8c13aaf403700ea9663[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:13:52 2024 +0300
+
+    alumnlist.style.js
+
+[33mcommit ccd89de579e60f53674f3025997dc6a49b6aefbb[m
+Merge: 18534c9 abb093c
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:12:28 2024 +0300
+
+    Merge branch 'main' into deniz
+
+[33mcommit 18534c97b58610183900c7f548fc9be94a239c53[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:12:11 2024 +0300
+
+    AlumniList.style.js
+
+[33mcommit a8939a9f228afe418c99e81995529577d568311b[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:11:08 2024 +0300
+
+    api.php
+
+[33mcommit e2131487ccaf6bfa27323b5ab08b77539c317a2e[m
+Merge: 1e2d54b 3e2f7ea
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:03:52 2024 +0300
+
+    Merge branch 'main' into deniz
+
+[33mcommit 1e2d54b95d6ba993da2be8097dd86435a44d4e18[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 9 10:03:34 2024 +0300
+
+    api.php
+
+[33mcommit abb093cf9273e465fc56697882fea37ca49903b8[m
+Merge: 3e2f7ea 8fa28ea
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Tue Jul 9 09:02:03 2024 +0200
+
+    Merge pull request #14 from dpsd18108/deep
+    
+    Deep
+
+[33mcommit 8fa28ea71b08866a67671c39957916cb2df595c5[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jul 9 08:59:48 2024 +0200
+
+    update
+
+[33mcommit 79526b945263ec9884288ae628445dcafa9ae0c8[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jul 9 08:13:52 2024 +0200
+
+    up
+
+[33mcommit 3e2f7ea386bc30eb6841ef717a3104eb047192e9[m
+Merge: c979d02 7a82804
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Mon Jul 8 13:54:22 2024 +0200
+
+    Merge pull request #13 from dpsd18108/deniz
+    
+    login form for backend
+
+[33mcommit 7a82804a2f8e04f01bf328dfea0a776bbf5a1edc[m
+Merge: 9f4ea77 9946063
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 14:52:24 2024 +0300
+
+    sude merge
+
+[33mcommit 9f4ea775670b4cd2e676dff544a0a9045b38728b[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 14:41:06 2024 +0300
+
+    logııııın
+
+[33mcommit 1352a0258130f250afbde36b4288b5d2d350113c[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 14:40:26 2024 +0300
+
+    complete dashboard
+
+[33mcommit dd9bf0d5722590ec910756ada922a1a76cb1c8d1[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 14:36:05 2024 +0300
+
+    complete dashboard
+
+[33mcommit 8c101badc9241e4383d27e90dfb3a6adbaba111f[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 14:34:34 2024 +0300
+
+    login form for backend
+
+[33mcommit fdfd14b2dd718102ebf87882b3733ad7076b278e[m
+Merge: f5e108f c979d02
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jul 8 13:23:22 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 4847f6368c4fbf8be2b8698934f6358177578893[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 14:20:00 2024 +0300
+
+    dashboard finish
+
+[33mcommit c979d02006accfcca846848783475f31f2125080[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 14:13:04 2024 +0300
+
+    problem fix
+
+[33mcommit 4709168c6d09488201bd245f482c0e0039567fd3[m
+Merge: a7e52bf 9946063
+Author: Sude Akgün <102792219+sudeakq@users.noreply.github.com>
+Date:   Mon Jul 8 14:06:24 2024 +0300
+
+    Merge pull request #11 from dpsd18108/sude
+    
+    Sude
+
+[33mcommit 9946063f94264a7aa4e07e3320f6fa3b885e0901[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 14:02:12 2024 +0300
+
+    three pages done
+
+[33mcommit 739588ca9177e24a22a470e0e3f4cde61f7b5350[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 13:56:32 2024 +0300
+
+    dashboardSave2
+
+[33mcommit f89a31c2f5fdcc85252d58982343beeb9082c4d9[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 13:44:49 2024 +0300
+
+    dashboard save
+
+[33mcommit 767c8661f2d8a46573207e18cfbc53edea1a925c[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 11:43:10 2024 +0300
+
+    save
+
+[33mcommit b1fd22ae5c8b11d6f213d609559d9da15d1a9c4c[m
+Merge: f0b5cdc a7e52bf
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 11:38:54 2024 +0300
+
+    Merge branch 'main' into sude
+
+[33mcommit a7e52bfe1ff6426d1827d308792b5e0fb4b470c1[m
+Merge: 3005abd 9276682
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Mon Jul 8 10:37:32 2024 +0200
+
+    Merge pull request #10 from dpsd18108/deniz
+    
+    style files added for 3 pages
+
+[33mcommit 9276682af278c758ecdcce5d75c206e602d9b845[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 11:32:54 2024 +0300
+
+    style files added for 3 pages
+
+[33mcommit 1a5546a0015da4e5914269344181fc83d3265f5e[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 11:07:18 2024 +0300
+
+    dashboard save
+
+[33mcommit f0b5cdc1b05ed44fdb01390fa1a9656a3fe6d565[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 11:02:17 2024 +0300
+
+    update
+
+[33mcommit 2b1491d6f6385b30a05f66cc050343b29ee2af58[m
+Merge: 1e7c2b6 3005abd
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 11:01:06 2024 +0300
+
+    Merge branch 'main' into sude
+
+[33mcommit 1e7c2b6652c7965bd071feeb9349482e33f14da3[m
+Merge: 090ed16 60d14c5
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 10:42:46 2024 +0300
+
+    Merge branch 'deniz' into sude
+
+[33mcommit f5e108f830ff2899e1ee89a41236697815316df0[m
+Merge: ed5660d 3005abd
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jul 8 09:39:40 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 3005abd80b9b41e20880d7a7b6bbd1f9e5bbdfea[m
+Merge: 4fb6bc9 1f02cd1
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Mon Jul 8 09:36:25 2024 +0200
+
+    Merge pull request #9 from dpsd18108/deniz
+    
+    Deniz
+
+[33mcommit 1f02cd16812e7573274545bdcc8e097e800f1673[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 10:33:26 2024 +0300
+
+    a
+
+[33mcommit a56437dafb874abf7aa24dbfda50655d570ae620[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 10:32:24 2024 +0300
+
+    a
+
+[33mcommit b89bfaa620ee19deb163699558921e526e6c1c60[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 10:30:42 2024 +0300
+
+    a
+
+[33mcommit 3844ac25bcfab7a5023001bcdcb9db1f3b302f5f[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 10:28:56 2024 +0300
+
+    Departments.style.js
+
+[33mcommit 256af0fb4916eac1c66264a7474f778c69993f9c[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 10:17:50 2024 +0300
+
+    Departments.style.js
+
+[33mcommit ed5660d1861c74efc33a599ac321557a12eb8685[m
+Merge: 4ef820a 4fb6bc9
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jul 8 09:12:38 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 4ab9bac712ac4e703ed416a42d0df80e0cf552cc[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Mon Jul 8 10:03:51 2024 +0300
+
+    userDashboard
+
+[33mcommit 4fb6bc94b9a67da5bd3fcd09417068df717030cf[m
+Merge: 8e888b4 096e5ab
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Mon Jul 8 08:58:20 2024 +0200
+
+    Merge pull request #8 from dpsd18108/deniz
+    
+    Deniz
+
+[33mcommit 090ed16833dbe5c94043f9e512f8b178579544e1[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Mon Jul 8 09:33:28 2024 +0300
+
+    Router changes
+
+[33mcommit 4ef820af64db8e0b20e5545043a45e0d9e5ec2e3[m
+Merge: 1405024 8e888b4
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jul 8 08:27:23 2024 +0200
+
+    Merge branch 'main' into deep
+
+[33mcommit 096e5abe92aa5f45cce208bb610f72d7bce33fab[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Mon Jul 8 09:20:05 2024 +0300
+
+    InternList.css
+
+[33mcommit 0cbc13ac61ea4ee709cb86014d74669d5b5b3cec[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Sun Jul 7 13:36:26 2024 +0300
+
+     departments fully done
+
+[33mcommit 8332c35e5844b5f344d28c49bc051118b28535f5[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 16:55:01 2024 +0300
+
+    Done
+
+[33mcommit 704f2222ea9b4d65215cb68b4b13e8bf54c7e046[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 16:51:59 2024 +0300
+
+    Workers Done
+
+[33mcommit ccc3cf786b5fff648f8268761acf0cec7ee826d0[m
+Merge: 362a38e aa30eb9
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 5 16:20:49 2024 +0300
+
+    sa1
+
+[33mcommit 362a38e08403fafb648d395d4d9cf8f852942da2[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Fri Jul 5 16:19:00 2024 +0300
+
+    save
+
+[33mcommit aa30eb9275714fc9e404792756d377aec2985092[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 16:14:53 2024 +0300
+
+    Departments Done, Workers in build
+
+[33mcommit f86aede14f433cad2731e5f8cce7c51d67c87871[m
+Merge: a8943b8 0ee2f54
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 14:00:50 2024 +0300
+
+    Merge branch 'manos' into deniz
+
+[33mcommit a8943b803f8a1de89df1de0a825e886071bc7bc5[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 13:59:41 2024 +0300
+
+    read more data done
+
+[33mcommit 0ee2f54c6723778f8c427bffeaa815e62d470d1a[m
+Merge: f7aec74 8e888b4
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 12:53:35 2024 +0200
+
+    Merge branch 'main' into manos
+
+[33mcommit f7aec740d80ee5ed62d7e7c9b4a816c202571dae[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 12:52:12 2024 +0200
+
+    EmployeeController success
+
+[33mcommit 1405024e483871f5751a70c23d8bd8f89071d8e4[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 5 11:15:18 2024 +0200
+
+    "Uncommented Intern and ApplicantsList components in index.js"
+
+[33mcommit 1807a01e58af0637e03265272a54207c9b3f51c7[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:14:16 2024 +0200
+
+    API TEST WITH LIST
+
+[33mcommit be4357bd6a683e38d191a4cb79fd126dedbf9664[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:12:10 2024 +0200
+
+    EMPLOYEE CONTROLLER
+
+[33mcommit 758afd134f4b8e464663419a9bc83d5cb6d9cf71[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:08:15 2024 +0200
+
+    API FOR STUDENT AND SANCTUM FOR SAFETY
+
+[33mcommit 097f989bddac19b21d484cd516e9b3d97a5ecfed[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:06:09 2024 +0200
+
+    details of model
+
+[33mcommit c972930d4785c736a7640e7ed9d13331f4cf3cc8[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:04:47 2024 +0200
+
+    model install
+
+[33mcommit 2ae17045e80c9528e318bb2b6bb6e51ab23009f4[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:03:05 2024 +0200
+
+    Controller
+
+[33mcommit 4e795be8209b915ea251541db7539c3e725d8b62[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 10:00:28 2024 +0200
+
+    Details of EmployeeController
+
+[33mcommit 4e9d5b80142ad0bb6430eb2c84471ea4bfa277e2[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 09:57:58 2024 +0200
+
+    EmployeeController
+
+[33mcommit 9de0aa4cf9e4bae9488d110efe2f732160694d14[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jul 5 09:52:54 2024 +0200
+
+    kali
+
+[33mcommit 8e888b4352ac34e75315694912967bc2a2fa7247[m
+Merge: ff41e8c 59bdca8
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Fri Jul 5 09:29:09 2024 +0200
+
+    Merge pull request #6 from dpsd18108/deniz
+    
+    asidebar done, departments added to asidebar
+
+[33mcommit 59bdca886927e83b81fc5aca14686c1d1fda5283[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 10:26:08 2024 +0300
+
+    asidebar done, departments added to asidebar
+
+[33mcommit ff41e8cc00732b1d8364b0582c66e8cd609ddaf9[m
+Merge: adb2adf a7761b3
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Fri Jul 5 10:02:31 2024 +0300
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit adb2adfcc92f73718b89ca70ee55cd7b6708813e[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Fri Jul 5 10:00:22 2024 +0300
+
+    Dashboard done
+
+[33mcommit a7761b3f2a66d81b6d162192a014b0e31e16738a[m
+Merge: 8a1876f 99492d0
+Author: SandeepProjects <150274077+SandeepProjects@users.noreply.github.com>
+Date:   Fri Jul 5 08:58:18 2024 +0200
+
+    Merge pull request #5 from dpsd18108/deep
+    
+    Deep
+
+[33mcommit 99492d0b5fc77fb1d2ab3caa46cc1249c9d2d4ca[m
+Merge: 36ccc5d 8a1876f
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 5 08:57:23 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 36ccc5d09869bdae24a2c295853d60b25bb08e5c[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jul 5 08:55:32 2024 +0200
+
+    pull
+
+[33mcommit 8a1876f7437dd7969f0b4d78542610630b79bbef[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Fri Jul 5 09:38:44 2024 +0300
+
+    routes done
+
+[33mcommit f33225c73aa2c33156458c65aa1b7c9e8d4d5e25[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Thu Jul 4 16:15:55 2024 +0300
+
+    UpcomingBirthdays section done
+
+[33mcommit 763eec9f33ca430aa271000bf89ad65594ecc11c[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 15:41:11 2024 +0300
+
+    index, routes done
+
+[33mcommit 60d14c58c2ef8b27aa4f86b48ab181d33dd124c7[m
+Merge: 5403c2d 920e112
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Thu Jul 4 15:02:40 2024 +0300
+
+    Merge branch 'main' into deniz
+
+[33mcommit 5403c2d21f98e00c4a119d30ad9bff5928afeb37[m
+Merge: 36d183d 7f0969c
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Thu Jul 4 15:00:11 2024 +0300
+
+    Merge branch 'sudedev' into deniz
+
+[33mcommit 36d183df8e421886d65388714804848c7879e535[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 14:55:28 2024 +0300
+
+    Birthdays.* ReminderClicked.* StartPages.* content.* ForgotPassword.* index.*
+
+[33mcommit f49e957b871adb52e2861f89eb7bdcb0dd28a369[m
+Merge: 448b46a 920e112
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 12:07:38 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 920e11261851f02af21c0714c4309ea7b7e65c77[m
+Merge: 1dbbf50 7f0969c
+Author: Sude Akgün <102792219+sudeakq@users.noreply.github.com>
+Date:   Thu Jul 4 13:02:24 2024 +0300
+
+    Merge pull request #4 from dpsd18108/sudedev
+    
+    make daily reminder card
+
+[33mcommit 7f0969cd93e191b8977204f3750c403b8213e8c4[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Thu Jul 4 12:59:41 2024 +0300
+
+    make daily reminder card
+
+[33mcommit 448b46a5aba2e2bd6d5373f840df55c6653c8ad7[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 11:47:48 2024 +0200
+
+    merge
+
+[33mcommit 668e36bbdb9ff27a46575c5a41bca9d3ba20e434[m
+Merge: 9cb644f 1dbbf50
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 11:00:18 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP into deep
+
+[33mcommit 1dbbf509716ee51ef8bbfcbec7386acb006a669a[m
+Merge: 857a57b 51ee4c6
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Thu Jul 4 10:58:14 2024 +0200
+
+    Merge pull request #3 from dpsd18108/manos
+    
+    Manos
+
+[33mcommit 51ee4c666506f00a0d58ab27dc5e5754ddcf90d6[m
+Merge: b62ab73 857a57b
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Thu Jul 4 10:57:27 2024 +0200
+
+    deeparostest
+
+[33mcommit 5ab05b69f9e42d3808853d04bcd2797197866371[m
+Merge: 35d21c9 3b1574c
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 4 11:48:18 2024 +0300
+
+    finished loginPages
+
+[33mcommit 9cb644f8950d5d4559ca10f5a1a23d9d37228326[m
+Merge: d25ae47 3b1574c
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 10:45:27 2024 +0200
+
+    merge
+
+[33mcommit 35d21c90df57d9bc36fcddaf729f5380de66b360[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 4 11:42:53 2024 +0300
+
+    merge
+
+[33mcommit d25ae4706ae8039d3865f3c4c88d46b81be6f2f2[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 10:40:17 2024 +0200
+
+    change
+
+[33mcommit b62ab73aa39543903e33443e746d771efaf264c4[m
+Merge: 0a23562 3b1574c
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Thu Jul 4 10:36:55 2024 +0200
+
+    Merge branch 'main' into manos
+
+[33mcommit 857a57bdfabfe42b97bd25b0edccd9493076a565[m
+Merge: 3b1574c 4dcf921
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Thu Jul 4 10:33:03 2024 +0200
+
+    Merge pull request #2 from dpsd18108/deniz
+    
+    sa
+
+[33mcommit 4dcf9210db0a1d270e1b8d1bf22c6675a12625ac[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 11:24:31 2024 +0300
+
+    sa
+
+[33mcommit 0a23562b20cb59c64fbca48837e526ad10d7799e[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Thu Jul 4 10:24:07 2024 +0200
+
+    MANOLIS
+
+[33mcommit 3b1574c25a2b253a10c35e3821a7e5b1954c0a97[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 10:46:35 2024 +0300
+
+    push 10:46
+
+[33mcommit 8c7d613d008088a9b0e660cb6820bc6bb88a53ff[m
+Merge: 057f71a 152c984
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 10:43:43 2024 +0300
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 057f71a01348b5a721cf4f6e6189f6378af4a6a9[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 10:42:05 2024 +0300
+
+    push 10:38 - 4.07.2024
+    
+    InternList done
+
+[33mcommit 152c984196534beac3e5f153c25bdad94baae986[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Thu Jul 4 10:20:14 2024 +0300
+
+    ResetPassword
+    
+    done Login pages. made Reset Password Site
+
+[33mcommit 9e35d8bb3101a80f2ef4d8b431d59fbfbfb27a42[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 3 15:09:26 2024 +0300
+
+    changeindex
+
+[33mcommit 80a9bfa7ec169fbba40b6f2b72865e6a51f6a38c[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 3 14:55:22 2024 +0300
+
+    createDeniz
+
+[33mcommit c8aaf6da903c6be5a7dddfe9e2e0b23fa3fe1520[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 09:01:06 2024 +0200
+
+    index
+
+[33mcommit 7155968b9e732cb05abe84926d3809dc41bf479d[m
+Merge: ca60a44 49e2e93
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 09:38:52 2024 +0300
+
+    INDEXJS
+
+[33mcommit ca60a44180f7a98494113f216de12b877aea8a9d[m
+Merge: 212b47f dcf974d
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Thu Jul 4 09:35:27 2024 +0300
+
+    INTERNLISTJSCSS AND INDEXJS
+
+[33mcommit 49e2e93dd5f2c3e4fd4eea19a434c85ef1462fbd[m
+Merge: 07dff47 b991d25
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jul 4 08:11:44 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit b991d25d62798e84bff9b77b8a1e0c192e2de79b[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 14:04:58 2024 +0200
+
+    TEST
+
+[33mcommit 4d50ff25a8414537eb95e8b5d1b0abd5f5585beb[m
+Merge: 10a5bf6 dcf974d
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 14:03:34 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 07dff479fd3ceef30cef996df87c4648c67ae411[m
+Merge: 10a5bf6 dcf974d
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 14:02:02 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit dcf974d14e666f88604461eebaf100b6a041f60b[m
+Merge: 58eaae6 cf5c35e
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Wed Jul 3 14:43:56 2024 +0300
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 58eaae6e79b96e6d9ce7707c726843d064ed511a[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Wed Jul 3 14:43:48 2024 +0300
+
+    update the dashboard content
+
+[33mcommit 212b47fe46ea3841d5f75fa10ee9dc6285d11243[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 14:34:08 2024 +0300
+
+    index.js
+
+[33mcommit cf5c35eca25fceed5de01cea4747e7d6a0008aca[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 3 14:30:56 2024 +0300
+
+    changes
+
+[33mcommit 10a5bf69921a1946c0f4ef42e7da41b33c477967[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 14:27:52 2024 +0300
+
+    startPage.css
+
+[33mcommit c5f863892287f024bb7107f8148c9de114bedb07[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 14:24:35 2024 +0300
+
+    push 14:24
+
+[33mcommit 62b36838fdcfaa08a008c3f4fa74469b438be27e[m
+Merge: e4542e3 2b4e78c
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 14:03:32 2024 +0300
+
+    changes
+
+[33mcommit e4542e33c6c06bdb4e83c8920392dd300cc29472[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 13:58:47 2024 +0300
+
+    push 13:58
+
+[33mcommit 2b4e78c4d8733db94fcbb0e81775a4823c07561d[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 12:55:56 2024 +0200
+
+    update
+
+[33mcommit da68a4c8f865eeeaad48f0e594cea459fc40402b[m
+Merge: 223ca39 5a5aed7
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 12:52:09 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 5a5aed79f118858c45b6130ec66214a89838cf16[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 12:51:13 2024 +0200
+
+    AXIOS
+
+[33mcommit 223ca39907f3b1526f7cd6d45a52abc3f74e3126[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 12:49:59 2024 +0200
+
+    update
+
+[33mcommit ae51d5d35f7a7901fc9c235c1615f216cc7d731a[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 12:37:13 2024 +0200
+
+    upd
+
+[33mcommit 1458f4feffd21510eb9ea5097f089e867027a562[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 13:31:40 2024 +0300
+
+    push 13:31
+
+[33mcommit dc8350c40e7c3b52967a0ebfc98544cccb17761f[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 12:28:45 2024 +0200
+
+    update
+
+[33mcommit 749e5a958ab7aadecb74406dc06b68c6602b9fcd[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 12:27:55 2024 +0200
+
+    Updatemanos
+
+[33mcommit a534a1453e8fefa7ee40d924df0e1b344b9eee5d[m
+Merge: c6e5cb2 d58d90d
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Wed Jul 3 12:16:47 2024 +0300
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit c6e5cb2364d28e868026b99b9a0096cd3be97eee[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Wed Jul 3 12:14:26 2024 +0300
+
+    dashboard sections Weekly ScheduleCard add
+
+[33mcommit 280b2c5873007aef3d125bf825e914860d99c85f[m
+Merge: 80c39e7 d58d90d
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 10:44:27 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit d58d90d74ab233073798e8ee4de1235c50025167[m
+Merge: 5a22c3c a861199
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 10:44:05 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit a861199b11d291704fc9e2d701c5a9cab122b5bb[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 11:39:13 2024 +0300
+
+    push
+
+[33mcommit 80c39e75fd058ed01ffa54cf88876951472736d5[m
+Merge: bb4b95e c3dd1a3
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 10:20:04 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit bb4b95e65ba43e8cc35f0c1202d0d366fad1cdf9[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jul 3 10:19:45 2024 +0200
+
+    Update
+
+[33mcommit 5a22c3caaab8215ee23b2a3000e5e1f9d4b9340b[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 10:18:28 2024 +0200
+
+    update
+
+[33mcommit c3dd1a3bc85deaf69bbaafd5d2a6e938c40c5a12[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Wed Jul 3 10:31:03 2024 +0300
+
+    ForgotPasswordPage
+
+[33mcommit 44995499d45546d1290ac2fc4b00bab6916c8c50[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 2 14:56:35 2024 +0300
+
+    little change
+
+[33mcommit cfdd8c1b621d16a6d5c86fcae53a035ac20aef8c[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 2 14:46:41 2024 +0300
+
+    User-Start-Page
+
+[33mcommit 7340658e88ed2364dd36aec51770befa98ce90ef[m
+Merge: 242eba6 7d66e18
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 09:50:19 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 7d66e18a187cf0465a317ebf21b470c6ac05cc82[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 10:46:22 2024 +0300
+
+    3.07.2024 push 10:46
+
+[33mcommit 242eba68fdbbdd714694940505b4237432b54e38[m
+Merge: f7bb7b5 ee41949
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 08:35:51 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit f7bb7b5ad079fff44f495820a19146244e277789[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jul 3 08:30:27 2024 +0200
+
+    update
+
+[33mcommit ee41949738a61740a8d33d6519b3965829a72b10[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Wed Jul 3 09:25:06 2024 +0300
+
+    push 03.07.2024-9:25
+
+[33mcommit d8be2061985f774a4851576a5698725856821507[m
+Merge: ed3db7d e81096b
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Tue Jul 2 16:34:00 2024 +0300
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit ed3db7de764f24d9b56368a808e71916d00019f6[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Tue Jul 2 16:30:29 2024 +0300
+
+    add package
+
+[33mcommit e81096b5fb59ca08f0e8216a43d97754de9e86cc[m
+Merge: 33cdebb 256aeaa
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Tue Jul 2 15:30:03 2024 +0200
+
+    Merge pull request #1 from dpsd18108/sudedev
+    
+    create dashboard card component add to content
+
+[33mcommit 256aeaa45899cbe4ee476e9b4cd55ffa6e406e1f[m
+Merge: afa800f 33cdebb
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Tue Jul 2 16:24:03 2024 +0300
+
+    Merge branch 'main' into sudedev
+
+[33mcommit 33cdebbff19184de9f77cb31d4925930bc1a9fe2[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jul 2 15:20:50 2024 +0200
+
+    up
+
+[33mcommit 9d9b673fcfd0867b40bf4fafcfc0265079238433[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jul 2 15:20:25 2024 +0200
+
+    Sidebar Icons
+
+[33mcommit afa800f132835ea2895f93d11c814864e5d35764[m
+Author: sudeakq <sudeakq@gmail.com>
+Date:   Tue Jul 2 15:49:03 2024 +0300
+
+    create dashboard card component add to content
+
+[33mcommit 1b868a4f3359941f0324f7a38ae3b13c7dbc60bc[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jul 2 13:16:48 2024 +0200
+
+    Update icons
+
+[33mcommit d55a26ff4a2bac63b4343029757ec3dbcb0c9b6e[m
+Merge: 25baa50 272096e
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jul 2 13:14:55 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 272096ef4d1d0c4ce53923db8c9acc501650f399[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 2 14:13:11 2024 +0300
+
+    push
+
+[33mcommit 25baa50c574b20cb1f102c68f23ba0e2b7509f39[m
+Author: Hidayet Çiftçi <148482270+heyedos@users.noreply.github.com>
+Date:   Tue Jul 2 10:35:19 2024 +0300
+
+    sıde folder
+
+[33mcommit 19185a0ed04edced82b5d84c5b590a4a8b4ba6e3[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 2 10:29:18 2024 +0300
+
+    Delete manos.jsx
+
+[33mcommit c37c01e8c994cb54cc75c47b2d557d7ca6667f5c[m
+Author: Deniz Yetim <denizyetim@hotmail.com>
+Date:   Tue Jul 2 10:25:23 2024 +0300
+
+    daılyremınder
+
+[33mcommit 30f61326ad2cc38d4b3653c59e01556e1eed55e1[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jun 25 11:55:29 2024 +0200
+
+    CSS
+
+[33mcommit e0689156d245dee2c3dbbc0c62a4ecafeae1dbf7[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 21 13:25:12 2024 +0200
+
+    update css
+
+[33mcommit c10a18c6683cbcc44af8529f1fb7868e6c8419bd[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 21 11:52:22 2024 +0200
+
+    update css
+
+[33mcommit f6432e32c9633bd375f2d2cc12d3a82e9872cab8[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 21 09:55:20 2024 +0200
+
+    update css - (api)
+
+[33mcommit 3b125f05d3983e466a5f7fa66d314c64e09f3350[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 20 14:43:48 2024 +0200
+
+    update
+
+[33mcommit 411f50ccab9782dda199785efc3d9e5f22af558e[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 20 11:04:30 2024 +0200
+
+    update
+
+[33mcommit 276e7dd36f7ba4dbba0a300e0c0574a13109ed4f[m
+Merge: bb019e9 93fb863
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 20 09:17:46 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 93fb863080a1f4ab2809a32bdceec31f14eabf3f[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 21:09:21 2024 +0200
+
+    pu
+
+[33mcommit bb019e9115353c05ba4761aadf94f5c4c93b0a46[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 13:41:33 2024 +0200
+
+    update api.
+
+[33mcommit 0e28b9debdef05de99346d63817da1c2ae0d38f8[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 13:20:56 2024 +0200
+
+    up
+
+[33mcommit b80334c6bf9f68c8abec5fb04f05851615c22105[m
+Merge: 9cfb0a0 b3f9a6a
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 13:19:21 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit b3f9a6a2774fe2766281011969d53aa2b2964a80[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 13:17:38 2024 +0200
+
+    Create AuthController.php
+
+[33mcommit 9cfb0a033178bfd4e67307ee9ffa663a9a3b6ad6[m
+Merge: 002886b 3fa3085
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 13:03:51 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 3fa3085beaf9c3a57ddd9f18a3643488d439e3c5[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 13:02:30 2024 +0200
+
+    Update UserController.php
+
+[33mcommit 002886bd3a50a5a7d1b02e1b15200d8e81d316ef[m
+Merge: e50ae1b 7abd76c
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 13:01:59 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 7abd76c5d1cc27013a3240e3953a953ca176ad64[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 13:00:12 2024 +0200
+
+    Update UserController.php
+
+[33mcommit e50ae1b1d3d0a24df3fe9019bfcaa08de1ba66a7[m
+Merge: b03925d cc17e90
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 12:11:13 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit cc17e90c94acab713d1d8b5e583bb530f534c8f4[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 12:09:48 2024 +0200
+
+    update
+
+[33mcommit b03925d99ca83afdefb187b94caf0022f2ab506f[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 12:09:34 2024 +0200
+
+    push wrong
+
+[33mcommit fcddae2152abc450bf5096873664c6bf22867c18[m
+Merge: 3600236 8d0c8df
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 12:01:32 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 8d0c8df3f3db580d53ce8740f2e155ca82c15882[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 12:00:09 2024 +0200
+
+    up
+
+[33mcommit 3600236b6696646d3573233858a8c3d7b1961dc7[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 11:45:26 2024 +0200
+
+    up
+
+[33mcommit 30ee21156e78f3747468fad1107b28feeeb5d12e[m
+Merge: 8239c07 65224d5
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 11:18:36 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 8239c07bc6cd8b0c5e94bd9f15ed8baaee7579e2[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Wed Jun 19 11:17:30 2024 +0200
+
+    up
+
+[33mcommit 65224d5282c2c52bbcd51b3ed88f2e2e2212f72b[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Wed Jun 19 11:16:58 2024 +0200
+
+    updte css
+
+[33mcommit 5771a8929ff987708bdae509075df26a4abc03ba[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jun 18 23:00:28 2024 +0200
+
+    update css
+
+[33mcommit 8c3f3af2b418111219a69e698da044afaf48dbe3[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jun 18 22:31:33 2024 +0200
+
+    update css white
+
+[33mcommit c83b768a0cfb5be9ccc7fe5f5c52a3a09b1a32f3[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jun 18 11:05:28 2024 +0200
+
+    update
+
+[33mcommit 369dcdc503036b56855898498943e2cafbbd4d7d[m
+Merge: f8dc5e3 c12d9e2
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 11:22:18 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit f8dc5e337b9bd4a638540c7456e1d8095b03a471[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 11:22:01 2024 +0200
+
+    upod
+
+[33mcommit c12d9e29d9d1b3bf5536dd422b2a22747c4a6c7c[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Mon Jun 17 11:21:30 2024 +0200
+
+    upd
+
+[33mcommit a2118a8bb77f6eeded623a555810221565ad7694[m
+Merge: 7cea4c5 de320f9
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Mon Jun 17 10:50:32 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit de320f9ca937525ee0e4034d37728d694e6b8b1e[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 10:48:37 2024 +0200
+
+    upda
+
+[33mcommit 7cea4c548a8f393a7eb6eda0fdb2e452c146c506[m
+Merge: 582b5b3 71c755c
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Mon Jun 17 10:42:26 2024 +0200
+
+    Resolved conflicts by accepting current branch changes
+
+[33mcommit 71c755c939ea74f793ad5607269dd22c33547cef[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 10:36:44 2024 +0200
+
+    UPdate image
+
+[33mcommit e10ad3e66e04de4647f38946315cc40bf2201595[m
+Merge: adc6c6a f70bfa3
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 10:22:43 2024 +0200
+
+    UP
+
+[33mcommit adc6c6a410e507b4f7fdfcff38e5e354d4022b58[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 10:21:54 2024 +0200
+
+    UPDATE BILLS
+
+[33mcommit 582b5b3988c335fc641448716fae8ddd03e6f8c9[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Mon Jun 17 10:20:46 2024 +0200
+
+    up
+
+[33mcommit f70bfa33689770abd6580f36283d9a6ed505b349[m
+Merge: daad6f9 bb84543
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Mon Jun 17 09:44:51 2024 +0200
+
+    up
+
+[33mcommit daad6f9424386750642e8c706972a8090e189a53[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Mon Jun 17 09:42:00 2024 +0200
+
+    update
+
+[33mcommit bb84543b2457b6d69788f295a95567677f0da2fe[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Mon Jun 17 09:39:15 2024 +0200
+
+    Update (NoError)
+
+[33mcommit 7ca546cc3d2e0ddafd38cd07f43a5867a891d7cb[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Sat Jun 15 21:21:13 2024 +0200
+
+    Update(BiancoHouse)
+
+[33mcommit 9f8a7de726516c4895d5171aa9399011ef09e739[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Sat Jun 15 21:02:56 2024 +0200
+
+    Update - (Houses)
+
+[33mcommit f51381bbb194a6b2dc2ea028976e23a43b2d6f8b[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Sat Jun 15 20:53:01 2024 +0200
+
+    Update(AlumniList)--👌👌
+
+[33mcommit 3695c5898fb67a15583bce1d98a79026991712f3[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 23:17:44 2024 +0200
+
+    mkk
+
+[33mcommit bf234874c47f5354a863550de8b48b987994d29b[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 19:26:37 2024 +0200
+
+    Update (Interns)
+
+[33mcommit 45233045ef10031595e0eae43b53992ac7524c25[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 17:51:55 2024 +0200
+
+    uPDTAE..
+
+[33mcommit 5f6333fbf836d906574ad9756f618611518ca3b9[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 14:13:22 2024 +0200
+
+    UPDATEE
+
+[33mcommit 0b370b9c59d2b54289f9186866f8ba269e483970[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 13:12:50 2024 +0200
+
+    Update ( WSchedule) -2
+
+[33mcommit a9a2e13bca309cee3e0e672c0542eb94c527fa27[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 12:39:44 2024 +0200
+
+    Update (WeekSchedule)👌👌
+
+[33mcommit 9970e5e566f4499d60fdecfabcb4f77b4a62c6b5[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 12:14:32 2024 +0200
+
+    Update Index.js(Schedule)
+
+[33mcommit a69f78074834d71365a0a45af893af1ab418aee4[m
+Merge: aed5c39 49d06f2
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 12:10:06 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit aed5c39f46cf8750042069381f9db0feeb8e2b50[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 12:10:02 2024 +0200
+
+    Update Schedule UX
+
+[33mcommit 49d06f219f8d2dd39fb97eec86f5f1e10ca3912d[m
+Merge: a5b5c6b eb521bb
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jun 14 10:44:29 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit eb521bba3a42d353d0aa901cb623acde4b56361c[m[33m ([m[1;33mtag: [m[1;33mUpdtae-Schedule[m[33m, [m[1;32mrecovery-branch[m[33m)[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 10:43:38 2024 +0200
+
+    Update - ()
+
+[33mcommit a5b5c6b2ca91663318d7cc4a1dc254d7185af00f[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jun 14 10:43:34 2024 +0200
+
+    image
+
+[33mcommit d90f09293ac9143e49c804df6dda1ba9f6a12b13[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 09:36:01 2024 +0200
+
+    Update Ubirthday Page--
+
+[33mcommit 42df29646c6b670b0c70b802995cd4dcb43e844f[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Fri Jun 14 09:12:18 2024 +0200
+
+    Update -(UpcomingBirthdays)
+
+[33mcommit 7f4abd73a7382307562d898ac5aeb7251f4cf730[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Fri Jun 14 08:41:09 2024 +0200
+
+    update Dashboard
+
+[33mcommit 93a6d23bb941fcf1a317f046a5f7cbfd785ea84d[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 13 15:08:39 2024 +0200
+
+    Update - ( DailyRemainder) (UpcomingEvents).-
+
+[33mcommit ac5a71f77d396bf5ac6345ba84a9ae39d0d98516[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 13 13:43:19 2024 +0200
+
+    Update - (Daily_Reaminders)
+
+[33mcommit 39587bf97d1d351dd843f8eba32a36163ce9d494[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 13 12:54:39 2024 +0200
+
+    up
+
+[33mcommit 7227c223b8d5c9103965fffdf03ace7864a93205[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Thu Jun 13 12:51:05 2024 +0200
+
+    update - ( Whats New)
+
+[33mcommit f4bd891736c57c57cabf342931462cd34dcacf48[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Thu Jun 13 08:34:51 2024 +0200
+
+    up
+
+[33mcommit 50aeb1de946589f0a37a153ee3e6fe94c6a9e7cc[m
+Merge: 140e804 1e2449a
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Tue Jun 11 11:50:12 2024 +0200
+
+    Merge branch 'main' of https://github.com/dpsd18108/ERP
+
+[33mcommit 140e804c9d96f3fa05e7ebe3401c958e70d1d5c1[m
+Author: Striligkas Manos <dpsd18108@aegean.gr>
+Date:   Tue Jun 11 11:49:58 2024 +0200
+
+    up
+
+[33mcommit 1e2449acebc101fe7919d62b2148718c760a7d8e[m
+Author: SandeepProjects <Bagosandeep@gmail.com>
+Date:   Tue Jun 11 11:49:47 2024 +0200
+
+    update
+
+[33mcommit e6dd8ce10640cdec7654ddaadc3dff38ea6117ff[m
+Author: Striligkas Manos <101745590+dpsd18108@users.noreply.github.com>
+Date:   Tue Jun 11 10:07:42 2024 +0200
+
+    Initial commit
