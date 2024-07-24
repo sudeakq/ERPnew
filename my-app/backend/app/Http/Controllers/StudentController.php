@@ -95,6 +95,10 @@ class StudentController extends Controller
         ->get();
     }
 
+    public function getStudentsByApartmentId(string $id){
+        return $this->student->where("apartment_id",$id)->get();
+    }
+
     /**
      * Update the specified resource in storage.
      */

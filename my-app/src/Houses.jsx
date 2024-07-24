@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
-import AllHouse from './Components/AllHouses';
+import AllHouses from './Components/AllHouses';
 
 function AllHous() {
 
@@ -14,7 +14,7 @@ function AllHous() {
       <div className="container">
         <Sidebar {...{selected,setSelected}} />
         <main>
-          <AllHouse />
+          <AllHouses />
         </main>
       </div>
     </>

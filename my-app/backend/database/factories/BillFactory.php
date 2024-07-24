@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Apartment;
 use App\Models\ConsumedUtility;
 use App\Models\Student;
 use App\Models\UtilityPrice;
@@ -28,6 +29,7 @@ class BillFactory extends Factory
             "water_price" => $this->faker->numberBetween(1, 1000),
             "electricity_price" => $this->faker->numberBetween(1, 1000),
             "student_id" => Student::factory(),
+            "apartment_id" => Apartment::find(mt_rand(1,9)),
             "is_paid" => $this->faker->boolean(),
             "utility_price_id" => UtilityPrice::factory(),
             "consumed_utility_id"=> ConsumedUtility::factory(),

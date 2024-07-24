@@ -51,6 +51,9 @@ export const AllHousesContainer = styled.div`
   text-align: left;
   width: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction : column;
+  justify-content: space-between;
 }
 
 .house-header {
@@ -95,5 +98,18 @@ export const AllHousesContainer = styled.div`
   background-color: #d9534f;
 }
 
+.bills-button-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.bills-button {
+  padding: 5px 10px;
+  background-color: #f2f6fc;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 `

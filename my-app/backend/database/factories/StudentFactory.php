@@ -52,6 +52,7 @@ class StudentFactory extends Factory
             'health_issues' => $this->faker->sentence,
             'morning_shift_id' => $isMorning ? MorningShift::first() : null,
             'afternoon_shift_id' => !$isMorning ? AfternoonShift::first() : null,
+            'amount' => 222,
             'progress_id' => Progress::find(mt_rand(1, 10)),
             'created_at' => now(),
             'updated_at' => now(),

@@ -44,6 +44,7 @@ return new class extends Migration
             $table->foreignIdFor(Coordinator::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
             $table->string('health_issues');
+            $table->float('amount');
             $table->foreignIdFor(Progress::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(MorningShift::class)->nullable()->constrained()->onDelete('cascade');
             $table->foreignIdFor(AfternoonShift::class)->nullable()->constrained()->onDelete('cascade');
