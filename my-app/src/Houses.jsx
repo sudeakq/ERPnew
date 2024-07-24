@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
-import HousesL from './Components/HousesList';
+import AllHouse from './Components/AllHouses';
 
-function House() {
+function AllHous() {
 
-  const [selected,setSelected] = useState('Houses')
+  const [selected,setSelected] = useState("Houses")
 
   return (
     <>
@@ -14,11 +14,11 @@ function House() {
       <div className="container">
         <Sidebar {...{selected,setSelected}} />
         <main>
-          <HousesL />
+          <AllHouse />
         </main>
       </div>
     </>
   );
 }
 
-export default House
+export default AllHous

@@ -14,7 +14,7 @@ import UpcomingArrivals from './UpcomingArrivals';
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
 import Bills from './Bills';
-import AllHous from './AllHouse';
+import Houses from './Houses';
 import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
@@ -52,7 +52,7 @@ const App = () => {
           <Route path="ApplicantForm" element={<ApplicantsForm />} />
           <Route path='interns' element={<Intern />} />
           <Route path='alumni' element={<Alumni />} />
-          <Route path='houses' element={<AllHous />} />
+          <Route path='houses' element={<Houses />} />
           <Route path='bills' element={<Bills />} />
           <Route path='login' element={<StartPage />} />
           <Route path='workers' element={<Workers />} />
