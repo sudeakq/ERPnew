@@ -1,33 +1,36 @@
 import React, { useState } from "react";
 import { ReminderClickedContainer } from "./ReminderClicked.style";
-import leftIcon from '../images/chevron-left-solid.svg';
-import rightIcon from '../images/chevron-right-solid.svg';
-import EditForm from './EditForm'; // Import EditForm component
+import leftIcon from "../images/chevron-left-solid.svg";
+import rightIcon from "../images/chevron-right-solid.svg";
+import EditForm from "./EditForm"; // Import EditForm component
 
 function ReminderClicked() {
   const [isEditing, setIsEditing] = useState(false); // State for edit form
   const [currentPage, setCurrentPage] = useState(1);
   const totalPage = 4; // Assuming 4 total pages
 
-  const reminders = [ // Array of reminder objects
+  const reminders = [
+    // Array of reminder objects
     {
       date: "22 July 2024",
       postedBy: "Antonio Gallo",
       title: "Project Management Presentation",
-      description: "On Monday 23 August there will be a presentation from project management regarding the theater platform. Please prepare the necessary documents.",
+      description:
+        "On Monday 23 August there will be a presentation from project management regarding the theater platform. Please prepare the necessary documents.",
     },
     {
       date: "27 August 2024",
       postedBy: "Antonio Gallo",
       title: "Sandeep Gautam Birthday Celebration",
-      description: "On Monday 23 August there will be a presentation from project management regarding the theater platform. Please prepare the necessary documents.",
+      description:
+        "On Monday 23 August there will be a presentation from project management regarding the theater platform. Please prepare the necessary documents.",
     },
     {
       date: "27 August 2024",
       postedBy: "Sandeep Gautam",
       title: "Independence Day Parade",
-      description: "On Monday 23 August there will be a presentation from lorem lorem lorem.",
-
+      description:
+        "On Monday 23 August there will be a presentation from lorem lorem lorem.",
     },
     // Add more reminder objects here
   ];
@@ -36,9 +39,9 @@ function ReminderClicked() {
   const handleCloseForm = () => setIsEditing(false);
 
   const handlePageChange = (direction) => {
-    if (direction === 'prev' && currentPage > 1) {
+    if (direction === "prev" && currentPage > 1) {
       setCurrentPage(currentPage - 1);
-    } else if (direction === 'next' && currentPage < totalPage) {
+    } else if (direction === "next" && currentPage < totalPage) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -77,20 +80,32 @@ function ReminderClicked() {
         </button>
 
         {isEditing && (
-          <EditForm 
-            onClose={handleCloseForm} 
-            onSubmit={(data) => { console.log('Form submitted with data:', data); }} 
+          <EditForm
+            onClose={handleCloseForm}
+            onSubmit={(data) => {
+              console.log("Form submitted with data:", data);
+            }}
             initialData={reminders[0]} // Set initial data for edit form
           />
         )}
 
         <div className="reminder-list">{renderReminders()}</div>
         <div className="buttons-container poppins-extrabold">
-          <img className="icon" src={leftIcon} onClick={() => handlePageChange('prev')} alt="Previous" />
+          <img
+            className="icon"
+            src={leftIcon}
+            onClick={() => handlePageChange("prev")}
+            alt="Previous"
+          />
           {/* Left arrow icon */}
           {currentPage} / {totalPage}
           {/* Page number display */}
-          <img className="icon" src={rightIcon} onClick={() => handlePageChange('next')} alt="Next" />
+          <img
+            className="icon"
+            src={rightIcon}
+            onClick={() => handlePageChange("next")}
+            alt="Next"
+          />
           {/* Right arrow icon */}
         </div>
       </div>
