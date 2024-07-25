@@ -3,6 +3,7 @@
 use App\Models\AfternoonShift;
 use App\Models\Apartment;
 use App\Models\Arrival;
+use App\Models\Bill;
 use App\Models\Coordinator;
 use App\Models\Department;
 use App\Models\Interviewer;
@@ -45,6 +46,7 @@ return new class extends Migration
             $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
             $table->string('health_issues');
             $table->float('amount');
+            $table->foreignIdFor(Bill::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Progress::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(MorningShift::class)->nullable()->constrained()->onDelete('cascade');
             $table->foreignIdFor(AfternoonShift::class)->nullable()->constrained()->onDelete('cascade');

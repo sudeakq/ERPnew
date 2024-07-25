@@ -4,7 +4,7 @@ import Sidebar from './Components/Sidebar';
 import './Components/Header.css';
 import AllHouses from './Components/AllHouses';
 
-function AllHous() {
+function Houses() {
 
   const [selected,setSelected] = useState("Houses")
 
@@ -21,4 +21,4 @@ function AllHous() {
   );
 }
 
-export default AllHous
+export default Houses

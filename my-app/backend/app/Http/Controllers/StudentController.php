@@ -96,7 +96,7 @@ class StudentController extends Controller
     }
 
     public function getStudentsByApartmentId(string $id){
-        return $this->student->where("apartment_id",$id)->get();
+        return $this->student->with(["bill","apartment"])->where("apartment_id",$id)->get();
     }
 
     /**

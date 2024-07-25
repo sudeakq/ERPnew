@@ -20,16 +20,21 @@ class BillFactory extends Factory
      */
     public function definition(): array
     {
+
+        $electric = mt_rand(5000,10000) / 100;
+        $gas = mt_rand(5000,10000) / 100;
+        $water = mt_rand(5000,10000) / 100;
+        $internet = mt_rand(5000,10000) / 100;
+
         return [
             "opening_date" => $this->faker->date(),
             "closing_date" => $this->faker->date(),
             "deadline" => $this->faker->date(),
-            "internet_price" => $this->faker->numberBetween(1, 1000),
-            "gas_price" => $this->faker->numberBetween(1, 1000),
-            "water_price" => $this->faker->numberBetween(1, 1000),
-            "electricity_price" => $this->faker->numberBetween(1, 1000),
-            "student_id" => Student::factory(),
-            "apartment_id" => Apartment::find(mt_rand(1,9)),
+            "internet_price" => $internet,
+            "gas_price" => $gas,
+            "water_price" => $water,
+            "electricity_price" => $electric,
+            "total_price" => $electric + $gas + $water + $internet ,
             "is_paid" => $this->faker->boolean(),
             "utility_price_id" => UtilityPrice::factory(),
             "consumed_utility_id"=> ConsumedUtility::factory(),

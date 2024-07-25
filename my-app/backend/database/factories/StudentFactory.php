@@ -5,6 +5,7 @@ namespace Database\Factories;
 use App\Models\AfternoonShift;
 use App\Models\Apartment;
 use App\Models\Arrival;
+use App\Models\Bill;
 use App\Models\Coordinator;
 use App\Models\Department;
 use App\Models\Interviewer;
@@ -47,12 +48,13 @@ class StudentFactory extends Factory
             'department_id' => Department::find(mt_rand(1, 11)),
             'email' => $this->faker->unique()->safeEmail,
             'date_of_birth' => $this->faker->date(),
+            'bill_id' => Bill::factory(),
             'coordinator_id' => Coordinator::factory(),
             'apartment_id' =>  Apartment::find(mt_rand(1, 9)),
             'health_issues' => $this->faker->sentence,
             'morning_shift_id' => $isMorning ? MorningShift::first() : null,
             'afternoon_shift_id' => !$isMorning ? AfternoonShift::first() : null,
-            'amount' => 222,
+            'amount' => mt_rand(10000, 1000000) / 100,
             'progress_id' => Progress::find(mt_rand(1, 10)),
             'created_at' => now(),
             'updated_at' => now(),

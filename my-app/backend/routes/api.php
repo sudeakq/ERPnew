@@ -81,6 +81,7 @@ Route::controller(ApartmentController::class)->group(function () {
     Route::get('/apartments', 'index');
     Route::post('/apartments', 'store');
     Route::get('/apartments/{apartment}','show');
+    Route::put('/apartments/{apartment}','update');
 });
 
 Route::controller(ApartmentProblemController::class)->group(function () {

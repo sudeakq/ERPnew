@@ -24,8 +24,7 @@ return new class extends Migration
             $table->float('gas_price');
             $table->float('water_price');
             $table->float('electricity_price');
-            $table->foreignIdFor(Student::class)->constrained()->onDelete('cascade');
-            $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
+            $table->float('total_price');
             $table->boolean('is_paid');
             $table->foreignIdFor(UtilityPrice::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(ConsumedUtility::class)->constrained()->onDelete('cascade');
