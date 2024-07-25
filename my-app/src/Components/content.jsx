@@ -37,7 +37,7 @@ function Content(){
           <div className="content-container-top">
             <h4>What's New?</h4>
             <div className="view-all">
-              <a href="/news">View All (18) </a>
+              <a href="/news">View All </a>
               <p className="view-all-arrow">
                 <FaArrowRightLong />
               </p>
@@ -67,7 +67,9 @@ function Content(){
           <div className="content-container-top" style={{ marginTop: "30px" }}>
             <h4>Weekly Schedule</h4>
             <div className="view-all">
-              <a href="/schedule">View All </a>
+              <a href="/schedule">View All </a><p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
           <WeeklyScheduleCard></WeeklyScheduleCard>
@@ -77,7 +79,10 @@ function Content(){
           <div className="content-container-top">
             <h4>Daily Reminder</h4>
             <div className="view-all">
-              <a href="/daily/reminder">View All (12)</a>
+              <a href="/daily/reminder">View All</a>
+              <p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
 
@@ -86,7 +91,10 @@ function Content(){
           <div className="content-container-middle" style={{}}>
             <h4>Upcoming Arrival and Departure</h4>
             <div className="view-all">
-              <a href="/arrivals">View All (8)</a>
+              <a href="/arrivals">View All</a>
+              <p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
           <UpcomingArrivalCard entries={entries} limit={3} />
@@ -94,7 +102,10 @@ function Content(){
           <div className="content-container-bottom" style={{}}>
             <h4>Upcoming Birthdays </h4>
             <div className="view-all">
-              <a href="/birthdays">View All (8)</a>
+              <a href="/birthdays">View All</a>
+              <p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
           <UpcomingBirthdayCard count={3} />

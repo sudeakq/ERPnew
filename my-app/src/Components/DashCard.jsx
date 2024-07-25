@@ -18,7 +18,7 @@ const DashCard = (props) => {
                 <p>{description}</p>
             </div>
             <div className='dashcard-right-section'>
-                <p>Read More</p>
+                <a href='/news'>Read More</a>
             </div>
         </div>
     );
