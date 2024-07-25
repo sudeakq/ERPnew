@@ -33,6 +33,7 @@ import UserResetPassword from "./UserSide/ResetPassword";
 import UserDashboard from "./UserSide/UserDashboard";
 import UserStartPage from "./UserSide/UserStartPage"; 
 import UserNewsPage from "./UserSide/UserNewsPage"; 
+import AdminPage from './AdminPage';
 
 const App = () => {
 
@@ -50,6 +51,8 @@ const App = () => {
           <Route path='departments' element={<Departments />} />
           <Route path='applicants' element={<Applicants />} />
           <Route path='interns' element={<Intern />} />
+          <Route path='admin' element={<AdminPage />} />
+          <Route path='forgotPassword' element={<UserForgotPassword />} />
           <Route path='alumni' element={<Alumni />} />
           <Route path='houses' element={<AllHous />} />
           <Route path='bills' element={<Bills />} />
