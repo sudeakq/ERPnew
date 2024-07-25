@@ -22,7 +22,7 @@ function WorkersData() {
             Name : <span className="name">Joey Morgan</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Back End</span>{" "}
+            Position : <span className="name">Full Stack</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -33,7 +33,7 @@ function WorkersData() {
             Name : <span className="name">Anna Light</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Full Stack</span>{" "}
+            Position : <span className="name">Back End</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -66,7 +66,7 @@ function WorkersData() {
             Name : <span className="name">Maria Martinez</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Full Stack</span>{" "}
+            Position : <span className="name">Front End</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -77,7 +77,7 @@ function WorkersData() {
             Name : <span className="name">Edward Johnson</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Front End</span>{" "}
+            Position : <span className="name">Full Stack</span>{" "}
           </p>
         </div>
       </div>
