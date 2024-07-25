@@ -18,6 +18,7 @@ import AllHous from './AllHouse';
 import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
+import Workers2 from './Workers2';
 import NewsData from './NewsData';
 import ApplicantsForm from './ApplicantForm';
 import WindowContainer from './WindowContainer';
@@ -59,6 +60,7 @@ const App = () => {
           <Route path='bills' element={<Bills />} />
           <Route path='login' element={<StartPage />} />
           <Route path='workers' element={<Workers />} />
+          <Route path='workers2' element={<Workers2 />} />
           <Route path='events' element={<Events />} />
         </Route>
         <Route path='/user' element={<WindowContainer />} >

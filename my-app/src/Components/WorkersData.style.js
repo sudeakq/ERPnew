@@ -46,8 +46,10 @@ export const WorkersDataContainer = styled.div`
         gap: 20px;
         
         .image {
-            width: 100%;
-            height: auto;
+            width: 225px;
+            height: 225px;
+            box-sizing: border-box;
+            object-fit: cover;
         }
 
         p {
