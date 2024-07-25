@@ -65,7 +65,6 @@ export const AllHousesContainer = styled.div`
 
 .house-emoji-container {
   display: flex;
-  justify-content: center;
   gap: 10px;
 
   button {
