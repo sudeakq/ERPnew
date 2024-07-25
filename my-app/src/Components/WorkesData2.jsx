@@ -22,7 +22,7 @@ function WorkersData2() {
             Name : <span className="name">Andres Boyer</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Saafdas</span>{" "}
+            Position : <span className="name">Recruitment</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -33,7 +33,7 @@ function WorkersData2() {
             Name : <span className="name">Sophia Crane</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Full Stack</span>{" "}
+            Position : <span className="name">Executive assistant</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -44,7 +44,7 @@ function WorkersData2() {
             Name : <span className="name">Foster Lucas</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Front End</span>{" "}
+            Position : <span className="name">HR intern</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -55,7 +55,7 @@ function WorkersData2() {
             Name : <span className="name">Jessica Nguyen</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Back End</span>{" "}
+            Position : <span className="name">Executive assistant</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -66,7 +66,7 @@ function WorkersData2() {
             Name : <span className="name">Bruce Peck</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Full Stack</span>{" "}
+            Position : <span className="name">HR intern</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -77,7 +77,7 @@ function WorkersData2() {
             Name : <span className="name">Evelyn Burch</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Front End</span>{" "}
+            Position : <span className="name">Recruitment</span>{" "}
           </p>
         </div>
       </div>
