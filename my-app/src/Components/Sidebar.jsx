@@ -102,6 +102,16 @@ const Sidebar = ({ selected, setSelected }) => {
                 <i className="fas fa-file-invoice-dollar"></i>Bills
               </div>
             </a>
+            <a href="/admin" className="nav-link">
+              <div
+                onClick={() => setSelected("Admin")}
+                className={
+                  `link-data ` + ` ${selected === "Admin" ? " selected " : ""}`
+                }
+              >
+                <i class="fa-solid fa-user-tie"></i>Admin
+              </div>
+            </a>
           </div>
         </div>
       </nav>
