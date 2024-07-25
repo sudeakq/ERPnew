@@ -107,6 +107,10 @@ Expenses.css
   background: #03a9f4;
 }
 
+.internet {
+  background: red;
+}
+
 .gas {
   background: #4caf50;
 }

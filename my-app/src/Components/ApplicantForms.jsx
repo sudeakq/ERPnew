@@ -1,7 +1,8 @@
 import React, { useEffect, useState }  from "react";
-import './ApllicantForm.css';
+/* import './ApplicantForm.css'; */
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { ApplicantFormsContainer } from "./ApplicantForms.style";
 
 function ApplicantsForms(){
   
@@ -13,10 +14,10 @@ function ApplicantsForms(){
   const [selectedApartment,setSelectedApartment] = useState("Apartment");
   const [selectedRoom,setSelectedRoom] = useState("Room");
   const [selectedInterviewer,setSelectedInterviewer] = useState("Interviewer");
-  const [selectedStatus,setSelectedStatus] = useState("Status");
   const [selectedDriver,setSelectedDriver] = useState("Driver")
   const [selectedNationality,setSelectedNationality] = useState("Nationality")
   const [selectedGender,setSelectedGender] = useState("Gender");
+  const [selectedShift,setSelectedShift] = useState("Shift");
 
   const navigate = useNavigate();
 
@@ -24,6 +25,12 @@ function ApplicantsForms(){
     "Apartment"
   ])
   
+  const [shifts,setShifts] = useState([
+    "Shift",
+    "First (Morning)",
+    "Second (Afternoon)"
+  ]);
+
   const [genders,setGenders] = useState([
     "Gender",
     "male",
@@ -81,13 +88,6 @@ function ApplicantsForms(){
 
   const [interviewers,setInterviewers] = useState([
     "Interviewer",
-    "Patrycja"
-  ]);
-
-  const [status,setStatus] = useState([
-    "Status",
-    "Working",
-    "Done"
   ]);
 
   const [drivers,setDrivers] = useState([
@@ -101,14 +101,16 @@ function ApplicantsForms(){
     departmentId : 0,
     positionId : 0,
     coordinatorId : 0,
-    apartmentId : 0
+    apartmentId : 0,
+    interviewerId : 0,
+    progressId : 0,
+    billId : 0,
   });
 
   const [formData,setFormData] = useState({
     "name" : "",
     "surName" : "",
     "gender" : "",
-    "status" : 1,
     "phone" : "",
     "email" : "",
     "dateOfBirth" : "",
@@ -147,7 +149,16 @@ function ApplicantsForms(){
     (async () => {
       const response = await axios.get("http://localhost:8000/api/apartments");
       if(response.status){
-        setApartments(()=>([{name : "Apartment",double_room : 0,single_room : 0},...response.data]))
+        setApartments(()=>([{name : "Apartment",double_room : 0,single_room : 0},...response.data.filter(d=>d.is_visible)]))
+      }
+    })();
+  },[]);
+
+  useEffect(()=>{
+    (async () => {
+      const response = await axios.get("http://localhost:8000/api/interviewers");
+      if(response.status){
+        setInterviewers(()=>([{name : "Interviewer"},...response.data]))
       }
     })();
   },[]);
@@ -176,6 +187,10 @@ function ApplicantsForms(){
     setSelectedData(e.target.value);
   }
 
+  useEffect(()=>{
+    console.log(selectedPosition)
+  },[selectedPosition])
+
   const handleAdd = async () => {
 
     try {
@@ -183,7 +198,7 @@ function ApplicantsForms(){
       let response = await axios.post("http://localhost:8000/api/arrivals",{
         time : formData.internshipInfo.arrival,
         pickup_location : formData.internshipInfo.pickupLocation,
-        pickup_by : formData.internshipInfo.pickupBy 
+        pickup_by : selectedDriver
       })
 
       response = await axios.get(`http://localhost:8000/api/arrivals/${response.data.id}`);
@@ -198,12 +213,30 @@ function ApplicantsForms(){
       if(response.status) 
         setIdList(v=>({...v,statusId : response.data.id}))
 
-      response = await axios.post("http://localhost:8000/api/get/positions",{name : selectedPosition})
+      response = await axios.post("http://localhost:8000/api/get/positions",{
+        name : selectedPosition
+      })
 
       if(response.status) {
         setIdList(v=>({...v,positionId : response.data.id}))
-        setIdList(v=>({...v,departmentId : response.data.department_id}))
+        setIdList(v=>({...v,departmentId : response.data.department.id}))
       }
+
+      response = await axios.post("http://localhost:8000/api/bills",{
+        "opening_date": formData.internshipInfo.startDate,
+        "closing_date": formData.internshipInfo.endDate,
+        "deadline": formData.internshipInfo.endDate,
+        "internet_price": 0,
+        "gas_price": 0,
+        "water_price": 0,
+        "electricity_price": 0,
+        "total_price": 0,
+        "is_paid": 0,
+        "utility_price_id": 1,
+        "consumed_utility_id": 1
+      });
+
+      if(response.status) setIdList(v=>({...v,billId : response.data.id}))
 
       response = await axios.post("http://localhost:8000/api/coordinators",{
         name : formData.coordinator.name,
@@ -214,6 +247,15 @@ function ApplicantsForms(){
       if(response.status) 
         setIdList(v=>({...v,coordinatorId : response.data.id}));
 
+      response = await axios.post("http://localhost:8000/api/progresses",{
+        progress : "New Applicant",
+        date : formData.internshipInfo.applicationDate,
+        status : "Pending"
+      });
+
+      if(response.status) 
+        setIdList(v=>({...v,progressId : response.data.id}));
+
       setReady(true);
   
     } catch (error) {
@@ -222,6 +264,11 @@ function ApplicantsForms(){
   }
 
   useEffect(()=>{
+    if(selectedInterviewer !== "Interviewer") setIdList(v=>({...v,interviewerId : selectedInterviewer}))
+  },[selectedInterviewer])
+
+  useEffect(()=>{
+
     if(ready){
       (async ()=> {
         const {data} = await axios.post("http://localhost:8000/api/students",{
@@ -236,14 +283,18 @@ function ApplicantsForms(){
           "phone_number": formData.phone,
           "sex": selectedGender,
           "country": selectedCountry,
+          "interviewer_id" : idList.interviewerId,
           "institution": formData.studentInfo.institution,
           "nationality": selectedNationality,
-          "department_id": idList.departmentId,
+          "amount" : 0,
+          "morning_shift_id" : selectedShift == "First (Morning)" ? 1 : null,
+          "afternoon_shift_id" : selectedShift == "Second (Afternoon)" ? 1 : null,
           "email": formData.email,
+          "bill_id" : idList.billId,
           "date_of_birth": formData.dateOfBirth,
           "coordinator_id": idList.coordinatorId,
           "apartment_id": idList.apartmentId,
-          "progress_id" : 10,
+          "progress_id" : idList.progressId,
           "health_issues": formData.healthIssues
       });
       
@@ -254,6 +305,7 @@ function ApplicantsForms(){
   },[ready])
 
   return (
+    <ApplicantFormsContainer>
     <form className="application-form">
     <div className="section">
       <div className="field">
@@ -288,16 +340,6 @@ function ApplicantsForms(){
           {genders.map(gender=>{
             return (
               <option value={gender} >{gender}</option>
-            )
-          })}
-        </select>
-      </div>
-      <div className="field">
-        <label>Status</label>
-        <select onChange={(e)=>handleChangeSelected(e,setSelectedStatus)}>
-          {status.map(status=>{
-            return (
-              <option>{status}</option>
             )
           })}
         </select>
@@ -470,6 +512,16 @@ function ApplicantsForms(){
         />
       </div>
       <div className="field">
+        <label>Shift</label>
+        <select onChange={(e)=>handleChangeSelected(e,setSelectedShift)} >
+          {shifts.map(shift=>{
+            return (
+              <option value={shift} >{shift}</option>
+            )
+          })}
+        </select>
+      </div>
+      <div className="field">
         <label>Arrival</label>
         <input
           name="arrival" 
@@ -622,7 +674,7 @@ function ApplicantsForms(){
         <select onChange={(e)=>handleChangeSelected(e,setSelectedInterviewer)} >
           {interviewers.map(interviewer=>{
             return (
-              <option>{interviewer}</option>
+              <option value={interviewer.id} >{interviewer.name}</option>
             )
           })}
         </select>
@@ -648,6 +700,7 @@ function ApplicantsForms(){
       </div>
     </div>
   </form>
+  </ApplicantFormsContainer>
   );
 }
 

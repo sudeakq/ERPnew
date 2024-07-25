@@ -23,7 +23,9 @@ use App\Http\Controllers\StatusController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\ApartmentProblemController;
+use App\Http\Controllers\InterviewerController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ProgressController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ShiftController;
 use App\Http\Controllers\UtilityController;
@@ -79,6 +81,7 @@ Route::controller(ApartmentController::class)->group(function () {
     Route::get('/apartments', 'index');
     Route::post('/apartments', 'store');
     Route::get('/apartments/{apartment}','show');
+    Route::put('/apartments/{apartment}','update');
 });
 
 Route::controller(ApartmentProblemController::class)->group(function () {
@@ -146,6 +149,7 @@ Route::controller(StudentController::class)->group(function (){
     Route::post('/students','store');
     Route::get('/students/{student}','show');
     Route::post('/students/schedule','updateStudentSchedule');
+    Route::get('/students/apartment/{id}','getStudentsByApartmentId');
 });
 
 Route::controller(ArrivalController::class)->group(function (){
@@ -177,6 +181,7 @@ Route::controller(CoordinatorController::class)->group(function (){
 Route::controller(DepartmentController::class)->group(function (){
     Route::get('/departments','index');
     Route::post('/departments','store');
+    Route::post('/departments/department','getDepartmentByName');
     Route::get('/departments/{deparment}','show');
 });
 
@@ -227,3 +232,17 @@ Route::controller(UtilityPriceController::class)->group(function () {
     Route::put('/utility-prices/{utilityPrice}', 'update')->name('utility-prices.update');
     Route::delete('/utility-prices/{utilityPrice}', 'destroy')->name('utility-prices.destroy');
 });
+
+Route::controller(InterviewerController::class)->group(function (){
+    Route::get('/interviewers','index');
+    Route::post('/interviewers','store');
+    Route::get('/interviewers/{interviewer}','show');
+});
+
+Route::controller(ProgressController::class)->group(function (){
+    Route::get('/progresses','index');
+    Route::post('/progresses','store');
+    Route::get('/progresses/{progress}','show');
+    Route::put('/progresses/{progress}', 'update');   
+});
+

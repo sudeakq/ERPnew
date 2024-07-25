@@ -14,12 +14,13 @@ import UpcomingArrivals from './UpcomingArrivals';
 import ScheduleView from './Schedule-2';
 import Alumni from './Alumni';
 import Bills from './Bills';
-import AllHous from './AllHouse';
+import Houses from './Houses';
 import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
+import Workers2 from './Workers2';
 import NewsData from './NewsData';
-import ApplicantsForm from './ApllicantForm';
+import ApplicantsForm from './ApplicantForm';
 import WindowContainer from './WindowContainer';
 
 // USER COMPONENTS
@@ -33,6 +34,7 @@ import UserResetPassword from "./UserSide/ResetPassword";
 import UserDashboard from "./UserSide/UserDashboard";
 import UserStartPage from "./UserSide/UserStartPage"; 
 import UserNewsPage from "./UserSide/UserNewsPage"; 
+import AdminPage from './AdminPage';
 
 const App = () => {
 
@@ -49,14 +51,18 @@ const App = () => {
           <Route path='birthdays' element={<UpcomingBirthdays />} />
           <Route path='departments' element={<Departments />} />
           <Route path='applicants' element={<Applicants />} />
+          <Route path="ApplicantForm" element={<ApplicantsForm />} />
           <Route path='interns' element={<Intern />} />
+          <Route path='admin' element={<AdminPage />} />
+          <Route path='forgotPassword' element={<UserForgotPassword />} />
           <Route path='alumni' element={<Alumni />} />
-          <Route path='houses' element={<AllHous />} />
+          <Route path='houses' element={<Houses />} />
           <Route path='bills' element={<Bills />} />
+          <Route path='bills/:id' element={<Bills />} />
           <Route path='login' element={<StartPage />} />
           <Route path='workers' element={<Workers />} />
+          <Route path='workers2' element={<Workers2 />} />
           <Route path='events' element={<Events />} />
-          <Route path="ApplicantForm" element={<ApplicantsForm />} />
         </Route>
         <Route path='/user' element={<WindowContainer />} >
           <Route path='forgotPassword' element={<UserForgotPassword />} />

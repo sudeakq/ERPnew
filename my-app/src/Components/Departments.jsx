@@ -16,7 +16,7 @@ function Departments() {
           <p>Information Technology.</p>
           <p>Click to See More</p>
         </div>
-        <div className="card C2" onClick={() => navigate("/workers")}>
+        <div className="card C2" onClick={() => navigate("/workers2")}>
           <h2>HR</h2>
           <p>Human Resources.</p>
           <p>Click to See More</p>
