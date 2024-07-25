@@ -1,47 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './dailyremindercard.css';
-// I used the same CSS as dailyremindercard because the cards are the same
 import { AiOutlineClockCircle } from "react-icons/ai";
 
 const UpcomingBirthdayCard = () => {
+    const [birthdays, setBirthdays] = useState([]);
+
+    useEffect(() => {
+        axios.get('http://localhost:8000/api/birthdays')
+            .then(response => {
+                setBirthdays(response.data);
+            })
+            .catch(error => {
+                console.error('There was an error fetching the data!', error);
+            });
+    }, []);
+
     return (
         <div className="daily-reminder-card-frame">
-            <div className='daily-reminder-card'>
-                <div className='daily-reminder-card-left'>
-                    <div className='daily-reminder-card-left-hr'>
-                        <p style={{ fontWeight: "700" }}>Sandeep Gautam</p>
-                        <p style={{ color: "gray" }}>ICT</p>
+            {birthdays.map((birthday) => (
+                <div className='daily-reminder-card' key={birthday.id}>
+                    <div className='daily-reminder-card-left'>
+                        <div className='daily-reminder-card-left-hr'>
+                            <p style={{ fontWeight: "700" }}>{birthday.name}</p>
+                            <p style={{ color: "gray" }}>{birthday.department}</p>
+                        </div>
+                    </div>
+                    <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
+                        <p style={{ color: "gray" }}>{new Date(birthday.birthday_date).toLocaleDateString()}</p>
+                        <AiOutlineClockCircle style={{ color: "gray" }} />
                     </div>
                 </div>
-                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>Today</p>
-                    <AiOutlineClockCircle style={{ color: "gray" }} />
-                </div>
-            </div>
-            <div className='daily-reminder-card'>
-                <div className='daily-reminder-card-left'>
-                    <div className='daily-reminder-card-left-hr'>
-                        <p style={{ fontWeight: "700" }}>Sude Akgün</p>
-                        <p style={{ color: "gray" }}>IT</p>
-                    </div>
-                </div>
-                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>26 May</p>
-                    <AiOutlineClockCircle style={{ color: "gray" }} />
-                </div>
-            </div>
-            {/* <div className='daily-reminder-card'>
-                <div className='daily-reminder-card-left'>
-                    <div className='daily-reminder-card-left-hr'>
-                        <p style={{ fontWeight: "700" }}>Infinity</p>
-                        <p style={{ color: "gray" }}>HR</p>
-                    </div>
-                </div>
-                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>31 August</p>
-                    <AiOutlineClockCircle style={{ color: "gray" }} />
-                </div>
-            </div> */}
+            ))}
         </div>
     );
 };

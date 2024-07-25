@@ -31,6 +31,9 @@ use App\Http\Controllers\ShiftController;
 use App\Http\Controllers\UtilityController;
 use App\Http\Controllers\UtilityPriceController;
 use App\Http\Controllers\EntryController;
+use App\Http\Controllers\BirthdayController;
+
+Route::get('/birthdays', [BirthdayController::class, 'index']);
 
 Route::post('/entries', [EntryController::class, 'store']);
 Route::get('/entries', [EntryController::class, 'index']);
