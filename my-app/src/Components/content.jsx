@@ -97,7 +97,7 @@ function Content(){
               <a href="/birthdays">View All (8)</a>
             </div>
           </div>
-          <UpcomingBirthdayCard />
+          <UpcomingBirthdayCard count={3} />
         </div>
       </div>
     </ContentContainer>

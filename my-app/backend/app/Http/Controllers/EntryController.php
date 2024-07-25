@@ -5,34 +5,23 @@ namespace App\Http\Controllers;
 use App\Models\Entry;
 use Illuminate\Http\Request;
 
-
-
 class EntryController extends Controller
 {
     public function index()
     {
-        $entries = Entry::all();
-        return response()->json($entries);
+        return Entry::all();
     }
-    
+
     public function store(Request $request)
     {
-        
         $request->validate([
-            'name' => 'required|string|max:255',
-            'surname' => 'required|string|max:255',
+            'name' => 'required',
+            'surname' => 'required',
             'date' => 'required|date',
-            'status' => 'required|in:arriving,departing,none',
+            'status' => 'required',
+            'department' => 'required',
         ]);
 
-        $entry = Entry::create([
-            'name' => $request->name,
-            'surname' => $request->surname,
-            'date' => $request->date,
-            'status' => $request->status,
-        ]);
-
-        return response()->json($entry, 201);
+        return Entry::create($request->all());
     }
 }
-
