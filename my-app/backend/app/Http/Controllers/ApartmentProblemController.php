@@ -40,7 +40,7 @@ class ApartmentProblemController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update($request, string $id)
     {
         return ApartmentProblem::find($id)->update($request->all());
     }

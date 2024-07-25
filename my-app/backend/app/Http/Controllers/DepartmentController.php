@@ -38,6 +38,10 @@ class DepartmentController extends Controller
         return $department;
     }
 
+    public function getDepartmentByName(Request $request){
+        return $this->department->where('name',$request->name)->first();
+    }
+
     /**
      * Update the specified resource in storage.
      */

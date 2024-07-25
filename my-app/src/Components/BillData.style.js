@@ -1,8 +1,8 @@
 
 import styled from "styled-components";
 
-export const AllHousesContainer = styled.div`
-/* Houses.css */
+export const BillDataContainer = styled.div`
+
 .houses {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -61,18 +61,6 @@ export const AllHousesContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
-}
-
-.house-emoji-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-
-  button {
-    margin: 0;
-    padding: 0;
-  }
-
 }
 
 .house-card h2 {

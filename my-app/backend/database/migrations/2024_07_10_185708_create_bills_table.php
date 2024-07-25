@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Apartment;
 use App\Models\ConsumedUtility;
 use App\Models\Student;
 use App\Models\UtilityPrice;
@@ -23,7 +24,7 @@ return new class extends Migration
             $table->float('gas_price');
             $table->float('water_price');
             $table->float('electricity_price');
-            $table->foreignIdFor(Student::class)->constrained()->onDelete('cascade');
+            $table->float('total_price');
             $table->boolean('is_paid');
             $table->foreignIdFor(UtilityPrice::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(ConsumedUtility::class)->constrained()->onDelete('cascade');
