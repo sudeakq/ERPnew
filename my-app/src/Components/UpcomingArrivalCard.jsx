@@ -4,7 +4,9 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import dayjs from 'dayjs';
 
 const UpcomingArrivalCard = ({ entries = [], limit }) => {
-    const displayedEntries = limit ? entries.slice(0, limit) : entries;
+    // Verileri tarihe göre sıralayın, en yakın tarih en başta olacak şekilde
+    const sortedEntries = entries.sort((a, b) => dayjs(a.date).isAfter(dayjs(b.date)) ? 1 : -1);
+    const displayedEntries = limit ? sortedEntries.slice(0, limit) : sortedEntries;
     
     return (
       <div className="daily-reminder-card-frame">
@@ -29,6 +31,6 @@ const UpcomingArrivalCard = ({ entries = [], limit }) => {
         ))}
       </div>
     );
-  };
-  
+};
+
 export default UpcomingArrivalCard;
