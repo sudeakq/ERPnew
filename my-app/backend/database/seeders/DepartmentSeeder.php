@@ -13,6 +13,11 @@ class DepartmentSeeder extends Seeder
      */
     public function run(): void
     {
+        
+        Department::factory()->create([
+            "name" => "Digital Marketing"
+        ]);
+
         Department::factory()->create([
             "name" => "Information Technology"
         ]);
@@ -21,9 +26,6 @@ class DepartmentSeeder extends Seeder
             "name" => "Human Resources"
         ]);
 
-        Department::factory()->create([
-            "name" => "Digital Marketing"
-        ]);
 
         Department::factory()->create([
             "name" => "Financial Accounting"
