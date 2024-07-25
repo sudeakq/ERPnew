@@ -186,7 +186,7 @@ function Arrivals() {
             </Modal>
           </div>
 
-          <UpcomingArrivalCard entries={entries}  limit={2}/>
+          <UpcomingArrivalCard entries={entries}  />
         </div>
       </div>
       
