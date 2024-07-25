@@ -13,13 +13,13 @@ const StartPages = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const {currentUser,setCurrentUser} = useContext(UserContext);
+  const { currentUser, setCurrentUser } = useContext(UserContext);
 
   const navigate = useNavigate();
 
-  useEffect(()=>{
-    if(currentUser) navigate("/dashboard");
-  },[currentUser])
+  useEffect(() => {
+    if (currentUser) navigate("/dashboard");
+  }, [currentUser]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -31,9 +31,9 @@ const StartPages = () => {
       console.log("Response:", response);
       if (response.data.success) {
         setCurrentUser(response.data.user);
-        Cookies.set("current-user",JSON.stringify(response.data.user),{
-          expires : 30
-        }); 
+        Cookies.set("current-user", JSON.stringify(response.data.user), {
+          expires: 30,
+        });
         navigate("/dashboard");
       } else {
         setError("Invalid email or password");
@@ -75,7 +75,7 @@ const StartPages = () => {
             />
             <div className="login-options">
               <a
-                href="/forgot-password"
+                href="/forgotPassword"
                 className="forgot-password poppins-extrabold"
               >
                 Forgot password?

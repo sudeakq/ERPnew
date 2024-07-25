@@ -18,6 +18,7 @@ import Houses from './Houses';
 import Applicants from './Applicants';
 import Departments from './Departments';
 import Workers from './Workers';
+import Workers2 from './Workers2';
 import NewsData from './NewsData';
 import ApplicantsForm from './ApplicantForm';
 import WindowContainer from './WindowContainer';
@@ -33,6 +34,7 @@ import UserResetPassword from "./UserSide/ResetPassword";
 import UserDashboard from "./UserSide/UserDashboard";
 import UserStartPage from "./UserSide/UserStartPage"; 
 import UserNewsPage from "./UserSide/UserNewsPage"; 
+import AdminPage from './AdminPage';
 
 const App = () => {
 
@@ -51,12 +53,15 @@ const App = () => {
           <Route path='applicants' element={<Applicants />} />
           <Route path="ApplicantForm" element={<ApplicantsForm />} />
           <Route path='interns' element={<Intern />} />
+          <Route path='admin' element={<AdminPage />} />
+          <Route path='forgotPassword' element={<UserForgotPassword />} />
           <Route path='alumni' element={<Alumni />} />
           <Route path='houses' element={<Houses />} />
           <Route path='bills' element={<Bills />} />
           <Route path='bills/:id' element={<Bills />} />
           <Route path='login' element={<StartPage />} />
           <Route path='workers' element={<Workers />} />
+          <Route path='workers2' element={<Workers2 />} />
           <Route path='events' element={<Events />} />
         </Route>
         <Route path='/user' element={<WindowContainer />} >
