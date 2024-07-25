@@ -4,7 +4,7 @@ import Sidebar from "./Components/Sidebar";
 import Admin from "./Components/Admin";
 
 function AdminPage() {
-  const [selected, setSelected] = useState("Dashboard");
+  const [selected, setSelected] = useState("Admin");
 
   return (
     <>
