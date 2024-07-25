@@ -13,9 +13,10 @@ function Reminders() {
       <div class="container-reminder">
         <div class="calendar-reminder border-reminder">
           <h1>Calendar</h1>
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DateCalendar />
-          </LocalizationProvider>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=sudeakq%40gmail.com&ctz=Europe%2FIstanbul"
+            style={{ border: '0', width: '350px', height: '300px' }}
+          ></iframe>
         </div>
         <div class="list-reminder">
           <h1>List</h1>
