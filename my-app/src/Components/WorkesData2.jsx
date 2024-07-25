@@ -1,13 +1,13 @@
 import React from "react";
 import { WorkersDataContainer } from "./WorkersData.style";
-import workerImage1 from "../images/worker1.png";
-import workerImage2 from "../images/worker2.png";
-import workerImage3 from "../images/worker3.png";
-import workerImage4 from "../images/menpic1.avif";
-import workerImage5 from "../images/women-pic-1.jpg";
-import workerImage6 from "../images/men-pic-2.jpg";
+import workerImage1 from "../images/man-pic-3.jpg";
+import workerImage2 from "../images/women-pic-2.jpg";
+import workerImage3 from "../images/men-pic-4.webp";
+import workerImage4 from "../images/women-pic-3.avif";
+import workerImage5 from "../images/men-pic-5.jpg";
+import workerImage6 from "../images/women-4.jpg";
 
-function WorkersData() {
+function WorkersData2() {
   return (
     <WorkersDataContainer>
       <div className="title">
@@ -19,10 +19,10 @@ function WorkersData() {
             <img src={workerImage1} alt="" className="image" />
           </div>
           <p>
-            Name : <span className="name">Joey Morgan</span>{" "}
+            Name : <span className="name">Andres Boyer</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Full Stack</span>{" "}
+            Position : <span className="name">Recruitment</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -30,10 +30,10 @@ function WorkersData() {
             <img src={workerImage2} alt="" className="image" />
           </div>
           <p>
-            Name : <span className="name">Anna Light</span>{" "}
+            Name : <span className="name">Sophia Crane</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Back End</span>{" "}
+            Position : <span className="name">Executive assistant</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -41,10 +41,10 @@ function WorkersData() {
             <img src={workerImage3} alt="" className="image" />
           </div>
           <p>
-            Name : <span className="name">John Smith</span>{" "}
+            Name : <span className="name">Foster Lucas</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Front End</span>{" "}
+            Position : <span className="name">HR intern</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -52,10 +52,10 @@ function WorkersData() {
             <img src={workerImage4} alt="" className="image" />
           </div>
           <p>
-            Name : <span className="name">James Stanton</span>{" "}
+            Name : <span className="name">Jessica Nguyen</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Back End</span>{" "}
+            Position : <span className="name">Executive assistant</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -63,10 +63,10 @@ function WorkersData() {
             <img src={workerImage5} alt="" className="image" />
           </div>
           <p>
-            Name : <span className="name">Maria Martinez</span>{" "}
+            Name : <span className="name">Bruce Peck</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Front End</span>{" "}
+            Position : <span className="name">HR intern</span>{" "}
           </p>
         </div>
         <div className="card">
@@ -74,10 +74,10 @@ function WorkersData() {
             <img src={workerImage6} alt="" className="image" />
           </div>
           <p>
-            Name : <span className="name">Edward Johnson</span>{" "}
+            Name : <span className="name">Evelyn Burch</span>{" "}
           </p>
           <p>
-            Position : <span className="name">Full Stack</span>{" "}
+            Position : <span className="name">Recruitment</span>{" "}
           </p>
         </div>
       </div>
@@ -85,4 +85,4 @@ function WorkersData() {
   );
 }
 
-export default WorkersData;
+export default WorkersData2;

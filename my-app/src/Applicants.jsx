@@ -40,7 +40,7 @@ function Applicants() {
       <Header />
       <div className="container">
         <Sidebar {...{selected,setSelected}} />
-       <NewApplicants {...{applicants,setApplicants}} />
+        <NewApplicants {...{applicants,setApplicants}} />
       </div>
     </>
   );

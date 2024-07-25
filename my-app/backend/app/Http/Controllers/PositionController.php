@@ -31,7 +31,7 @@ class PositionController extends Controller
     }
 
     public function getPositionByName(Request $request){
-        return $this->position->where("name", $request->name)->first();
+        return $this->position->with('department')->where("name", $request->name)->first();
     }
 
     public function getPositions(Request $request){

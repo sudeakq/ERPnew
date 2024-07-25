@@ -14,11 +14,11 @@ class DepartmentSeeder extends Seeder
     public function run(): void
     {
         Department::factory()->create([
-            "name" => "Human Resources"
+            "name" => "Information Technology"
         ]);
 
         Department::factory()->create([
-            "name" => "Data Analyst"
+            "name" => "Human Resources"
         ]);
 
         Department::factory()->create([
@@ -26,35 +26,27 @@ class DepartmentSeeder extends Seeder
         ]);
 
         Department::factory()->create([
-            "name" => "Copy Writer"
+            "name" => "Financial Accounting"
         ]);
 
         Department::factory()->create([
-            "name" => "Growth Hacker"
+            "name" => "Business Administration"
         ]);
 
         Department::factory()->create([
-            "name" => "Business Project Management"
+            "name" => "Data Analyst"
         ]);
 
         Department::factory()->create([
-            "name" => "Architecture & Urban Design"
+            "name" => "User Experience"
         ]);
 
         Department::factory()->create([
-            "name" => "Information Technology"
+            "name" => "Urban Developments"
         ]);
 
         Department::factory()->create([
-            "name" => "User Experience Designer"
-        ]);
-
-        Department::factory()->create([
-            "name" => "European Project Manager"
-        ]);
-
-        Department::factory()->create([
-            "name" => "Business Lawyer"
+            "name" => "European Project manager."
         ]);
 
     }

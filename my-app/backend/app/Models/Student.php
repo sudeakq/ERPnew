@@ -55,8 +55,12 @@ class Student extends Model
         return $this->hasMany(ApartmentProblem::class);
     }
 
-    public function bills(){
-        return $this->hasMany(Bill::class);
+    public function bill(){
+        return $this->belongsTo(Bill::class);
+    }
+
+    public function apartment(){
+        return $this->belongsTo(Apartment::class);
     }
 
 }

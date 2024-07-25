@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { AllHousesContainer } from "./AllHouses.style";
+import { BillDataContainer } from "./BillData.style";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-function AllHouse(){
+function BillData(){
 
   const [houses,setHouses] = useState([])
   const [visibleCount,setVisibleCount] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(()=>{
 
@@ -29,35 +32,15 @@ function AllHouse(){
     if(houses) setVisibleCount(houses.filter(house=>house.is_visible).length)
   },[houses])
 
-  const handleVisibility = async (data) => {
-    
-    try {
-
-      const response1 = await axios.get(`http://localhost:8000/api/apartments/${data}`)
-
-      if(response1.status){
-        const houseData = response1.data;
-
-        const response = await axios.put(`http://localhost:8000/api/apartments/${data}`,{
-          is_visible : !houseData.is_visible 
-        })
-
-        if(response.status) window.location.reload();
-
-      }
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
   if(!houses.length) return (<div>Loading...</div>)
     
   return(
-    <AllHousesContainer>
+    <BillDataContainer>
       <div className="houses">
-        <h1>Houses</h1>
+        <h1>Bills</h1>
         <div className="locators">
           <span>{visibleCount}/{houses.length} locators</span>
+          
         </div>
         <div className="houses-grid">
           {
@@ -70,10 +53,6 @@ function AllHouse(){
                     <div className="top-container">
                       <div className="house-header">
                         <h2>{house.name}</h2>
-                        <div className="house-emoji-container">
-                          <button value={house.id} onClick={(e)=>handleVisibility(e.target.value)} style={house.is_visible ? ({}) : ({color : "black"}) } className="edit-button">🔍</button>
-                          <button style={house.is_visible ? ({color : "black"}) : ({color : "black"}) } className="edit-button">✎</button>
-                        </div>
                       </div>
                       <div className="house-body">
                         {(Array.from({length : single_room})).map(()=>{
@@ -94,6 +73,11 @@ function AllHouse(){
                         })}
                       </div>
                     </div>
+                    <div className="house-bottom">
+                    <div className="bills-button-container" >
+                        {house.is_visible != 0 && (<button className="bills-button" onClick={()=>navigate(`/bills/${house.id}`)} >Bills</button>)}
+                    </div>
+                    </div>
                   </div>
                 )
             }
@@ -101,8 +85,8 @@ function AllHouse(){
 
         </div>
       </div>
-    </AllHousesContainer>
+    </BillDataContainer>
   )
 }
 
-export default  AllHouse
+export default BillData

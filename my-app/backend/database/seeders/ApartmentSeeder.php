@@ -14,39 +14,48 @@ class ApartmentSeeder extends Seeder
     public function run(): void
     {
         Apartment::factory()->create([
-            "name" => "Bianco 1"
+            "name" => "Bianco 1",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Bianco 2"
+            "name" => "Bianco 2",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Ferraro"
+            "name" => "Ferraro",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Gallo"
+            "name" => "Gallo",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Gentile"
+            "name" => "Gentile",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Pignataro"
+            "name" => "Pignataro",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Romeo"
+            "name" => "Romeo",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Russo 1"
+            "name" => "Russo 1",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
         Apartment::factory()->create([
-            "name" => "Russo 2"
+            "name" => "Russo 2",
+            "is_visible" => mt_rand(0,1) ? true : false
         ]);
 
     }

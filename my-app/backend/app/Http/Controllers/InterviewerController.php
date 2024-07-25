@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Bill;
+use App\Models\Interviewer;
 use Illuminate\Http\Request;
 
-class BillController extends Controller
+class InterviewerController extends Controller
 {
-    protected $bill;
+
+    protected $interviewer;
 
     public function __construct(){
-        $this->bill = new Bill();
+        $this->interviewer = new Interviewer();
     }
 
     /**
@@ -18,7 +19,7 @@ class BillController extends Controller
      */
     public function index()
     {
-        return $this->bill->all();
+        return $this->interviewer->all();
     }
 
     /**
@@ -26,30 +27,30 @@ class BillController extends Controller
      */
     public function store(Request $request)
     {
-        return $this->bill->create($request->all());
+        return $this->interviewer->create($request->all());
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Interviewer $interviewer)
     {
-        return $this->bill->with('apartment')->findOrFail($id);;
+        return $interviewer;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Bill $bill)
+    public function update(Request $request, Interviewer $interviewer)
     {
-        return $bill->update($request->all());
+        return $interviewer->update($request->all());
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Bill $bill)
+    public function destroy(Interviewer $interviewer)
     {
-        return $bill->delete();
+        return $interviewer->delete();
     }
 }

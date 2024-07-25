@@ -3,8 +3,10 @@
 use App\Models\AfternoonShift;
 use App\Models\Apartment;
 use App\Models\Arrival;
+use App\Models\Bill;
 use App\Models\Coordinator;
 use App\Models\Department;
+use App\Models\Interviewer;
 use App\Models\MorningShift;
 use App\Models\Position;
 use App\Models\Progress;
@@ -29,6 +31,7 @@ return new class extends Migration
             $table->foreignIdFor(Arrival::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Status::class)->constrained('status')->onDelete('cascade');
             $table->foreignIdFor(Position::class)->constrained()->onDelete('cascade');
+            $table->foreignIdFor(Interviewer::class)->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('surname');
             $table->string('phone_number');
@@ -36,12 +39,13 @@ return new class extends Migration
             $table->string('country');
             $table->string('institution');
             $table->string('nationality');
-            $table->foreignIdFor(Department::class)->constrained()->onDelete('cascade');
             $table->string('email')->unique();
             $table->date('date_of_birth');
             $table->foreignIdFor(Coordinator::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Apartment::class)->constrained()->onDelete('cascade');
             $table->string('health_issues');
+            $table->float('amount');
+            $table->foreignIdFor(Bill::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(Progress::class)->constrained()->onDelete('cascade');
             $table->foreignIdFor(MorningShift::class)->nullable()->constrained()->onDelete('cascade');
             $table->foreignIdFor(AfternoonShift::class)->nullable()->constrained()->onDelete('cascade');
