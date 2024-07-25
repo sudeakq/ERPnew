@@ -28,8 +28,10 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProgressController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ShiftController;
+use App\Http\Controllers\TestController;
 use App\Http\Controllers\UtilityController;
 use App\Http\Controllers\UtilityPriceController;
+use PHPUnit\Event\Code\Test;
 
 /*
 |--------------------------------------------------------------------------
@@ -244,5 +246,10 @@ Route::controller(ProgressController::class)->group(function (){
     Route::post('/progresses','store');
     Route::get('/progresses/{progress}','show');
     Route::put('/progresses/{progress}', 'update');   
+});
+
+Route::controller(TestController::class)->group(function (){
+    Route::get('/test','index');
+    Route::post('/test','store'); 
 });
 

@@ -1,6 +1,8 @@
-import "./Admin.css";
+/* import "./Admin.css"; */
+import { AdminContainer } from "./Admin.style";
 function Admin() {
   return (
+    <AdminContainer>
     <div className="formContent">
       <h1>Register Page</h1>
       <form className="FormRegister">
@@ -64,6 +66,7 @@ function Admin() {
         </div>
       </form>
     </div>
+    </AdminContainer>
   );
 }
 export default Admin;
