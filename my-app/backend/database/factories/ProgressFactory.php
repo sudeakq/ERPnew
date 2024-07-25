@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Status;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -19,6 +20,7 @@ class ProgressFactory extends Factory
         return [
             "progress" => $this->faker->word(),
             "date" => $this->faker->date(),
+            "status" => Status::find(mt_rand(1,10))
         ];
     }
 }
