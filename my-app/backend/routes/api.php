@@ -181,6 +181,7 @@ Route::controller(CoordinatorController::class)->group(function (){
 Route::controller(DepartmentController::class)->group(function (){
     Route::get('/departments','index');
     Route::post('/departments','store');
+    Route::post('/departments/department','getDepartmentByName');
     Route::get('/departments/{deparment}','show');
 });
 

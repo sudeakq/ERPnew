@@ -39,7 +39,6 @@ return new class extends Migration
             $table->string('country');
             $table->string('institution');
             $table->string('nationality');
-            $table->foreignIdFor(Department::class)->constrained()->onDelete('cascade');
             $table->string('email')->unique();
             $table->date('date_of_birth');
             $table->foreignIdFor(Coordinator::class)->constrained()->onDelete('cascade');

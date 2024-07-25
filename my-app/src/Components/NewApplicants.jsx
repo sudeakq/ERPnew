@@ -84,7 +84,7 @@ function NewApplicants({applicants,setApplicants}) {
         </thead>
         <tbody>
           {applicants.map((applicant,index)=>{
-
+            if(index === 1) console.log(applicant)
             const {name,surname} = applicant;
             const {date,progress,status} = applicant.progress;
           
@@ -93,7 +93,7 @@ function NewApplicants({applicants,setApplicants}) {
                 {canUpdate !== index && (<td style={{padding : " 0 21px "}} ><input type="checkbox" /></td>)  || canUpdate === index && ( <td style={{with : "50px"}} ><button onClick={()=>handleUpdate(applicant)} >Save</button></td> )}
                 <td>{name} {surname}</td>
                 {canUpdate !== index && (<td style={{width : "170px"}} >{date}</td>)  || canUpdate === index && ( <td><input onChange={(e)=>handleChange(e,setSelectedDate)} type='date' placeholder={date} /></td> )}
-                <td>{applicant.department.name}</td>
+                <td>{applicant.position.department.name}</td>
                 <td>{applicant.position.name}</td>
                 {canUpdate !== index && (
                   <td style={{width : "200px"}} >{progress}</td>
