@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('location');
             $table->integer('single_room');
             $table->integer('double_room');
+            $table->boolean('is_visible');
             $table->timestamps();
         });
     }

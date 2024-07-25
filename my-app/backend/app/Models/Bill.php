@@ -23,4 +23,8 @@ class Bill extends Model
         return $this->belongsToMany(ConsumedUtility::class);
     }
 
+    public function apartment(){
+        return $this->belongsTo(Apartment::class);
+    }
+
 }

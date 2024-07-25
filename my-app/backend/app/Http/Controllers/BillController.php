@@ -32,9 +32,9 @@ class BillController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Bill $bill)
+    public function show(string $id)
     {
-        return $bill;
+        return $this->bill->with('apartment')->findOrFail($id);;
     }
 
     /**

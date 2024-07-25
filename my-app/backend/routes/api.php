@@ -81,6 +81,7 @@ Route::controller(ApartmentController::class)->group(function () {
     Route::get('/apartments', 'index');
     Route::post('/apartments', 'store');
     Route::get('/apartments/{apartment}','show');
+    Route::put('/apartments/{apartment}','update');
 });
 
 Route::controller(ApartmentProblemController::class)->group(function () {
@@ -148,6 +149,7 @@ Route::controller(StudentController::class)->group(function (){
     Route::post('/students','store');
     Route::get('/students/{student}','show');
     Route::post('/students/schedule','updateStudentSchedule');
+    Route::get('/students/apartment/{id}','getStudentsByApartmentId');
 });
 
 Route::controller(ArrivalController::class)->group(function (){
@@ -179,6 +181,7 @@ Route::controller(CoordinatorController::class)->group(function (){
 Route::controller(DepartmentController::class)->group(function (){
     Route::get('/departments','index');
     Route::post('/departments','store');
+    Route::post('/departments/department','getDepartmentByName');
     Route::get('/departments/{deparment}','show');
 });
 
