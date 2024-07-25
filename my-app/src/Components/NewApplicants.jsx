@@ -92,7 +92,7 @@ function NewApplicants({applicants,setApplicants}) {
               <tr>
                 {canUpdate !== index && (<td style={{padding : " 0 21px "}} ><input type="checkbox" /></td>)  || canUpdate === index && ( <td style={{with : "50px"}} ><button onClick={()=>handleUpdate(applicant)} >Save</button></td> )}
                 <td>{name} {surname}</td>
-                {canUpdate !== index && (<td style={{width : "170px"}} >{date}</td>)  || canUpdate === index && ( <td><input onChange={(e)=>handleChange(e,setSelectedDate)} type='date' placeholder={date} /></td> )}
+                {canUpdate !== index && (<td style={{width : "170px"}} >{date}</td>)  || canUpdate === index && ( <td><input value={selectedDate} onChange={(e)=>handleChange(e,setSelectedDate)} type='date' placeholder={date} /></td> )}
                 <td>{applicant.position.department.name}</td>
                 <td>{applicant.position.name}</td>
                 {canUpdate !== index && (
@@ -101,7 +101,7 @@ function NewApplicants({applicants,setApplicants}) {
                   || canUpdate === index && 
                 ( 
                   <td>
-                    <select onChange={(e)=>handleChange(e,setSelectedProgress)} >
+                    <select value={selectedProgress} onChange={(e)=>handleChange(e,setSelectedProgress)} >
                         {progressesData.map((data)=>(
                           <option value={data}>{data}</option>
                         ))}
@@ -119,7 +119,7 @@ function NewApplicants({applicants,setApplicants}) {
                     || canUpdate === index && 
                   (
                     <td>
-                      <select onChange={(e)=>handleChange(e,setSelectedStatus)} >
+                      <select value={selectedStatus} onChange={(e)=>handleChange(e,setSelectedStatus)} >
                         {statusData.map((data)=>(
                           <option value={data}>{data}</option>
                         ))}
@@ -129,9 +129,11 @@ function NewApplicants({applicants,setApplicants}) {
                 <td><button 
                   onClick={()=>setCanUpdate(()=>{
                   if(index === canUpdate) return -1;
+      
                   setSelectedDate(date)
                   setSelectedProgress(progress)
                   setSelectedStatus(status)
+
                   return index;
                 })} className="action-btn">...</button></td>
               </tr>    
