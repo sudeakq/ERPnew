@@ -1,4 +1,3 @@
-// src/Content.js
 import React from "react";
 import { ContentContainer } from "./content.style";
 import DashCard from "./DashCard";
@@ -7,8 +6,29 @@ import WeeklyScheduleCard from "./WeeklyScheduleCard";
 import DailyReminderCard from "./DailyReminderCard";
 import UpcomingBirthdayCard from "./UpcomingBirthdaysCard";
 import UpcomingArrivalCard from "./UpcomingArrivalCard";
+import { useEffect , useState} from "react";
 
-const Content = () => {
+function Content(){
+
+  const [entries, setEntries] = useState([]);
+  useEffect(() => {
+    const fetchEntries = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/api/entries');
+        if (response.ok) {
+          const data = await response.json();
+          setEntries(data);
+        } else {
+          console.error('Error fetching entries:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error fetching entries:', error);
+      }
+    };
+
+    fetchEntries();
+  }, []);
+  
   return (
     <ContentContainer>
       <div className="content-container">
@@ -17,7 +37,7 @@ const Content = () => {
           <div className="content-container-top">
             <h4>What's New?</h4>
             <div className="view-all">
-              <a href="/news">View All (18) </a>
+              <a href="/news">View All </a>
               <p className="view-all-arrow">
                 <FaArrowRightLong />
               </p>
@@ -47,37 +67,53 @@ const Content = () => {
           <div className="content-container-top" style={{ marginTop: "30px" }}>
             <h4>Weekly Schedule</h4>
             <div className="view-all">
-              <a href="/schedule">View All </a>
+              <a href="/schedule">View All </a><p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
-          <WeeklyScheduleCard></WeeklyScheduleCard>
+          <WeeklyScheduleCard  startDate="20 July"
+                endDate="to 25 July"
+                currentWeekText="Current Week"></WeeklyScheduleCard>
+                 <WeeklyScheduleCard  startDate="28 July"
+                endDate="to 2 Augst"
+                currentWeekText="Next Week"></WeeklyScheduleCard>
           {/* Weekly Schedule Section ends*/}
         </div>
         <div className="content-container-right">
           <div className="content-container-top">
             <h4>Daily Reminder</h4>
             <div className="view-all">
-              <a href="/daily/reminder">View All (12)</a>
+              <a href="/daily/reminder">View All</a>
+              <p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
 
-          <DailyReminderCard />
+          <DailyReminderCard {...{count : 3}} />
 
           <div className="content-container-middle" style={{}}>
             <h4>Upcoming Arrival and Departure</h4>
             <div className="view-all">
-              <a href="/arrivals">View All (8)</a>
+              <a href="/arrivals">View All</a>
+              <p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
-          <UpcomingArrivalCard />
+          <UpcomingArrivalCard entries={entries} limit={3} />
 
           <div className="content-container-bottom" style={{}}>
             <h4>Upcoming Birthdays </h4>
             <div className="view-all">
-              <a href="/birthdays">View All (8)</a>
+              <a href="/birthdays">View All</a>
+              <p className="view-all-arrow">
+                <FaArrowRightLong />
+              </p>
             </div>
           </div>
-          <UpcomingBirthdayCard />
+          <UpcomingBirthdayCard count={3} pagination={false} />
         </div>
       </div>
     </ContentContainer>

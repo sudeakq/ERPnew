@@ -8,9 +8,14 @@ function ApplicantsForm() {
   return (
     <>
       <Header />
-      <div className="main-container">
+      <div className="main-container" style={{
+          display : "flex",
+        }} >
         <Sidebar className="sidebar" />
-        <div className="form-container">
+        <div className="form-container" style={{
+          maxWidth : "1000000px",
+          width : "100%"
+        }} >
           <ApplicantsForms />
         </div>
       </div>

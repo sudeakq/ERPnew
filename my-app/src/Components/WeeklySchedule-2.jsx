@@ -7,42 +7,34 @@ function WeeklyScheduleView({students}) {
 
   const [departments,setDepartments] = useState({
     morning : [
-      [ "Human Resources", students.morningStudents.filter((student)=>student.department.name === "Human Resources" )],
-      [ "Data Analyst", students.morningStudents.filter((student)=>student.department.name === "Data Analyst" )],
-      [ "Digital Marketing", students.morningStudents.filter((student)=>student.department.name === "Digital Marketing" )],
-      [ "Copy Writer", students.morningStudents.filter((student)=>student.department.name === "Copy Writer" )],
-      [ "Growth Hacker", students.morningStudents.filter((student)=>student.department.name === "Growth Hacker" )],
-      [ "Business Project Management", students.morningStudents.filter((student)=>student.department.name === "Business Project Management" )],
-      [ "Architecture & Urban Design", students.morningStudents.filter((student)=>student.department.name === "Architecture & Urban Design" )],
-      [ "Information Technology", students.morningStudents.filter((student)=>student.department.name === "Information Technology" )],
-      [ "User Experience Designer", students.morningStudents.filter((student)=>student.department.name === "User Experience Designer" )],
-      [ "European Project Manager", students.morningStudents.filter((student)=>student.department.name === "European Project Manager" )],
-      [ "Business Lawyer", students.morningStudents.filter((student)=>student.department.name === "Business Lawyer" )],
+      [ "Digital Marketing", students.morningStudents.filter((student)=>student.position.department.name === "Digital Marketing" )],
+      [ "Human Resource Management", students.morningStudents.filter((student)=>student.position.department.name === "Human Resource Management" )],
+      [ "Business & Data Analyst", students.morningStudents.filter((student)=>student.position.department.name === "Business & Data Analyst" )],
+      [ "Project Management", students.morningStudents.filter((student)=>student.position.department.name === "Project Management" )],
+      [ "Languages", students.morningStudents.filter((student)=>student.position.department.name === "Languages" )],
+      [ "Information Technology", students.morningStudents.filter((student)=>student.position.department.name === "Information Technology" )],
+      [ "Urban Design", students.morningStudents.filter((student)=>student.position.department.name === "Urban Design" )],
+      [ "Law", students.morningStudents.filter((student)=>student.position.department.name === "Law" )],
     ],
     afternoon : [
-      [ "Human Resources", students.afternoonStudents.filter((student)=>student.department.name === "Human Resources" )],
-      [ "Data Analyst", students.afternoonStudents.filter((student)=>student.department.name === "Data Analyst" )],
-      [ "Digital Marketing", students.afternoonStudents.filter((student)=>student.department.name === "Digital Marketing" )],
-      [ "Copy Writer", students.afternoonStudents.filter((student)=>student.department.name === "Copy Writer" )],
-      [ "Growth Hacker", students.afternoonStudents.filter((student)=>student.department.name === "Growth Hacker" )],
-      [ "Business Project Management", students.afternoonStudents.filter((student)=>student.department.name === "Business Project Management" )],
-      [ "Architecture & Urban Design", students.afternoonStudents.filter((student)=>student.department.name === "Architecture & Urban Design" )],
-      [ "Information Technology", students.afternoonStudents.filter((student)=>student.department.name === "Information Technology" )],
-      [ "User Experience Designer", students.afternoonStudents.filter((student)=>student.department.name === "User Experience Designer" )],
-      [ "European Project Manager", students.afternoonStudents.filter((student)=>student.department.name === "European Project Manager" )],
-      [ "Business Lawyer", students.afternoonStudents.filter((student)=>student.department.name === "Business Lawyer" )],
+      [ "Digital Marketing", students.afternoonStudents.filter((student)=>student.position.department.name === "Digital Marketing" )],
+      [ "Human Resource Management", students.afternoonStudents.filter((student)=>student.position.department.name === "Human Resource Management" )],
+      [ "Business & Data Analyst", students.afternoonStudents.filter((student)=>student.position.department.name === "Business & Data Analyst" )],
+      [ "Project Management", students.afternoonStudents.filter((student)=>student.position.department.name === "Project Management" )],
+      [ "Languages", students.afternoonStudents.filter((student)=>student.position.department.name === "Languages" )],
+      [ "Information Technology", students.afternoonStudents.filter((student)=>student.position.department.name === "Information Technology" )],
+      [ "Urban Design", students.afternoonStudents.filter((student)=>student.position.department.name === "Urban Design" )],
+      [ "Law", students.afternoonStudents.filter((student)=>student.position.department.name === "Law" )],
     ],
   })
-
-  const [selectedStudents,setSelectedStudents] = useState([]);
 
   useEffect(()=>{
     console.log(departments)
   },[departments])
 
-  useEffect(()=>{
-    console.log(selectedStudents)
-  },[selectedStudents])
+  const [selectedStudents,setSelectedStudents] = useState([]);
+
+  console.log(students)
 
   const handleAddRemove = (id, shift) => {
     if (!selectedStudents.some(student => student.id === id && student.shift === shift)) {

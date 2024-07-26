@@ -1,47 +1,78 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './dailyremindercard.css';
-// I used the same CSS as dailyremindercard because the cards are the same
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const UpcomingBirthdayCard = () => {
+const UpcomingBirthdayCard = ({ count, pagination }) => {
+    const [birthdays, setBirthdays] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 8;
+
+    useEffect(() => {
+        axios.get('http://localhost:8000/api/birthdays')
+            .then(response => {
+                // Doğum günlerini tarih sırasına göre sırala
+                const sortedBirthdays = response.data.sort((a, b) => new Date(a.date_of_birth) - new Date(b.date_of_birth));
+                setBirthdays(sortedBirthdays);
+            })
+            .catch(error => {
+                console.error('There was an error fetching the data!', error);
+            });
+    }, []);
+
+    const handlePreviousPage = () => {
+        setCurrentPage((prev) => Math.max(prev - 1, 1));
+    };
+
+    const handleNextPage = () => {
+        setCurrentPage((prev) => Math.min(prev + 1, Math.ceil(birthdays.length / itemsPerPage)));
+    };
+
+    const handlePageClick = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
+    // Gösterilecek doğum günü sayısını belirle
+    const displayedBirthdays = count ? birthdays.slice(0, count) : birthdays;
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const currentPageBirthdays = pagination ? displayedBirthdays.slice(startIndex, startIndex + itemsPerPage) : displayedBirthdays;
+
+    const totalPages = Math.ceil(displayedBirthdays.length / itemsPerPage);
+    const pageNumbers = [...Array(totalPages).keys()].map(num => num + 1);
+
     return (
         <div className="daily-reminder-card-frame">
-            <div className='daily-reminder-card'>
-                <div className='daily-reminder-card-left'>
-                    <div className='daily-reminder-card-left-hr'>
-                        <p style={{ fontWeight: "700" }}>Sandeep Gautam</p>
-                        <p style={{ color: "gray" }}>ICT</p>
+            {currentPageBirthdays.map((birthday) => (
+                <div className='daily-reminder-card' key={birthday.id}>
+                    <div className='daily-reminder-card-left'>
+                        <div className='daily-reminder-card-left-hr'>
+                            <p style={{ fontWeight: "700" }}>{birthday.name}</p>
+                            <p style={{ color: "gray" }}>{birthday.department}</p>
+                        </div>
+                    </div>
+                    <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
+                        <p style={{ color: "gray" }}>{new Date(birthday.date_of_birth).toLocaleDateString()}</p>
+                        <AiOutlineClockCircle style={{ color: "gray" }} />
                     </div>
                 </div>
-                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>Today</p>
-                    <AiOutlineClockCircle style={{ color: "gray" }} />
+            ))}
+            {pagination && (
+                <div className="pagination">
+                    <button onClick={handlePreviousPage} disabled={currentPage === 1}><FaArrowLeft/></button>
+                    {pageNumbers.map(number => (
+                        <button
+                            key={number}
+                            onClick={() => handlePageClick(number)}
+                            className={`page-number ${currentPage === number ? 'active' : ''}`}
+                        >
+                            {number}
+                        </button>
+                    ))}
+                    <button onClick={handleNextPage} disabled={currentPage === totalPages}><FaArrowRight/></button>
                 </div>
-            </div>
-            <div className='daily-reminder-card'>
-                <div className='daily-reminder-card-left'>
-                    <div className='daily-reminder-card-left-hr'>
-                        <p style={{ fontWeight: "700" }}>Sude Akgün</p>
-                        <p style={{ color: "gray" }}>IT</p>
-                    </div>
-                </div>
-                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>26 May</p>
-                    <AiOutlineClockCircle style={{ color: "gray" }} />
-                </div>
-            </div>
-            {/* <div className='daily-reminder-card'>
-                <div className='daily-reminder-card-left'>
-                    <div className='daily-reminder-card-left-hr'>
-                        <p style={{ fontWeight: "700" }}>Infinity</p>
-                        <p style={{ color: "gray" }}>HR</p>
-                    </div>
-                </div>
-                <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                    <p style={{ color: "gray" }}>31 August</p>
-                    <AiOutlineClockCircle style={{ color: "gray" }} />
-                </div>
-            </div> */}
+            )}
         </div>
     );
 };

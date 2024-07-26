@@ -12,6 +12,7 @@
   width: 15%;
   border-radius: 8px;
   background-color: white;
+  min-width: 200px;
 }
 
 .link-list{

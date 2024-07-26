@@ -22,16 +22,15 @@ class StudentController extends Controller
     }
 
     public function getStudentsWithDepartment(){
-        $morningStudents = $this->student->with('department')
+        $morningStudents = $this->student->with('position.department')
         ->whereNot("morning_shift_id",null)
-        ->orderBy('department_id')
+        ->orderBy('position_id')
         ->get();
 
-        $afterNoonStudents = $this->student->with('department')
+        $afterNoonStudents = $this->student->with('position.department')
         ->where('morning_shift_id', null)
-        ->orderBy('department_id')
+        ->orderBy('position_id')
         ->get();
-
 
         return [
             $morningStudents,
@@ -87,12 +86,16 @@ class StudentController extends Controller
     }
 
     public function getStudentsForApplicantlist(){
-        return $this->student->with(['department','position','status','progress'])
+        return $this->student->with(['status','progress','position.department'])
         ->whereHas('status', function ($query) {
             $query->where('name','Applicant');
         })
         ->orderByDesc("created_at")
-        ->get();
+        ->paginate(10);
+    }
+
+    public function getStudentsByApartmentId(string $id){
+        return $this->student->with(["bill","apartment"])->where("apartment_id",$id)->get();
     }
 
     /**

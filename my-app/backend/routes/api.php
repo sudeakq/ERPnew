@@ -28,8 +28,17 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ProgressController;
 use App\Http\Controllers\ReminderController;
 use App\Http\Controllers\ShiftController;
+use App\Http\Controllers\TestController;
 use App\Http\Controllers\UtilityController;
 use App\Http\Controllers\UtilityPriceController;
+use App\Http\Controllers\EntryController;
+use App\Http\Controllers\BirthdayController;
+
+Route::get('/birthdays', [BirthdayController::class, 'index']);
+
+Route::post('/entries', [EntryController::class, 'store']);
+Route::get('/entries', [EntryController::class, 'index']);
+
 
 /*
 |--------------------------------------------------------------------------
@@ -81,6 +90,7 @@ Route::controller(ApartmentController::class)->group(function () {
     Route::get('/apartments', 'index');
     Route::post('/apartments', 'store');
     Route::get('/apartments/{apartment}','show');
+    Route::put('/apartments/{apartment}','update');
 });
 
 Route::controller(ApartmentProblemController::class)->group(function () {
@@ -148,6 +158,7 @@ Route::controller(StudentController::class)->group(function (){
     Route::post('/students','store');
     Route::get('/students/{student}','show');
     Route::post('/students/schedule','updateStudentSchedule');
+    Route::get('/students/apartment/{id}','getStudentsByApartmentId');
 });
 
 Route::controller(ArrivalController::class)->group(function (){
@@ -179,6 +190,7 @@ Route::controller(CoordinatorController::class)->group(function (){
 Route::controller(DepartmentController::class)->group(function (){
     Route::get('/departments','index');
     Route::post('/departments','store');
+    Route::post('/departments/department','getDepartmentByName');
     Route::get('/departments/{deparment}','show');
 });
 
@@ -241,5 +253,10 @@ Route::controller(ProgressController::class)->group(function (){
     Route::post('/progresses','store');
     Route::get('/progresses/{progress}','show');
     Route::put('/progresses/{progress}', 'update');   
+});
+
+Route::controller(TestController::class)->group(function (){
+    Route::get('/test','index');
+    Route::post('/test','store'); 
 });
 
