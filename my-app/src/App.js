@@ -47,6 +47,7 @@ const App = () => {
           <Route path='news/1' element={<NewsData />} />
           <Route path='schedule' element={<ScheduleView />} />
           <Route path='daily/reminder' element={<DailyReminders />} />
+          <Route path='daily/reminder/:id' element={<DailyReminders />} />
           <Route path='arrivals' element={<UpcomingArrivals />} />
           <Route path='birthdays' element={<UpcomingBirthdays />} />
           <Route path='departments' element={<Departments />} />
