@@ -85,14 +85,24 @@ class StudentController extends Controller
         return $student;
     }
 
-    public function getStudentsForApplicantlist(){
-        return $this->student->with(['status','progress','position.department'])
+    public function getStudentsForApplicantlist()
+{
+    return $this->student
+        ->with(['status', 'progress' => function ($query) {
+            $query->orderBy('date', 'desc');
+        }, 'position.department'])
         ->whereHas('status', function ($query) {
-            $query->where('name','Applicant');
+            $query->where('name', 'Applicant');
         })
-        ->orderByDesc("created_at")
+        ->orderByDesc(function($query) {
+            $query->select('date')
+                  ->from('progress')
+                  ->whereColumn('progress.student_id', 'students.id')
+                  ->orderByDesc('date')
+                  ->limit(1);
+        })
         ->paginate(10);
-    }
+}
 
     //naber
 
