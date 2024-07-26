@@ -133,5 +133,24 @@ table td {
   margin-top: 10px;
 }
 
+.buttons-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+
+  button {
+    padding: 7px;
+    font-weight: bold;
+    background-color: #4b3fa1;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+  }
+
+}
 
 `

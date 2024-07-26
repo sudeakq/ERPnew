@@ -2,8 +2,15 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import { ApplicantsContainer } from './NewApplicants.style';
+import { useNavigate } from 'react-router-dom';
 
-function NewApplicants({applicants,setApplicants}) {
+function NewApplicants({currentPage}) {
+
+  const navigate = useNavigate();
+
+  const [paginateData,setPaginateData] = useState({})
+  const [applicants, setApplicants] = useState([]);
+  const [loading,setLoading] = useState(true);
 
   const [canUpdate,setCanUpdate] = useState(-1);
 
@@ -33,11 +40,31 @@ function NewApplicants({applicants,setApplicants}) {
     "Ending"
   ]);
 
+  useEffect(()=>{
+    (async ()=>{
+      const response = await axios.get(`http://localhost:8000/api/students/applicant?page=${currentPage}`);
+      if(response.status){
+        if(!response.data.data.length) {
+          navigate("/applicants/1")
+          window.location.reload()
+        }
+        setPaginateData(response.data);
+        setApplicants(response.data.data)
+      }
+    })();
+  },[]);
+
+  useEffect(()=>{
+    if(applicants.length) setLoading(false)
+  },[applicants])
+
+  useEffect(()=>{
+    console.log(paginateData)
+  },[paginateData])
+
   const handleUpdate = async (applicant) => {
 
     const {progress_id} = applicant;
-
-    console.log(selectedDate,selectedProgress,selectedStatus)
 
     try {
       const response = await axios.put(`http://localhost:8000/api/progresses/${progress_id}`,{
@@ -57,7 +84,30 @@ function NewApplicants({applicants,setApplicants}) {
 
   const handleChange = (e,setData) => {
     setData(e.target.value);
+  } 
+
+  const goNext = () => {
+    if(paginateData.next_page_url) {
+      navigate(`/applicants/${parseInt(currentPage) + 1}`)
+      window.location.reload()
+    }
   }
+
+  const goPrev = () => {
+    if(paginateData.prev_page_url) {
+      navigate(`/applicants/${parseInt(currentPage) - 1}`)
+      window.location.reload()
+    }
+  }
+
+  if(loading) 
+    return (
+      <>
+        <div className="container">
+          <p>Loading...</p>
+        </div>
+      </>
+    );
 
   return (
     <ApplicantsContainer>
@@ -84,7 +134,7 @@ function NewApplicants({applicants,setApplicants}) {
         </thead>
         <tbody>
           {applicants.map((applicant,index)=>{
-            if(index === 1) console.log(applicant)
+            
             const {name,surname} = applicant;
             const {date,progress,status} = applicant.progress;
           
@@ -141,6 +191,10 @@ function NewApplicants({applicants,setApplicants}) {
           })}
         </tbody>
       </table>
+      <div className='buttons-container' >
+        {paginateData.prev_page_url && (<button onClick={goPrev} >prev</button>)}
+        {paginateData.next_page_url && (<button onClick={goNext} >next</button>)}
+      </div>
     </ApplicantsContainer>
   );
 }

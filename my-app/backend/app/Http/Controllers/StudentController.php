@@ -91,7 +91,7 @@ class StudentController extends Controller
             $query->where('name','Applicant');
         })
         ->orderByDesc("created_at")
-        ->get();
+        ->paginate(10);
     }
 
     public function getStudentsByApartmentId(string $id){
