@@ -94,6 +94,8 @@ class StudentController extends Controller
         ->paginate(10);
     }
 
+    //naber
+
     public function getStudentsByApartmentId(string $id){
         return $this->student->with(["bill","apartment"])->where("apartment_id",$id)->get();
     }
