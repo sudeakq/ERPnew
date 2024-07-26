@@ -10,7 +10,7 @@ const UpcomingBirthdayCard = ({ count }) => {
         axios.get('http://localhost:8000/api/birthdays')
             .then(response => {
                 // Doğum günlerini tarih sırasına göre sırala
-                const sortedBirthdays = response.data.sort((a, b) => new Date(a.birthday_date) - new Date(b.birthday_date));
+                const sortedBirthdays = response.data.sort((a, b) => new Date(a.date_of_birth) - new Date(b.date_of_birth));
                 setBirthdays(sortedBirthdays);
             })
             .catch(error => {
@@ -32,7 +32,7 @@ const UpcomingBirthdayCard = ({ count }) => {
                         </div>
                     </div>
                     <div className='daily-reminder-card-right' style={{ padding: "5px" }}>
-                        <p style={{ color: "gray" }}>{new Date(birthday.birthday_date).toLocaleDateString()}</p>
+                        <p style={{ color: "gray" }}>{new Date(birthday.date_of_birth).toLocaleDateString()}</p>
                         <AiOutlineClockCircle style={{ color: "gray" }} />
                     </div>
                 </div>

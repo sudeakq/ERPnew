@@ -72,7 +72,12 @@ function Content(){
               </p>
             </div>
           </div>
-          <WeeklyScheduleCard></WeeklyScheduleCard>
+          <WeeklyScheduleCard  startDate="20 July"
+                endDate="to 25 July"
+                currentWeekText="Current Week"></WeeklyScheduleCard>
+                 <WeeklyScheduleCard  startDate="28 July"
+                endDate="to 2 Augst"
+                currentWeekText="Next Week"></WeeklyScheduleCard>
           {/* Weekly Schedule Section ends*/}
         </div>
         <div className="content-container-right">
