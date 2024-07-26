@@ -13,8 +13,8 @@ const UpcomingBirthdayCard = ({ count, pagination }) => {
 
     useEffect(()=>{
         if(birthdays[0]){
-            console.log(birthdays[0].date_of_birth)
-            console.log(birthdays[0].date_of_birth.slice(5,7))
+            console.log(parseInt(birthdays[25].date_of_birth.slice(5,7)))
+            console.log(birthdays)
         }
     },[birthdays])
 
