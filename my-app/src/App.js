@@ -51,6 +51,7 @@ const App = () => {
           <Route path='birthdays' element={<UpcomingBirthdays />} />
           <Route path='departments' element={<Departments />} />
           <Route path='applicants' element={<Applicants />} />
+          <Route path='applicants/:id' element={<Applicants />} />
           <Route path="ApplicantForm" element={<ApplicantsForm />} />
           <Route path='interns' element={<Intern />} />
           <Route path='admin' element={<AdminPage />} />
