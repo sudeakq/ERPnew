@@ -11,7 +11,7 @@ function Content() {
           <div className="Header-News HeadFlex">
             <h3>What's New</h3>
             <div className="right-H_news">
-              <b className="blue">View All (18)</b>
+              <b className="blue">View All</b>
               <img src={blueLine} alt="" />
             </div>
           </div>

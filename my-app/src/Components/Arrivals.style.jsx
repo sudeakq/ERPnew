@@ -19,12 +19,12 @@ padding:50px;
 width: 100%;
 }
 .calendar-reminder{
-    width:500px !important;
+    width:auto !important;
     display:block;
     justify-content:center;
     align-items:center;
     margin: 10px 50px;
-    height: 400px;
+    height: 450px;
 
 
 }
@@ -34,7 +34,7 @@ width: 100%;
     justify-content:center;
     align-items:center;
     margin: 10px 50px;
-    height: 400px;
+    height: auto;
 
 
 }
