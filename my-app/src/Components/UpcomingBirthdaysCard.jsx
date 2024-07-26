@@ -70,7 +70,7 @@ const UpcomingBirthdayCard = ({ count, pagination }) => {
                             {number}
                         </button>
                     ))}
-                    <button onClick={handleNextPage} disabled={currentPage === totalPages}><FaArrowLeft/></button>
+                    <button onClick={handleNextPage} disabled={currentPage === totalPages}><FaArrowRight/></button>
                 </div>
             )}
         </div>
