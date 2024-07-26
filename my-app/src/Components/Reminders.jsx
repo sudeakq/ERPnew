@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Reminders.css";
 import { RemindersContainer } from "./Reminders.style";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import DailyReminderCard from "./DailyReminderCard";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-function Reminders() {
+function Reminders({currentPage}) {
+
+  const navigate = useNavigate();
+
+  const [reminders,setReminders] = useState([]);
+  const [paginateData,setPaginateData] = useState({});
+  const [count,setCount] = useState(8)
+
+  useEffect(()=>{
+    (async ()=>{
+      const response = await axios.get(`http://localhost:8000/api/students/applicant?page=${currentPage}`);
+      if(response.status) {
+        if(!response.data.data.length) {
+          navigate("/daily/reminder/1")
+          window.location.reload()
+        }
+        setPaginateData(response.data)
+        setReminders(response.data.data.slice(0,count))
+      } 
+    })()
+  },[])
+
   return (
     <RemindersContainer>
       <h1 style={{ padding: "30px" }}>Daily Reminders</h1>
@@ -20,7 +43,7 @@ function Reminders() {
         </div>
         <div class="list-reminder">
           <h1>List</h1>
-          <DailyReminderCard />
+          <DailyReminderCard {...{reminders,count}} />
         </div>
       </div>
     </RemindersContainer>
