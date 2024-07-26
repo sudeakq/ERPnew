@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import { ReminderClickedContainer } from "./ReminderClicked.style";
 import leftIcon from "../images/chevron-left-solid.svg";
 import rightIcon from "../images/chevron-right-solid.svg";
-import EditForm from "./EditForm"; // Import EditForm component
+import EditForm from "./EditForm"; // Ensure this path is correct
 
 function ReminderClicked() {
-  const [isEditing, setIsEditing] = useState(false); // State for edit form
+  const [isEditing, setIsEditing] = useState(false); // State for edit form visibility
   const [currentPage, setCurrentPage] = useState(1);
   const totalPage = 4; // Assuming 4 total pages
 
-  const reminders = [
-    // Array of reminder objects
+  const [reminders, setReminders] = useState([
     {
       date: "22 July 2024",
       postedBy: "Antonio Gallo",
@@ -33,7 +32,7 @@ function ReminderClicked() {
         "On Monday 23 August there will be a presentation from lorem lorem lorem.",
     },
     // Add more reminder objects here
-  ];
+  ]);
 
   const handleEditClick = () => setIsEditing(true);
   const handleCloseForm = () => setIsEditing(false);
@@ -44,6 +43,12 @@ function ReminderClicked() {
     } else if (direction === "next" && currentPage < totalPage) {
       setCurrentPage(currentPage + 1);
     }
+  };
+
+  const handleFormSubmit = (newData) => {
+    // Handle the form submission, e.g., add new reminder
+    setReminders([...reminders, newData]); // Append new reminder data
+    handleCloseForm(); // Close form after submission
   };
 
   const renderReminders = () => {
@@ -62,7 +67,7 @@ function ReminderClicked() {
             <p className="text">{reminder.description}</p>
           </div>
           <div className="read-link-container">
-            <a className="read-link" href="news/1">
+            <a className="read-link" href={`news/${index}`}>
               Read More
             </a>
           </div>
@@ -82,10 +87,14 @@ function ReminderClicked() {
         {isEditing && (
           <EditForm
             onClose={handleCloseForm}
-            onSubmit={(data) => {
-              console.log("Form submitted with data:", data);
+            onSubmit={handleFormSubmit}
+            initialData={{
+              date: "",
+              title: "",
+              postedBy: "",
+              description: "",
+              user_id: 2, // Ensure this matches the backend requirement
             }}
-            initialData={reminders[0]} // Set initial data for edit form
           />
         )}
 
