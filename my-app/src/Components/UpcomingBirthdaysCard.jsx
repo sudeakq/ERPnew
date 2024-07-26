@@ -12,8 +12,9 @@ const UpcomingBirthdayCard = ({ count, pagination }) => {
     useEffect(() => {
         axios.get('http://localhost:8000/api/birthdays')
             .then(response => {
-                console.log(response.data)
-                setBirthdays(response.data);
+                const {data} = response;
+                const sortedBirthdays = data.sort((a,b)=>new Date(b.date_of_birth) - a)
+                setBirthdays(data);
             })
             .catch(error => {
                 console.error('There was an error fetching the data!', error);

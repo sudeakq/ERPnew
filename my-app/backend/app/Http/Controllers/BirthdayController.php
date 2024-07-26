@@ -8,7 +8,7 @@ class BirthdayController extends Controller
 {
     public function index()
     {
-        $birthdays = Birthday::orderByDesc("date_of_birth")->get();
+        $birthdays = Birthday::all();
         return response()->json($birthdays);
     }
 }

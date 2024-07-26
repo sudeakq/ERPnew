@@ -21,8 +21,9 @@ const DailyReminderCard = ({count}) => {
                 navigate("/daily/reminder/1")
                 window.location.reload()
             }
+            const data = response.data.data.slice(0,count)
             setPaginateData(response.data)
-            setReminders(response.data.data.slice(0,count))
+            setReminders(data.sort((a,b)=>b.progress.date.slice(0,4) - a.progress.date.slice(0,4)))
         } 
         })()
     },[])
