@@ -23,7 +23,7 @@ function Birthdays() {
           ></iframe></div>
       <div class="list-reminder">
         <h1>List</h1>
-        <UpcomingBirthdayCard />
+        <UpcomingBirthdayCard  pagination={true} />
       </div>
     </div>
     </BirthdaysContainer>

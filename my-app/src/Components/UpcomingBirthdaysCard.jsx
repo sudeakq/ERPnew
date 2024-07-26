@@ -4,7 +4,7 @@ import './dailyremindercard.css';
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const UpcomingBirthdayCard = ({ count }) => {
+const UpcomingBirthdayCard = ({ count, pagination }) => {
     const [birthdays, setBirthdays] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8;
@@ -37,7 +37,7 @@ const UpcomingBirthdayCard = ({ count }) => {
     const displayedBirthdays = count ? birthdays.slice(0, count) : birthdays;
 
     const startIndex = (currentPage - 1) * itemsPerPage;
-    const currentPageBirthdays = displayedBirthdays.slice(startIndex, startIndex + itemsPerPage);
+    const currentPageBirthdays = pagination ? displayedBirthdays.slice(startIndex, startIndex + itemsPerPage) : displayedBirthdays;
 
     const totalPages = Math.ceil(displayedBirthdays.length / itemsPerPage);
     const pageNumbers = [...Array(totalPages).keys()].map(num => num + 1);
@@ -58,19 +58,21 @@ const UpcomingBirthdayCard = ({ count }) => {
                     </div>
                 </div>
             ))}
-            <div className="pagination">
-                <button onClick={handlePreviousPage} disabled={currentPage === 1}> <FaArrowLeft/> </button>
-                {pageNumbers.map(number => (
-                    <button
-                        key={number}
-                        onClick={() => handlePageClick(number)}
-                        className={`page-number ${currentPage === number ? 'active' : ''}`}
-                    >
-                        {number}
-                    </button>
-                ))}
-                <button onClick={handleNextPage} disabled={currentPage === totalPages}><FaArrowRight/></button>
-            </div>
+            {pagination && (
+                <div className="pagination">
+                    <button onClick={handlePreviousPage} disabled={currentPage === 1}><FaArrowLeft/></button>
+                    {pageNumbers.map(number => (
+                        <button
+                            key={number}
+                            onClick={() => handlePageClick(number)}
+                            className={`page-number ${currentPage === number ? 'active' : ''}`}
+                        >
+                            {number}
+                        </button>
+                    ))}
+                    <button onClick={handleNextPage} disabled={currentPage === totalPages}><FaArrowLeft/></button>
+                </div>
+            )}
         </div>
     );
 };

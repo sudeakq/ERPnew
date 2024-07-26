@@ -113,7 +113,7 @@ function Content(){
               </p>
             </div>
           </div>
-          <UpcomingBirthdayCard count={3} />
+          <UpcomingBirthdayCard count={3} pagination={false} />
         </div>
       </div>
     </ContentContainer>
