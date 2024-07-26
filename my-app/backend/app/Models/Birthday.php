@@ -10,14 +10,10 @@ class Birthday extends Model
 
  protected $table = 'students';
 
- // Fillable fields
+ use HasFactory;
  protected $fillable = [
      'name', 
      'department', 
      'date_of_birth'
  ];
-
-
-
-    use HasFactory;
 }
