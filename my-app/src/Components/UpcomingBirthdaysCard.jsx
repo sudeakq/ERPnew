@@ -9,12 +9,21 @@ const UpcomingBirthdayCard = ({ count, pagination }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8;
 
+    console.log(new Date().getMonth() + 1)
+
+    useEffect(()=>{
+        if(birthdays[0]){
+            console.log(birthdays[0].date_of_birth)
+            console.log(birthdays[0].date_of_birth.slice(5,7))
+        }
+    },[birthdays])
+
     useEffect(() => {
         axios.get('http://localhost:8000/api/birthdays')
             .then(response => {
                 const {data} = response;
-                const sortedBirthdays = data.sort((a,b)=>new Date(b.date_of_birth) - a)
-                setBirthdays(data);
+                const sortedBirthdays = data.sort((a,b)=>( parseInt(new Date().getMonth() + 1) - parseInt(b.date_of_birth.slice(5,7)) ) - ( parseInt(new Date().getMonth() + 1) - parseInt(a.date_of_birth.slice(5,7)) ) )
+                setBirthdays(sortedBirthdays);
             })
             .catch(error => {
                 console.error('There was an error fetching the data!', error);
