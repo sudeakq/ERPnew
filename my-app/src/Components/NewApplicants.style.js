@@ -37,6 +37,8 @@ headerk h1 {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
+  width: 130px;
+  height: 30px;
 }
 
 table {
