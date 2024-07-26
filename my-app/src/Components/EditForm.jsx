@@ -12,7 +12,6 @@ function EditForm({ onClose, onSubmit, initialData }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(formData);
-    onClose();
   };
 
   return (
@@ -24,7 +23,7 @@ function EditForm({ onClose, onSubmit, initialData }) {
             <b>Date</b>
           </label>
           <input
-            type="text"
+            type="date"
             id="date"
             name="date"
             value={formData.date}
@@ -53,7 +52,7 @@ function EditForm({ onClose, onSubmit, initialData }) {
             type="text"
             id="postedBy"
             name="postedBy"
-            value={formData.postedBy}
+            value={formData.postedBy || ''}
             onChange={handleChange}
             required
           />

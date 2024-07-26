@@ -20,7 +20,7 @@ class NewsController extends Controller
      */
     public function index(Request $request)
     {
-        return $this->news->paginate($request->page);
+        return $this->news->paginate(5);
     }
 
     /**
