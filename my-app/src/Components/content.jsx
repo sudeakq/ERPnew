@@ -86,7 +86,7 @@ function Content(){
             </div>
           </div>
 
-          <DailyReminderCard />
+          <DailyReminderCard {...{count : 3}} />
 
           <div className="content-container-middle" style={{}}>
             <h4>Upcoming Arrival and Departure</h4>
