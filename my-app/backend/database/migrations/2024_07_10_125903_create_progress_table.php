@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Student;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -16,6 +17,7 @@ return new class extends Migration
             $table->string('progress');
             $table->date('date');
             $table->string('status');
+            $table->foreignIdFor(Student::class)->nullable();
             $table->timestamps();
         });
     }
