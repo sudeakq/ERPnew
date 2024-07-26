@@ -12,9 +12,25 @@ const UpcomingBirthdayCard = ({ count, pagination }) => {
     useEffect(() => {
         axios.get('http://localhost:8000/api/birthdays')
             .then(response => {
-                const {data} = response;
-                const sortedBirthdays = data.sort((a,b)=>new Date(b.date_of_birth) - a)
-                setBirthdays(data);
+                const { data } = response;
+                const today = new Date();
+                
+                const sortedBirthdays = data.sort((a, b) => {
+                    const dateA = new Date(a.date_of_birth);
+                    const dateB = new Date(b.date_of_birth);
+
+                    // Adjust years to the next occurrence of the birthday
+                    dateA.setFullYear(today.getFullYear());
+                    dateB.setFullYear(today.getFullYear());
+
+                    // If the birthday already passed this year, adjust to next year
+                    if (dateA < today) dateA.setFullYear(today.getFullYear() + 1);
+                    if (dateB < today) dateB.setFullYear(today.getFullYear() + 1);
+
+                    return dateA - dateB;
+                });
+
+                setBirthdays(sortedBirthdays);
             })
             .catch(error => {
                 console.error('There was an error fetching the data!', error);
