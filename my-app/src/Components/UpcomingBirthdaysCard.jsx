@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './dailyremindercard.css';
 import { AiOutlineClockCircle } from "react-icons/ai";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-const UpcomingBirthdayCard = ({ count }) => {
+const UpcomingBirthdayCard = ({ count, pagination }) => {
     const [birthdays, setBirthdays] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 8;
 
     useEffect(() => {
         axios.get('http://localhost:8000/api/birthdays')
@@ -17,12 +20,30 @@ const UpcomingBirthdayCard = ({ count }) => {
             });
     }, []);
 
+    const handlePreviousPage = () => {
+        setCurrentPage((prev) => Math.max(prev - 1, 1));
+    };
+
+    const handleNextPage = () => {
+        setCurrentPage((prev) => Math.min(prev + 1, Math.ceil(birthdays.length / itemsPerPage)));
+    };
+
+    const handlePageClick = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    };
+
     // Gösterilecek doğum günü sayısını belirle
     const displayedBirthdays = count ? birthdays.slice(0, count) : birthdays;
 
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const currentPageBirthdays = pagination ? displayedBirthdays.slice(startIndex, startIndex + itemsPerPage) : displayedBirthdays;
+
+    const totalPages = Math.ceil(displayedBirthdays.length / itemsPerPage);
+    const pageNumbers = [...Array(totalPages).keys()].map(num => num + 1);
+
     return (
         <div className="daily-reminder-card-frame">
-            {displayedBirthdays.map((birthday) => (
+            {currentPageBirthdays.map((birthday) => (
                 <div className='daily-reminder-card' key={birthday.id}>
                     <div className='daily-reminder-card-left'>
                         <div className='daily-reminder-card-left-hr'>
@@ -36,6 +57,21 @@ const UpcomingBirthdayCard = ({ count }) => {
                     </div>
                 </div>
             ))}
+            {pagination && (
+                <div className="pagination">
+                    <button onClick={handlePreviousPage} disabled={currentPage === 1}><FaArrowLeft/></button>
+                    {pageNumbers.map(number => (
+                        <button
+                            key={number}
+                            onClick={() => handlePageClick(number)}
+                            className={`page-number ${currentPage === number ? 'active' : ''}`}
+                        >
+                            {number}
+                        </button>
+                    ))}
+                    <button onClick={handleNextPage} disabled={currentPage === totalPages}><FaArrowRight/></button>
+                </div>
+            )}
         </div>
     );
 };
