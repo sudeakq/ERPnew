@@ -11,6 +11,7 @@ export const AdminContainer = styled.div`
     align-items: center;
     background-color: #f9fafb;
     height: 87.5vh;
+    min-width: 900px;
 }
 .FormRegister {
     padding: 2rem;
@@ -19,6 +20,7 @@ export const AdminContainer = styled.div`
     gap: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    min-width: 500px;
 }
 label{
     display: inline-block;
